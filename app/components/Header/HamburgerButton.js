@@ -22,5 +22,5 @@ const HamburgerButton = forwardRef((props, ref) => {
     </button>
   );
 });
-
+HamburgerButton.displayName = "HamburgerButton";
 export default HamburgerButton;
