@@ -5,10 +5,8 @@ import { MenuContext } from "../../context/navState";
 import "./Header.scss";
 import Link from "next/link";
 
-type SideMenuProps = {
-  children?: ReactNode;
-};
-export const SideMenu = ({ children }: SideMenuProps = {}) => {
+
+export const SideMenu = ({ children } = {}) => {
   const { isMenuOpen } = useContext(MenuContext);
 
   return (
