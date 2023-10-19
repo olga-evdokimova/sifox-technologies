@@ -1,7 +1,7 @@
 //@ts-nocheck
 "use client";
 import React, { useRef, useContext, forwardRef} from "react";
-import useOnClickOutside from "../../hooks/OnClickOutside";
+import useOnClickOutside from "../../hooks/onClickOutside";
 import { MenuContext } from "../../context/navState";
 import HamburgerButton from "./HamburgerButton";
 import { SideMenu } from "./SideMenu";
