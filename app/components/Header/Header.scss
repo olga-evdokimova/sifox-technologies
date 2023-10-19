@@ -36,7 +36,7 @@
     &__wrap {
         display: flex;
         position: absolute;
-        z-index: 100;
+        z-index: 300;
     }
     &__btn {
         display: flex;
@@ -87,7 +87,7 @@
     right: 0px;
     bottom: 0px;
     z-index: 100;
-    min-width: 140px;
+    min-width: 30vw;
     background-color: var(--color-text-white);
     transform: translateX(100%);
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -95,6 +95,9 @@
     flex-direction: column;
     align-items: center;
     padding-top: 130px;
+    @media (max-width: 1600px){
+        min-width: 140px;
+    }
     &.open {
         transform: translateX(0);
     }

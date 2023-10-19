@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import "./style.scss";
 import "./null.scss";
 import Header from "./components/Header/Header";
