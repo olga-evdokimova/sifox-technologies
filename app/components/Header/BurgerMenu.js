@@ -1,7 +1,7 @@
 
 "use client";
-import React, { useRef, useContext, forwardRef} from "react";
- import useOnClickOutside from "../../hooks/useOnClickOutside";
+import React, { useRef, useContext, forwardRef } from "react";
+import useOnClickOutside from "../../hooks/onClickOutside";
 // import useOnclickOutside from "react-cool-onclickoutside";
 import { MenuContext } from "../../context/navState";
 import HamburgerButton from "./HamburgerButton";
