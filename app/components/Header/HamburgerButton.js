@@ -1,4 +1,4 @@
-//@ts-nocheck
+
 import React, { useContext, forwardRef } from "react";
 import { MenuContext } from "../../context/navState";
 import "./Header.scss";

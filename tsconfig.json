@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/context/navState.js", "app/components/Header/HamburgerButton.tsx", "app/hooks/onClickOutside.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/context/navState.js", "app/components/Header/HamburgerButton.js", "app/hooks/onClickOutside.js", "app/components/Header/BurgerMenu.js"],
   "exclude": ["node_modules"]
 }
