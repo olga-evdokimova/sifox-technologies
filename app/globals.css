@@ -10,9 +10,11 @@
   --color-hover: #e78a25;
   --color-cases: #857867;
   --color-line: #1c2236;
+  --border-radius: 10px;
 }
 body {
   background-color: var(--background);
+  color: var(--color-text-white);
 }
 .wrapper {
   min-height: 100%;
