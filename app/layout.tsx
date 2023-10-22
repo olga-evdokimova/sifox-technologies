@@ -4,6 +4,7 @@ import "./globals.scss";
 import "./style.scss";
 import "./null.scss";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const inter = Inter({
   weight: ["400", "500", "600"],
@@ -35,6 +36,7 @@ export default function RootLayout({
         <div className="wrapper">
           <main>{children}</main>
         </div>
+        <Footer/>
       </body>
     </html>
   );
