@@ -1,6 +1,6 @@
 import About from "./components/Products/About/About";
 import Products from "./components/Products/Products";
-import SolutionsPlatform from "./components/Platform/Platform";
+import Platform from "./components/Platform/Platform";
 import TopBlock from "./components/TopBlock/TopBlock";
 import Image from "next/image";
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       <TopBlock />
       <Products />
       <About />
-      <SolutionsPlatform />
+      <Platform />
     </section>
   );
 }
