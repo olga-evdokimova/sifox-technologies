@@ -1,7 +1,7 @@
 import Title from "../Title/Title";
-import "./SolutionsPlatform.scss";
+import "./Platform.scss";
 import Image from "next/image";
-export default function SolutionsPlatform() {
+export default function Platform() {
   return (
     <section className="platform container">
       <div className="platform__img">
