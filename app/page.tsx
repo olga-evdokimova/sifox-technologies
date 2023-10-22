@@ -1,9 +1,13 @@
-
-
+import TopBlock from "./components/TopBlock/TopBlock";
+import Image from "next/image";
 export default function Home() {
   return (
-    <section >
-  
+    <section className="main">
+      <div className="main__img">
+        <Image src={"/top-block-img.png"} alt="logo" fill ></Image>
+      </div>
+
+      <TopBlock></TopBlock>
     </section>
-  )
+  );
 }

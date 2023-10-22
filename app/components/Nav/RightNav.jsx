@@ -16,17 +16,16 @@ const Ul = styled.ul`
   min-width: 140px;
   transition: transform 0.3s ease-in-out;
   padding: 80px 40px 0;
-
   .nav-menu {
     font-weight: 700;
     font-size: 20px;
-    padding: 0 0px 5px ;
+    padding: 0 0px 5px;
     margin: 50px 10px 0;
 
     &__list {
       padding: 30px 60px 20px 60px;
-    //   transform: translateX(100%);
-    //   animation: slideIn 0.5s ease-in-out forwards;
+      //   transform: translateX(100%);
+      //   animation: slideIn 0.5s ease-in-out forwards;
       &-item {
         color: var(--color-text-black);
         text-align: right;
@@ -45,14 +44,14 @@ const Ul = styled.ul`
       }
     }
   }
-//   @keyframes slideIn {
-//     0% {
-//       transform: translateX(100%);
-//     }
-//     100% {
-//       transform: translateX(0);
-//     }
-//   }
+  //   @keyframes slideIn {
+  //     0% {
+  //       transform: translateX(100%);
+  //     }
+  //     100% {
+  //       transform: translateX(0);
+  //     }
+  //   }
 `;
 
 const Li = styled.li`
@@ -62,8 +61,7 @@ const Li = styled.li`
   border-bottom: ${(props) =>
     props.clicked
       ? "2px solid transparent"
-        : "2px solid var(--color-text-black)"};
-     
+      : "2px solid var(--color-text-black)"};
 `;
 
 const RightNav = ({ open }) => {
@@ -73,7 +71,8 @@ const RightNav = ({ open }) => {
   const [isB2BClicked, setIsB2BClicked] = useState(false);
 
   const listB2CAnimation = useSpring({
-      opacity: showListB2C ? 1 : 0,
+    opacity: showListB2C ? 1 : 0,
+    transform: showListB2C ? "translateX()" : "translateX(100%)",
     transition: "all 0.3s ease",
   });
 
@@ -151,5 +150,3 @@ const RightNav = ({ open }) => {
 };
 
 export default RightNav;
-
-

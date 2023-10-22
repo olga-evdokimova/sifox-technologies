@@ -1,0 +1,9 @@
+.main {
+  .main__img {
+    img {
+      object-fit: cover;
+      max-height: clamp(815px, 815px + (1196 - 815) * ((100vw - 375px) / (1600 - 375)), 1196px);
+      z-index: -1;
+    }
+  }
+}
