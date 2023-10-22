@@ -1,0 +1,5 @@
+h2{
+    font-family: var(--font-bebas-neue), sans-serif;
+    font-size: clamp(50px, 50px + (80 - 50) * ((100vw - 375px) / (1600 - 375)), 80px);
+    color: var(--color-text-white);
+}
