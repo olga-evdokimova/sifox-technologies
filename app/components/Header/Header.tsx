@@ -1,9 +1,8 @@
+"use client";
 import Link from "next/link";
 import "./Header.scss";
 import Image from "next/image";
-import NavState from "../../context/navState";
-import BurgerMenu from "./BurgerMenu";
-
+import Burger from "../Nav/Burger";
 export default function Header() {
   return (
     <header className="header header-container">
@@ -19,9 +18,7 @@ export default function Header() {
       <Link href={"#"} className="header__btn">
         Contact us
       </Link>
-      <NavState>
-        <BurgerMenu />
-      </NavState>
+      <Burger />
     </header>
   );
 }
