@@ -33,8 +33,9 @@ export default function Platform() {
         <div className="platform__card">
           <Title>613 million</Title>
           <p className="platform__card-text">
-            The total number of mobile service subscribers in Sub-Saharan Africa
-            will reach 613 million by 2025 (50% of the region's population)
+            The total number of&nbsp;mobile service subscribers
+            in&nbsp;Sub-Saharan Africa will reach 613 million by&nbsp;2025 (50%
+            of&nbsp;the region&rsquo;s population)
           </p>
         </div>
         <div className="platform__card">
