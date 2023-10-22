@@ -31,12 +31,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header/>
+      <body className={`${inter.variable} ${bebas_neue.variable}`}>
+        <Header />
         <div className="wrapper">
           <main>{children}</main>
         </div>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

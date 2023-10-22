@@ -1,3 +1,4 @@
+import About from "./components/Products/About/About";
 import Products from "./components/Products/Products";
 import SolutionsPlatform from "./components/SolutionsPlatform/SolutionsPlatform";
 import TopBlock from "./components/TopBlock/TopBlock";
@@ -10,6 +11,7 @@ export default function Home() {
       </div>
       <TopBlock />
       <Products />
+      <About />
       <SolutionsPlatform />
     </section>
   );
