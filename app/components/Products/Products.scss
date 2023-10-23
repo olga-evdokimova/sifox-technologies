@@ -1,4 +1,7 @@
 .products {
     width: 1600px;
     height: 800px;
+    @media (max-width: 992px){
+        height: 400px;
+    }
 }
