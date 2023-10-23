@@ -16,6 +16,10 @@ const Ul = styled.ul`
   min-width: 140px;
   transition: transform 0.3s ease-in-out;
   padding: 80px 40px 0;
+  @media (max-width: 767px) {
+    padding: 60px 20px 0 20px;
+    width: 100%;
+  }
   .nav-menu {
     font-weight: 700;
     font-size: 20px;
@@ -24,8 +28,11 @@ const Ul = styled.ul`
 
     &__list {
       padding: 30px 60px 20px 60px;
-        transform: translateX(100%);
-        animation: slideIn 0.5s ease-in-out forwards;
+      transform: translateX(100%);
+      animation: slideIn 0.5s ease-in-out forwards;
+      @media (max-width: 767px) {
+        padding: 20px 0 0px;
+      }
       &-item {
         color: var(--color-text-black);
         text-align: right;
@@ -44,14 +51,14 @@ const Ul = styled.ul`
       }
     }
   }
-    @keyframes slideIn {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(0);
-      }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
     }
+    100% {
+      transform: translateX(0);
+    }
+  }
 `;
 
 const Li = styled.li`
@@ -101,7 +108,7 @@ const RightNav = ({ open }) => {
         B2C
       </Li>
       {showListB2C && (
-        <ul className="nav-menu__list" >
+        <ul className="nav-menu__list">
           <li className="nav-menu__list-item">
             <Link href={""}>
               Data & Voice Sharing<span>Family</span>
@@ -127,7 +134,7 @@ const RightNav = ({ open }) => {
         B2B
       </Li>
       {showListB2B && (
-        <ul className="nav-menu__list" >
+        <ul className="nav-menu__list">
           <li className="nav-menu__list-item">
             <Link href={""}>
               Data & Voice Sharing<span>Family</span>
