@@ -24,8 +24,8 @@ const Ul = styled.ul`
 
     &__list {
       padding: 30px 60px 20px 60px;
-      //   transform: translateX(100%);
-      //   animation: slideIn 0.5s ease-in-out forwards;
+        transform: translateX(100%);
+        animation: slideIn 0.5s ease-in-out forwards;
       &-item {
         color: var(--color-text-black);
         text-align: right;
@@ -44,14 +44,14 @@ const Ul = styled.ul`
       }
     }
   }
-  //   @keyframes slideIn {
-  //     0% {
-  //       transform: translateX(100%);
-  //     }
-  //     100% {
-  //       transform: translateX(0);
-  //     }
-  //   }
+    @keyframes slideIn {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
 `;
 
 const Li = styled.li`
@@ -70,16 +70,16 @@ const RightNav = ({ open }) => {
   const [isB2CClicked, setIsB2CClicked] = useState(false);
   const [isB2BClicked, setIsB2BClicked] = useState(false);
 
-  const listB2CAnimation = useSpring({
-    opacity: showListB2C ? 1 : 0,
-    transform: showListB2C ? "translateX()" : "translateX(100%)",
-    transition: "all 0.3s ease",
-  });
+  // const listB2CAnimation = useSpring({
+  //   opacity: showListB2C ? 1 : 0,
+  //   transform: showListB2C ? "translateX()" : "translateX(100%)",
+  //   transition: "all 0.3s ease",
+  // });
 
-  const listB2BAnimation = useSpring({
-    opacity: showListB2B ? 1 : 0,
-    transition: "all 0.3s ease",
-  });
+  // const listB2BAnimation = useSpring({
+  //   opacity: showListB2B ? 1 : 0,
+  //   transition: "all 0.3s ease",
+  // });
 
   const handleItemClickB2C = () => {
     setShowListB2C(!showListB2C);
@@ -101,7 +101,7 @@ const RightNav = ({ open }) => {
         B2C
       </Li>
       {showListB2C && (
-        <animated.ul className="nav-menu__list" style={listB2CAnimation}>
+        <ul className="nav-menu__list" >
           <li className="nav-menu__list-item">
             <Link href={""}>
               Data & Voice Sharing<span>Family</span>
@@ -117,7 +117,7 @@ const RightNav = ({ open }) => {
               Social Network Bundles<span>Individuals and social buying</span>
             </Link>
           </li>
-        </animated.ul>
+        </ul>
       )}
       <Li
         className="nav-menu"
@@ -127,7 +127,7 @@ const RightNav = ({ open }) => {
         B2B
       </Li>
       {showListB2B && (
-        <animated.ul className="nav-menu__list" style={listB2BAnimation}>
+        <ul className="nav-menu__list" >
           <li className="nav-menu__list-item">
             <Link href={""}>
               Data & Voice Sharing<span>Family</span>
@@ -143,7 +143,7 @@ const RightNav = ({ open }) => {
               Social Network Bundles<span>Individuals and social buying</span>
             </Link>
           </li>
-        </animated.ul>
+        </ul>
       )}
     </Ul>
   );
