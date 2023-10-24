@@ -18,7 +18,7 @@ const Ul = styled.ul`
   padding: 80px 40px 0;
   @media (max-width: 767px) {
     padding: 60px 20px 0 20px;
-    width: 100%;
+    // min-width: 100%;
   }
   .nav-menu {
     font-weight: 700;
@@ -32,6 +32,9 @@ const Ul = styled.ul`
       animation: slideIn 0.5s ease-in-out forwards;
       @media (max-width: 767px) {
         padding: 20px 0 0px;
+      }
+      @media (max-width: 375px) {
+        width: 100vw;
       }
       &-item {
         color: var(--color-text-black);

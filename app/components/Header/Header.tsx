@@ -5,7 +5,7 @@ import Image from "next/image";
 import Burger from "../Nav/Burger";
 export default function Header() {
   return (
-    <header className="header header-container">
+    <header className="header">
       <Link href={"/"} className="header__logo">
         <Image
           src={"/logo.svg"}
