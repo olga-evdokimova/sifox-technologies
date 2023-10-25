@@ -1,7 +1,7 @@
+
 import Link from "next/link";
 import React, { useState } from "react";
 import styled from "styled-components";
-import { useSpring, animated } from "@react-spring/web";
 
 const Ul = styled.ul`
   display: flex;

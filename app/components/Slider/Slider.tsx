@@ -1,134 +1,87 @@
 "use client";
-import { useRef } from "react";
-import Image from "next/image";
-import "../Hexagon/Hexagon.scss";
-export default function ScrollableDiv() {
-  const divRef = useRef(null);
+import React, { useRef } from "react";
 
-  function scrollToMiddle() {
-    if (divRef.current) {
-      const scrollHeight = divRef.current.scrollHeight;
-      const clientHeight = divRef.current.clientHeight;
-      const middleScroll = (scrollHeight - clientHeight) / 2;
-      divRef.current.scrollTo({
-        top: middleScroll,
+// export default function Scroll() {
+//   const hexagonRef = useRef(null);
+
+//   function scrollHexagon() {
+//     if (hexagonRef.current) {
+//       hexagonRef.current.scrollBy({
+//         left: 1000,
+//         behavior: "smooth",
+//       });
+//     }
+//   }
+
+//   return (
+//     <div>
+//       <button style={{ width: "50px", height: "50px" }} onClick={scrollHexagon}>
+//         scroll
+//       </button>
+//       <div
+//         className="hexagon"
+//         style={{
+//           overflowX: "auto",
+//           height: "240px",
+//           backgroundColor: "red",
+//         }}
+//         ref={hexagonRef}
+//       >
+//         <div
+//           className="hexagon__inner"
+//           style={{
+//             width: "3410px",
+//             float: "left",
+//             paddingLeft: "13%",
+//             paddingTop: "100px",
+//           }}
+//         ></div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
+export default function Scroll() {
+  const hexagonRef = useRef(null);
+
+  function scrollHexagon() {
+    if (hexagonRef.current) {
+      const scrollWidth = hexagonRef.current.scrollWidth;
+      const clientWidth = hexagonRef.current.clientWidth;
+      const halfScroll = (scrollWidth - clientWidth) / 2;
+      hexagonRef.current.scrollTo({
+        left: halfScroll,
         behavior: "smooth",
       });
     }
   }
 
   return (
-    <div style={{ overflowX: "auto", height: "940px" }}>
-      <div className="hexagon__inner" ref={divRef}>
-        <div className="hexagon__row">
-          <div className="hexagon__item" style={{ opacity: 0 }}></div>
-          <div className="hexagon__item" style={{ opacity: 0 }}></div>
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-          </div>
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
-            </div>
-          </div>
-          <div className="hexagon__item" style={{ opacity: 0 }}></div>
-        </div>
-
-        <div className="hexagon__row even">
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
-            </div>
-          </div>
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
-            </div>
-          </div>
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-          </div>
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
-            </div>
-          </div>
-          <div className="hexagon__item" style={{ opacity: 0 }}></div>
-        </div>
-
-        <div className="hexagon__row">
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
-            </div>
-          </div>
-          <div className="hexagon__item"></div>
-          <div className="hexagon__item">
-            {" "}
-            <div className="hexagon__hover"></div>
-          </div>
-          <div className="hexagon__item"></div>
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
-            </div>
-          </div>
-          <div className="hexagon__item">
-            {" "}
-            <div className="hexagon__hover"></div>
-          </div>
-        </div>
-
-        <div className="hexagon__row even">
-          <div className="hexagon__item">
-            {" "}
-            <div className="hexagon__hover"></div>
-          </div>
-          <div className="hexagon__item"></div>
-          <div className="hexagon__item"></div>
-          <div className="hexagon__item">
-            {" "}
-            <div className="hexagon__hover"></div>
-          </div>
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
-            </div>
-          </div>
-        </div>
-
-        <div className="hexagon__row">
-          <div className="hexagon__item" style={{ opacity: 0 }}></div>
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
-            </div>
-          </div>
-          <div className="hexagon__item" style={{ opacity: 0 }}></div>
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
-            </div>
-          </div>
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
-            </div>
-          </div>
-        </div>
+    <div>
+      <button style={{ width: "50px", height: "50px" }} onClick={scrollHexagon}>
+        scroll
+      </button>
+      <div
+        className="hexagon"
+        style={{
+          overflowX: "auto",
+          height: "240px",
+          backgroundColor: "red",
+        }}
+        ref={hexagonRef}
+      >
+        <div
+          className="hexagon__inner"
+          style={{
+            width: "3410px",
+            float: "left",
+            paddingLeft: "13%",
+            paddingTop: "100px",
+          }}
+        ></div>
       </div>
-      <button onClick={scrollToMiddle}>Прокрутить в середину</button>
     </div>
   );
 }
-
