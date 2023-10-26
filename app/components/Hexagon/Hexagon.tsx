@@ -4,17 +4,13 @@ import "./Hexagon.scss";
 import Image from "next/image";
 import React, { useRef, useEffect } from "react";
 import Title from "../Title/Title";
-
+import Link from "next/link";
 
 export default function Hexagon() {
   const hexagonRef = useRef(null);
 
-  const width = window.innerWidth;
-  console.log(width);
-
   function scrollHexagon() {
-    const block = document.querySelector(".hexagon__inner");
-  
+
     if (hexagonRef.current) {
       let leftValue;
 
@@ -30,7 +26,6 @@ export default function Hexagon() {
         leftValue = 2000;
       }
 
-
       hexagonRef.current.scrollBy({
         left: leftValue,
         behavior: "smooth",
@@ -38,7 +33,6 @@ export default function Hexagon() {
     }
   }
   function scrollToStart() {
-   
     if (hexagonRef.current) {
       let leftValue;
 
@@ -53,7 +47,7 @@ export default function Hexagon() {
       } else {
         leftValue = -2000;
       }
-   
+
       hexagonRef.current.scrollBy({
         left: leftValue,
         behavior: "smooth",
@@ -116,9 +110,32 @@ export default function Hexagon() {
             <div className="hexagon__hover"></div>
           </div>
           <div className="hexagon__item">
+            <div className="hexagon__item-content">
+              <Link href={"#"}>
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </Link>
+              <h6>
+                Data & Voice
+                <br />
+                Sharing{" "}
+              </h6>
+              <p>Family</p>
+            </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
+              <Image src="/b2c/b2c-1.png " alt="" fill />
             </div>
           </div>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
@@ -126,24 +143,99 @@ export default function Hexagon() {
 
         <div className="hexagon__row even">
           <div className="hexagon__item">
+            <div className="hexagon__item-content">
+              <Link href={"#"}>
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </Link>
+              <h6>
+                Data & Voice
+                <br />
+                Sharing{" "}
+              </h6>
+              <p>
+                Small and micro
+                <br />
+                business
+              </p>
+            </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
+              <Image src="/b2b/b2b-1.png" alt="" fill />
+            </div>
+          </div>
+          <div className="hexagon__item">
+            <div className="hexagon__item-content">
+              <Link href={"#"}>
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </Link>
+              <h6>
+                Data Sponsorship
+                <br />
+                or Gifting
+              </h6>
+              <p>
+                Enterprises and <br /> Governments
+              </p>
+            </div>
+            <div className="hexagon__hover"></div>
+            <div className="hexagon__item-img">
+              <Image src="/b2b/b2b-4.png" alt="" fill />
             </div>
           </div>
           <div className="hexagon__item">
             <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
+          </div>
+          <div className="hexagon__item">
+            <div className="hexagon__item-content">
+              <Link href={"#"}>
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </Link>
+              <h6>
+                CVM campaigns
+                <br />
+                management
+              </h6>
+              <p>HV customers</p>
             </div>
-          </div>
-          <div className="hexagon__item">
-            <div className="hexagon__hover"></div>
-          </div>
-          <div className="hexagon__item">
             <div className="hexagon__hover"></div>
             <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
+              <Image src="/b2c/b2c-2.png" alt="" fill />
             </div>
           </div>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
@@ -151,9 +243,34 @@ export default function Hexagon() {
 
         <div className="hexagon__row">
           <div className="hexagon__item">
+            <div className="hexagon__item-content">
+              <Link href={"#"}>
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </Link>
+              <h6>
+                Reverse
+                <br />
+                Billing
+              </h6>
+              <p>
+                Enterprises and <br /> Governments
+              </p>
+            </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
+              <Image src="/b2b/b2b-2.png" alt="" fill />
             </div>
           </div>
           <div className="hexagon__item"></div>
@@ -163,9 +280,35 @@ export default function Hexagon() {
           </div>
           <div className="hexagon__item"></div>
           <div className="hexagon__item">
+            <div className="hexagon__item-content">
+              <Link href={"#"}>
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </Link>
+              <h6>
+                Data & Voice
+                <br />
+                Cost Sharing
+              </h6>
+              <p>
+                Friends and social
+                <br /> buying
+              </p>
+            </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
+              <Image src="/b2c/b2c-6.png" alt="" fill />
             </div>
           </div>
           <div className="hexagon__item">
@@ -186,9 +329,35 @@ export default function Hexagon() {
             <div className="hexagon__hover"></div>
           </div>
           <div className="hexagon__item">
+            <div className="hexagon__item-content">
+              <Link href={"#"}>
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </Link>
+              <h6>
+                Social Network
+                <br />
+                Bundles
+              </h6>
+              <p>
+                Individuals and social
+                <br /> buying
+              </p>
+            </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
+              <Image src="/b2c/b2c-4.png" alt="" fill />
             </div>
           </div>
         </div>
@@ -196,22 +365,92 @@ export default function Hexagon() {
         <div className="hexagon__row">
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
           <div className="hexagon__item">
+            <div className="hexagon__item-content">
+              <Link href={"#"}>
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </Link>
+              <h6>
+                Data & Voice
+                <br />
+                Distribution
+              </h6>
+              <p>
+                Distributors and
+                <br /> resellers
+              </p>
+            </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
+              <Image src="/b2b/b2b-3.png" alt="" fill />
             </div>
           </div>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
           <div className="hexagon__item">
+            <div className="hexagon__item-content">
+              <Link href={"#"}>
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </Link>
+              <h6>
+                Airtime
+                <br />
+                Credit
+              </h6>
+              <p>Individuals</p>
+            </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
+              <Image src="/b2c/b2c-5.png" alt="" fill />
             </div>
           </div>
           <div className="hexagon__item">
+            <div className="hexagon__item-content">
+              <Link href={"#"}>
+                <svg
+                  width="18"
+                  height="19"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </Link>
+              <h6>Content
+                <br />Service
+              </h6>
+              <p>Individuals</p>
+            </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__item-img">
-              <Image src="/1.jpg" alt="" fill />
+              <Image src="/b2c/b2c-3.png" alt="" fill />
             </div>
           </div>
         </div>

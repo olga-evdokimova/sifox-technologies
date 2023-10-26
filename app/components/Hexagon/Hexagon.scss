@@ -108,7 +108,6 @@
     &__inner {
         float: left;
         overflow-x: auto;
-        // width: 3466px;
         width: 3332px;
         height: 940px;
         padding-left: 273px;
@@ -116,7 +115,6 @@
         position: relative;
         @media (max-width: 1440px) {
             padding-left: 150px;
-         
         }
         @media (max-width: 1024px) {
             padding-left: 0px;
@@ -173,7 +171,7 @@
             height: 287px;
             @media (max-width: 992px) {
                 width: 217px;
-                height: 187px;
+                height: 189px;
                 top: -39px;
                 left: -14px;
             }
@@ -181,14 +179,57 @@
                 object-fit: cover;
             }
         }
+        &-content {
+            position: absolute;
+            top: 24px;
+            left: 30px;
+            z-index: 20;
+            transform: rotate(270deg);
+            width: 270px;
+            @media (max-width: 992px) {
+                width: 168px;
+            }
+            h6 {
+                font-weight: 600;
+                font-size: 25px;
+                text-align: center;
+                padding: 5px;
+                @media (max-width: 992px) {
+                    font-size: 16px;
+                }
+            }
+            p {
+                font-size: 16px;
+                text-align: center;
+                font-style: italic;
+                padding: 5px;
+                @media (max-width: 992px) {
+                    font-size: 12px;
+                }
+            }
+            a {
+                position: absolute;
+                top: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                @media (max-width: 992px) {
+                    top: -25px;
+                }
+                svg {
+                    @media (max-width: 992px) {
+                        width: 8px;
+                    }
+                }
+            }
+        }
     }
     &__hover {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(90, 27, 27, 0.5);
+        // top: 0;
+        // left: 0;
+        // width: 100%;
+        // height: 100%;
+        background-color: rgba(27, 56, 73, 0.5);
         position: absolute;
         top: -60px;
         left: -23px;
