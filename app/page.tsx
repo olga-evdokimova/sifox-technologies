@@ -3,8 +3,6 @@ import Products from "./components/Products/Products";
 import Platform from "./components/Platform/Platform";
 import TopBlock from "./components/TopBlock/TopBlock";
 import Image from "next/image";
-import Hexagon from "./components/Hexagon/Hexagon";
-import Slider from "./components/Slider/Slider";
 export default function Home() {
   return (
     <section className="main">
