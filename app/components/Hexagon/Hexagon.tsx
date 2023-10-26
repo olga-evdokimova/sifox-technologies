@@ -2,23 +2,51 @@
 "use client";
 import "./Hexagon.scss";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Title from "../Title/Title";
+
 export default function Hexagon() {
   const hexagonRef = useRef(null);
 
+
   function scrollHexagon() {
+      const left = document.querySelector(".left");
+      
     if (hexagonRef.current) {
+      let leftValue;
+
+      if (window.innerWidth <= 375) {
+        leftValue = 380;
+        const currentTransform = left.style.transform || ""; // Get the current transform value
+        const newTransform = `${currentTransform} translateX(${leftValue}px)`; // Append the new transform value
+
+        left.style.transform = newTransform; // Apply the updated transform value
+      } else if (window.innerWidth <= 768) {
+        leftValue = 1000;
+      } else {
+        leftValue = 1520;
+      }
+   
       hexagonRef.current.scrollBy({
-        left: 1520,
+        left: leftValue,
         behavior: "smooth",
       });
     }
   }
   function scrollToStart() {
     if (hexagonRef.current) {
-      hexagonRef.current.scrollTo({
-        left: 0,
+      let leftValue;
+
+      if (window.innerWidth <= 375) {
+        leftValue = -380;
+      } else if (window.innerWidth <= 768) {
+        leftValue = -1000;
+      } else {
+        leftValue = -1520;
+      }
+
+      hexagonRef.current.scrollBy({
+        left: leftValue,
         behavior: "smooth",
       });
     }
@@ -29,7 +57,7 @@ export default function Hexagon() {
         <div className="hexagon__nav left">
           <Title>B2B Products</Title>
           <button onClick={scrollHexagon}>
-            B2B PRODUCTS{" "}
+            B2B <span>PRODUCTS</span>{" "}
             <svg
               width="42"
               height="15"
@@ -65,7 +93,7 @@ export default function Hexagon() {
                 stroke-linecap="round"
               />
             </svg>
-            B2C PRODUCTS
+            B2C <span>PRODUCTS</span>
           </button>
           <p>
             Cost savings. Enhanced flexibility. Improved voice and data
@@ -181,4 +209,6 @@ export default function Hexagon() {
       </div>
     </section>
   );
+
+    
 }

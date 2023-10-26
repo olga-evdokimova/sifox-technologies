@@ -12,8 +12,6 @@ export default function Home() {
         <Image src={"/top-block-img.png"} alt="logo" fill></Image>
       </div>
       <TopBlock />
-      <Hexagon/>
-      {/* <Slider/>  */}
       <Products />
       <About />
       <Platform />

@@ -1,6 +1,7 @@
 .hexagon {
     padding: 100px 0 80px;
     overflow-x: auto;
+
     &::-webkit-scrollbar {
         width: 0;
     }
@@ -9,9 +10,13 @@
         align-items: center;
         flex-wrap: wrap;
         width: 640px;
-
+        position: absolute;
         h2 {
             flex: 0 1 360px;
+            @media (max-width: 992px) {
+                font-size: 40px;
+                flex: 0 1 200px;
+            }
         }
         p {
             flex: 0 1 360px;
@@ -21,6 +26,9 @@
             padding-top: 30px;
             @media (max-width: 1590px) {
                 padding-top: 20px;
+            }
+            @media (max-width: 992px) {
+                font-size: 16px;
             }
         }
         button {
@@ -34,13 +42,22 @@
             border-radius: var(--border-radius);
             border: 1px solid rgba(255, 255, 255, 0.8);
             z-index: 100;
+            @media (max-width: 992px) {
+                font-size: 16px;
+                flex: 0 1 90px;
+                padding: 10px 15px;
+            }
+           
+            span {
+                @media (max-width: 992px) {
+                    display: none;
+                }
+            }
         }
     }
     .left {
-        position: absolute;
         left: 20px;
         top: 30px;
-
         button {
             margin-left: 50px;
             @media (max-width: 1024px) {
@@ -52,8 +69,6 @@
         }
     }
     .right {
-        position: absolute;
-        // left: 2450px;
         right: 370px;
         top: 30px;
         justify-content: end;
@@ -65,8 +80,11 @@
         @media (max-width: 1024px) {
             right: 930px;
         }
-        @media (max-width: 992px){
+        @media (max-width: 992px) {
             right: 0;
+        }
+        @media (max-width: 768px){
+                right: 360px;
         }
         svg {
             padding-right: 10px;
@@ -91,14 +109,16 @@
         padding-left: 13%;
         padding-top: 100px;
         position: relative;
-        background-color: green;
         @media (max-width: 1024px) {
             padding-left: 0px;
         }
-        @media (max-width: 992px){
+        @media (max-width: 992px) {
             width: 2130px;
             height: 700px;
             padding-left: 13%;
+        }
+        @media (max-width: 768px){
+            padding-left: 10px;
         }
     }
     &__row {
@@ -106,7 +126,7 @@
     }
     .even {
         margin-left: 251px;
-        @media (max-width: 992px){
+        @media (max-width: 992px) {
             margin-left: 167px;
         }
     }
@@ -132,33 +152,45 @@
             margin-right: 138px;
         }
         &-img {
-            // position: absolute;
-            // top: -60px;
-            // left: -23px;
-            // clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-            // transform: rotate(-90deg);
-            // width: 332px;
-            // height: 287px;
-            // img {
-            //     object-fit: cover;
-            // }
+            position: absolute;
+            top: -60px;
+            left: -23px;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            transform: rotate(-90deg);
+            width: 332px;
+            height: 287px;
+            @media (max-width: 992px) {
+                width: 217px;
+                height: 187px;
+                top: -39px;
+                left: -14px;
+            }
+            img {
+                object-fit: cover;
+            }
         }
     }
     &__hover {
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-        // width: 100%;
-        // height: 100%;
-        // background-color: rgba(90, 27, 27, 0.5);
-        // position: absolute;
-        // top: -60px;
-        // left: -23px;
-        // clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        // transform: rotate(-90deg);
-        // width: 332px;
-        // height: 287px;
-        // z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(90, 27, 27, 0.5);
+        position: absolute;
+        top: -60px;
+        left: -23px;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        transform: rotate(-90deg);
+        width: 332px;
+        height: 287px;
+        z-index: 1;
+        @media (max-width: 992px) {
+            width: 217px;
+            height: 187px;
+            top: -39px;
+            left: -14px;
+        }
     }
     &__item:before,
     &__item:after {
