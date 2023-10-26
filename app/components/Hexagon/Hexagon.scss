@@ -11,6 +11,9 @@
         flex-wrap: wrap;
         width: 640px;
         position: absolute;
+        @media (max-width: 992px) {
+            width: 380px;
+        }
         h2 {
             flex: 0 1 360px;
             @media (max-width: 992px) {
@@ -47,7 +50,7 @@
                 flex: 0 1 90px;
                 padding: 10px 15px;
             }
-           
+
             span {
                 @media (max-width: 992px) {
                     display: none;
@@ -56,8 +59,11 @@
         }
     }
     .left {
-        left: 20px;
+        left: 100px;
         top: 30px;
+        @media (max-width: 1440px) {
+            left: 20px;
+        }
         button {
             margin-left: 50px;
             @media (max-width: 1024px) {
@@ -69,22 +75,20 @@
         }
     }
     .right {
-        right: 370px;
+        right: 100px;
         top: 30px;
         justify-content: end;
-
         @media (max-width: 1440px) {
-            right: 530px;
+            right: 300px;
         }
-
         @media (max-width: 1024px) {
-            right: 930px;
+            right: 1200px;
         }
         @media (max-width: 992px) {
-            right: 0;
+            right: 700px;
         }
-        @media (max-width: 768px){
-                right: 360px;
+        @media (max-width: 768px) {
+            right: 640px;
         }
         svg {
             padding-right: 10px;
@@ -104,21 +108,29 @@
     &__inner {
         float: left;
         overflow-x: auto;
-        width: 3466px;
+        // width: 3466px;
+        width: 3332px;
         height: 940px;
-        padding-left: 13%;
+        padding-left: 273px;
         padding-top: 100px;
         position: relative;
+        @media (max-width: 1440px) {
+            padding-left: 150px;
+         
+        }
         @media (max-width: 1024px) {
             padding-left: 0px;
+            height: 1100px;
+            padding-top: 220px;
         }
         @media (max-width: 992px) {
-            width: 2130px;
-            height: 700px;
-            padding-left: 13%;
+            width: 2090px;
+            height: 800px;
+            padding-left: 80px;
         }
-        @media (max-width: 768px){
-            padding-left: 10px;
+        @media (max-width: 768px) {
+            padding-left: 14px;
+            width: 2022px;
         }
     }
     &__row {
