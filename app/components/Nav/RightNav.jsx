@@ -16,6 +16,8 @@ const Ul = styled.ul`
   min-width: 140px;
   transition: transform 0.3s ease-in-out;
   padding: 80px 40px 0;
+  z-index: 100;
+  overflow: auto;
   @media (max-width: 767px) {
     padding: 60px 20px 0 20px;
     // min-width: 100%;

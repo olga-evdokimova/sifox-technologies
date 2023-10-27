@@ -5,10 +5,12 @@
     &__svg-1 {
         position: absolute;
         transform: translate(574px, 328px);
+        z-index: -1;
     }
     &__svg-2 {
         position: absolute;
         transform: translate(362px, -111px);
+        z-index: -1;
         @media (max-width: 425px) {
             width: 600px;
             transform: translate(42px, -5px);
@@ -18,6 +20,7 @@
         position: absolute;
         transform: translate(-296px, 0px);
         opacity: 0.7;
+        z-index: -1;
         @media (max-width: 425px) {
             transform: translate(-66px, -350px);
             width: 500px;
@@ -36,9 +39,11 @@
     &__svg-5 {
         position: absolute;
         transform: translate(-516px, 6px);
+        z-index: -1;
     }
     &__svg-6 {
         position: absolute;
         transform: translate(0px, -29px);
+        z-index: -1;
     }
 }

@@ -8,7 +8,7 @@ const StyledBurger = styled.div`
   position: absolute;
   top: 40px;
   right: 40px;
-  z-index: 20;
+  z-index: 150;
   display: flex;
   flex-direction: column;
   justify-content: center;
