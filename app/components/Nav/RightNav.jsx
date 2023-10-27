@@ -1,3 +1,5 @@
+import { StyleSheetManager } from "styled-components";
+import isPropValid from "@emotion/is-prop-valid";
 import Link from "next/link";
 import React, { useState } from "react";
 import styled from "styled-components";
@@ -67,7 +69,7 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
-  /* Styles for li */
+  /* Стили для li */
   color: ${(props) =>
     props.clicked ? "var(--color-accent)" : "var(--color-text-black)"};
   border-bottom: ${(props) =>
@@ -76,7 +78,7 @@ const Li = styled.li`
       : "2px solid var(--color-text-black)"};
 `;
 
-const RightNav = ({ open }) => {
+export default function RightNav({ open }) {
   const [showListB2C, setShowListB2C] = useState(false);
   const [showListB2B, setShowListB2B] = useState(false);
   const [isB2CClicked, setIsB2CClicked] = useState(false);
@@ -92,64 +94,62 @@ const RightNav = ({ open }) => {
     setIsB2BClicked(!isB2BClicked);
   };
 
-
-  
   return (
-    <Ul open={open}>
-      <Li
-        className="nav-menu"
-        clicked={isB2CClicked}
-        onClick={handleItemClickB2C}
-      >
-        B2C
-      </Li>
-      {showListB2C && (
-        <ul className="nav-menu__list">
-          <li className="nav-menu__list-item">
-            <Link href={""}>
-              Data & Voice Sharing<span>Family</span>
-            </Link>
-          </li>
-          <li className="nav-menu__list-item">
-            <Link href={""}>
-              Data & Voice Cost Sharing<span>Friends and social buying</span>
-            </Link>
-          </li>
-          <li className="nav-menu__list-item">
-            <Link href={""}>
-              Social Network Bundles<span>Individuals and social buying</span>
-            </Link>
-          </li>
-        </ul>
-      )}
-      <Li
-        className="nav-menu"
-        clicked={isB2BClicked}
-        onClick={handleItemClickB2B}
-      >
-        B2B
-      </Li>
-      {showListB2B && (
-        <ul className="nav-menu__list">
-          <li className="nav-menu__list-item">
-            <Link href={""}>
-              Data & Voice Sharing<span>Family</span>
-            </Link>
-          </li>
-          <li className="nav-menu__list-item">
-            <Link href={""}>
-              Data & Voice Cost Sharing<span>Friends and social buying</span>
-            </Link>
-          </li>
-          <li className="nav-menu__list-item">
-            <Link href={""}>
-              Social Network Bundles<span>Individuals and social buying</span>
-            </Link>
-          </li>
-        </ul>
-      )}
-    </Ul>
+    <StyleSheetManager shouldForwardProp={(prop) => isPropValid(prop)}>
+      <Ul open={open}>
+        <Li
+          className="nav-menu"
+          clicked={isB2CClicked}
+          onClick={handleItemClickB2C}
+        >
+          B2C
+        </Li>
+        {showListB2C && (
+          <ul className="nav-menu__list">
+            <li className="nav-menu__list-item">
+              <Link href={""}>
+                Data & Voice Sharing<span>Family</span>
+              </Link>
+            </li>
+            <li className="nav-menu__list-item">
+              <Link href={""}>
+                Data & Voice Cost Sharing<span>Friends and social buying</span>
+              </Link>
+            </li>
+            <li className="nav-menu__list-item">
+              <Link href={""}>
+                Social Network Bundles<span>Individuals and social buying</span>
+              </Link>
+            </li>
+          </ul>
+        )}
+        <Li
+          className="nav-menu"
+          clicked={isB2BClicked}
+          onClick={handleItemClickB2B}
+        >
+          B2B
+        </Li>
+        {showListB2B && (
+          <ul className="nav-menu__list">
+            <li className="nav-menu__list-item">
+              <Link href={""}>
+                Data & Voice Sharing<span>Family</span>
+              </Link>
+            </li>
+            <li className="nav-menu__list-item">
+              <Link href={""}>
+                Data & Voice Cost Sharing<span>Friends and social buying</span>
+              </Link>
+            </li>
+            <li className="nav-menu__list-item">
+              <Link href={""}>
+                Social Network Bundles<span>Individuals and social buying</span>
+              </Link>
+            </li>
+          </ul>
+        )}
+      </Ul>
+    </StyleSheetManager>
   );
-};
-
-export default RightNav;
+}
