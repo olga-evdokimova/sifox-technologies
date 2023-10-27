@@ -9,15 +9,29 @@
     &__svg-2 {
         position: absolute;
         transform: translate(362px, -111px);
+        @media (max-width: 425px) {
+            width: 600px;
+            transform: translate(42px, -5px);
+        }
     }
     &__svg-3 {
         position: absolute;
         transform: translate(-296px, 0px);
         opacity: 0.7;
+        @media (max-width: 425px) {
+            transform: translate(-66px, -350px);
+            width: 500px;
+            opacity: 0.5;
+        }
     }
     &__svg-4 {
         position: absolute;
         transform: translate(600px, -360px);
+        @media (max-width: 425px) {
+            width: 500px;
+            height: 500px;
+            transform: translate(600px, -360px);
+        }
     }
     &__svg-5 {
         position: absolute;
