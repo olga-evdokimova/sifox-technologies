@@ -71,7 +71,6 @@ export default function Burger() {
       blur.style.display = "none";
     }
 
-
   }, [open]);
 
   return (
