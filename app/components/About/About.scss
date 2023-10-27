@@ -26,27 +26,14 @@
         background-position: center;
         position: absolute;
         top: -274px;
-        z-index: -1;
+        z-index: -2;
         @media (max-width: 992px) {
             height: 812px;
             top: 0;
             width: 1000px;
         }
     }
-    &::after {
-        content: "";
-        width: 1600px;
-        height: 1600px;
-        background-image: url("/about-ellips.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        top: -30%;
-        left: -30%;
-        opacity: 0.6;
-        z-index: -1;
-    }
+
 
     a {
         font-family: var(--font-bebas-neue), sans-serif;

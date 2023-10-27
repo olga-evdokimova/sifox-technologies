@@ -1,23 +1,18 @@
 .platform {
     padding: 100px 0 100px;
     position: relative;
-    @media (max-width: 1024px){
+    @media (max-width: 1024px) {
         padding-top: 0;
-    }
-    &::before {
-        content: "";
-        width: 1983px;
-        height: 1329px;
-        background-image: url("/platform-cases-bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 135px;
-        left: 255px;
     }
 
     @media (max-width: 992px) {
         padding: 40px 0 40px;
+    }
+    &__svg {
+        position: absolute;
+        z-index: -1;
+        top: -40px;
+        left: -180px;
     }
     &__img {
         position: absolute;
