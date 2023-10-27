@@ -59,24 +59,19 @@ export default function Burger() {
   useEffect(() => {
     const body = document.body;
     const pageWidth = document.documentElement.scrollWidth;
-    const wrapper = document.querySelector('.wrapper')
-    
-    
+    const blur = document.querySelector(".blur");
+
     if (open) {
       body.style.overflow = "hidden";
       body.style.marginRight = `${body.clientWidth - pageWidth}px`;
-
-      console.log(body.clientWidth);
-      console.log(pageWidth);
+      blur.style.display = "block";
     } else {
       body.style.overflow = "auto";
       body.style.marginRight = "0";
+      blur.style.display = "none";
     }
 
-    return () => {
-      body.style.overflow = "auto";
-      body.style.marginRight = "0";
-    };
+
   }, [open]);
 
   return (

@@ -19,6 +19,7 @@ export default function Header() {
         Contact us
       </Link>
       <Burger />
+      <div className="blur"></div>
     </header>
   );
 }
