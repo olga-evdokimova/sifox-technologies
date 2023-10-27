@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import React, { useState } from "react";
 import styled from "styled-components";
@@ -8,7 +7,7 @@ const Ul = styled.ul`
   flex-direction: column;
   align-items: flex-end;
   background-color: var(--color-text-white);
-  position: fixed;
+  position: absolute;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   top: 0;
   right: 0;
@@ -18,6 +17,7 @@ const Ul = styled.ul`
   padding: 80px 40px 0;
   z-index: 100;
   overflow: auto;
+
   @media (max-width: 767px) {
     padding: 60px 20px 0 20px;
     // min-width: 100%;
@@ -82,17 +82,6 @@ const RightNav = ({ open }) => {
   const [isB2CClicked, setIsB2CClicked] = useState(false);
   const [isB2BClicked, setIsB2BClicked] = useState(false);
 
-  // const listB2CAnimation = useSpring({
-  //   opacity: showListB2C ? 1 : 0,
-  //   transform: showListB2C ? "translateX()" : "translateX(100%)",
-  //   transition: "all 0.3s ease",
-  // });
-
-  // const listB2BAnimation = useSpring({
-  //   opacity: showListB2B ? 1 : 0,
-  //   transition: "all 0.3s ease",
-  // });
-
   const handleItemClickB2C = () => {
     setShowListB2C(!showListB2C);
     setIsB2CClicked(!isB2CClicked);
@@ -103,6 +92,8 @@ const RightNav = ({ open }) => {
     setIsB2BClicked(!isB2BClicked);
   };
 
+
+  
   return (
     <Ul open={open}>
       <Li

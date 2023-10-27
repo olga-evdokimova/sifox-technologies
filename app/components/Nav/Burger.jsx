@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import RightNav from "./RightNav";
 
@@ -35,9 +35,7 @@ const StyledBurger = styled.div`
     }
     &:nth-child(1) {
       transform: ${({ open }) =>
-        open
-          ? "rotate(45deg) translate(0px, -7px)"
-          : "rotate(0) translate(0)"};
+        open ? "rotate(45deg) translate(0px, -7px)" : "rotate(0) translate(0)"};
     }
 
     &:nth-child(2) {
@@ -57,6 +55,29 @@ const StyledBurger = styled.div`
 
 export default function Burger() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const body = document.body;
+    const pageWidth = document.documentElement.scrollWidth;
+    const wrapper = document.querySelector('.wrapper')
+    
+    
+    if (open) {
+      body.style.overflow = "hidden";
+      body.style.marginRight = `${body.clientWidth - pageWidth}px`;
+
+      console.log(body.clientWidth);
+      console.log(pageWidth);
+    } else {
+      body.style.overflow = "auto";
+      body.style.marginRight = "0";
+    }
+
+    return () => {
+      body.style.overflow = "auto";
+      body.style.marginRight = "0";
+    };
+  }, [open]);
 
   return (
     <>
