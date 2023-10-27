@@ -3,12 +3,11 @@ import Products from "./components/Products/Products";
 import Platform from "./components/Platform/Platform";
 import TopBlock from "./components/TopBlock/TopBlock";
 import Image from "next/image";
+import MainImage from "./components/MainImage/MainImage";
 export default function Home() {
   return (
     <section className="main">
-      <div className="main__img">
-        <Image src={"/b2b/b2b-4.png"} alt="logo" fill sizes="1000"></Image>
-      </div>
+      <MainImage />
       <TopBlock />
       <Products />
       <Platform />
