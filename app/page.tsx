@@ -7,11 +7,8 @@ export default function Home() {
   return (
     <section className="main">
       <div className="main__img">
-        <Image src={"/b2b/b2b-4.png"} alt="logo" fill></Image>
+        <Image src={"/b2b/b2b-4.png"} alt="logo" fill sizes="1000"></Image>
       </div>
-   
-    
-
       <TopBlock />
       <Products />
       <Platform />
