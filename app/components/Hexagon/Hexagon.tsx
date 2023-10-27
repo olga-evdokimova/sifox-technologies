@@ -70,7 +70,7 @@ export default function Hexagon() {
               <path
                 d="M1 7.5H40.5M40.5 7.5L34 1M40.5 7.5L34 14"
                 stroke="white"
-                stroke-linecap="round"
+                strokeLinecap="round"
               />
             </svg>
           </button>
@@ -92,7 +92,7 @@ export default function Hexagon() {
               <path
                 d="M41 7.5H1.5M1.5 7.5L8 1M1.5 7.5L8 14"
                 stroke="white"
-                stroke-linecap="round"
+                strokeLinecap="round"
               />
             </svg>
             B2B <span>PRODUCTS</span>
@@ -121,7 +121,7 @@ export default function Hexagon() {
                   <path
                     d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
                     stroke="white"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </Link>
@@ -154,7 +154,7 @@ export default function Hexagon() {
                   <path
                     d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
                     stroke="white"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </Link>
@@ -187,7 +187,7 @@ export default function Hexagon() {
                   <path
                     d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
                     stroke="white"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </Link>
@@ -221,7 +221,7 @@ export default function Hexagon() {
                   <path
                     d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
                     stroke="white"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </Link>
@@ -254,7 +254,7 @@ export default function Hexagon() {
                   <path
                     d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
                     stroke="white"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </Link>
@@ -291,7 +291,7 @@ export default function Hexagon() {
                   <path
                     d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
                     stroke="white"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </Link>
@@ -340,7 +340,7 @@ export default function Hexagon() {
                   <path
                     d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
                     stroke="white"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </Link>
@@ -376,7 +376,7 @@ export default function Hexagon() {
                   <path
                     d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
                     stroke="white"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </Link>
@@ -409,7 +409,7 @@ export default function Hexagon() {
                   <path
                     d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
                     stroke="white"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </Link>
@@ -438,7 +438,7 @@ export default function Hexagon() {
                   <path
                     d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
                     stroke="white"
-                    stroke-width="3"
+                    strokeWidth="3"
                   />
                 </svg>
               </Link>
