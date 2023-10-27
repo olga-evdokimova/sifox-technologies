@@ -1,6 +1,9 @@
 .platform {
     padding: 100px 0 100px;
     position: relative;
+    @media (max-width: 1024px){
+        padding-top: 0;
+    }
     &::before {
         content: "";
         width: 1983px;

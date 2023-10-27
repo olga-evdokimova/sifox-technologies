@@ -1,5 +1,30 @@
 .products {
     display: flex;
     justify-content: center;
-  
+    position: relative;
+    &__svg-1 {
+        position: absolute;
+        transform: translate(574px, 328px);
+    }
+    &__svg-2 {
+        position: absolute;
+        transform: translate(362px, -111px);
+    }
+    &__svg-3 {
+        position: absolute;
+        transform: translate(-296px, 0px);
+        opacity: 0.7;
+    }
+    &__svg-4 {
+        position: absolute;
+        transform: translate(600px, -360px);
+    }
+    &__svg-5 {
+        position: absolute;
+        transform: translate(-516px, 6px);
+    }
+    &__svg-6 {
+        position: absolute;
+        transform: translate(0px, -29px);
+    }
 }
