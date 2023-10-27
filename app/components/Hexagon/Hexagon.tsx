@@ -10,7 +10,6 @@ export default function Hexagon() {
   const hexagonRef = useRef(null);
 
   function scrollHexagon() {
-
     if (hexagonRef.current) {
       let leftValue;
 
@@ -110,7 +109,7 @@ export default function Hexagon() {
             <div className="hexagon__hover"></div>
           </div>
           <div className="hexagon__item">
-            <div className="hexagon__item-content">
+            <div className="hexagon__content">
               <Link href={"#"}>
                 <svg
                   width="18"
@@ -134,7 +133,7 @@ export default function Hexagon() {
               <p>Family</p>
             </div>
             <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
+            <div className="hexagon__img">
               <Image src="/b2c/b2c-1.png " alt="" fill />
             </div>
           </div>
@@ -143,7 +142,7 @@ export default function Hexagon() {
 
         <div className="hexagon__row even">
           <div className="hexagon__item">
-            <div className="hexagon__item-content">
+            <div className="hexagon__content">
               <Link href={"#"}>
                 <svg
                   width="18"
@@ -171,12 +170,12 @@ export default function Hexagon() {
               </p>
             </div>
             <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
+            <div className="hexagon__img">
               <Image src="/b2b/b2b-1.png" alt="" fill />
             </div>
           </div>
           <div className="hexagon__item">
-            <div className="hexagon__item-content">
+            <div className="hexagon__content">
               <Link href={"#"}>
                 <svg
                   width="18"
@@ -202,7 +201,7 @@ export default function Hexagon() {
               </p>
             </div>
             <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
+            <div className="hexagon__img">
               <Image src="/b2b/b2b-4.png" alt="" fill />
             </div>
           </div>
@@ -210,7 +209,7 @@ export default function Hexagon() {
             <div className="hexagon__hover"></div>
           </div>
           <div className="hexagon__item">
-            <div className="hexagon__item-content">
+            <div className="hexagon__content">
               <Link href={"#"}>
                 <svg
                   width="18"
@@ -234,7 +233,7 @@ export default function Hexagon() {
               <p>HV customers</p>
             </div>
             <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
+            <div className="hexagon__img">
               <Image src="/b2c/b2c-2.png" alt="" fill />
             </div>
           </div>
@@ -243,7 +242,7 @@ export default function Hexagon() {
 
         <div className="hexagon__row">
           <div className="hexagon__item">
-            <div className="hexagon__item-content">
+            <div className="hexagon__content">
               <Link href={"#"}>
                 <svg
                   width="18"
@@ -269,7 +268,7 @@ export default function Hexagon() {
               </p>
             </div>
             <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
+            <div className="hexagon__img">
               <Image src="/b2b/b2b-2.png" alt="" fill />
             </div>
           </div>
@@ -280,7 +279,7 @@ export default function Hexagon() {
           </div>
           <div className="hexagon__item"></div>
           <div className="hexagon__item">
-            <div className="hexagon__item-content">
+            <div className="hexagon__content">
               <Link href={"#"}>
                 <svg
                   width="18"
@@ -307,7 +306,7 @@ export default function Hexagon() {
               </p>
             </div>
             <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
+            <div className="hexagon__img">
               <Image src="/b2c/b2c-6.png" alt="" fill />
             </div>
           </div>
@@ -329,7 +328,7 @@ export default function Hexagon() {
             <div className="hexagon__hover"></div>
           </div>
           <div className="hexagon__item">
-            <div className="hexagon__item-content">
+            <div className="hexagon__content">
               <Link href={"#"}>
                 <svg
                   width="18"
@@ -356,7 +355,7 @@ export default function Hexagon() {
               </p>
             </div>
             <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
+            <div className="hexagon__img">
               <Image src="/b2c/b2c-4.png" alt="" fill />
             </div>
           </div>
@@ -365,7 +364,7 @@ export default function Hexagon() {
         <div className="hexagon__row">
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
           <div className="hexagon__item">
-            <div className="hexagon__item-content">
+            <div className="hexagon__content">
               <Link href={"#"}>
                 <svg
                   width="18"
@@ -392,13 +391,13 @@ export default function Hexagon() {
               </p>
             </div>
             <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
+            <div className="hexagon__img">
               <Image src="/b2b/b2b-3.png" alt="" fill />
             </div>
           </div>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
           <div className="hexagon__item">
-            <div className="hexagon__item-content">
+            <div className="hexagon__content">
               <Link href={"#"}>
                 <svg
                   width="18"
@@ -422,12 +421,12 @@ export default function Hexagon() {
               <p>Individuals</p>
             </div>
             <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
+            <div className="hexagon__img">
               <Image src="/b2c/b2c-5.png" alt="" fill />
             </div>
           </div>
           <div className="hexagon__item">
-            <div className="hexagon__item-content">
+            <div className="hexagon__content">
               <Link href={"#"}>
                 <svg
                   width="18"
@@ -443,13 +442,15 @@ export default function Hexagon() {
                   />
                 </svg>
               </Link>
-              <h6>Content
-                <br />Service
+              <h6>
+                Content
+                <br />
+                Service
               </h6>
               <p>Individuals</p>
-            </div>
+            </div>{" "}
             <div className="hexagon__hover"></div>
-            <div className="hexagon__item-img">
+            <div className="hexagon__img">
               <Image src="/b2c/b2c-3.png" alt="" fill />
             </div>
           </div>
