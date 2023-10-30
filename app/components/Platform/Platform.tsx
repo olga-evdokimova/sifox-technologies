@@ -5,7 +5,7 @@ export default function Platform() {
   return (
     <section className="platform container">
       <svg className="platform__svg"
-        width="2485"
+        width="2085"
         height="2080"
         viewBox="0 0 2485 2080"
         fill="none"
