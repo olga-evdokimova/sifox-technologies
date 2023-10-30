@@ -1,0 +1,119 @@
+.nigeria {
+    position: absolute;
+    top: 152px;
+    right: 571px;
+    cursor: pointer;
+
+    &__title {
+        position: absolute;
+        top: 43px;
+        left: 13px;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        transition: all 0.5s ease-out;
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    &:hover {
+        .nigeria__title {
+            opacity: 1;
+            transition: all 0.5s ease-out;
+        }
+        .nigeria__svg {
+            transform: scale(1.5);
+            transition: all 0.5s ease-out;
+            path {
+                fill: var(--color-hover);
+            }
+        }
+        .btn-1 {
+            top: 14px;
+            left: 146px;
+            transition: all 0.5s ease-out;
+        }
+        .btn-2 {
+            bottom: 40px;
+            left: 14px;
+            transition: all 0.5s ease-out;
+        }
+    }
+    &__btn {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.3);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .btn-1 {
+        top: 28px;
+        left: 117px;
+        transition: all 0.5s ease-out;
+    }
+    .btn-2 {
+        bottom: 53px;
+        left: 43px;
+        transition: all 0.5s ease-out;
+    }
+    &__svg {
+        transition: all 0.5s ease-out;
+    }
+    &__tooltip {
+        position: absolute;
+        padding: 20px;
+        width: 320px;
+        height: 135px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(5px);
+        text-align: start;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 64px;
+            height: 27px;
+            border-top: 32px solid transparent;
+            border-right: 32px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h6 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            opacity: 0.5;
+            padding-top: 19px;
+        }
+    }
+}
+
+.tooltip-1 {
+    right: -355px;
+    top: -105px;
+    &::before {
+        bottom: 19px;
+        left: -65px;
+        transform: rotate(0deg);
+    }
+}
+.tooltip-2 {
+    left: -289px;
+    bottom: -170px;
+    &::before {
+        top: -33px;
+        right: 16px;
+        transform: rotate(0deg);
+    }
+}
