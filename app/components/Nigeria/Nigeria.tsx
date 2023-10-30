@@ -2,10 +2,12 @@
 import { useState } from "react";
 import Image from "next/image";
 import "./Nigeria.scss";
+import Link from "next/link";
 
 export default function Nigeria() {
   const [showTooltip1, setShowTooltip1] = useState(false);
   const [showTooltip2, setShowTooltip2] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const handleMouseEnter1 = () => {
     setShowTooltip1(true);
   };
@@ -21,6 +23,14 @@ export default function Nigeria() {
   const handleMouseLeave2 = () => {
     setShowTooltip2(false);
   };
+  const handleButtonClick = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className="nigeria">
       <svg
@@ -39,7 +49,7 @@ export default function Nigeria() {
           stroke-linejoin="round"
         />
       </svg>
-      <h6 className="nigeria__title">
+      <h6 className="nigeria__title" onClick={handleButtonClick}>
         <Image src={"/nigeria.png"} alt="" width={41} height={22}></Image>
         Nigeria
       </h6>
@@ -75,6 +85,66 @@ export default function Nigeria() {
           </div>
         )}
       </button>
+      {showModal && (
+        <div className="modal">
+          <button className="modal__close" onClick={handleCloseModal}>
+            &#10006;
+          </button>
+          <Image
+            src={"/nigeria-modal.png"}
+            alt=""
+            width={955}
+            height={769}
+          ></Image>
+          <div className="modal__content">
+            <h6>
+              {" "}
+              <Image src={"/nigeria.png"} alt="" width={41} height={22}></Image>
+              Nigeria
+            </h6>
+            <Link href={""}>
+              Sponsored data
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 17L17 2M17 2H2M17 2V17"
+                  stroke="white"
+                  stroke-width="3"
+                />
+              </svg>
+            </Link>
+            <p>
+              Advantages of working with us Advantages of working with
+              usAdvantages of working
+            </p>
+            <Link href={""}>
+              Data distribution
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 17L17 2M17 2H2M17 2V17"
+                  stroke="white"
+                  stroke-width="3"
+                />
+              </svg>
+            </Link>
+            <p>
+              Advantages of working with us Advantages of working with
+              usAdvantages of working
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
