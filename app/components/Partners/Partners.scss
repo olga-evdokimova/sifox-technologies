@@ -2,13 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 200px 0 104px;
+    padding: 150px 0 104px;
+
+    @media (max-width: 1024px) {
+        padding: 130px 0 104px;
+    }
     @media (max-width: 768px) {
         margin-top: auto;
-    }
-
-    @media (max-width: 992px) {
-        padding: 0;
+        padding: 130px 0 30px;
     }
     svg {
         opacity: 0.3;
