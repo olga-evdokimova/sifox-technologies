@@ -12,7 +12,7 @@ export default function Modal({ onCloseModal }: ModalProps) {
       <button className="modal__close" onClick={onCloseModal}>
         &#10006;
       </button>
-      <Image src={"/nigeria-modal.png"} alt="" width={955} height={769}></Image>
+      <Image className="modal__img" src={"/nigeria-modal.png"} alt="" width={955} height={769}></Image>
       <div className="modal__content">
         <h6>
           <Image src={"/nigeria.png"} alt="" width={41} height={22}></Image>

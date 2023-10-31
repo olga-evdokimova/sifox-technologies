@@ -2,7 +2,7 @@
 
 export default function CasesSvgMap() {
   return (
-  
+
       <svg
         className="cases__svg-map"
         width="1181"

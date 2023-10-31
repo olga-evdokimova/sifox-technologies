@@ -53,7 +53,7 @@ export default function Congo() {
 
       <h6 className="congo__title" onClick={handleButtonClick}>
         <Image src={"/nigeria.png"} alt="" width={41} height={22}></Image>
-        Democratic Republic<br/>of the Congo
+        DRC
       </h6>
       <button
         className="congo__btn btn-1"

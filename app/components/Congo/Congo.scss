@@ -2,15 +2,20 @@
     position: absolute;
     top: 284px;
     right: 315px;
+    z-index: 10;
     @media (max-width: 992px) {
-        right: 265px;
+        right: 263px;
+    }
+    @media (max-width: 768px) {
+        top: 413px;
+        right: 124px;
     }
 
     &__title {
         display: none;
         position: absolute;
-        top: 43px;
-        left: 13px;
+        top: 99px;
+        left: 123px;
         font-size: 20px;
         font-weight: 600;
         display: flex;
@@ -18,34 +23,54 @@
         opacity: 0;
         transition: all 0.5s ease-out;
         cursor: pointer;
+
         img {
             margin-right: 10px;
+            @media (max-width: 768px) {
+               width: 20px;
+                height: 10px;
+                margin-right: 5px;
+            }
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+            top: 41px;
+            left: 52px;
         }
     }
 
-    // &:hover {
-    //     .congo__title {
-    //         opacity: 1;
-    //         transition: all 0.5s ease-out;
-    //     }
-    //     .congo__svg {
-    //         transform: scale(1.5);
-    //         transition: all 0.5s ease-out;
-    //         path {
-    //             fill: var(--color-hover);
-    //         }
-    //     }
-    //     .btn-1 {
-    //         top: 70px;
-    //         left: 117px;
-    //         transition: all 0.5s ease-out;
-    //     }
-    //     .btn-2 {
-    //         bottom: 106px;
-    //         left: 205px;
-    //         transition: all 0.5s ease-out;
-    //     }
-    // }
+    &:hover {
+        .congo__title {
+            opacity: 1;
+            transition: all 0.5s ease-out;
+        }
+        .congo__svg {
+            transform: scale(1.5);
+            transition: all 0.5s ease-out;
+            path {
+                fill: var(--color-hover);
+            }
+        }
+        .btn-1 {
+            top: -7px;
+            left: 48px;
+
+            transition: all 0.5s ease-out;
+            @media (max-width: 768px) {
+                top: -8px;
+                left: 34px;
+            }
+        }
+        .btn-2 {
+            bottom: 39px;
+            left: 245px;
+            transition: all 0.5s ease-out;
+            @media (max-width: 768px) {
+                bottom: 1px;
+                left: 122px;
+            }
+        }
+    }
     &__btn {
         position: absolute;
         justify-content: center;
@@ -56,31 +81,50 @@
         border-radius: 50%;
         font-size: 16px;
         font-weight: 600;
+        @media (max-width: 768px) {
+            width: 21px;
+            height: 21px;
+            font-size: 16px;
+        }
     }
     .btn-1 {
         top: 70px;
         left: 117px;
         transition: all 0.5s ease-out;
+        @media (max-width: 768px) {
+            top: 16px;
+            left: 50px;
+        }
     }
     .btn-2 {
         bottom: 106px;
         left: 205px;
         transition: all 0.5s ease-out;
+        @media (max-width: 768px) {
+            bottom: 26px;
+            left: 97px;
+        }
     }
     &__svg {
         transition: all 0.5s ease-out;
+        @media (max-width: 768px) {
+            width: 149px;
+            height: 148px;
+        }
     }
     &__tooltip {
-        display: none;
         position: absolute;
         padding: 20px;
         width: 320px;
-        height: 135px;
+        z-index: 20;
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(5px);
         text-align: start;
+        @media (max-width: 992px) {
+            width: 280px;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -94,72 +138,53 @@
         h6 {
             font-size: 16px;
             font-weight: 600;
+            @media (max-width: 992px) {
+                font-size: 14px;
+            }
         }
         p {
             font-size: 16px;
             font-weight: 400;
             opacity: 0.5;
             padding-top: 19px;
+            @media (max-width: 992px) {
+                font-size: 12px;
+                padding-top: 10px;
+            }
+        }
+    }
+    .tooltip-1 {
+        right: -355px;
+        top: -105px;
+        &::before {
+            bottom: 19px;
+            left: -65px;
+            transform: rotate(0deg);
+            @media (max-width: 992px) {
+                bottom: -48px;
+                left: 33px;
+                transform: rotate(270deg);
+            }
+        }
+        @media (max-width: 992px) {
+            right: -188px;
+            top: -128px;
+        }
+    }
+    .tooltip-2 {
+        left: -289px;
+        bottom: -170px;
+        &::before {
+            top: -33px;
+            right: 16px;
+            transform: rotate(0deg);
+            @media (max-width: 992px) {
+                right: 64px;
+            }
+        }
+        @media (max-width: 992px) {
+            left: -194px;
+            bottom: -130px;
         }
     }
 }
-
-// .tooltip-1 {
-//     right: -355px;
-//     top: -105px;
-//     &::before {
-//         bottom: 19px;
-//         left: -65px;
-//         transform: rotate(0deg);
-//     }
-// }
-// .tooltip-2 {
-//     left: -289px;
-//     bottom: -170px;
-//     &::before {
-//         top: -33px;
-//         right: 16px;
-//         transform: rotate(0deg);
-//     }
-// }
-// .modal {
-//     position: absolute;
-//     top: -160px;
-//     left: -210px;
-
-//     &__content {
-//         position: absolute;
-//         top: 120px;
-//         left: 173px;
-//         width: 350px;
-//     }
-//     &__close {
-//         position: absolute;
-//         right: 0;
-//         padding: 10px;
-//     }
-//     h6 {
-//         font-size: 40px;
-//         font-weight: 600;
-//         margin-bottom: 83px;
-//         display: flex;
-//         align-items: center;
-//         img {
-//             margin-right: 10px;
-//         }
-//     }
-//     p {
-//         font-size: 16px;
-//         font-weight: 400;
-//         padding: 20px 20px 20px 0px;
-//         border-bottom: 2px solid var(--color-text-white);
-//         margin-bottom: 50px;
-//     }
-//     a {
-//         font-size: 30px;
-//         font-weight: 600;
-//         svg {
-//             margin-left: 20px;
-//         }
-//     }
-// }
