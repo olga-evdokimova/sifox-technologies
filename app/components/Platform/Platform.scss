@@ -11,9 +11,11 @@
     &__svg {
         position: absolute;
         z-index: -1;
-         top: 184px;
-    left: 54px;
-      
+        top: 184px;
+        left: 54px;
+        @media (max-width: 768px) {
+            left: -123px;
+        }
     }
     &__img {
         position: absolute;
