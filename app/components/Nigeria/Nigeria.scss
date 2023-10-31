@@ -2,7 +2,6 @@
     position: absolute;
     top: 152px;
     right: 571px;
-    cursor: pointer;
 
     &__title {
         position: absolute;
@@ -14,6 +13,7 @@
         align-items: center;
         opacity: 0;
         transition: all 0.5s ease-out;
+        cursor: pointer;
         img {
             margin-right: 10px;
         }

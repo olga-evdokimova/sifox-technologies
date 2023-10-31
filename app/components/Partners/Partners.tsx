@@ -2,14 +2,20 @@
 import styled from "styled-components";
 
 const Div = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 198px 0 104px;
-  svg {
-    opacity: 0.3;
-  }
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: clamp(1.25rem, -0.3571rem + 6.8571vw, 6.5rem);
+    padding-top: clamp(1.25rem, -2.1556rem + 14.5306vw, 12.375rem);
+    svg {
+      opacity: 0.3;
+      margin-right: clamp(0.3125rem, -0.7398rem + 4.4898vw, 3.75rem);
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  
 `;
 
 export default function Partners() {
