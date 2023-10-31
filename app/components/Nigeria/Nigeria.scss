@@ -2,7 +2,9 @@
     position: absolute;
     top: 152px;
     right: 571px;
-
+    @media (max-width: 992px) {
+        right: 521px;
+    }
     &__title {
         position: absolute;
         top: 43px;
@@ -70,12 +72,15 @@
         position: absolute;
         padding: 20px;
         width: 320px;
-        height: 135px;
+        // height: 135px;
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(5px);
         text-align: start;
+        @media (max-width: 992px) {
+            width: 280px;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -89,12 +94,19 @@
         h6 {
             font-size: 16px;
             font-weight: 600;
+            @media (max-width: 992px) {
+                font-size: 14px;
+            }
         }
         p {
             font-size: 16px;
             font-weight: 400;
             opacity: 0.5;
             padding-top: 19px;
+            @media (max-width: 992px) {
+                font-size: 12px;
+                padding-top: 10px;
+            }
         }
     }
 }
@@ -102,6 +114,10 @@
 .tooltip-1 {
     right: -355px;
     top: -105px;
+    @media (max-width: 992px) {
+        right: -314px;
+        top: -79px;
+    }
     &::before {
         bottom: 19px;
         left: -65px;
@@ -111,50 +127,19 @@
 .tooltip-2 {
     left: -289px;
     bottom: -170px;
+    @media (max-width: 992px) {
+        left: -6px;
+        bottom: -130px;
+    }
     &::before {
         top: -33px;
         right: 16px;
         transform: rotate(0deg);
+        @media (max-width: 992px) {
+            top: -48px;
+            right: 204px;
+            transform: rotate(90deg);
+        }
     }
 }
-.modal {
-    position: absolute;
-    top: -160px;
-    left: -210px;
 
-    &__content {
-        position: absolute;
-        top: 120px;
-        left: 173px;
-        width: 350px;
-    }
-    &__close {
-        position: absolute;
-        right: 0;
-        padding: 10px;
-    }
-    h6 {
-        font-size: 40px;
-        font-weight: 600;
-        margin-bottom: 83px;
-        display: flex;
-        align-items: center;
-        img {
-            margin-right: 10px;
-        }
-    }
-    p {
-        font-size: 16px;
-        font-weight: 400;
-        padding: 20px 20px 20px 0px;
-        border-bottom: 2px solid var(--color-text-white);
-        margin-bottom: 50px;
-    }
-    a {
-        font-size: 30px;
-        font-weight: 600;
-        svg{
-            margin-left: 20px;
-        }
-    }
-}

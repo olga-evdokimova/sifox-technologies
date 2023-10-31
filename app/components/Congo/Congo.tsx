@@ -116,7 +116,7 @@ export default function Congo() {
                 <path
                   d="M2 17L17 2M17 2H2M17 2V17"
                   stroke="white"
-                  stroke-width="3"
+                  strokeWidth="3"
                 />
               </svg>
             </Link>
@@ -136,7 +136,7 @@ export default function Congo() {
                 <path
                   d="M2 17L17 2M17 2H2M17 2V17"
                   stroke="white"
-                  stroke-width="3"
+                  strokeWidth="3"
                 />
               </svg>
             </Link>

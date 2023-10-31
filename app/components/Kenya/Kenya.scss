@@ -2,7 +2,9 @@
     position: absolute;
     top: 288px;
     right: 147px;
-
+@media (max-width: 992px){
+    right: 97px;
+}
     &__title {
         display: none;
         position: absolute;

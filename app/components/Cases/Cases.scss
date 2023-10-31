@@ -1,6 +1,9 @@
 .cases {
     position: relative;
     height: 1203px;
+    @media (max-width: 992px) {
+        padding-top: 40px;
+    }
     &__titles {
         height: 100%;
         display: flex;
@@ -20,7 +23,8 @@
         top: -338px;
         z-index: -3;
         opacity: 0.5;
+        @media (max-width: 992px) {
+            right: -50px;
+        }
     }
- 
-
 }
