@@ -21,7 +21,7 @@ export default function Modal({ onCloseModal }: ModalProps) {
           <path
             d="M41 1L21 21M1 41L21 21M21 21L1 1L41 41"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
             stroke-linecap="round"
           />
         </svg>

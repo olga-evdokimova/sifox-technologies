@@ -31,6 +31,7 @@ export default function TopBlock() {
           <Link href="#">About</Link>
         </li>
       </ul>
+      
     </section>
   );
 }
