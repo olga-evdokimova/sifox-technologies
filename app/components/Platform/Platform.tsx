@@ -4,7 +4,8 @@ import Image from "next/image";
 export default function Platform() {
   return (
     <section className="platform container">
-      <svg className="platform__svg"
+      <svg
+        className="platform__svg"
         width="2085"
         height="2080"
         viewBox="0 0 2485 2080"
@@ -147,6 +148,7 @@ export default function Platform() {
           </p>
         </div>
       </div>
+      <span className="platform__source">Source: GSMA</span>
     </section>
   );
 }

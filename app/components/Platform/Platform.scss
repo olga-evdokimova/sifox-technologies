@@ -1,12 +1,14 @@
 .platform {
-    padding: 100px 0 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     position: relative;
     @media (max-width: 1024px) {
         padding-top: 0;
     }
 
     @media (max-width: 992px) {
-        padding: 40px 0 40px;
+       padding-top: 40px;
+       padding-bottom: 40px;
     }
     &__svg {
         position: absolute;
@@ -75,5 +77,12 @@
         &:nth-child(5) {
             grid-area: e;
         }
+    }
+    &__source{
+        display: flex;
+        font-size: 16px;
+        opacity: 0.5;
+        padding-top: 20px;
+       justify-content: flex-end;
     }
 }
