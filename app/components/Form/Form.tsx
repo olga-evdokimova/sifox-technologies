@@ -12,10 +12,7 @@ export default function Form() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Отправка данных на сервер или на почту
-    // Здесь можно добавить логику для отправки данных
-
-    // Сброс полей формы
+   
     setName("");
     setPhone("");
     setEmail("");
