@@ -1,6 +1,8 @@
+"use client";
 import Link from "next/link";
 import AcccentTitle from "../AcccentTitle/AccentTitle";
 import "./Contacts.scss";
+import Form from "../Form/Form";
 export default function Contacts() {
   return (
     <section className="contacts container">
@@ -44,8 +46,9 @@ export default function Contacts() {
               <Link href="#">WhatsApp</Link>
             </div>
           </div>
-        </div>
-        <div className="contacts__form"></div>
+              </div>
+              
+        <Form />
       </div>
     </section>
   );

@@ -1,0 +1,52 @@
+.form {
+    &__subtitle {
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__input {
+        background-color: transparent;
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        width: 690px;
+        height: 80px;
+        margin-bottom: 15px;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+            font-family: Inter;
+            font-size: 20px;
+            padding-left: 28px;
+        }
+    }
+    &__textarea {
+        background-color: transparent;
+        width: 690px;
+        height: 230px;
+        border-radius: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 15px;
+        resize: none;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+            font-family: Inter;
+            font-size: 20px;
+            padding: 28px 0 0 28px;
+        }
+    }
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        input {
+            background-color: var(--color-accent);
+            border-radius: 5px;
+            width: 25px;
+            height: 25px;
+            display: inline-flex;
+            margin-right: 30px;
+            cursor: pointer;
+        }
+    }
+    &__btn {
+    }
+}
