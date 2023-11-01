@@ -75,7 +75,7 @@ export default function Form() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            placeholder="Comment"
+            placeholder="Question"
           ></textarea>
         </label>
 
@@ -86,7 +86,7 @@ export default function Form() {
             onChange={handlePrivacyPolicyChange}
             required
           />
-          privacy policy
+          <span className="checkbox__label">Privacy Policy</span>
         </label>
 
         <button className="form__btn" type="submit">
