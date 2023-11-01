@@ -49,7 +49,7 @@ const StyledBurger = styled.div`
         open ? "rotate(-45deg) translate(0px, 7px)" : "rotate(0) translate(0)"};
           width: ${({ open }) => (open ? "50px" : "40px")};
     }
-    w
+    
   }
 `;
 

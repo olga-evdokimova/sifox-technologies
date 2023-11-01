@@ -1,0 +1,9 @@
+.accent-title {
+    font-family: var(--font-bebas-neue), sans-serif;
+    color: var(--color-accent);
+    font-size: 30px;
+    font-weight: 400;
+    @media (max-width: 767px) {
+        font-size: 20px;
+    }
+}

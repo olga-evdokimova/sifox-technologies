@@ -5,6 +5,9 @@ import TopBlock from "./components/TopBlock/TopBlock";
 import Image from "next/image";
 import MainImage from "./components/MainImage/MainImage";
 import Cases from "./components/Cases/Cases";
+import Contacts from "./components/Contacts/Contacts";
+
+
 export default function Home() {
   return (
     <section className="main">
@@ -14,6 +17,7 @@ export default function Home() {
       <Platform />
       <Cases />
       <About />
+      <Contacts/> 
     </section>
   );
 }

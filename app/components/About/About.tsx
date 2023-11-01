@@ -1,14 +1,18 @@
 import Link from "next/link";
 import "./About.scss";
+import AcccentTitle from "../AcccentTitle/AccentTitle";
+
 
 export default function About() {
   return (
     <section className="about">
       <div className="about__content">
-        <Link href="#">About the company</Link>
-        <h3 className="about__title">
+        <Link href="#">
+          <AcccentTitle>About the company</AcccentTitle>
+        </Link>
+        <h4 className="about__title">
           Providing cutting-edge solutions for mobile communications worldwide.
-        </h3>
+        </h4>
         <p className="about__text">
           With an international team of seasoned professionals, we specialize in
           creating highly adaptable and robust products for seamless data

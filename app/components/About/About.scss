@@ -34,15 +34,10 @@
         }
     }
 
-
     a {
-        font-family: var(--font-bebas-neue), sans-serif;
-        color: var(--color-accent);
-        font-size: 30px;
         padding: 10px;
         margin-bottom: 40px;
         @media (max-width: 767px) {
-            font-size: 20px;
             padding: 20px;
             margin-bottom: 0;
         }
