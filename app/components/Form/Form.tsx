@@ -12,7 +12,18 @@ export default function Form() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-   
+
+    const data = {
+      name,
+      phone,
+      email,
+      message,
+    };
+    console.log(data);
+    fetch("/api/contact", {
+      method: "post",
+      body: JSON.stringify(data),
+    });
     setName("");
     setPhone("");
     setEmail("");
