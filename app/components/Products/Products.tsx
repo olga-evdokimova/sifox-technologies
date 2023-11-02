@@ -3,7 +3,7 @@ import "./Products.scss";
 export default function Products() {
   return (
     <section className="products">
-      <svg
+      {/* <svg
         className="products__svg-1"
         width="828"
         height="828"
@@ -278,7 +278,7 @@ export default function Products() {
             />
           </filter>
         </defs>
-      </svg>
+      </svg> */}
 
       <Hexagon />
     </section>

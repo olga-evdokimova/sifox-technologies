@@ -23,7 +23,7 @@ export default function MainImage() {
       <div className="main__img">
         <Image src={"/b2b/b2b-4.png"} alt="logo" fill sizes="1000"></Image>
       </div>
-      <svg
+      {/* <svg
         className="main__svg"
         width="100%"
         height="100%"
@@ -203,7 +203,7 @@ export default function MainImage() {
             />
           </filter>
         </defs>
-      </svg>
+      </svg> */}
     </Div>
   );
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Platform() {
   return (
     <section className="platform container">
-      <svg
+      {/* <svg
         className="platform__svg"
         width="2085"
         height="2080"
@@ -107,7 +107,7 @@ export default function Platform() {
             />
           </filter>
         </defs>
-      </svg>
+      </svg> */}
 
       <div className="platform__wrap">
         <div className="platform__card">
