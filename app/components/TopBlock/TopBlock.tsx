@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function TopBlock() {
-  const scrollToAbout = () => {
+  const scrollTo = () => {
     scroll.scrollTo( {
       smooth: true,
       duration: 500,
@@ -34,7 +34,7 @@ export default function TopBlock() {
             to="b2b"
             smooth={true}
             duration={1500}
-            onClick={scrollToAbout}
+            onClick={scrollTo}
           >
             B2C
             <br />
@@ -46,7 +46,7 @@ export default function TopBlock() {
             to="about"
             smooth={true}
             duration={1500}
-            onClick={scrollToAbout}
+            onClick={scrollTo}
           >
             About
           </ScrollLink>
