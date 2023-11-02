@@ -23,19 +23,14 @@ export default function TopBlock() {
       </h1>
       <ul className="top-block__list">
         <li>
-          <Link href="#">
+          <ScrollLink to="b2b" smooth={true} duration={1500} onClick={scrollTo}>
             B2B
             <br />
             Products
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <ScrollLink
-            to="b2b"
-            smooth={true}
-            duration={1500}
-            onClick={scrollTo}
-          >
+          <ScrollLink to="b2c" smooth={true} duration={1500} onClick={scrollTo}>
             B2C
             <br />
             Products

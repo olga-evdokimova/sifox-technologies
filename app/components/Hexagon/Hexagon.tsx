@@ -79,7 +79,7 @@ export default function Hexagon() {
             management.
           </p>
         </div>
-        <div className="hexagon__nav right " >
+        <div className="hexagon__nav right" >
           <Title>B2C Products</Title>
           <button onClick={scrollToStart}>
             <svg
