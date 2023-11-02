@@ -5,7 +5,7 @@ import "./Contacts.scss";
 import Form from "../Form/Form";
 export default function Contacts() {
   return (
-    <section className="contacts container">
+    <section className="contacts container" id="contacts">
       <div className="contacts__wrap">
         <div className="contacts__content">
           <AcccentTitle>Contacts</AcccentTitle>

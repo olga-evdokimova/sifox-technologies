@@ -1,8 +1,17 @@
+//@ts-nocheck
+"use client";
 import "./TopBlock.scss";
 import Link from "next/link";
-
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function TopBlock() {
+  const scrollToAbout = () => {
+    scroll.scrollTo( {
+      smooth: true,
+      duration: 500,
+      offset: -100, 
+    });
+  };
   return (
     <section className="top-block container">
       <h1>
@@ -21,17 +30,28 @@ export default function TopBlock() {
           </Link>
         </li>
         <li>
-          <Link href="#">
+          <ScrollLink
+            to="b2b"
+            smooth={true}
+            duration={1500}
+            onClick={scrollToAbout}
+          >
             B2C
             <br />
             Products
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link href="#">About</Link>
+          <ScrollLink
+            to="about"
+            smooth={true}
+            duration={1500}
+            onClick={scrollToAbout}
+          >
+            About
+          </ScrollLink>
         </li>
       </ul>
-      
     </section>
   );
 }

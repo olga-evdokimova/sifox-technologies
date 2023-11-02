@@ -29,7 +29,7 @@ const Ul = styled.ul`
     font-size: 20px;
     padding: 0 0px 5px;
     margin: 50px 10px 0;
-
+cursor: pointer;
     &__list {
       padding: 30px 60px 20px 60px;
       transform: translateX(100%);

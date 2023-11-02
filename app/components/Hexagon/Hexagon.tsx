@@ -54,7 +54,7 @@ export default function Hexagon() {
     }
   }
   return (
-    <section className="hexagon" ref={hexagonRef}>
+    <section className="hexagon" ref={hexagonRef} id="b2b">
       <div className="hexagon__inner">
         <div className="hexagon__nav left">
           <Title>B2B Products</Title>
@@ -79,7 +79,7 @@ export default function Hexagon() {
             management.
           </p>
         </div>
-        <div className="hexagon__nav right">
+        <div className="hexagon__nav right " >
           <Title>B2C Products</Title>
           <button onClick={scrollToStart}>
             <svg

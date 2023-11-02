@@ -12,6 +12,7 @@ const StyledBurger = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
   @media (max-width: 767px) {
     top: 15px;
     right: 20px;
