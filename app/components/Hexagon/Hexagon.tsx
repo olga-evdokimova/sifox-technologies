@@ -55,7 +55,8 @@ export default function Hexagon() {
   }
   return (
     <section className="hexagon" ref={hexagonRef} id="b2b">
-      <div className="hexagon__inner">
+      <div className="hexagon__block-left">
+        {" "}
         <div className="hexagon__nav left">
           <Title>B2B Products</Title>
           <button onClick={scrollHexagon}>
@@ -79,7 +80,9 @@ export default function Hexagon() {
             management.
           </p>
         </div>
-        <div className="hexagon__nav right" >
+      </div>
+      <div className="hexagon__block-right">
+        <div className="hexagon__nav right">
           <Title>B2C Products</Title>
           <button onClick={scrollToStart}>
             <svg
@@ -102,6 +105,9 @@ export default function Hexagon() {
             management.
           </p>
         </div>
+      </div>
+
+      <div className="hexagon__inner">
         <div className="hexagon__row">
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>

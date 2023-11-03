@@ -1,10 +1,34 @@
 .hexagon {
-    padding: 50px 0 80px;
+    margin: 50px 0 80px;
     overflow-x: auto;
+    position: relative;
     &::-webkit-scrollbar {
         width: 0;
     }
-
+    &__block-left {
+        width: 1600px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 53px;
+        background-color: rgba(0, 128, 0, 0.231);
+        @media (max-width: 992px) {
+            width: 738px;
+            left:0px;
+        }
+    }
+    &__block-right {
+        width: 1600px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 1654px;
+        background-color: rgba(43, 27, 106, 0.591);
+        @media (max-width: 992px) {
+            width: 738px;
+            left: 1000px;
+        }
+    }
     &__nav {
         display: flex;
         align-items: center;
@@ -60,9 +84,9 @@
         }
     }
     .left {
-        left: 100px;
+        left: 95px;
         top: 30px;
-        @media (max-width: 1440px) {
+        @media (max-width: 992px) {
             left: 20px;
         }
         button {
@@ -76,20 +100,11 @@
         }
     }
     .right {
-        right: 100px;
+        right: 95px;
         top: 30px;
         justify-content: end;
-        @media (max-width: 1440px) {
-            right: 300px;
-        }
-        @media (max-width: 1024px) {
-            right: 1200px;
-        }
         @media (max-width: 992px) {
-            right: 700px;
-        }
-        @media (max-width: 768px) {
-            right: 640px;
+            right: 0px;
         }
         svg {
             padding-right: 10px;
@@ -97,6 +112,9 @@
         button {
             order: -1;
             margin-right: 50px;
+            @media (max-width: 992px) {
+                margin-right: 20px;
+            }
         }
         h2 {
             order: 1;
@@ -107,29 +125,16 @@
         }
     }
     &__inner {
-        float: left;
-        overflow-x: auto;
+        background-color: rgba(255, 255, 255, 0.192);
         width: 3332px;
         height: 940px;
         padding-left: 273px;
         padding-top: 100px;
         position: relative;
-        @media (max-width: 1440px) {
-            padding-left: 150px;
-        }
-        @media (max-width: 1024px) {
-            padding-left: 0px;
-            height: 1100px;
-            padding-top: 190px;
-        }
         @media (max-width: 992px) {
-            width: 2090px;
+            width: 2020px;
             height: 800px;
-            padding-left: 80px;
-        }
-        @media (max-width: 768px) {
-            padding-left: 14px;
-            width: 2022px;
+            padding-left: 20px;
         }
     }
     &__row {

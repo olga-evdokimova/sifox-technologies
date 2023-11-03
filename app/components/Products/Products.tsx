@@ -8,6 +8,7 @@ export default function Products() {
     <section className="products">
       <div className="products__ellipses">
       </div>
+      
       <Hexagon />
     </section>
   );
