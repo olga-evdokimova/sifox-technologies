@@ -8,7 +8,8 @@ import Kenya from "../Kenya/Kenya";
 export default function Cases() {
   return (
     <section className="cases container">
-    <div className="cases__map"></div>
+      <div className="cases__map"></div>
+      <div className="cases__ellipses"></div>
       <Nigeria />
       <Congo />
       <Kenya />

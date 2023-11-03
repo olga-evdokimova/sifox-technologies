@@ -14,9 +14,9 @@ const Div = styled.div`
       height: 812px;
     }
   }
-  .main__ellipse {
+  .main__ellipses {
     position: absolute;
-    background-image: url("/main-ellipse.png");
+    background-image: url("/main-ellipses.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 2312px;
@@ -26,7 +26,7 @@ const Div = styled.div`
     transform: translateX(-50%);
     z-index: -2;
     @media (max-width: 992px) {
-      background-image: url("/main-ellipse-992.png");
+      background-image: url("/main-ellipses-992.png");
       width: 1200px;
    
       top: -300px;
@@ -45,7 +45,7 @@ export default function MainImage() {
           sizes="1000"
         ></Image>
       </div>
-      <div className="main__ellipse">
+      <div className="main__ellipses">
       </div>
     </Div>
   );

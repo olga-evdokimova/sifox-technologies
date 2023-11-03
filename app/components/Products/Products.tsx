@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Products() {
   return (
     <section className="products">
-      <div className="products__ellipse">
+      <div className="products__ellipses">
       </div>
       <Hexagon />
     </section>
