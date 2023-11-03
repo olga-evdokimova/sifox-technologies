@@ -6,60 +6,71 @@ import React, { useRef, useEffect } from "react";
 import Title from "../Title/Title";
 import Link from "next/link";
 
-export default function Hexagon() {
+// const a: number
+// 5, "jopa"
+// number, string
+// const value: type
+
+// let username: string
+
+// let toLeft: () => void
+
+// value (x: number, y: number) => { return x + y }
+// value (x: number, y: number) => 100
+// type (x: number, y: number) => number
+
+// let sum: (x: number, y: number) => number
+
+// sum = (x: number, y: number) => { return x + y }
+
+// type SumProps = {
+//   x: number,
+//   y: number
+// }
+
+// const sum3 = (sumProps: SumProps) => { return sumProps.x + sumProps.y }
+
+// function sum2(x: number, y: number) { return x + y }
+
+// type ComponentProps = {
+//   x: number,
+//   y: number,
+//   jopa: string
+// }
+
+// function Component(props: ComponentProps) { return <></> }
+
+// function abc() {
+//   return <>
+//     <Component x={1} y={2} jopa="jopa" />
+//   </>
+// }
+
+type HexagonProps = {
+  position: "left" | "right";
+  toLeft: () => void;
+  toRight: () => void;
+};
+export default function Hexagon(props: HexagonProps) {
   const hexagonRef = useRef(null);
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
+  
 
-  function scrollHexagon() {
-    if (hexagonRef.current) {
-      let leftValue;
+  const { position, toLeft, toRight } = props;
+ 
+  
+  useEffect(() => {
+    console.log(position);
+  }, [position]);
 
-      if (window.innerWidth <= 375) {
-        leftValue = 1000;
-      } else if (window.innerWidth <= 992) {
-        leftValue = 1000;
-      } else if (window.innerWidth <= 1024) {
-        leftValue = 1500;
-      } else if (window.innerWidth <= 1440) {
-        leftValue = 1600;
-      } else {
-        leftValue = 2000;
-      }
-
-      hexagonRef.current.scrollBy({
-        left: leftValue,
-        behavior: "smooth",
-      });
-    }
-  }
-  function scrollToStart() {
-    if (hexagonRef.current) {
-      let leftValue;
-
-      if (window.innerWidth <= 375) {
-        leftValue = -1000;
-      } else if (window.innerWidth <= 992) {
-        leftValue = -1000;
-      } else if (window.innerWidth <= 1024) {
-        leftValue = -1500;
-      } else if (window.innerWidth <= 1440) {
-        leftValue = -1600;
-      } else {
-        leftValue = -2000;
-      }
-
-      hexagonRef.current.scrollBy({
-        left: leftValue,
-        behavior: "smooth",
-      });
-    }
-  }
   return (
-    <section className="hexagon" ref={hexagonRef} id="b2b">
-      <div className="hexagon__block-left">
+    <section className="hexagon" ref={hexagonRef}>
+      <div className="hexagon__block-left" ref={leftRef}>
         {" "}
         <div className="hexagon__nav left">
           <Title>B2B Products</Title>
-          <button onClick={scrollHexagon}>
+          <button onClick={toRight}>
             B2C <span>PRODUCTS</span>{" "}
             <svg
               width="42"
@@ -81,10 +92,10 @@ export default function Hexagon() {
           </p>
         </div>
       </div>
-      <div className="hexagon__block-right">
+      <div className="hexagon__block-right" ref={rightRef}>
         <div className="hexagon__nav right">
           <Title>B2C Products</Title>
-          <button onClick={scrollToStart}>
+          <button onClick={toLeft}>
             <svg
               width="42"
               height="15"
