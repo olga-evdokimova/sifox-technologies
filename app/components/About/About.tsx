@@ -5,8 +5,9 @@ import AcccentTitle from "../AcccentTitle/AccentTitle";
 
 export default function About() {
   return (
-    <section className="about"id="about">
+    <section className="about" id="about">
       <div className="about__content">
+        <div className="about__ellipses"></div>
         <Link href="#">
           <AcccentTitle>About the company</AcccentTitle>
         </Link>
