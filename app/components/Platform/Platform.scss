@@ -10,15 +10,6 @@
        padding-top: 40px;
        padding-bottom: 40px;
     }
-    &__svg {
-        position: absolute;
-        z-index: -1;
-        top: 184px;
-        left: 280px;
-        @media (max-width: 768px) {
-            left: -123px;
-        }
-    }
     &__img {
         position: absolute;
         width: 100%;
