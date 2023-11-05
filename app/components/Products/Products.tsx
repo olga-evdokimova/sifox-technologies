@@ -15,11 +15,9 @@ export default function Products() {
         position={position}
         toLeft={() => {
           setPosition("left");
-          console.log("toLeft");
-        }}
+        }}  
         toRight={() => {
           setPosition("right");
-          console.log("toRight");
         }}
       />
     </section>

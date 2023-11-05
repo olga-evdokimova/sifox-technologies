@@ -1,10 +1,11 @@
-//@ts-nocheck
+
 "use client";
 import "./Hexagon.scss";
 import Image from "next/image";
 import React, { useRef, useEffect } from "react";
 import Title from "../Title/Title";
 import Link from "next/link";
+ 
 
 // const a: number
 // 5, "jopa"
