@@ -91,11 +91,7 @@ export default function Kenya() {
       </div>
       {showModal && (
         <div className="modal-kenya">
-          <button
-            className="modal-kenya__close"
-            onClick={handleCloseModal}
-         
-          >
+          <button className="modal-kenya__close" onClick={handleCloseModal}>
             <svg
               className="modal__close-svg"
               width="42"
@@ -119,13 +115,13 @@ export default function Kenya() {
             width={729}
             height={901}
           ></Image>
-          <div className="modal-kenya__content" >
+          <div className="modal-kenya__content">
             <h6>
               {" "}
               <Image src={"/kenya.png"} alt="" width={41} height={22}></Image>
               Kenya
             </h6>
-            <Link href={""}>
+            <Link href={"/products/b2c-airtime-credit"}>
               Airtime Credit
               <svg
                 width="19"
@@ -142,7 +138,7 @@ export default function Kenya() {
               </svg>
             </Link>
 
-            <Link href={""}>
+            <Link href={"/products/b2c-content-services"}>
               Content Services
               <svg
                 width="19"

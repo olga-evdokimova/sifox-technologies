@@ -514,7 +514,7 @@ export default function Hexagon() {
             management.
           </p>
         </div>
-        <div className="hexagon__nav right " >
+        <div className="hexagon__nav right ">
           <Title>B2C Products</Title>
           <button onClick={scrollToStart}>
             <svg
@@ -545,7 +545,7 @@ export default function Hexagon() {
           </div>
           <div className="hexagon__item">
             <div className="hexagon__content">
-              <Link href={"#"}>
+              <Link href={"/products/b2c-data-voice-sharing"}>
                 <svg
                   width="18"
                   height="19"
@@ -715,7 +715,7 @@ export default function Hexagon() {
           <div className="hexagon__item"></div>
           <div className="hexagon__item">
             <div className="hexagon__content">
-              <Link href={"#"}>
+              <Link href={"/products/b2c-data-voice-cost-sharing"}>
                 <svg
                   width="18"
                   height="19"
@@ -746,7 +746,6 @@ export default function Hexagon() {
             </div>
           </div>
           <div className="hexagon__item">
-            {" "}
             <div className="hexagon__hover"></div>
           </div>
         </div>
@@ -764,7 +763,7 @@ export default function Hexagon() {
           </div>
           <div className="hexagon__item">
             <div className="hexagon__content">
-              <Link href={"#"}>
+              <Link href={"/products/b2c-social-network-bundles"}>
                 <svg
                   width="18"
                   height="19"
@@ -833,7 +832,7 @@ export default function Hexagon() {
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
           <div className="hexagon__item">
             <div className="hexagon__content">
-              <Link href={"#"}>
+              <Link href={"/products/b2c-airtime-credit"}>
                 <svg
                   width="18"
                   height="19"
@@ -862,7 +861,7 @@ export default function Hexagon() {
           </div>
           <div className="hexagon__item">
             <div className="hexagon__content">
-              <Link href={"#"}>
+              <Link href={"/products/b2c-content-services"}>
                 <svg
                   width="18"
                   height="19"

@@ -116,10 +116,7 @@ export default function Congo() {
             width={1008}
             height={999}
           ></Image>
-          <div
-            className="modal-congo__content"
-         
-          >
+          <div className="modal-congo__content">
             <h6>
               {" "}
               <Image src={"/congo.png"} alt="" width={41} height={22}></Image>
@@ -157,7 +154,7 @@ export default function Congo() {
                 />
               </svg>
             </Link>
-            <Link href={""}>
+            <Link href={"/products/b2c-data-voice-sharing"}>
               Data & Voice Sharing
               <svg
                 width="19"
@@ -173,7 +170,7 @@ export default function Congo() {
                 />
               </svg>
             </Link>
-            <Link href={""}>
+            <Link href={"/products/b2c-data-voice-cost-sharing"}>
               Data & Voice Cost Sharing
               <svg
                 width="19"
