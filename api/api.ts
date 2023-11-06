@@ -8,10 +8,10 @@ export type Post = {
     title: string
     slug: string,
     content: string,
-    catalog: Catalog,
+    kind: string
 }
 
-export type Catalog = "b2b" | "b2c" 
+
 
 const getMetadata = (html: string, key: string) => {
     const regex = `<p hidden id="${key}">(.+?)<\/p>`
@@ -20,8 +20,8 @@ const getMetadata = (html: string, key: string) => {
     return match[1]
 }
 
-export const getPostById = (catalog: Catalog, slug: string): Post => {
-    const fullPath = join(postsDirectory, catalog, slug)
+export const getPostById = (slug: string): Post => {
+    const fullPath = join(postsDirectory, slug)
     const fileContent = fs.readFileSync(fullPath, 'utf8')
 
     const title = getMetadata(fileContent, 'title') || "Untitled"
@@ -30,12 +30,11 @@ export const getPostById = (catalog: Catalog, slug: string): Post => {
         title,
         slug: slug.replace(/\.html$/, ''),
         content: fileContent,
-        catalog,
+        kind: getMetadata(fileContent, 'kind') || 'b2b'
     }
 }
 
-export const notes = fs.readdirSync(join(postsDirectory, "notes")).map(x => getPostById("b2b", x))
-export const photo = fs.readdirSync(join(postsDirectory, "photo")).map(x => getPostById("b2c", x))
+export const posts = fs.readdirSync(postsDirectory).map(x => getPostById( x))
 
 
-export const posts = [...notes, ...photo]
+
