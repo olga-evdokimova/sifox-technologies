@@ -1,0 +1,110 @@
+.post {
+    padding: 30px 40px 100px;
+    position: relative;
+    max-width: 1505px;
+    margin: 0 auto;
+
+    &__img {
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -4;
+    }
+    &__inner {
+        padding-top: 100px;
+    }
+    &__ellipses {
+        position: absolute;
+        background-image: url("/posts/post-ellipses.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 2500px;
+        height: 1800px;
+        top: -500px;
+        left: 60%;
+        transform: translateX(-50%);
+        z-index: -4;
+        @media (max-width: 992px) {
+            background-image: url("/posts/post-ellipses-992.png");
+            width: 1200px;
+            height: 1200px;
+           
+        }
+    }
+    &__tag {
+        border-radius: 10px;
+        background: var(--color-accent);
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        display: inline-flex;
+    }
+    .title {
+        padding-bottom: 10px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 20px;
+        font-style: italic;
+        color: var(--color-text-white);
+        opacity: 0.5;
+    }
+    &__backward {
+        position: absolute;
+        top: 77px;
+        right: 40px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        padding: 18px 20px;
+        overflow: hidden;
+        transition: all 0.8s ease-out;
+        span {
+            margin-left: 10px;
+            display: none;
+            transition: all 0.8s ease-out;
+        }
+        &:hover {
+            transition: all 0.8s ease-out;
+            span {
+                display: inline-block;
+                transition: all 0.8s ease-out;
+            }
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 45px;
+        color: var(--color-text-white);
+        padding: 100px 0;
+         border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        display: flex;
+        padding: 50px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        &:first-child {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        &-title {
+            width: 50%;
+            font-family: var(--font-bebas-neue), sans-serif;
+            color: var(--color-accent);
+            font-size: 30px;
+            font-weight: 400;
+            padding-right: 20px;
+            @media (max-width: 767px) {
+                font-size: 20px;
+            }
+        }
+        &-text {
+            width: 50%;
+        }
+    }
+}

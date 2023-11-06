@@ -104,7 +104,7 @@ export default function RightNav({ open }) {
         {showListB2C && (
           <ul className="nav-menu__list">
             <li className="nav-menu__list-item">
-              <Link href={`/b2b/${b2b.slug}`} key={index}>
+              <Link href={""} >
                 Data & Voice Sharing<span>Family</span>
               </Link>
             </li>

@@ -5,10 +5,13 @@ const postsDirectory = join(process.cwd(), 'posts')
 
 
 export type Post = {
-    title: string
+    title: string,
+    subtitle?: string,
     slug: string,
     content: string,
-    kind: string
+    kind: string,
+    image: string,
+    tag?: string
 }
 
 
@@ -25,16 +28,22 @@ export const getPostById = (slug: string): Post => {
     const fileContent = fs.readFileSync(fullPath, 'utf8')
 
     const title = getMetadata(fileContent, 'title') || "Untitled"
-
+    const subtitle = getMetadata(fileContent, 'subtitle')
+    const tag = getMetadata(fileContent, 'tag')
+    const image = getMetadata(fileContent, 'image') || '/posts/b2c-01.png'
+    
     return {
         title,
+        subtitle,
+        tag,
         slug: slug.replace(/\.html$/, ''),
         content: fileContent,
-        kind: getMetadata(fileContent, 'kind') || 'b2b'
+        kind: getMetadata(fileContent, 'kind') || 'b2b',
+        image
     }
 }
 
-export const posts = fs.readdirSync(postsDirectory).map(x => getPostById( x))
+export const posts = fs.readdirSync(postsDirectory).map(x => getPostById(x))
 
 
 

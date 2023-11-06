@@ -7,13 +7,5 @@
       z-index: -1;
     }
   }
-  &__svg {
-    height: clamp(815px, 815px + (1300 - 815) * ((100vw - 375px) / (1600 - 375)), 1300px);
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    @media (max-width: 992px) {
-      width: 1300px;
-    }
-  }
+
 }

@@ -1,17 +1,24 @@
 import { getPostById } from "@/api/api";
 import "./style.scss";
 import Title from "@/app/components/Title/Title";
-
+import Image from "next/image";
 export default function PageSlug({ params }: any) {
   const post = getPostById(params.id + ".html");
 
   return (
-    <div className="post container">
-     
+    <>
+      <Image className="post__img" src={post.image} alt="Картинка" fill sizes="1000"  style={{objectFit: "cover"}}/>
+      <div className="post">
+        <div className="post__ellipses"></div>
+
+        <div className="post__tag">{post.tag}</div>
         <Title>{post.title}</Title>
-     
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
-   
-    </div>
+        <span className="post__subtitle">{post.subtitle}</span>
+        <div
+          className="post__inner"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
+      </div>
+    </>
   );
 }
