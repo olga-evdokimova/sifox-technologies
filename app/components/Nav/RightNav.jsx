@@ -104,20 +104,36 @@ export default function RightNav({ open }) {
         {showListB2C && (
           <ul className="nav-menu__list">
             <li className="nav-menu__list-item">
-              <Link href={""} >
+              <Link href={"/products/b2c-data-voice-sharing"}>
                 Data & Voice Sharing<span>Family</span>
               </Link>
             </li>
             <li className="nav-menu__list-item">
-              <Link href={""}>
+              <Link href={"/products/b2c-data-voice-cost-sharing"}>
                 Data & Voice Cost Sharing<span>Friends and social buying</span>
               </Link>
             </li>
             <li className="nav-menu__list-item">
-              <Link href={""}>
+              <Link href={"/products/b2c-social-network-bundles"}>
                 Social Network Bundles<span>Individuals and social buying</span>
               </Link>
             </li>
+            <li className="nav-menu__list-item">
+              <Link href={"/products/b2c-airtime-credit"}>
+                Airtime Credit<span>Individuals</span>
+              </Link>
+            </li>
+            <li className="nav-menu__list-item">
+              <Link href={"/products/b2c-content-services"}>
+                Content Services<span>Individuals</span>
+              </Link>
+            </li>
+            {/* <li className="nav-menu__list-item">
+              <Link href={"/products/b2c-cvm-campaigns-management"}>
+                CVM campaigns management
+                <span>HV customers</span>
+              </Link>
+            </li> */}
           </ul>
         )}
         <Li
