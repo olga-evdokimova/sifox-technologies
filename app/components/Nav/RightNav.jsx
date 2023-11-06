@@ -27,8 +27,9 @@ export default function RightNav({ open }) {
     setBorderB2B((prevBorder) => !prevBorder);
   };
 
+
   return (
-    <ul open={open} className="ul">
+    <ul open={open} className="nav">
       <li
         className="nav-menu"
         style={{
