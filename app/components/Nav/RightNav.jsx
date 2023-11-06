@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
-import React, { useState} from "react";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import "./style.scss";
+import { usePathname } from "next/navigation";
 
 export default function RightNav({ open }) {
   const [showListB2C, setShowListB2C] = useState(false);
@@ -9,7 +13,22 @@ export default function RightNav({ open }) {
   const [buttonColorB2C, setButtonColorB2C] = useState("black");
   const [BorderB2C, setBorderB2C] = useState(true);
   const [BorderB2B, setBorderB2B] = useState(true);
-  
+
+  // где я
+  const pathname = usePathname();
+
+  useEffect(() => {
+    console.log(`App is changing to ${pathname}`);
+
+    { // тут внутри выключаем всякие бордеры
+      setShowListB2C(false);
+      setButtonColorB2C((prevColor) =>
+        prevColor === "black" ? "#e0933e" : "black"
+      );
+      setBorderB2C(true);
+    }
+
+  }, [pathname]); // вызывай эффект когда поменялся pathname
 
   const handleItemClickB2C = () => {
     setShowListB2C(!showListB2C);
@@ -26,7 +45,6 @@ export default function RightNav({ open }) {
     );
     setBorderB2B((prevBorder) => !prevBorder);
   };
-
 
   return (
     <ul open={open} className="nav">

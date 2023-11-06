@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
 import RightNav from "./RightNav";
-
+import { usePathname } from "next/navigation";
 
 export default function Burger() {
   const [open, setOpen] = useState(false);
+
+  // где я
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setOpen(false); // делай open false
+  }, [pathname]); // вызывай эффект когда поменялся pathname
 
   useEffect(() => {
     const body = document.body;
@@ -19,7 +26,6 @@ export default function Burger() {
       body.style.marginRight = "0";
       blur.style.display = "none";
     }
-
   }, [open]);
 
   return (
