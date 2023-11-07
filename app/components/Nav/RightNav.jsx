@@ -18,7 +18,7 @@ export default function RightNav({ open }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    console.log(`App is changing to ${pathname}`);
+    // console.log(`App is changing to ${pathname}`);
 
     { // тут внутри выключаем всякие бордеры
       setShowListB2C(false);
