@@ -1,9 +1,9 @@
 .products {
     position: relative;
-    // left: calc(50% - 1600px / 2);
     display: flex;
     justify-content: center;
     margin: 0 auto;
+
     &__ellipses {
         position: absolute;
         background-image: url("/products-ellipses.png");

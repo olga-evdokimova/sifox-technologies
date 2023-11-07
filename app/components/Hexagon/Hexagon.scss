@@ -7,9 +7,12 @@
         left: 1160px;
     }
     @media (max-width: 768px) {
-        // left: 1337px;
         overflow-x: auto;
         left: 0;
+        width:768px;
+    }
+    @media (max-width: 375px) {
+        width: 375px;
     }
     &::-webkit-scrollbar {
         width: 0;
@@ -20,7 +23,6 @@
         position: absolute;
         top: 0;
         left: 0px;
-        background-color: rgba(0, 128, 0, 0.231);
         @media (max-width: 1440px) {
             width: 1090px;
         }
@@ -34,7 +36,6 @@
         position: absolute;
         top: 0;
         left: 1425px;
-        background-color: rgba(43, 27, 106, 0.591);
         @media (max-width: 1440px) {
             left: 1495px;
             width: 1090px;
@@ -99,6 +100,7 @@
                 }
             }
             span {
+
                 @media (max-width: 768px) {
                     display: none;
                 }
@@ -108,12 +110,6 @@
     .left {
         left: 0px;
         top: 30px;
-        @media (max-width: 1440px) {
-            // left: 50px;
-        }
-        @media (max-width: 1100px) {
-            // left: 20px;
-        }
         button {
             top: 20px;
             left: 380px;
@@ -126,6 +122,9 @@
             }
         }
         svg {
+            padding-left: 10px;
+        }
+        span{
             padding-left: 10px;
         }
     }
@@ -159,9 +158,11 @@
                 text-align: start;
             }
         }
+         span{
+            padding-right: 10px;
+        }
     }
     &__inner {
-        background-color: rgba(255, 255, 255, 0.192);
         width: 3332px;
         height: 940px;
         padding-left: 20px;
