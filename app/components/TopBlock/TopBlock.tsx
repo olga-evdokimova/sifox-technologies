@@ -6,10 +6,10 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function TopBlock() {
   const scrollTo = () => {
-    scroll.scrollTo( {
+    scroll.scrollTo({
       smooth: true,
       duration: 500,
-      offset: -100, 
+      offset: -100,
     });
   };
   return (
@@ -30,7 +30,7 @@ export default function TopBlock() {
           </ScrollLink>
         </li>
         <li>
-          <ScrollLink to="b2c" smooth={true} duration={1500} onClick={scrollTo}>
+          <ScrollLink to="b2с" smooth={true} duration={1500} onClick={scrollTo}>
             B2C
             <br />
             Products

@@ -17,7 +17,7 @@ export default function Hexagon(props: any) {
   return (
     <section className="hexagon" ref={hexagonRef}>
       <div className={`hexagon__inner ${styleName}`}>
-        <div className="hexagon__block-left" ref={leftRef}>
+        <div className="hexagon__block-left" ref={leftRef} id="b2b">
           {" "}
           <div className="hexagon__nav left">
             <Title>B2B Products</Title>
@@ -47,7 +47,7 @@ export default function Hexagon(props: any) {
             </p>
           </div>
         </div>
-        <div className="hexagon__block-right" ref={rightRef}>
+        <div className="hexagon__block-right" ref={rightRef} id="b2c">
           <div className="hexagon__nav right">
             <Title>B2C Products</Title>
             <button
