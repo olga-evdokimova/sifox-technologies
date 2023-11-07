@@ -7,7 +7,7 @@ export default function PageSlug({ params }: any) {
 
   return (
     <>
-      <Image className="post__img" src={post.image} alt="Картинка" fill sizes="1000"  style={{objectFit: "cover"}}/>
+      <Image className="post__img" src={post.image} alt="Картинка" width={1598} height={1690}/>
       <div className="post">
         <div className="post__ellipses"></div>
 
