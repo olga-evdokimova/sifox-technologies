@@ -46,7 +46,7 @@ export default function Contacts() {
               <Link href="#">WhatsApp</Link>
             </div>
           </div>
-              </div>
+         </div>
               
         <Form />
       </div>

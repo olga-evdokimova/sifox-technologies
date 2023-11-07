@@ -44,7 +44,7 @@ export default function Form() {
       </p>
 
       <form onSubmit={handleSubmit} className="form__form">
-        <label>
+        <label className="form__label">
           <input
             className="form__input"
             type="text"
@@ -55,7 +55,7 @@ export default function Form() {
           />
         </label>
 
-        <label>
+        <label className="form__label">
           <input
             className="form__input"
             type="tel"
@@ -66,7 +66,7 @@ export default function Form() {
           />
         </label>
 
-        <label>
+        <label className="form__label">
           <input
             className="form__input"
             type="email"
@@ -77,7 +77,7 @@ export default function Form() {
           />
         </label>
 
-        <label>
+        <label className="form__label-textarea">
           <textarea
             className="form__textarea"
             value={message}
