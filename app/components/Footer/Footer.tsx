@@ -4,7 +4,7 @@ export default function Footer() {
     return (
       <footer className="footer container">
         <div className="footer__copyright">
-          (с) Copywriting, Sifox Technologies | 2023
+          Copyright © SIFOX Technologies. All rights reserved | 2023
         </div>
         <Link href={""} className="footer__privacy">
           privacy policy

@@ -27,7 +27,7 @@ export default function Form() {
 
   return (
     <div className="form">
-      <Title>Get a consultation</Title>
+      <Title>LET US HELP YOU</Title>
       <p className="form__subtitle">
         The team of seasoned professionals with extensive IT and telecom
         expertise
@@ -87,7 +87,7 @@ export default function Form() {
 
         <label className="form__checkbox">
           <input type="checkbox" required {...register("checkbox")} />
-          <span className="checkbox__label">Privacy Policy</span>
+          <span className="checkbox__label">I Agree to the Privacy Policy</span>
         </label>
 
         <button className="form__btn" type="submit">
