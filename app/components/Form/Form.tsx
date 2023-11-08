@@ -56,12 +56,7 @@ export default function Form() {
                 value: /.*/,
               },
             })}
-            onFocus={(e) => e.target.labels[0].classList.add("label-focus")}
-            onBlur={(e) =>
-              !e.target.value
-                ? e.target.labels[0].classList.remove("label-blur")
-                : null
-            }
+        
           />
         </label>
 
@@ -90,12 +85,7 @@ export default function Form() {
                 message: "Please check if your e-mail is correct",
               },
             })}
-            onFocus={(e) => e.target.labels[0].classList.add("label-focus")}
-            onBlur={(e) =>
-              !e.target.value
-                ? e.target.labels[0].classList.remove("label-blur")
-                : null
-            }
+    
           />
           {errors.email && (
             <p className="message-error">{errors.email.message}</p>
@@ -117,12 +107,7 @@ export default function Form() {
                 message: "Please provide a bit more detail in your question",
               },
             })}
-            onFocus={(e) => e.target.labels[0].classList.add("label-focus")}
-            onBlur={(e) =>
-              !e.target.value
-                ? e.target.labels[0].classList.remove("label-blur")
-                : null
-            }
+      
           ></textarea>
           {errors.question && (
             <p className="message-error">{errors.question.message}</p>
