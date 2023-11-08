@@ -1,38 +1,28 @@
+//@ts-nocheck
 import React, { useState } from "react";
 import "./Form.scss";
 import Title from "../Title/Title";
-import Link from "next/link";
+import { useForm } from "react-hook-form";
 
+type Inputs = {
+  example: string;
+  exampleRequired: string;
+};
 export default function Form() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [privacyPolicyChecked, setPrivacyPolicyChecked] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const data = {
-      name,
-      phone,
-      email,
-      message,
-    };
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  
+  const onSubmit = (data) => {
+    console.log("Форма отправлена!");
     console.log(data);
-    fetch("/api/contact", {
-      method: "post",
-      body: JSON.stringify(data),
-    });
-    setName("");
-    setPhone("");
-    setEmail("");
-    setMessage("");
-    setPrivacyPolicyChecked(false);
-  };
-
-  const handlePrivacyPolicyChange = () => {
-    setPrivacyPolicyChecked(!privacyPolicyChecked);
+    setIsSubmitted(true);
+    reset();
   };
 
   return (
@@ -43,63 +33,69 @@ export default function Form() {
         expertise
       </p>
 
-      <form onSubmit={handleSubmit} className="form__form">
+      <form className="form__form" onSubmit={handleSubmit(onSubmit)}>
         <label className="form__label">
           <input
             className="form__input"
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
             placeholder="Name"
+            type="text"
+            {...register("name")}
           />
         </label>
 
         <label className="form__label">
           <input
             className="form__input"
-            type="tel"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            required
             placeholder="Phone"
+            type="text"
+            {...register("phone")}
           />
         </label>
 
         <label className="form__label">
           <input
             className="form__input"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
             placeholder="E-mail"
+            type="text"
+            {...register("email", {
+              required: true,
+              pattern: {
+                value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
+                message: "Please check if your e-mail is correct",
+              },
+            })}
           />
+          {errors.email && <p className="error">{errors.email.message}</p>}
         </label>
 
         <label className="form__label-textarea">
           <textarea
             className="form__textarea"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
             placeholder="Question"
+            {...register("question", {
+              required: true,
+              pattern: {
+                value: /.{10,}/,
+                message: "Please provide a bit more detail in your question",
+              },
+            })}
           ></textarea>
+          {errors.question && (
+            <p className="error">{errors.question.message}</p>
+          )}
         </label>
 
         <label className="form__checkbox">
-          <input
-            type="checkbox"
-            checked={privacyPolicyChecked}
-            onChange={handlePrivacyPolicyChange}
-            required
-          />
+          <input type="checkbox" required {...register("checkbox")} />
           <span className="checkbox__label">Privacy Policy</span>
         </label>
 
         <button className="form__btn" type="submit">
           Submit
         </button>
+        {isSubmitted && (
+          <p className="form__notification">Form submitted successfully!</p>
+        )}
       </form>
     </div>
   );
