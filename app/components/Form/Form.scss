@@ -91,7 +91,7 @@
             display: none;
         }
         input[type="checkbox"]:checked + .checkbox__label:before {
-            opacity: 0.5;
+           background-color: transparent;
         }
         .checkbox__label {
             display: inline-block;
@@ -111,6 +111,7 @@
                 height: 25px;
                 background-color: var(--color-accent);
                 border-radius: 5px;
+                border: 2px solid #E0933E;
                 @media (max-width: 768px) {
                     width: 16px;
                     height: 16px;
