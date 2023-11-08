@@ -1,4 +1,5 @@
 .contacts {
+    position: relative;
     &__wrap {
         padding: 100px 0;
         display: flex;
@@ -10,9 +11,9 @@
     &__content {
         flex: 0 0 50%;
         padding-right: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         @media (max-width: 992px) {
             padding-right: 0;
         }
@@ -39,7 +40,7 @@
         font-size: 20px;
         padding-bottom: 20px;
         max-width: 480px;
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             font-size: 16px;
         }
     }
@@ -57,7 +58,7 @@
                 &:last-child {
                     margin-right: 0;
                 }
-                @media (max-width: 768px){
+                @media (max-width: 768px) {
                     font-size: 16px;
                 }
             }
@@ -66,5 +67,4 @@
             }
         }
     }
-  
 }

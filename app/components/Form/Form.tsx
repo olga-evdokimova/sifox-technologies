@@ -4,25 +4,34 @@ import "./Form.scss";
 import Title from "../Title/Title";
 import { useForm } from "react-hook-form";
 
-type Inputs = {
-  example: string;
-  exampleRequired: string;
+type FormValues = {
+  name: string;
+  phone: string;
+  email: string;
+  question: string;
+  checkbox: boolean;
 };
 export default function Form() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isValid },
     reset,
-  } = useForm();
+  } = useForm<FormValues>({
+    mode: "all",
+  });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-  
-  const onSubmit = (data) => {
-    console.log("Форма отправлена!");
-    console.log(data);
+ 
+   const handleCloseSubmittedMessage = () => {
+     setIsSubmitted(false);
+   };
+
+  const onSubmit: SubmitHandler<FormValues> = (data) => {
     setIsSubmitted(true);
     reset();
+    console.log("Форма отправлена!");
+    console.log(data);
   };
 
   return (
@@ -39,7 +48,11 @@ export default function Form() {
             className="form__input"
             placeholder="Name"
             type="text"
-            {...register("name")}
+            {...register("name", {
+              pattern: {
+                value: /.*/,
+              },
+            })}
           />
         </label>
 
@@ -52,7 +65,11 @@ export default function Form() {
           />
         </label>
 
-        <label className="form__label">
+        <label
+          className={`form__label ${
+            errors.email ? "label-error" : isValid ? "label-success" : ""
+          }`}
+        >
           <input
             className="form__input"
             placeholder="E-mail"
@@ -65,10 +82,16 @@ export default function Form() {
               },
             })}
           />
-          {errors.email && <p className="error">{errors.email.message}</p>}
+          {errors.email && (
+            <p className="message-error">{errors.email.message}</p>
+          )}
         </label>
 
-        <label className="form__label-textarea">
+        <label
+          className={`form__label-textarea ${
+            errors.question ? "label-error" : isValid ? "label-success" : ""
+          }`}
+        >
           <textarea
             className="form__textarea"
             placeholder="Question"
@@ -79,9 +102,15 @@ export default function Form() {
                 message: "Please provide a bit more detail in your question",
               },
             })}
+            onFocus={(e) => e.target.labels[0].classList.add("label-focus")}
+            onBlur={(e) =>
+              !e.target.value
+                ? e.target.labels[0].classList.remove("label-blur")
+                : null
+            }
           ></textarea>
           {errors.question && (
-            <p className="error">{errors.question.message}</p>
+            <p className="message-error">{errors.question.message}</p>
           )}
         </label>
 
@@ -93,10 +122,35 @@ export default function Form() {
         <button className="form__btn" type="submit">
           Submit
         </button>
-        {isSubmitted && (
-          <p className="form__notification">Form submitted successfully!</p>
-        )}
       </form>
+      {isSubmitted && (
+        <div className="submitted-message">
+          <p>
+            The application has
+            <br /> been sent successfully!
+            <div
+              className="submitted-message__close"
+              onClick={handleCloseSubmittedMessage}
+            >
+              {" "}
+              <svg
+                width="42"
+                height="42"
+                viewBox="0 0 42 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M41 1L21 21M1 41L21 21M21 21L1 1L41 41"
+                  stroke="#0A0714"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </p>
+        </div>
+      )}
     </div>
   );
 }

@@ -19,6 +19,7 @@
         flex-direction: column;
     }
     &__label {
+        position: relative;
         background-color: transparent;
         border-radius: 10px;
         border: 2px solid rgba(255, 255, 255, 0.2);
@@ -36,13 +37,12 @@
     &__input {
         color: var(--color-text-white);
         font-size: 20px;
-
+        color: rgba(255, 255, 255, 0.5);
         @media (max-width: 768px) {
             font-size: 16px;
             height: 55px;
         }
         &::placeholder {
-            color: rgba(255, 255, 255, 0.5);
             font-family: Inter;
             font-size: 20px;
 
@@ -52,6 +52,7 @@
         }
     }
     &__label-textarea {
+        position: relative;
         background-color: transparent;
         width: 100%;
         height: 230px;
@@ -68,12 +69,12 @@
         resize: none;
         color: var(--color-text-white);
         font-size: 20px;
+        color: rgba(255, 255, 255, 0.5);
         @media (max-width: 768px) {
             height: 150px;
             font-size: 16px;
         }
         &::placeholder {
-            color: rgba(255, 255, 255, 0.5);
             font-family: Inter;
             font-size: 20px;
 
@@ -138,5 +139,55 @@
         @media (max-width: 768px) {
             padding: 16px;
         }
+    }
+}
+.label-error {
+    background: rgba(233, 36, 36, 0.1);
+}
+.label-success {
+    color: green;
+}
+.message-error {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #cf3636;
+    display: block;
+    text-align: end;
+}
+.label-focus {
+}
+.label-blur {
+}
+.submitted-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 300px;
+        color: #67bb6f;
+        font-size: 35px;
+        text-align: center;
+        font-weight: 400;
+        background-color: var(--color-text-white);
+        border-radius: 20px;
+        position: relative;
+    }
+    &__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        z-index: 10;
+        cursor: pointer;
     }
 }
