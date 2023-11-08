@@ -91,7 +91,7 @@
             display: none;
         }
         input[type="checkbox"]:checked + .checkbox__label:before {
-           background-color: transparent;
+            background-color: transparent;
         }
         .checkbox__label {
             display: inline-block;
@@ -111,7 +111,7 @@
                 height: 25px;
                 background-color: var(--color-accent);
                 border-radius: 5px;
-                border: 2px solid #E0933E;
+                border: 2px solid #e0933e;
                 @media (max-width: 768px) {
                     width: 16px;
                     height: 16px;
@@ -150,7 +150,16 @@
     }
 }
 .label-success {
-    color: green;
+    background: rgba(63, 235, 35, 0.1);
+    position: relative;
+    &::before {
+        content: "\2714";
+        color: rgba(149, 207, 54, 0.6);
+        position: absolute;
+        right: 30px;
+        font-size: 20px;
+        line-height: 1;
+    }
 }
 .message-error {
     position: absolute;
@@ -159,10 +168,22 @@
     color: #cf3636;
     display: block;
     text-align: end;
+    padding-right: 30px;
+    &::before {
+        content: "\2716";
+        position: absolute;
+        right: 0px;
+        font-size: 20px;
+        line-height: 1;
+        @media (max-width: 768px){
+            font-size: 16px;
+        }
+    }
     @media (max-width: 768px) {
         font-size: 12px;
         bottom: -20px;
         right: 10px;
+        padding-right: 20px;
     }
 }
 .label-focus {

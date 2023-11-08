@@ -18,7 +18,6 @@ export default function Form() {
     formState: { errors, isValid },
     reset,
   } = useForm<FormValues>({
-    mode: "all",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -43,7 +42,11 @@ export default function Form() {
       </p>
 
       <form className="form__form" onSubmit={handleSubmit(onSubmit)}>
-        <label className="form__label">
+        <label
+          className={`form__label ${
+            errors.name ? "label-error" : isValid ? "label-success" : ""
+          }`}
+        >
           <input
             className="form__input"
             placeholder="Name"
@@ -53,6 +56,12 @@ export default function Form() {
                 value: /.*/,
               },
             })}
+            onFocus={(e) => e.target.labels[0].classList.add("label-focus")}
+            onBlur={(e) =>
+              !e.target.value
+                ? e.target.labels[0].classList.remove("label-blur")
+                : null
+            }
           />
         </label>
 
@@ -81,6 +90,12 @@ export default function Form() {
                 message: "Please check if your e-mail is correct",
               },
             })}
+            onFocus={(e) => e.target.labels[0].classList.add("label-focus")}
+            onBlur={(e) =>
+              !e.target.value
+                ? e.target.labels[0].classList.remove("label-blur")
+                : null
+            }
           />
           {errors.email && (
             <p className="message-error">{errors.email.message}</p>
@@ -115,7 +130,7 @@ export default function Form() {
         </label>
 
         <label className="form__checkbox">
-          <input type="checkbox" required {...register("checkbox")} />
+          <input type="checkbox" required {...register("checkbox", { required: true })} />
           <span className="checkbox__label">I Agree to the Privacy Policy</span>
         </label>
 
