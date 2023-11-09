@@ -41,7 +41,10 @@ export default function Contacts() {
             </div>
             <div className="contacts__social-item">
               <span>social media:</span>
-              <Link href="https://www.linkedin.com/company/sifox-technologies">
+              <Link
+                href="https://www.linkedin.com/company/sifox-technologies"
+                target="_blank"
+              >
                 Linkedin
               </Link>
               {/* <Link href="#">Facebook</Link>
