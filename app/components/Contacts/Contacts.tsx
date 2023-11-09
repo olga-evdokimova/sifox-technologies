@@ -37,17 +37,20 @@ export default function Contacts() {
           <div className="contacts__social">
             <div className="contacts__social-item">
               <span>mail:</span>
-              <Link href="mailto:info@sifox.com">info@sifox.com</Link>
+              <Link href="mailto:info@sifoxtech.com">info@sifoxtech.com</Link>
             </div>
             <div className="contacts__social-item">
               <span>social media:</span>
-              <Link href="#">Facebook</Link>
+              <Link href="https://www.linkedin.com/company/sifox-technologies">
+                Linkedin
+              </Link>
+              {/* <Link href="#">Facebook</Link>
               <Link href="#">YouTube</Link>
-              <Link href="#">WhatsApp</Link>
+              <Link href="#">WhatsApp</Link> */}
             </div>
           </div>
-         </div>
-              
+        </div>
+
         <Form />
       </div>
     </section>
