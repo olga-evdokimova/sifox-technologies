@@ -50,7 +50,7 @@ export default function Kenya() {
           <Image src={"/kenya.png"} alt="" width={41} height={22}></Image>
           Kenya
         </h6>
-    
+
         <button
           className="kenya__btn"
           onMouseEnter={handleMouseEnter}
@@ -58,12 +58,9 @@ export default function Kenya() {
         >
           i
           {showTooltip && (
-            <div className="kenya__tooltip tooltip-2">
-              <h6>Sponsored data</h6>
-              <p>
-                Advantages of working with us Advantages of working with
-                usAdvantages of working
-              </p>
+            <div className="kenya__tooltip">
+              <p>Airtime Credit</p>
+              <p>Content Services</p>
             </div>
           )}
         </button>

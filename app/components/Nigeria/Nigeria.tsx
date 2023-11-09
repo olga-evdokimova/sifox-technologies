@@ -49,7 +49,7 @@ export default function Nigeria() {
           <Image src={"/nigeria.png"} alt="" width={41} height={22}></Image>
           Nigeria
         </h6>
-  
+
         <button
           className="nigeria__btn"
           onMouseEnter={handleMouseEnter2}
@@ -57,12 +57,9 @@ export default function Nigeria() {
         >
           i
           {showTooltip && (
-            <div className="nigeria__tooltip tooltip-2">
-              <h6>Sponsored data</h6>
-              <p>
-                Advantages of working with us Advantages of working with
-                usAdvantages of working
-              </p>
+            <div className="nigeria__tooltip">
+              <p>Data Sponsorship or Gifting</p>
+              <p>Data & Voice Distribution</p>
             </div>
           )}
         </button>

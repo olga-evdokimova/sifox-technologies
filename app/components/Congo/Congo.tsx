@@ -51,7 +51,7 @@ export default function Congo() {
           <Image src={"/congo.png"} alt="" width={41} height={22}></Image>
           DRC
         </h6>
-  
+
         <button
           className="congo__btn"
           onMouseEnter={handleMouseEnter}
@@ -59,12 +59,11 @@ export default function Congo() {
         >
           i
           {showTooltip && (
-            <div className="congo__tooltip tooltip-2">
-              <h6>Sponsored data</h6>
-              <p>
-                Advantages of working with us Advantages of working with
-                usAdvantages of working
-              </p>
+            <div className="congo__tooltip">
+              <p>Reverse Billing</p>
+              <p>Data & Voice Distribution</p>
+              <p>Data & Voice Sharing</p>
+              <p>Data & Voice Cost Sharing</p>
             </div>
           )}
         </button>
