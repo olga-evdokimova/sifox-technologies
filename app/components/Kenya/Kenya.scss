@@ -2,12 +2,13 @@
     position: absolute;
     top: 288px;
     right: 147px;
-    @media (max-width: 992px) {
-        right: 97px;
-    }
+
     @media (max-width: 768px) {
         top: 416px;
         right: 40px;
+    }
+    @media (max-width: 360px){
+        right: 0;
     }
     &__title {
         display: none;
@@ -184,7 +185,7 @@
             right: 123px;
             top: 162px;
         }
-        &-svg {
+        svg {
             @media (max-width: 767px) {
                 width: 25px;
                 height: 25px;

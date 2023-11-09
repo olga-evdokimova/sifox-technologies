@@ -43,6 +43,9 @@
             top: 101px;
             right: -34px;
         }
+        @media (max-width: 360px){
+            right: -74px;
+        }
     }
     &__ellipses {
         position: absolute;
