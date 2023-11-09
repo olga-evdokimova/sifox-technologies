@@ -11,11 +11,11 @@ export default function Nigeria() {
   const [showModal, setShowModal] = useState(false);
 
 
-  const handleMouseEnter2 = () => {
+  const handleMouseEnter = () => {
     setShowTooltip(true);
   };
 
-  const handleMouseLeave2 = () => {
+  const handleMouseLeave = () => {
     setShowTooltip(false);
   };
   const handleButtonClick = () => {
@@ -52,8 +52,8 @@ export default function Nigeria() {
 
         <button
           className="nigeria__btn"
-          onMouseEnter={handleMouseEnter2}
-          onMouseLeave={handleMouseLeave2}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           i
           {showTooltip && (
