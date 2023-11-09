@@ -117,7 +117,7 @@ export default function Hexagon(props: any) {
         <div className="hexagon__row even">
           <div className="hexagon__item">
             <div className="hexagon__content">
-              <Link href={"#"}>
+              <Link href={"/products/b2b-data-voice-sharing"}>
                 <svg
                   width="18"
                   height="19"
@@ -150,7 +150,7 @@ export default function Hexagon(props: any) {
           </div>
           <div className="hexagon__item">
             <div className="hexagon__content">
-              <Link href={"#"}>
+              <Link href={"/products/b2b-data-sponsorship-or-gifting"}>
                 <svg
                   width="18"
                   height="19"
@@ -184,7 +184,7 @@ export default function Hexagon(props: any) {
           </div>
           <div className="hexagon__item">
             <div className="hexagon__content">
-              <Link href={"#"}>
+              <Link href={"/products/b2c-cvm-campaign-management"}>
                 <svg
                   width="18"
                   height="19"
@@ -217,7 +217,7 @@ export default function Hexagon(props: any) {
         <div className="hexagon__row">
           <div className="hexagon__item">
             <div className="hexagon__content">
-              <Link href={"#"}>
+              <Link href={"/products/b2b-reverse-billing"}>
                 <svg
                   width="18"
                   height="19"
@@ -338,7 +338,7 @@ export default function Hexagon(props: any) {
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
           <div className="hexagon__item">
             <div className="hexagon__content">
-              <Link href={"#"}>
+              <Link href={"/products/b2b-data-voice-distribution"}>
                 <svg
                   width="18"
                   height="19"
