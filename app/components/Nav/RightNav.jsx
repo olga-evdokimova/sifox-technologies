@@ -83,12 +83,12 @@ export default function RightNav({ open }) {
               Content Services<span>Individuals</span>
             </Link>
           </li>
-          {/* <li className="nav-menu__list-item">
-              <Link href={"/products/b2c-cvm-campaigns-management"}>
-                CVM campaigns management
-                <span>HV customers</span>
-              </Link>
-            </li> */}
+          <li className="nav-menu__list-item">
+            <Link href={"/products/b2c-cvm-campaign-management"}>
+              CVM campaigns management
+              <span>HV customers</span>
+            </Link>
+          </li>
         </ul>
       )}
       <li
@@ -104,18 +104,25 @@ export default function RightNav({ open }) {
       {showListB2B && (
         <ul className="nav-menu__list">
           <li className="nav-menu__list-item">
-            <Link href={""}>
-              Data & Voice Sharing<span>Family</span>
+            <Link href={"/products/b2b-data-voice-sharing"}>
+              Data & Voice Sharing<span>Small and micro business</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={""}>
-              Data & Voice Cost Sharing<span>Friends and social buying</span>
+            <Link href={"/products/b2b-data-sponsorship-or-gifting"}>
+              Data Sponsorship or Gifting
+              <span> Enterprises and Governments</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={""}>
-              Social Network Bundles<span>Individuals and social buying</span>
+            <Link href={"/products/b2b-reverse-billing"}>
+              Reverse Billing<span>Enterprises and Governments</span>
+            </Link>
+          </li>
+          <li className="nav-menu__list-item">
+            <Link href={"/products/b2b-data-voice-distribution"}>
+              Data & Voice Distribution
+              <span>Distributors and resellers</span>
             </Link>
           </li>
         </ul>
