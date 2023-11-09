@@ -100,7 +100,7 @@ export default function Congo() {
               <Image src={"/congo.png"} alt="" width={41} height={22}></Image>
               DRC
             </h6>
-            <Link href={""}>
+            <Link href={"/products/b2b-reverse-billing"}>
               Reverse Billing
               <svg
                 width="19"
@@ -116,7 +116,7 @@ export default function Congo() {
                 />
               </svg>
             </Link>
-            <Link href={""}>
+            <Link href={"/products/b2b-data-voice-distribution"}>
               Data & Voice Distribution
               <svg
                 width="19"

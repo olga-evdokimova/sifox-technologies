@@ -96,7 +96,7 @@ export default function Nigeria() {
               <Image src={"/nigeria.png"} alt="" width={41} height={22}></Image>
               Nigeria
             </h6>
-            <Link href={""}>
+            <Link href={"/products/b2b-data-sponsorship-or-gifting"}>
               Data Sponsorship or Gifting
               <svg
                 width="19"
@@ -113,7 +113,7 @@ export default function Nigeria() {
               </svg>
             </Link>
 
-            <Link href={""}>
+            <Link href={"/products/b2b-data-voice-distribution"}>
               Data & Voice Distribution
               <svg
                 width="19"
