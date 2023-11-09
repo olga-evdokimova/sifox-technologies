@@ -6,7 +6,7 @@ export default function Footer() {
     return (
       <footer className="footer container">
      <Copyright />
-        <Link href={""} className="footer__privacy">
+        <Link href={"/privacy-policy"} className="footer__privacy">
           privacy policy
         </Link>
       </footer>
