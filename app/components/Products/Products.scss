@@ -3,7 +3,9 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
-
+    @media (max-width: 768px) {
+        justify-content: flex-start;
+    }
     &__ellipses {
         position: absolute;
         background-image: url("/products-ellipses.png");

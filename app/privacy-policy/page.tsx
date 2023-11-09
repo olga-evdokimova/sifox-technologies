@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+
 import AcccentTitle from "../components/AcccentTitle/AccentTitle";
 import Title from "../components/Title/Title";
 import "./style.scss";
@@ -83,7 +83,7 @@ export default function PrivacyPolicy() {
       </p>
       <p className="privacy-policy__text">
         For any further information or inquiries regarding this agreement,
-        please contact us at [insert contact information].
+        please contact us at (insert contact information).
       </p>
       <p className="privacy-policy__text">
         Thank you for visiting Sifox Technologies.
