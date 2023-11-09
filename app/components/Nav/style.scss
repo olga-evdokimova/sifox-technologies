@@ -27,7 +27,7 @@
         font-size: 20px;
         padding: 0 0px 5px;
         margin: 50px 10px 0;
-        cursor: pointer;
+        cursor: url('/cursor.png'), auto;
         color: var(--color-text-black);
         border-bottom: 2px solid var(--color-text-black);
 
@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    cursor: pointer;
+      cursor: url('/cursor.png'), auto;
     &[open] {
         span {
               background-color: var(--color-text-black);

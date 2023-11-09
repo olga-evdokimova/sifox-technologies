@@ -17,9 +17,8 @@ export default function About() {
             priority
           />
         </Link>
-        <Link href="#">
-          <AcccentTitle>About the company</AcccentTitle>
-        </Link>
+        <AcccentTitle>About the company</AcccentTitle>
+
         <h4 className="about__title">
           Providing cutting-edge solutions for mobile communications worldwide.
         </h4>
