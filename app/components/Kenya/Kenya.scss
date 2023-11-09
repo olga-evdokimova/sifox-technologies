@@ -48,16 +48,8 @@
                 fill: var(--color-hover);
             }
         }
-        .btn-1 {
-            top: -20px;
-            left: -7px;
-            transition: all 0.5s ease-out;
-            @media (max-width: 768px) {
-                top: -19px;
-                left: -12px;
-            }
-        }
-        .btn-2 {
+   
+        .kenya__btn {
             bottom: -7px;
             left: 68px;
             transition: all 0.5s ease-out;
@@ -77,30 +69,19 @@
         border-radius: 50%;
         font-size: 16px;
         font-weight: 600;
+          bottom: 42px;
+        left: 61px;
+        transition: all 0.5s ease-out;
         @media (max-width: 768px) {
             width: 21px;
             height: 21px;
             font-size: 16px;
-        }
-    }
-    .btn-1 {
-        top: 29px;
-        left: 29px;
-        transition: all 0.5s ease-out;
-        @media (max-width: 768px) {
-            top: 4px;
-            left: 5px;
-        }
-    }
-    .btn-2 {
-        bottom: 42px;
-        left: 61px;
-        transition: all 0.5s ease-out;
-        @media (max-width: 768px) {
-            bottom: 10px;
+              bottom: 10px;
             left: 25px;
         }
     }
+
+
     &__svg {
         transition: all 0.5s ease-out;
         @media (max-width: 768px) {
@@ -118,8 +99,12 @@
         border: 1px solid rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(5px);
         text-align: start;
+             left: -289px;
+        bottom: -170px;
         @media (max-width: 992px) {
             width: 280px;
+                 left: -243px;
+            bottom: -127px;
         }
         &::before {
             content: "";
@@ -129,6 +114,9 @@
             height: 27px;
             border-top: 32px solid transparent;
             border-right: 32px solid rgba(255, 255, 255, 0.1);
+             top: -33px;
+            right: 16px;
+            transform: rotate(0deg);
         }
 
         h6 {
@@ -151,33 +139,8 @@
             }
         }
     }
-    .tooltip-1 {
-        right: -20px;
-        top: -167px;
-        &::before {
-            bottom: -49px;
-            right: 20px;
-            transform: rotate(270deg);
-        }
-        @media (max-width: 992px) {
-            top: -130px;
-        }
-    }
-    .tooltip-2 {
-        left: -289px;
-        bottom: -170px;
-        &::before {
-            top: -33px;
-            right: 16px;
-            transform: rotate(0deg);
-        }
-        @media (max-width: 992px) {
-            left: -243px;
-            bottom: -127px;
-        }
-        @media (max-width: 768px) {
-        }
-    }
+
+
 }
 .modal-kenya {
     position: absolute;
@@ -252,6 +215,7 @@
         font-weight: 600;
         padding: 20px 20px 20px 0px;
         border-bottom: 2px solid var(--color-text-white);
+          cursor: url('/cursor.png'), auto;
         svg {
             margin-left: 20px;
         }

@@ -19,7 +19,7 @@
         align-items: center;
         opacity: 0;
         transition: all 0.5s ease-out;
-         cursor: url('/cursor.png'), auto;
+        cursor: url("/cursor.png"), auto;
         img {
             margin-right: 10px;
             @media (max-width: 768px) {
@@ -47,16 +47,8 @@
                 fill: var(--color-hover);
             }
         }
-        .btn-1 {
-            top: -7px;
-            left: 169px;
-            transition: all 0.5s ease-out;
-            @media (max-width: 768px) {
-                top: -1px;
-                left: 77px;
-            }
-        }
-        .btn-2 {
+
+        .nigeria__btn {
             bottom: -5px;
             left: 24px;
             transition: all 0.5s ease-out;
@@ -73,30 +65,18 @@
         border-radius: 50%;
         font-size: 16px;
         font-weight: 600;
-        @media (max-width: 768px) {
-            width: 21px;
-            height: 21px;
-            font-size: 16px;
-        }
-    }
-    .btn-1 {
-        top: 28px;
-        left: 117px;
-        transition: all 0.5s ease-out;
-        @media (max-width: 768px) {
-            top: 8px;
-            left: 61px;
-        }
-    }
-    .btn-2 {
         bottom: 31px;
         left: 43px;
         transition: all 0.5s ease-out;
         @media (max-width: 768px) {
+            width: 21px;
+            height: 21px;
+            font-size: 16px;
             bottom: 9px;
             left: 24px;
         }
     }
+
     &__svg {
         transition: all 0.5s ease-out;
         @media (max-width: 768px) {
@@ -106,6 +86,8 @@
     }
     &__tooltip {
         position: absolute;
+        left: -238px;
+        bottom: -170px;
         padding: 20px;
         width: 320px;
         z-index: 20;
@@ -116,6 +98,12 @@
         text-align: start;
         @media (max-width: 992px) {
             width: 280px;
+            left: -71px;
+            bottom: -130px;
+        }
+        @media (max-width: 768px) {
+            left: -30px;
+            bottom: -124px;
         }
         &::before {
             content: "";
@@ -125,6 +113,17 @@
             height: 27px;
             border-top: 32px solid transparent;
             border-right: 32px solid rgba(255, 255, 255, 0.1);
+            top: -33px;
+            right: 70px;
+            transform: rotate(0deg);
+            @media (max-width: 992px) {
+                top: -48px;
+                right: 150px;
+                transform: rotate(90deg);
+            }
+            @media (max-width: 768px) {
+                right: 193px;
+            }
         }
 
         h6 {
@@ -147,49 +146,8 @@
             }
         }
     }
-    .tooltip-1 {
-        right: -355px;
-        top: -105px;
-        @media (max-width: 992px) {
-            right: -194px;
-            top: -128px;
-        }
-        &::before {
-            bottom: 19px;
-            left: -65px;
-            transform: rotate(0deg);
-            @media (max-width: 992px) {
-                bottom: -49px;
-                left: 25px;
-                transform: rotate(270deg);
-            }
-        }
-    }
-    .tooltip-2 {
-        left: -238px;
-        bottom: -170px;
-        @media (max-width: 992px) {
-            left: -71px;
-            bottom: -130px;
-        }
-        @media (max-width: 768px) {
-            left: -30px;
-            bottom: -124px;
-        }
-        &::before {
-            top: -33px;
-            right: 70px;
-            transform: rotate(0deg);
-            @media (max-width: 992px) {
-                top: -48px;
-                right: 150px;
-                transform: rotate(90deg);
-            }
-            @media (max-width: 768px) {
-                right: 193px;
-            }
-        }
-    }
+
+ 
 }
 .modal-nigeria {
     position: absolute;
@@ -264,6 +222,7 @@
         font-weight: 600;
         padding: 20px 20px 20px 0px;
         border-bottom: 2px solid var(--color-text-white);
+          cursor: url('/cursor.png'), auto;
         svg {
             margin-left: 20px;
         }

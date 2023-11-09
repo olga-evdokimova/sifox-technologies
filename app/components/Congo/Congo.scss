@@ -22,7 +22,7 @@
         align-items: center;
         opacity: 0;
         transition: all 0.5s ease-out;
-        cursor: url('/cursor.png'), auto;
+        cursor: url("/cursor.png"), auto;
 
         img {
             margin-right: 10px;
@@ -51,17 +51,8 @@
                 fill: var(--color-hover);
             }
         }
-        .btn-1 {
-            top: -7px;
-            left: 48px;
 
-            transition: all 0.5s ease-out;
-            @media (max-width: 768px) {
-                top: -8px;
-                left: 34px;
-            }
-        }
-        .btn-2 {
+        .congo__btn {
             bottom: 39px;
             left: 245px;
             transition: all 0.5s ease-out;
@@ -82,30 +73,17 @@
         border-radius: 50%;
         font-size: 16px;
         font-weight: 600;
+        bottom: 106px;
+        left: 205px;
         @media (max-width: 768px) {
             width: 21px;
             height: 21px;
             font-size: 16px;
-        }
-    }
-    .btn-1 {
-        top: 70px;
-        left: 117px;
-        transition: all 0.5s ease-out;
-        @media (max-width: 768px) {
-            top: 16px;
-            left: 50px;
-        }
-    }
-    .btn-2 {
-        bottom: 106px;
-        left: 205px;
-        transition: all 0.5s ease-out;
-        @media (max-width: 768px) {
             bottom: 26px;
             left: 97px;
         }
     }
+
     &__svg {
         transition: all 0.5s ease-out;
         @media (max-width: 768px) {
@@ -123,8 +101,12 @@
         border: 1px solid rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(5px);
         text-align: start;
+        left: -289px;
+        bottom: -170px;
         @media (max-width: 992px) {
             width: 280px;
+              left: -194px;
+            bottom: -130px;
         }
         &::before {
             content: "";
@@ -134,10 +116,16 @@
             height: 27px;
             border-top: 32px solid transparent;
             border-right: 32px solid rgba(255, 255, 255, 0.1);
+             top: -33px;
+            right: 16px;
+            transform: rotate(0deg);
+            @media (max-width: 992px) {
+                right: 64px;
+            }
         }
 
         h6 {
-              font-family: var(--font-inter);
+            font-family: var(--font-inter);
             font-size: 16px;
             font-weight: 600;
             @media (max-width: 992px) {
@@ -145,7 +133,7 @@
             }
         }
         p {
-              font-family: var(--font-inter);
+            font-family: var(--font-inter);
             font-size: 16px;
             font-weight: 400;
             opacity: 0.5;
@@ -156,40 +144,8 @@
             }
         }
     }
-    .tooltip-1 {
-        right: -355px;
-        top: -105px;
-        &::before {
-            bottom: 19px;
-            left: -65px;
-            transform: rotate(0deg);
-            @media (max-width: 992px) {
-                bottom: -48px;
-                left: 33px;
-                transform: rotate(270deg);
-            }
-        }
-        @media (max-width: 992px) {
-            right: -188px;
-            top: -128px;
-        }
-    }
-    .tooltip-2 {
-        left: -289px;
-        bottom: -170px;
-        &::before {
-            top: -33px;
-            right: 16px;
-            transform: rotate(0deg);
-            @media (max-width: 992px) {
-                right: 64px;
-            }
-        }
-        @media (max-width: 992px) {
-            left: -194px;
-            bottom: -130px;
-        }
-    }
+
+
 }
 .modal-congo {
     position: absolute;
@@ -203,13 +159,7 @@
     @media (max-width: 768px) {
         top: 100px;
     }
-    @media (max-width: 480px) {
-        // top: 200px;
-        // right: 50%;
-        // transform: translateX(50%);
-    }
-    &__img {
-    }
+
     &__content {
         display: flex;
         align-items: flex-start;
@@ -264,6 +214,7 @@
         font-weight: 600;
         padding: 20px 20px 20px 0px;
         border-bottom: 2px solid var(--color-text-white);
+          cursor: url('/cursor.png'), auto;
         svg {
             margin-left: 20px;
         }

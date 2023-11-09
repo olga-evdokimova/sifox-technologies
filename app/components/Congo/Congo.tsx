@@ -3,26 +3,20 @@ import { useState } from "react";
 import Image from "next/image";
 import "./Congo.scss";
 import Link from "next/link";
-import "../ModalCases/ModalCases.scss";
+
 
 export default function Congo() {
-  const [showTooltip1, setShowTooltip1] = useState(false);
-  const [showTooltip2, setShowTooltip2] = useState(false);
+
+  const [showTooltip, setShowTooltip] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const handleMouseEnter1 = () => {
-    setShowTooltip1(true);
+
+
+  const handleMouseEnter = () => {
+    setShowTooltip(true);
   };
 
-  const handleMouseLeave1 = () => {
-    setShowTooltip1(false);
-  };
-
-  const handleMouseEnter2 = () => {
-    setShowTooltip2(true);
-  };
-
-  const handleMouseLeave2 = () => {
-    setShowTooltip2(false);
+  const handleMouseLeave = () => {
+    setShowTooltip(false);
   };
   const handleButtonClick = () => {
     setShowModal(true);
@@ -57,29 +51,14 @@ export default function Congo() {
           <Image src={"/congo.png"} alt="" width={41} height={22}></Image>
           DRC
         </h6>
+  
         <button
-          className="congo__btn btn-1"
-          onMouseEnter={handleMouseEnter1}
-          onMouseLeave={handleMouseLeave1}
+          className="congo__btn"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           i
-          {showTooltip1 && (
-            <div className="congo__tooltip tooltip-1">
-              <h6>Data distribution</h6>
-              <p>
-                Advantages of working with us Advantages of working with
-                usAdvantages of working
-              </p>
-            </div>
-          )}
-        </button>
-        <button
-          className="congo__btn btn-2"
-          onMouseEnter={handleMouseEnter2}
-          onMouseLeave={handleMouseLeave2}
-        >
-          i
-          {showTooltip2 && (
+          {showTooltip && (
             <div className="congo__tooltip tooltip-2">
               <h6>Sponsored data</h6>
               <p>
