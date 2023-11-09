@@ -1,13 +1,22 @@
 import Link from "next/link";
 import "./About.scss";
 import AcccentTitle from "../AcccentTitle/AccentTitle";
-
+import Image from "next/image";
 
 export default function About() {
   return (
     <section className="about" id="about">
       <div className="about__content">
         <div className="about__ellipses"></div>
+        <Link href={"/"} className="header__logo">
+          <Image
+            src={"/logo.svg"}
+            alt="logo"
+            width={100}
+            height={46}
+            priority
+          />
+        </Link>
         <Link href="#">
           <AcccentTitle>About the company</AcccentTitle>
         </Link>
