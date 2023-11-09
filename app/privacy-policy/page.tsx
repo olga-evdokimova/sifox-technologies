@@ -6,6 +6,7 @@ import NexLink from "next/link";
 export default function PrivacyPolicy() {
   return (
     <div className="privacy-policy">
+      <div className="privacy-policy__ellipses"></div>
       <NexLink className="privacy-policy__backward" href="/">
         <svg
           width="41"
