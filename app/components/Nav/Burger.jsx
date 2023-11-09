@@ -5,12 +5,11 @@ import { usePathname } from "next/navigation";
 export default function Burger() {
   const [open, setOpen] = useState(false);
 
-  // где я
   const pathname = usePathname();
 
   useEffect(() => {
-    setOpen(false); // делай open false
-  }, [pathname]); // вызывай эффект когда поменялся pathname
+    setOpen(false); 
+  }, [pathname]); 
 
   useEffect(() => {
     const body = document.body;

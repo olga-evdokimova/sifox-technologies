@@ -12,21 +12,18 @@ export default function RightNav({ open }) {
   const [BorderB2C, setBorderB2C] = useState(true);
   const [BorderB2B, setBorderB2B] = useState(true);
 
-  // где я
   const pathname = usePathname();
 
   useEffect(() => {
-    // console.log(`App is changing to ${pathname}`);
-
-    { // тут внутри выключаем всякие бордеры
+    {
       setShowListB2C(false);
-      setButtonColorB2C((prevColor) =>
-        prevColor === "black" ? "#e0933e" : "black"
-      );
+      setShowListB2B(false);
+      setButtonColorB2C("black");
+      setButtonColorB2B("black");
       setBorderB2C(true);
+      setBorderB2B(true);
     }
-
-  }, [pathname]); // вызывай эффект когда поменялся pathname
+  }, [pathname]); 
 
   const handleItemClickB2C = () => {
     setShowListB2C(!showListB2C);
