@@ -108,7 +108,7 @@ export default function Hexagon(props: any) {
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
-              <Image src="/b2c/b2c-1.png " alt="" fill sizes="1000" />
+              <Image src="/b2c/b2c-1.png" alt="" fill sizes="1000" />
             </div>
           </div>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
