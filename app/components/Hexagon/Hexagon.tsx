@@ -4,13 +4,18 @@ import Image from "next/image";
 import React, { useRef, useState } from "react";
 import Title from "../Title/Title";
 import Link from "next/link";
+import { PullState } from "../PullState/PullState";
 
-export default function Hexagon(props: any) {
+export type HexagonProps = {
+  
+};
+
+export default function Hexagon(props: HexagonProps) {
   const hexagonRef = useRef(null);
   const leftRef = useRef(null);
   const rightRef = useRef(null);
 
-  const [styleName, setStyleName] = useState<string>("style_left");
+  const styleName = PullState.useState(s => s.hexagonStyleName);
 
   return (
     <section className="hexagon" ref={hexagonRef}>
@@ -21,7 +26,10 @@ export default function Hexagon(props: any) {
             <Title>B2B Products</Title>
             <button
               onClick={() => {
-                setStyleName("style_right");
+                // setStyleName("style_right");
+                PullState.update(state => { 
+                  state.hexagonStyleName = "style_right";
+                })
               }}
             >
               B2C <span>PRODUCTS</span>{" "}
@@ -50,7 +58,10 @@ export default function Hexagon(props: any) {
             <Title>B2C Products</Title>
             <button
               onClick={() => {
-                setStyleName("style_left");
+                // setStyleName("style_left");
+                PullState.update(state => {
+                  state.hexagonStyleName = "style_left";
+                });
               }}
             >
               <svg
@@ -414,21 +425,20 @@ export default function Hexagon(props: any) {
             href={"/products/b2c-content-services"}
           >
             <div className="hexagon__content">
-         
-                <svg
-                  width="18"
-                  height="19"
-                  viewBox="0 0 18 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                    stroke="white"
-                    strokeWidth="3"
-                  />
-                </svg>
-    
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                  stroke="white"
+                  strokeWidth="3"
+                />
+              </svg>
+
               <h6>
                 Content
                 <br />

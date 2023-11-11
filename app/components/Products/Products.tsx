@@ -1,9 +1,10 @@
 "use client";
-import Hexagon from "../Hexagon/Hexagon";
+import Hexagon, { HexagonProps } from "../Hexagon/Hexagon";
 import "./Products.scss";
 
-export default function Products() {
- 
+export type ProductsProps = { }
+
+export default function Products(props: ProductsProps) {
   return (
     <section className="products">
       <div className="products__ellipses"></div>

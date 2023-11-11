@@ -3,15 +3,14 @@
 import "./TopBlock.scss";
 import Link from "next/link";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { PullState } from "../PullState/PullState";
 
-export default function TopBlock() {
-  const scrollTo = () => {
-    scroll.scrollTo({
-      smooth: true,
-      duration: 500,
-      offset: -100,
-    });
-  };
+export type TopBlockProps = {
+
+}
+
+export default function TopBlock(props: TopBlockProps) {
+
   return (
     <section className="top-block container">
       <h1>
@@ -23,14 +22,23 @@ export default function TopBlock() {
       </h1>
       <ul className="top-block__list">
         <li>
-          <ScrollLink to="b2b" smooth={true} duration={1500} onClick={scrollTo}>
+          <ScrollLink to="b2b" smooth={true} duration={1500}>
             B2B
             <br />
             Products
           </ScrollLink>
         </li>
         <li>
-          <ScrollLink to="b2с" smooth={true} duration={1500} onClick={scrollTo}>
+          <ScrollLink
+            to="b2c"
+            smooth={true}
+            duration={1500}
+            onClick={() => { 
+              PullState.update(state => {
+                state.hexagonStyleName = "style_right";
+              })
+            }}
+          >
             B2C
             <br />
             Products
@@ -41,7 +49,6 @@ export default function TopBlock() {
             to="about"
             smooth={true}
             duration={1500}
-            onClick={scrollTo}
           >
             About
           </ScrollLink>
