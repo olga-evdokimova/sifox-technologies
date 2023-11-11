@@ -1,18 +1,16 @@
-
 "use client";
 import "./Hexagon.scss";
 import Image from "next/image";
 import React, { useRef, useState } from "react";
 import Title from "../Title/Title";
 import Link from "next/link";
- 
+
 export default function Hexagon(props: any) {
   const hexagonRef = useRef(null);
   const leftRef = useRef(null);
   const rightRef = useRef(null);
 
-  const [styleName, setStyleName] = useState<string>("style_left")
-  
+  const [styleName, setStyleName] = useState<string>("style_left");
 
   return (
     <section className="hexagon" ref={hexagonRef}>
@@ -82,23 +80,24 @@ export default function Hexagon(props: any) {
           <div className="hexagon__item">
             <div className="hexagon__hover"></div>
           </div>
-          <div className="hexagon__item">
+          <Link
+            className="hexagon__item"
+            href={"/products/b2c-data-voice-sharing"}
+          >
             <div className="hexagon__content">
-              <Link href={"/products/b2c-data-voice-sharing"}>
-                <svg
-                  width="18"
-                  height="19"
-                  viewBox="0 0 18 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                    stroke="white"
-                    strokeWidth="3"
-                  />
-                </svg>
-              </Link>
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                  stroke="white"
+                  strokeWidth="3"
+                />
+              </svg>
               <h6>
                 Data & Voice
                 <br />
@@ -110,28 +109,30 @@ export default function Hexagon(props: any) {
             <div className="hexagon__img">
               <Image src="/b2c/b2c-1.png" alt="" fill sizes="1000" />
             </div>
-          </div>
+          </Link>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
         </div>
 
         <div className="hexagon__row even">
-          <div className="hexagon__item">
+          <Link
+            className="hexagon__item"
+            href={"/products/b2b-data-voice-sharing"}
+          >
             <div className="hexagon__content">
-              <Link href={"/products/b2b-data-voice-sharing"}>
-                <svg
-                  width="18"
-                  height="19"
-                  viewBox="0 0 18 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                    stroke="white"
-                    strokeWidth="3"
-                  />
-                </svg>
-              </Link>
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                  stroke="white"
+                  strokeWidth="3"
+                />
+              </svg>
+
               <h6>
                 Data & Voice
                 <br />
@@ -147,24 +148,25 @@ export default function Hexagon(props: any) {
             <div className="hexagon__img">
               <Image src="/b2b/b2b-1.png" alt="" fill sizes="1000" />
             </div>
-          </div>
-          <div className="hexagon__item">
+          </Link>
+          <Link
+            className="hexagon__item"
+            href={"/products/b2b-data-sponsorship-or-gifting"}
+          >
             <div className="hexagon__content">
-              <Link href={"/products/b2b-data-sponsorship-or-gifting"}>
-                <svg
-                  width="18"
-                  height="19"
-                  viewBox="0 0 18 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                    stroke="white"
-                    strokeWidth="3"
-                  />
-                </svg>
-              </Link>
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                  stroke="white"
+                  strokeWidth="3"
+                />
+              </svg>
               <h6>
                 Data Sponsorship
                 <br />
@@ -178,27 +180,29 @@ export default function Hexagon(props: any) {
             <div className="hexagon__img">
               <Image src="/b2b/b2b-4.png" alt="" fill sizes="1000" />
             </div>
-          </div>
+          </Link>
           <div className="hexagon__item">
             <div className="hexagon__hover"></div>
           </div>
-          <div className="hexagon__item">
+          <Link
+            className="hexagon__item"
+            href={"/products/b2c-cvm-campaign-management"}
+          >
             <div className="hexagon__content">
-              <Link href={"/products/b2c-cvm-campaign-management"}>
-                <svg
-                  width="18"
-                  height="19"
-                  viewBox="0 0 18 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                    stroke="white"
-                    strokeWidth="3"
-                  />
-                </svg>
-              </Link>
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                  stroke="white"
+                  strokeWidth="3"
+                />
+              </svg>
+
               <h6>
                 CVM campaigns
                 <br />
@@ -210,28 +214,30 @@ export default function Hexagon(props: any) {
             <div className="hexagon__img">
               <Image src="/b2c/b2c-2.png" alt="" fill sizes="1000" />
             </div>
-          </div>
+          </Link>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
         </div>
 
         <div className="hexagon__row">
-          <div className="hexagon__item">
+          <Link
+            className="hexagon__item"
+            href={"/products/b2b-reverse-billing"}
+          >
             <div className="hexagon__content">
-              <Link href={"/products/b2b-reverse-billing"}>
-                <svg
-                  width="18"
-                  height="19"
-                  viewBox="0 0 18 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                    stroke="white"
-                    strokeWidth="3"
-                  />
-                </svg>
-              </Link>
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                  stroke="white"
+                  strokeWidth="3"
+                />
+              </svg>
+
               <h6>
                 Reverse
                 <br />
@@ -245,30 +251,32 @@ export default function Hexagon(props: any) {
             <div className="hexagon__img">
               <Image src="/b2b/b2b-2.png" alt="" fill sizes="1000" />
             </div>
-          </div>
+          </Link>
           <div className="hexagon__item"></div>
           <div className="hexagon__item">
             {" "}
             <div className="hexagon__hover"></div>
           </div>
           <div className="hexagon__item"></div>
-          <div className="hexagon__item">
+          <Link
+            className="hexagon__item"
+            href={"/products/b2c-data-voice-cost-sharing"}
+          >
             <div className="hexagon__content">
-              <Link href={"/products/b2c-data-voice-cost-sharing"}>
-                <svg
-                  width="18"
-                  height="19"
-                  viewBox="0 0 18 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                    stroke="white"
-                    strokeWidth="3"
-                  />
-                </svg>
-              </Link>
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                  stroke="white"
+                  strokeWidth="3"
+                />
+              </svg>
+
               <h6>
                 Data & Voice
                 <br />
@@ -283,7 +291,7 @@ export default function Hexagon(props: any) {
             <div className="hexagon__img">
               <Image src="/b2c/b2c-6.png" alt="" fill sizes="1000" />
             </div>
-          </div>
+          </Link>
           <div className="hexagon__item">
             <div className="hexagon__hover"></div>
           </div>
@@ -300,23 +308,25 @@ export default function Hexagon(props: any) {
             {" "}
             <div className="hexagon__hover"></div>
           </div>
-          <div className="hexagon__item">
+          <Link
+            className="hexagon__item"
+            href={"/products/b2c-social-network-bundles"}
+          >
             <div className="hexagon__content">
-              <Link href={"/products/b2c-social-network-bundles"}>
-                <svg
-                  width="18"
-                  height="19"
-                  viewBox="0 0 18 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                    stroke="white"
-                    strokeWidth="3"
-                  />
-                </svg>
-              </Link>
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                  stroke="white"
+                  strokeWidth="3"
+                />
+              </svg>
+
               <h6>
                 Social Network
                 <br />
@@ -331,28 +341,30 @@ export default function Hexagon(props: any) {
             <div className="hexagon__img">
               <Image src="/b2c/b2c-4.png" alt="" fill sizes="1000" />
             </div>
-          </div>
+          </Link>
         </div>
 
         <div className="hexagon__row">
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
-          <div className="hexagon__item">
+          <Link
+            className="hexagon__item"
+            href={"/products/b2b-data-voice-distribution"}
+          >
             <div className="hexagon__content">
-              <Link href={"/products/b2b-data-voice-distribution"}>
-                <svg
-                  width="18"
-                  height="19"
-                  viewBox="0 0 18 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                    stroke="white"
-                    strokeWidth="3"
-                  />
-                </svg>
-              </Link>
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                  stroke="white"
+                  strokeWidth="3"
+                />
+              </svg>
+
               <h6>
                 Data & Voice
                 <br />
@@ -367,25 +379,24 @@ export default function Hexagon(props: any) {
             <div className="hexagon__img">
               <Image src="/b2b/b2b-3.png" alt="" fill sizes="1000" />
             </div>
-          </div>
+          </Link>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
-          <div className="hexagon__item">
+          <Link className="hexagon__item" href={"/products/b2c-airtime-credit"}>
             <div className="hexagon__content">
-              <Link href={"/products/b2c-airtime-credit"}>
-                <svg
-                  width="18"
-                  height="19"
-                  viewBox="0 0 18 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                    stroke="white"
-                    strokeWidth="3"
-                  />
-                </svg>
-              </Link>
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
+                  stroke="white"
+                  strokeWidth="3"
+                />
+              </svg>
+
               <h6>
                 Airtime
                 <br />
@@ -397,10 +408,13 @@ export default function Hexagon(props: any) {
             <div className="hexagon__img">
               <Image src="/b2c/b2c-5.png" alt="" fill sizes="1000" />
             </div>
-          </div>
-          <div className="hexagon__item">
+          </Link>
+          <Link
+            className="hexagon__item"
+            href={"/products/b2c-content-services"}
+          >
             <div className="hexagon__content">
-              <Link href={"/products/b2c-content-services"}>
+         
                 <svg
                   width="18"
                   height="19"
@@ -414,7 +428,7 @@ export default function Hexagon(props: any) {
                     strokeWidth="3"
                   />
                 </svg>
-              </Link>
+    
               <h6>
                 Content
                 <br />
@@ -426,7 +440,7 @@ export default function Hexagon(props: any) {
             <div className="hexagon__img">
               <Image src="/b2c/b2c-3.png" alt="" fill sizes="1000" />
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
