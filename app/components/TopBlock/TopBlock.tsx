@@ -22,7 +22,16 @@ export default function TopBlock(props: TopBlockProps) {
       </h1>
       <ul className="top-block__list">
         <li>
-          <ScrollLink to="b2b" smooth={true} duration={1500}>
+          <ScrollLink
+            to="b2b"
+            smooth={true}
+            duration={1500}
+            onClick={() => {
+              PullState.update((state) => {
+                state.hexagonStyleName = "style_left";
+              });
+            }}
+          >
             B2B
             <br />
             Products
@@ -33,10 +42,10 @@ export default function TopBlock(props: TopBlockProps) {
             to="b2c"
             smooth={true}
             duration={1500}
-            onClick={() => { 
-              PullState.update(state => {
+            onClick={() => {
+              PullState.update((state) => {
                 state.hexagonStyleName = "style_right";
-              })
+              });
             }}
           >
             B2C
@@ -45,11 +54,7 @@ export default function TopBlock(props: TopBlockProps) {
           </ScrollLink>
         </li>
         <li>
-          <ScrollLink
-            to="about"
-            smooth={true}
-            duration={1500}
-          >
+          <ScrollLink to="about" smooth={true} duration={1500}>
             About
           </ScrollLink>
         </li>

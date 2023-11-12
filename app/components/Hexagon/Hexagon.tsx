@@ -15,11 +15,11 @@ export default function Hexagon(props: HexagonProps) {
   const leftRef = useRef(null);
   const rightRef = useRef(null);
 
-  const styleName = PullState.useState(s => s.hexagonStyleName);
+  const styleName = PullState.useState((state) => state.hexagonStyleName);
 
   return (
     <section className="hexagon" ref={hexagonRef}>
-      <div className={`hexagon__inner ${styleName}`}>
+      <div className={`hexagon__inner ${styleName}`} id="hexagon">
         <div className="hexagon__block-left" ref={leftRef} id="b2b">
           {" "}
           <div className="hexagon__nav left">

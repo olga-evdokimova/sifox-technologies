@@ -19,9 +19,9 @@ export default function PageSlug({ params }: any) {
       />
       <div className="post">
         <div className="post__ellipses"></div>
-        <a
+        <a                                         
           className="post__backward"
-          href={post.kind === "b2b" ? "/#b2b" : "/#b2c"}
+          href={`/?pk=${post.kind}#hexagon`}
         >
           <svg
             width="41"

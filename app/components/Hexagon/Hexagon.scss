@@ -350,10 +350,34 @@
         left: 0;
     }
 }
+.style_left_instant {
+    left: 0px;
+
+    @media (max-width: 1440px) {
+        left: 135px;
+    }
+    @media (max-width: 768px) {
+        left: 0;
+    }
+}
 
 .style_right {
     left: -1500px;
     transition: left 0.8s ease;
+
+    @media (max-width: 1440px) {
+        left: -1376px;
+    }
+    @media (max-width: 1100px) {
+        left: -850px;
+    }
+    @media (max-width: 768px) {
+        left: -990px;
+    }
+}
+
+.style_right_instant {
+    left: -1500px;
 
     @media (max-width: 1440px) {
         left: -1376px;
