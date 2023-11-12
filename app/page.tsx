@@ -24,17 +24,20 @@ export default function Home() {
 
   useEffect(() => {
     console.log(params);
-    const kind = params.get("pk");
-    console.log(kind);
-    if (kind === null) {
-      return;
+    const pkParam = params.get("pk");
+    console.log(pkParam);
+    
+    if (pkParam) {
+      PullState.update((state) => {
+        state.hexagonStyleName =
+          pkParam === "B2C" ? "style_right_instant" : "style_left_instant";
+      });
+      
+      //  const hexagon = document.getElementById("hexagon");
+      // console.log("top", hexagon?.offsetTop)
+   //   window.scroll({top: hexagon?.offsetTop, behavior: 'instant'});
+      // hexagon?.scrollIntoView({ behavior: "instant", block: "nearest" });
     }
-    PullState.update((state) => {
-      state.hexagonStyleName =
-        kind === "B2C" ? "style_right_instant" : "style_left_instant";
-    });
-    const hexagon = document.getElementById("hexagon");
-    hexagon?.scrollIntoView({ behavior: "instant" });
   }, [params]);
 
   return (
