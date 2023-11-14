@@ -24,8 +24,9 @@ export default function Home() {
           pkParam === "B2C" ? "style_right_instant" : "style_left_instant";
       });
       
-      // const hexagon = document.getElementById("hexagon");
-      // hexagon.scrollIntoView({ behavior: "smooth"});
+      const hexagon = document.getElementById("hexagon");
+      
+      hexagon?.scrollIntoView({ behavior: "smooth"});
 
     }
   }, [params]);
