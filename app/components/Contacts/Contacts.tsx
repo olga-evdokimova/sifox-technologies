@@ -11,14 +11,14 @@ export default function Contacts() {
           <AcccentTitle>Contacts</AcccentTitle>
           <span>Head office:</span>
           <div className="contacts__address">
-            5th Floor, The CORE Building No. 62 , ICT Avenue, Cybercity, Ebene,
+            5th Floor, The CORE Building No. 62, ICT Avenue, Cybercity, Ebene,
             Mauritius
           </div>
           <span>phone:</span>
           <Link href="tel:+2305773116">+230 5773 116</Link>
           <span>Operational HQ in Kenya:</span>
           <div className="contacts__address">
-            7th Floor, CMS Africa , Chania Avenue, Kilimani, Nairobi, Kenya
+            7th Floor, CMS Africa, Chania Avenue, Kilimani, Nairobi, Kenya
           </div>
           <span>phone:</span>
           <Link href="tel:+254786898658">+254 786 898 658</Link>

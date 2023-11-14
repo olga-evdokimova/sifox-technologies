@@ -16,8 +16,9 @@ export default function Cases() {
       <div className="cases__titles">
         <Title>Cases</Title>
         <p className="cases__subtitle">
-          Advantages of working with us Advantages of working with usAdvantages
-          of working
+          SIFOX Technologies has successfully developed and continues to
+          maintain a variety of distinctive projects across various African
+          countries.
         </p>
         <Partners />
       </div>
