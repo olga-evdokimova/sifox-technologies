@@ -1,6 +1,6 @@
 "use client";
 import About from "./components/About/About";
-import Products from "./components/Products/Products";
+import Products from "./components/Products/Products";``
 import Platform from "./components/Platform/Platform";
 import TopBlock from "./components/TopBlock/TopBlock";
 import MainImage from "./components/MainImage/MainImage";
