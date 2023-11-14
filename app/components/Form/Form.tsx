@@ -23,15 +23,8 @@ export default function Form() {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
  
-   const handleCloseSubmittedMessage = () => {
-     setIsSubmitted(false);
-   };
-
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    setIsSubmitted(true);
-    reset();
-    console.log("Форма отправлена!");
-    console.log(data);
+  const handleCloseSubmittedMessage = () => {
+    setIsSubmitted(false);
   };
 
   const form = useRef();
@@ -41,6 +34,8 @@ export default function Form() {
 
     emailjs.sendForm('service_gkyuxkt', 'template_xk593fv', form.current, '0BBekWC46Hftu0d4A')
       .then((result) => {
+          setIsSubmitted(true);
+          reset();
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
@@ -55,7 +50,7 @@ export default function Form() {
         expertise
       </p>
 
-      <form className="form__form" ref={form} onSubmit={handleSubmit(onSubmit), sendEmail}>
+      <form className="form__form" ref={form} onSubmit={sendEmail}>
         <label
           className={`form__label ${
             errors.name ? "label-error" : isValid ? "label-success" : ""
