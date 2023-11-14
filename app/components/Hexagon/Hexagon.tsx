@@ -18,18 +18,17 @@ export default function Hexagon(props: HexagonProps) {
   const styleName = PullState.useState((state) => state.hexagonStyleName);
 
   return (
-    <section className="hexagon" ref={hexagonRef}>
-      <div className={`hexagon__inner ${styleName}`} id="hexagon">
+    <section className="hexagon" ref={hexagonRef} id="hexagon">
+      <div className={`hexagon__inner ${styleName}`}>
         <div className="hexagon__block-left" ref={leftRef} id="b2b">
           {" "}
           <div className="hexagon__nav left">
             <Title>B2B Products</Title>
             <button
               onClick={() => {
-                // setStyleName("style_right");
-                PullState.update(state => { 
+                PullState.update((state) => {
                   state.hexagonStyleName = "style_right";
-                })
+                });
               }}
             >
               B2C <span>PRODUCTS</span>{" "}
@@ -58,8 +57,7 @@ export default function Hexagon(props: HexagonProps) {
             <Title>B2C Products</Title>
             <button
               onClick={() => {
-                // setStyleName("style_left");
-                PullState.update(state => {
+                PullState.update((state) => {
                   state.hexagonStyleName = "style_left";
                 });
               }}
