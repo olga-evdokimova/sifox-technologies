@@ -1,8 +1,9 @@
 //@ts-nocheck
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Form.scss";
 import Title from "../Title/Title";
 import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
 
 type FormValues = {
   name: string;
@@ -33,6 +34,19 @@ export default function Form() {
     console.log(data);
   };
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_gkyuxkt', 'template_xk593fv', form.current, '0BBekWC46Hftu0d4A')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <div className="form">
       <Title>LET US HELP YOU</Title>
@@ -41,7 +55,7 @@ export default function Form() {
         expertise
       </p>
 
-      <form className="form__form" onSubmit={handleSubmit(onSubmit)}>
+      <form className="form__form" ref={form} onSubmit={handleSubmit(onSubmit), sendEmail}>
         <label
           className={`form__label ${
             errors.name ? "label-error" : isValid ? "label-success" : ""
