@@ -26,7 +26,7 @@ export default function Home() {
       
       const hexagon = document.getElementById("hexagon");
       
-      hexagon.scrollIntoView({ behavior: "smooth"});
+      hexagon?.scrollIntoView({ behavior: "smooth"});
 
     }
   }, [params]);
