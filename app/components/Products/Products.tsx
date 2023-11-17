@@ -6,9 +6,9 @@ export type ProductsProps = { }
 
 export default function Products(props: ProductsProps) {
   return (
-    <section className="products">
+    <section className="products" id="hexagon">
       <div className="products__ellipses"></div>
-      <Hexagon/>
+      <Hexagon />
     </section>
   );
 }

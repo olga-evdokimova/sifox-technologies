@@ -18,7 +18,7 @@ export default function Hexagon(props: HexagonProps) {
   const styleName = PullState.useState((state) => state.hexagonStyleName);
 
   return (
-    <section className="hexagon" ref={hexagonRef} id="hexagon">
+    <section className="hexagon" ref={hexagonRef} >
       <div className={`hexagon__inner ${styleName}`}>
         <div className="hexagon__block-left" ref={leftRef} id="b2b">
           {" "}
