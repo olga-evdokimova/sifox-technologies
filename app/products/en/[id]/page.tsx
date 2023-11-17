@@ -4,10 +4,14 @@ import Title from "@/app/components/Title/Title";
 import Image from "next/image";
 import { PullStateServerSide } from "@/app/components/PullState/PullState";
 export default function PageSlug({ params }: any) {
-  const post = getPostById(params.id + ".html");
+  const post = getPostById(params.id + ".html", "en");
+
+  // mywebsite.com/products/en/b2c-blablabla.html
+  // mywebsite.com/products/fr/b2c-blablabla.html
 
   // const { PullState } = PullStateServerSide.useStores()
 
+  // Это утащить в компонент чтобы не дублировать код в en и fr
   return (
     <>
       <Image
@@ -19,10 +23,7 @@ export default function PageSlug({ params }: any) {
       />
       <div className="post">
         <div className="post__ellipses"></div>
-        <a                                         
-          className="post__backward"
-          href={`/?pk=${post.kind}`}
-        >
+        <a className="post__backward" href={`/?pk=${post.kind}`}>
           <svg
             width="41"
             height="14"

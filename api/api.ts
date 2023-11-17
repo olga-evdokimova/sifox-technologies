@@ -23,8 +23,8 @@ const getMetadata = (html: string, key: string) => {
     return match[1]
 }
 
-export const getPostById = (slug: string): Post => {
-    const fullPath = join(postsDirectory, slug)
+export const getPostById = (slug: string, lang: string): Post => {
+    const fullPath = join(postsDirectory, lang, slug)
     const fileContent = fs.readFileSync(fullPath, 'utf8')
 
     const title = getMetadata(fileContent, 'title') || "Untitled"
@@ -43,7 +43,7 @@ export const getPostById = (slug: string): Post => {
     }
 }
 
-export const posts = fs.readdirSync(postsDirectory).map(x => getPostById(x))
+// export const posts = fs.readdirSync(postsDirectory).map(x => getPostById(x, 'jopa'))
 
 
 

@@ -1,9 +1,10 @@
-//@ts-nocheck
+
 "use client";
 import "./TopBlock.scss";
 import Link from "next/link";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { PullState } from "../PullState/PullState";
+import { Dictionary } from "../PullState/Dictionary";
 
 export type TopBlockProps = {
 
@@ -11,15 +12,27 @@ export type TopBlockProps = {
 
 export default function TopBlock(props: TopBlockProps) {
 
+  const lang = PullState.useState(state => state.lang)
+
   return (
     <section className="top-block container">
       <h1>
-        Connecting the World:
+        {Dictionary[lang]["connect_the_world"]}:
         <br />
         Empowering Telecoms for Seamless
         <br />
         Data and Voice Access
       </h1>
+      <button onClick={() => { 
+        PullState.update((state) => {
+          state.lang = "en"
+        })
+      }}>English</button>
+      <button onClick={() => { 
+        PullState.update((state) => {
+          state.lang = "fr"
+        })
+      }}>French</button>
       <ul className="top-block__list">
         <li>
           <ScrollLink

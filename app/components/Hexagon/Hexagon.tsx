@@ -16,6 +16,7 @@ export default function Hexagon(props: HexagonProps) {
   const rightRef = useRef(null);
 
   const styleName = PullState.useState((state) => state.hexagonStyleName);
+  const lang = PullState.useState((state) => state.lang);
 
   return (
     <section className="hexagon" ref={hexagonRef} >
@@ -91,7 +92,7 @@ export default function Hexagon(props: HexagonProps) {
           </div>
           <Link
             className="hexagon__item"
-            href={"/products/b2c-data-voice-sharing"}
+            href={`/products/${lang}/b2c-data-voice-sharing`}
           >
             <div className="hexagon__content">
               <svg
