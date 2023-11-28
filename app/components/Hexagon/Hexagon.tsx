@@ -19,7 +19,7 @@ export default function Hexagon(props: HexagonProps) {
   const lang = PullState.useState((state) => state.lang);
 
   return (
-    <section className="hexagon" ref={hexagonRef} >
+    <section className="hexagon" ref={hexagonRef}>
       <div className={`hexagon__inner ${styleName}`}>
         <div className="hexagon__block-left" ref={leftRef} id="b2b">
           {" "}
@@ -126,7 +126,7 @@ export default function Hexagon(props: HexagonProps) {
         <div className="hexagon__row even">
           <Link
             className="hexagon__item"
-            href={"/products/b2b-data-voice-sharing"}
+            href={`/products/${lang}/b2b-data-voice-sharing`}
           >
             <div className="hexagon__content">
               <svg
@@ -161,7 +161,7 @@ export default function Hexagon(props: HexagonProps) {
           </Link>
           <Link
             className="hexagon__item"
-            href={"/products/b2b-data-sponsorship-or-gifting"}
+            href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}
           >
             <div className="hexagon__content">
               <svg
@@ -196,7 +196,7 @@ export default function Hexagon(props: HexagonProps) {
           </div>
           <Link
             className="hexagon__item"
-            href={"/products/b2c-cvm-campaign-management"}
+            href={`/products/${lang}/b2c-cvm-campaign-management`}
           >
             <div className="hexagon__content">
               <svg
@@ -231,7 +231,7 @@ export default function Hexagon(props: HexagonProps) {
         <div className="hexagon__row">
           <Link
             className="hexagon__item"
-            href={"/products/b2b-reverse-billing"}
+            href={`/products/${lang}/b2b-reverse-billing`}
           >
             <div className="hexagon__content">
               <svg
@@ -270,7 +270,7 @@ export default function Hexagon(props: HexagonProps) {
           <div className="hexagon__item"></div>
           <Link
             className="hexagon__item"
-            href={"/products/b2c-data-voice-cost-sharing"}
+            href={`/products/${lang}/b2c-data-voice-cost-sharing`}
           >
             <div className="hexagon__content">
               <svg
@@ -320,7 +320,7 @@ export default function Hexagon(props: HexagonProps) {
           </div>
           <Link
             className="hexagon__item"
-            href={"/products/b2c-social-network-bundles"}
+            href={`/products/${lang}/b2c-social-network-bundles`}
           >
             <div className="hexagon__content">
               <svg
@@ -358,7 +358,7 @@ export default function Hexagon(props: HexagonProps) {
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
           <Link
             className="hexagon__item"
-            href={"/products/b2b-data-voice-distribution"}
+            href={`/products/${lang}/b2b-data-voice-distribution`}
           >
             <div className="hexagon__content">
               <svg
@@ -391,7 +391,10 @@ export default function Hexagon(props: HexagonProps) {
             </div>
           </Link>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
-          <Link className="hexagon__item" href={"/products/b2c-airtime-credit"}>
+          <Link
+            className="hexagon__item"
+            href={`/products/${lang}/b2c-airtime-credit`}
+          >
             <div className="hexagon__content">
               <svg
                 width="18"
@@ -421,7 +424,7 @@ export default function Hexagon(props: HexagonProps) {
           </Link>
           <Link
             className="hexagon__item"
-            href={"/products/b2c-content-services"}
+            href={`/products/${lang}/b2c-content-services`}
           >
             <div className="hexagon__content">
               <svg

@@ -23,16 +23,7 @@ export default function TopBlock(props: TopBlockProps) {
         <br />
         Data and Voice Access
       </h1>
-      <button onClick={() => { 
-        PullState.update((state) => {
-          state.lang = "en"
-        })
-      }}>English</button>
-      <button onClick={() => { 
-        PullState.update((state) => {
-          state.lang = "fr"
-        })
-      }}>French</button>
+  
       <ul className="top-block__list">
         <li>
           <ScrollLink

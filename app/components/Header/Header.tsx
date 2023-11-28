@@ -6,6 +6,7 @@ import "./Header.scss";
 import Image from "next/image";
 import Burger from "../Nav/Burger";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import LanguageButton from "../LanguageButton/LanguageButton";
 
 export default function Header() {
   // Эта строка использует хук `usePathname` из пакета `next/navigation` для получения пути к текущей странице. Хук `usePathname` возвращает текущий путь в виде строки.
@@ -26,10 +27,7 @@ export default function Header() {
       <Link href={"/"} className="header__logo">
         <Image src={"/logo.svg"} alt="logo" width={100} height={46} priority />
       </Link>
-      {/* Это условный оператор, который проверяет, является ли переменная
-      isHomePage истинной. Если переменная истинна, то код, заключенный в
-      круглые скобки, будет отображен. Если значение равно false, то код будет
-      пропущен. */}
+      <LanguageButton />
       {isHomePage && (
         <ScrollLink
           to="contacts"
@@ -46,5 +44,3 @@ export default function Header() {
     </header>
   );
 }
-
-
