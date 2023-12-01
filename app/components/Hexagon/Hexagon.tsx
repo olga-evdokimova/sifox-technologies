@@ -69,14 +69,16 @@ export default function Hexagon(props: HexagonProps) {
 
   return (
     <section className="hexagon" ref={hexagonRef}>
-      <div className={`hexagon__inner ${window.screen.width > 768 && styleName}`}>
+      <div
+        className={`hexagon__inner ${window.screen.width > 768 && styleName}`}
+      >
         <div className="hexagon__block-left" ref={leftRef} id="b2b">
           {" "}
           <div className="hexagon__nav left">
             <Title>B2B Products</Title>
             <button
               onClick={() => {
-                console.log("click b2b")
+                console.log("click b2b");
                 PullState.update((state) => {
                   state.hexagonStyleName = "style_right";
                 });
@@ -92,8 +94,9 @@ export default function Hexagon(props: HexagonProps) {
               >
                 <path
                   d="M1 7.5H40.5M40.5 7.5L34 1M40.5 7.5L34 14"
-                  stroke="white"
-                  strokeLinecap="round"
+                  stroke="#E0933E"
+                  stroke-width="2"
+                  stroke-linecap="round"
                 />
               </svg>
             </button>
@@ -123,8 +126,9 @@ export default function Hexagon(props: HexagonProps) {
               >
                 <path
                   d="M41 7.5H1.5M1.5 7.5L8 1M1.5 7.5L8 14"
-                  stroke="white"
-                  strokeLinecap="round"
+                  stroke="#E0933E"
+                  stroke-width="2"
+                  stroke-linecap="round"
                 />
               </svg>
               B2B <span>PRODUCTS</span>

@@ -25,20 +25,20 @@ export default function PrivacyPolicy() {
       <Title> Personal data conditions</Title>
       <AcccentTitle>User Agreement:</AcccentTitle>
       <p className="privacy-policy__text">
-        Welcome to&nbsp;Sifox Technologies&rsquo; website. By&nbsp;using our
+        Welcome to&nbsp;SIFOX Technologies&rsquo; website. By&nbsp;using our
         services and providing your personal information, you agree to&nbsp;the
         terms and conditions outlined below:
       </p>
       <AcccentTitle>1. Information Collection: </AcccentTitle>
       <p className="privacy-policy__text">
-        Sifox Technologies may collect personal data, including but not limited
+        SIFOX Technologies may collect personal data, including but not limited
         to&nbsp;your name, telephone number, and email address, when you choose
         to send&nbsp;us your questions or&nbsp;feedback via the website.
       </p>
       <AcccentTitle>2. Data Usage:</AcccentTitle>
       <p className="privacy-policy__text">
         Your personal information will be used solely for the purpose of
-        addressing your inquiries or feedback. Sifox Technologies may also use
+        addressing your inquiries or feedback. SIFOX Technologies may also use
         your information for internal record-keeping, improvement of our
         products and services, and occasional promotional emails if you have
         opted to receive them.
@@ -46,14 +46,14 @@ export default function PrivacyPolicy() {
       <AcccentTitle>3. Data Protection:</AcccentTitle>
       <p className="privacy-policy__text">
         Your personal information will be&nbsp;used solely for the purpose of
-        addressing your inquiries or&nbsp;feedback. Sifox Technologies may also
+        addressing your inquiries or&nbsp;feedback. SIFOX Technologies may also
         use your information for internal record-keeping, improvement
         of&nbsp;our products and services, and occasional promotional emails
         if&nbsp;you have opted to&nbsp;receive them.
       </p>
       <AcccentTitle>4. Data Sharing:</AcccentTitle>
       <p className="privacy-policy__text">
-        Sifox Technologies does not sell, trade, or&nbsp;otherwise transfer your
+        SIFOX Technologies does not sell, trade, or&nbsp;otherwise transfer your
         personal information to&nbsp;outside parties unless required by&nbsp;law
         or&nbsp;as necessary to&nbsp;fulfill your requests.
       </p>
@@ -67,19 +67,19 @@ export default function PrivacyPolicy() {
       </p>
       <AcccentTitle>6. Age Restrictions:</AcccentTitle>
       <p className="privacy-policy__text">
-        Sifox Technologies&rsquo; website is&nbsp;intended for use
+        SIFOX Technologies&rsquo; website is&nbsp;intended for use
         by&nbsp;individuals who are at&nbsp;least 18&nbsp;years old. If&nbsp;you
         are under&nbsp;18, you may use the website under the supervision
         of&nbsp;a&nbsp;parent or&nbsp;legal guardian.
       </p>
       <AcccentTitle>7. Changes to Agreement:</AcccentTitle>
       <p className="privacy-policy__text">
-        Sifox Technologies reserves the right to&nbsp;modify or&nbsp;update this
+        SIFOX Technologies reserves the right to&nbsp;modify or&nbsp;update this
         User Agreement at&nbsp;any time. Users are encouraged to&nbsp;review
         this agreement periodically for any changes.
       </p>
       <p className="privacy-policy__text">
-        By&nbsp;using the Sifox Technologies website, you agree to&nbsp;the
+        By&nbsp;using the SIFOX Technologies website, you agree to&nbsp;the
         terms and conditions stated above. If&nbsp;you do&nbsp;not agree with
         any part of&nbsp;this agreement, please refrain from using our website
         or&nbsp;providing any personal information.

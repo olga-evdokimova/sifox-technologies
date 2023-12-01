@@ -23,8 +23,8 @@ export default function Platform() {
           <Title>11 GB</Title>
           <p className="platform__card-text">
             Mobile data consumption in Sub-Saharan Africa will nearly quadruple
-            to reach 11GB per by 2027, though it will continue to lag behind the
-            global average by a wide margin
+            to reach 11GB per smartphone per month by 2027, though it will
+            continue to lag behind the global average by a wide
           </p>
         </div>
         <div className="platform__card">
@@ -36,7 +36,7 @@ export default function Platform() {
           </p>
         </div>
         <div className="platform__card">
-          <Title>$57,4 billion</Title>
+          <Title>$57.4 billion</Title>
           <p className="platform__card-text">
             Mobile revenue will grow steadily and reach $57,4 billion by 2025
             thanks in part to rising data usage

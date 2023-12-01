@@ -20,8 +20,8 @@ export const bebas_neue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "Sifox Technologies",
-  description: "Sifox Technologies",
+  title: "SIFOX Technologies",
+  description: "SIFOX Technologies",
 };
 
 export default function RootLayout({
