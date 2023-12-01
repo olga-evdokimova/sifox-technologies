@@ -9,7 +9,7 @@ const Div = styled.div`
     top: 0;
     width: 100%;
     height: 1196px;
-    z-index: -3;
+    z-index: -1;
     @media (max-width: 768px) {
       height: 812px;
     }
@@ -29,7 +29,6 @@ const Div = styled.div`
     @media (max-width: 992px) {
       background-image: url("/main-ellipses-992.png");
       width: 1200px;
-   
       top: -300px;
     }
   }
