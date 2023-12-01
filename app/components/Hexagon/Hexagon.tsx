@@ -1,31 +1,82 @@
 "use client";
 import "./Hexagon.scss";
 import Image from "next/image";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Title from "../Title/Title";
 import Link from "next/link";
 import { PullState } from "../PullState/PullState";
 
-export type HexagonProps = {
-  
-};
+export type HexagonProps = {};
 
 export default function Hexagon(props: HexagonProps) {
-  const hexagonRef = useRef(null);
+  const hexagonRef = useRef<HTMLElement>(null);
   const leftRef = useRef(null);
   const rightRef = useRef(null);
 
   const styleName = PullState.useState((state) => state.hexagonStyleName);
 
+  useEffect(() => {
+    
+    console.log("useEffect on click", styleName);
+    const windowWidth = window.screen.width;
+    if(windowWidth > 768) {
+      return;
+    }
+    if(styleName === "") {
+      return;
+    }
+
+    let left = 0;
+
+    if (styleName === "style_left" || styleName === "style_left_instant") {
+      if (windowWidth <= 1440) {
+        left = 135;
+        if (windowWidth <= 768) {
+          left = 0;
+        }
+      }
+
+      console.log("scroll", left, styleName);
+      hexagonRef.current?.scrollTo({
+        left: 0,
+        behavior: styleName === "style_left_instant" ? "auto" : "smooth",
+      });
+    } else if (styleName === "style_right" || styleName === "style_right_instant") {
+      left = 1500
+      if (windowWidth <= 1440) {
+        left = 1376;
+        if (windowWidth <= 1100) {
+          left = 850;
+          if (windowWidth <= 768) {
+            left = 990;
+          }
+        }
+      }
+
+      console.log("scroll", left, styleName);
+
+      hexagonRef.current?.scrollTo({
+        left,
+        behavior: styleName === "style_right_instant" ? "auto" : "smooth",
+      });
+    }
+
+    PullState.update((state) => {
+      state.hexagonStyleName = "";
+    });
+
+  }, [styleName]);
+
   return (
-    <section className="hexagon" ref={hexagonRef} >
-      <div className={`hexagon__inner ${styleName}`}>
+    <section className="hexagon" ref={hexagonRef}>
+      <div className={`hexagon__inner ${window.screen.width > 768 && styleName}`}>
         <div className="hexagon__block-left" ref={leftRef} id="b2b">
           {" "}
           <div className="hexagon__nav left">
             <Title>B2B Products</Title>
             <button
               onClick={() => {
+                console.log("click b2b")
                 PullState.update((state) => {
                   state.hexagonStyleName = "style_right";
                 });
@@ -58,6 +109,7 @@ export default function Hexagon(props: HexagonProps) {
             <button
               onClick={() => {
                 PullState.update((state) => {
+                  console.log("click b2c");
                   state.hexagonStyleName = "style_left";
                 });
               }}
