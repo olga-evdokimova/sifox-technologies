@@ -6,7 +6,6 @@ const Button = styled.div`
   position: absolute;
   top: 6px;
   left: 160px;
-  //   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.3);

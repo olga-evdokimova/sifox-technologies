@@ -9,6 +9,9 @@
         overflow-x: auto;
         left: 0;
     }
+      &::-webkit-scrollbar {
+        width: 0;
+    }
     &__block-left {
         width: 1425px;
         height: 100%;
