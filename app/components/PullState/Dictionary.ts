@@ -156,7 +156,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         //PrivacyPolicy
         "personal_data_conditions": "CONDITIONS RELATIVES AUX DONNÉES PERSONNELLES",
         "user_agreement": "CONTRAT UTILISATEUR :",
-        "welcome_to": "Welcome to SIFOX Technologies' website. By using our services and providing your personal information, you agree to the terms and conditions outlined below:",
+        "welcome_to": "Bienvenue sur le site web de SIFOX Technologies. En utilisant nos services et en fournissant vos informations personnelles, vous acceptez les termes et conditions décrits ci-dessous :",
         "information_collection": "COLLECTE D'INFORMATIONS :",
         "sifox_technologies_may_collect": "SIFOX Technologies peut collecter des données personnelles, y compris, mais sans s'y limiter, votre nom, numéro de téléphone et adresse e-mail, lorsque vous choisissez de nous envoyer vos questions ou commentaires via le site web.",
         "data_usage": "UTILISATION DES DONNÉES : ",
