@@ -25,6 +25,15 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "airtime_credit": "Airtime Credit",
         "for_individual_users": "For individual users",
         "content_services": "Content Services",
+        //Platform
+        "mobile_penetration": "Mobile penetration in Sub-Saharan Africa will reach 50% by 2030",
+        "by_2030": "By 2030, smartphones will account for 88% of total connections, on average, in Sub- Saharan Africa",
+        "gb": "GB",
+        "mobile_data": "Mobile data consumption in Sub-Saharan Africa will quadruple from 4.7GB to reach 19GB per smartphone per month by 2030",
+        "million": "million",
+        "the_total_number": "The total number of mobile service subscribers in Sub-Saharan Africa will reach 692 million by 2030 (50% of the region's population)",
+        "billion": "billion",
+        "mobile_operator": "Mobile operators' revenue and investment will grow steadily and reach $58 billion by 2030 thanks in part to rising data usage",
     },
     "fr": {
         //TopBlock
@@ -52,6 +61,15 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "airtime_credit": "Crédit de temps d'antenne",
         "for_individual_users": "Pour Individus",
         "content_services": "Services de contenu",
+        //Platform
+        "mobile_penetration": "La pénétration du mobile en Afrique subsaharienne atteindra 50% d'ici 2030.",
+        "by_2030": "D'ici 2030, les smartphones représenteront en moyenne 88% des connexions totales en Afrique subsaharienne.",
+        "gb": "Go",
+        "mobile_data": "La consommation de données mobiles en Afrique subsaharienne quadruplera de 4,7 Go pour atteindre 19 Go par smartphone par mois d'ici 2030.",
+        "million": "millions",
+        "the_total_number": "Le nombre total d'abonnés aux services mobiles en Afrique subsaharienne atteindra 692 millions d'ici 2030 (50% de la population de la région).",
+        "billion": "milliards",
+        "mobile_operator": "Les revenus et investissements des opérateurs mobiles augmenteront régulièrement pour atteindre 58 milliards de dollars d'ici 2030, en partie grâce à l'augmentation de l'utilisation des données.",
     }
 }
 
