@@ -50,7 +50,7 @@ export default function Congo() {
 
         <h6 className="congo__title" onClick={handleButtonClick}>
           <Image src={"/congo.png"} alt="" width={41} height={22}></Image>
-          DRC
+          {Dictionary[lang]["drc"]}
         </h6>
 
         <button
@@ -99,7 +99,7 @@ export default function Congo() {
             <h6>
               {" "}
               <Image src={"/congo.png"} alt="" width={41} height={22}></Image>
-              DRC
+              {Dictionary[lang]["drc"]}
             </h6>
             <Link href={`/products/${lang}/b2b-reverse-billing`}>
               {Dictionary[lang]["reverse_billing"]}

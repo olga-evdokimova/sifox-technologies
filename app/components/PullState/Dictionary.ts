@@ -36,6 +36,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "mobile_operator": "Mobile operators' revenue and investment will grow steadily and reach $58 billion by 2030 thanks in part to rising data usage",
         //Cases
         "cases": "Cases",
+        "drc": "DRC",
         //About
         "about_the_company": "About the Company",
         "providing_cutting_edge": "Providing cutting-edge solutions for mobile communications worldwide.",
@@ -122,6 +123,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "mobile_operator": "Les revenus et investissements des opérateurs mobiles augmenteront régulièrement pour atteindre 58 milliards de dollars d'ici 2030, en partie grâce à l'augmentation de l'utilisation des données.",
         //Cases
         "cases": "Cases",
+        "drc": "RDC", 
         //About
         "about_the_company": "À propos de la société",
         "providing_cutting_edge": "Fournir des solutions de pointe pour les communications mobiles à l'échelle mondiale.",
