@@ -41,6 +41,19 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "providing_cutting_edge": "Providing cutting-edge solutions for mobile communications worldwide.",
         "with_an_international": "With an international team of seasoned professionals, we specialize in creating highly adaptable and robust products for seamless data provisioning, efficient data and voice sharing, innovative data gifting, as well as streamlined data and voice distribution.",
         "backed_by_unmatched": "Backed by unmatched technical assistance, our 5-star user interfaces, available on both mobile and browser platforms, guarantee a user-friendly experience, enabling our clients to effortlessly stay connected and communicate seamlessly worldwide.",
+        //Contacts
+        "сontacts": "Contacts",
+        "head_office": "Head Office:",
+        "5th_floor": "5th Floor, The CORE Building No. 62, ICT Avenue, Cybercity, Ebene, Mauritius",
+        "operational_hq_in_enya": "Operational HQ in Kenya:",
+        "7th_floor": "7th Floor, CMS Africa, Chania Avenue, Kilimani, Nairobi, Kenya",
+        "tel": "Tel:",
+        "office_in_nigeria": "Office in Nigeria:",
+        "primrose_drive": "Primrose Drive, Block H, Plot 5, Pinnock Estate Lekki, Lagos State, Nigeria",
+        "office_in_dcr": "Office in DRC (Democratic Republic of the Congo): ",
+        "silikin_village": "Silikin Village, 372, av. Colonel Mondjiba, Quartier/ Basoko, Commune/ Ngaliema, Kinshasa",
+        "mail": "Mail:",
+        "social_media": "Social Media:",
     },
     "fr": {
         //TopBlock
@@ -84,9 +97,21 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "providing_cutting_edge": "Fournir des solutions de pointe pour les communications mobiles à l'échelle mondiale.",
         "with_an_international": "Avec une équipe internationale de professionnels chevronnés, nous sommes spécialisés dans la création de produits hautement adaptables et robustes pour une fourniture de données sans faille, un partage efficace de données et de voix, un don de données innovant, ainsi qu'une distribution rationalisée de données et de voix.",
         "backed_by_unmatched": "Soutenus par une assistance technique inégalée, nos interfaces utilisateur 5 étoiles, disponibles sur les plates-formes mobiles et de navigation, garantissent une expérience conviviale, permettant à nos clients de rester connectés et de communiquer sans effort à l'échelle mondiale.",
+        //Contacts
+        "сontacts": "Nos emplacements",
+        "head_office": "Siège social :",
+        "5th_floor": "5e étage, immeuble The CORE, n° 62, avenue ICT, Cybercity, Ebène, Île Maurice",
+        "operational_hq_in_enya": "QG opérationnel au Kenya :",
+        "7th_floor": "7e étage, CMS Africa, avenue Chania, Kilimani, Nairobi, Kenya",
+        "tel": "Tél:",
+        "office_in_nigeria": "Bureau au Nigeria :",
+        "primrose_drive": "Primrose Drive, bloc H, parcelle 5, domaine Pinnock Estate Lekki, État de Lagos, Nigeria",
+        "office_in_dcr": "Bureau en RDC (République démocratique du Congo) :",
+        "silikin_village": "Village Silikin, 372, av. Colonel Mondjiba, Quartier/ Basoko, Commune/ Ngaliema, Kinshasa",
+        "mail": "Courriel :",
+        "social_media": "Réseaux sociaux :",
     }
 }
 
-//      en                        fr                   key
-//"Connecting the World" "Connectez-vous au monde" connect_the_world
+
 
