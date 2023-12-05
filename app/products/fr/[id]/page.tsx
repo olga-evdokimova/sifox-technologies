@@ -1,5 +1,5 @@
 import { getPostById } from "@/api/api";
-import "./style.scss";
+import "@/app/products/style.scss";
 import Title from "@/app/components/Title/Title";
 import Image from "next/image";
 import { PullStateServerSide } from "@/app/components/PullState/PullState";

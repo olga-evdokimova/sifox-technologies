@@ -7,7 +7,7 @@
         top: 416px;
         right: 40px;
     }
-    @media (max-width: 360px){
+    @media (max-width: 360px) {
         right: 14px;
     }
     &__title {
@@ -91,7 +91,7 @@
     }
     &__tooltip {
         position: absolute;
-        padding:0 20px;
+        padding: 0 20px;
         width: 300px;
         z-index: 20;
         background-color: rgba(255, 255, 255, 0.1);
@@ -106,7 +106,7 @@
             bottom: -127px;
             left: -171px;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             left: -190px;
         }
         &::before {
@@ -120,10 +120,10 @@
             top: -33px;
             right: 76px;
             transform: rotate(0deg);
-            @media (max-width: 992px){
-                  right: 56px;
+            @media (max-width: 992px) {
+                right: 56px;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 right: 40px;
             }
         }
@@ -170,7 +170,7 @@
         flex-direction: column;
         position: absolute;
         top: 226px;
-        left: 173px;
+        left: 153px;
         @media (max-width: 768px) {
             top: 174px;
             left: 128px;
@@ -219,11 +219,19 @@
         padding: 20px 20px 20px 0px;
         border-bottom: 2px solid var(--color-text-white);
         cursor: url("/cursor.png"), auto;
+          @media (max-width: 768px) {
+            padding: 10px 10px 10px 0px;
+        }
         svg {
             margin-left: 20px;
+            @media (max-width: 768px) {
+                width: 13px;
+                height: 13px;
+                margin-left: 10px;
+            }
         }
         @media (max-width: 768px) {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 }

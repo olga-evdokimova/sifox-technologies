@@ -158,16 +158,14 @@
         align-items: flex-start;
         flex-direction: column;
         position: absolute;
-        top: 174px;
-        left: 353px;
+        top: 128px;
+        left: 303px;
+        max-width: 500px;
         @media (max-width: 768px) {
-            top: 75px;
-            left: 194px;
+            top: 129px;
+            left: 196px;
         }
-        @media (max-width: 360px){
-            left: 244px;
-            top: 65px;
-        }
+      
     }
     &__close {
         position: absolute;
@@ -212,11 +210,19 @@
         padding: 20px 20px 20px 0px;
         border-bottom: 2px solid var(--color-text-white);
         cursor: url("/cursor.png"), auto;
+        @media (max-width: 768px) {
+            padding: 10px 10px 10px 0px;
+        }
         svg {
             margin-left: 20px;
+            @media (max-width: 768px) {
+                width: 13px;
+                height: 13px;
+                margin-left: 10px;
+            }
         }
         @media (max-width: 768px) {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 }

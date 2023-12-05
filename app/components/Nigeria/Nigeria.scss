@@ -7,7 +7,7 @@
         top: 347px;
         right: 253px;
     }
-    @media (max-width: 360px){
+    @media (max-width: 360px) {
         right: 227px;
     }
     &__title {
@@ -89,7 +89,7 @@
         position: absolute;
         left: -238px;
         bottom: -160px;
-        padding:0 20px;
+        padding: 0 20px;
         width: 300px;
         z-index: 20;
         background-color: rgba(255, 255, 255, 0.1);
@@ -122,18 +122,17 @@
                 transform: rotate(90deg);
             }
             @media (max-width: 768px) {
-              right: 150px;
+                right: 150px;
             }
         }
 
- 
         p {
             font-family: var(--font-inter);
             font-size: 16px;
             font-weight: 400;
             opacity: 0.5;
             padding: 20px 0;
-            border-bottom:1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             &:last-child {
                 border-bottom: none;
             }
@@ -143,8 +142,6 @@
             }
         }
     }
-
- 
 }
 .modal-nigeria {
     position: absolute;
@@ -171,12 +168,12 @@
         flex-direction: column;
         position: absolute;
         top: 174px;
-        left: 173px;
+        left: 163px;
         @media (max-width: 768px) {
             top: 111px;
             left: 128px;
         }
-        @media (max-width: 360px){
+        @media (max-width: 360px) {
             left: 156px;
         }
     }
@@ -222,12 +219,20 @@
         font-weight: 600;
         padding: 20px 20px 20px 0px;
         border-bottom: 2px solid var(--color-text-white);
-          cursor: url('/cursor.png'), auto;
+        cursor: url("/cursor.png"), auto;
+        @media (max-width: 768px) {
+            padding: 10px 10px 10px 0px;
+        }
         svg {
             margin-left: 20px;
+            @media (max-width: 768px) {
+                width: 13px;
+                height: 13px;
+                margin-left: 10px;
+            }
         }
         @media (max-width: 768px) {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 }
