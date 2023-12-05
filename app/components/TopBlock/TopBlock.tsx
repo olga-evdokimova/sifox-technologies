@@ -1,4 +1,3 @@
-
 "use client";
 import "./TopBlock.scss";
 import Link from "next/link";
@@ -6,24 +5,21 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { PullState } from "../PullState/PullState";
 import { Dictionary } from "../PullState/Dictionary";
 
-export type TopBlockProps = {
-
-}
+export type TopBlockProps = {};
 
 export default function TopBlock(props: TopBlockProps) {
-
-  const lang = PullState.useState(state => state.lang)
+  const lang = PullState.useState((state) => state.lang);
 
   return (
     <section className="top-block container">
       <h1>
         {Dictionary[lang]["connect_the_world"]}:
         <br />
-        Empowering Telecoms for Seamless
+        {Dictionary[lang]["empowering_telecoms_for_seamless"]}
         <br />
-        Data and Voice Access
+        {Dictionary[lang]["data_and_voice-access"]}
       </h1>
-  
+
       <ul className="top-block__list">
         <li>
           <ScrollLink
@@ -38,7 +34,8 @@ export default function TopBlock(props: TopBlockProps) {
           >
             B2B
             <br />
-            Products
+            {Dictionary[lang]["products"]}
+       
           </ScrollLink>
         </li>
         <li>
@@ -54,12 +51,14 @@ export default function TopBlock(props: TopBlockProps) {
           >
             B2C
             <br />
-            Products
+            {Dictionary[lang]["products"]}
+       
           </ScrollLink>
         </li>
         <li>
           <ScrollLink to="about" smooth={true} duration={1500}>
-            About
+            {Dictionary[lang]["about"]}
+         
           </ScrollLink>
         </li>
       </ul>
