@@ -26,6 +26,7 @@ export default function Header() {
       <Link href={"/"} className="header__logo">
         <Image src={"/logo.svg"} alt="logo" width={100} height={46} priority />
       </Link>
+      <LanguageButton />
       {isHomePage && (
         <ScrollLink
           to="contacts"
