@@ -7,11 +7,13 @@ import Image from "next/image";
 import Burger from "../Nav/Burger";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import LanguageButton from "../LanguageButton/LanguageButton";
-
+import { PullState } from "../PullState/PullState";
+import { Dictionary } from "../PullState/Dictionary";
 export default function Header() {
-  // Эта строка использует хук `usePathname` из пакета `next/navigation` для получения пути к текущей странице. Хук `usePathname` возвращает текущий путь в виде строки.
+  const lang = PullState.useState((state) => state.lang);
+  
   const pathname = usePathname();
-  //  Эта строка сравнивает переменную `pathname` с `"/"`, которая представляет собой домашнюю страницу. Если `pathname` равна `"/"`, то переменная `isHomePage` будет `true`. В противном случае она будет равна `false`.
+
   const isHomePage = pathname === "/";
 
   const scrollToContacts = () => {
@@ -36,7 +38,7 @@ export default function Header() {
           className="header__btn"
           onClick={scrollToContacts}
         >
-          Contact us
+          {Dictionary[lang]["contact_us"]}
         </ScrollLink>
       )}
       <Burger />

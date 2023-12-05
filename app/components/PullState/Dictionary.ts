@@ -36,6 +36,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "mobile_operator": "Mobile operators' revenue and investment will grow steadily and reach $58 billion by 2030 thanks in part to rising data usage",
         //Cases
         "cases": "Cases",
+        "sifox_technologies_has_successfully": " SIFOX Technologies has successfully developed and continues to maintain a variety of distinctive projects across various African countries.",
         "drc": "DRC",
         //About
         "about_the_company": "About the Company",
@@ -85,6 +86,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "thank_you": "Thank you for visiting SIFOX Technologies.",
         //Footer
         "privacy_policy": "privacy policy",
+        //Header
+        "contact_us": "Contact Us",
     },
     "fr": {
         //TopBlock
@@ -122,7 +125,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "billion": "milliards",
         "mobile_operator": "Les revenus et investissements des opérateurs mobiles augmenteront régulièrement pour atteindre 58 milliards de dollars d'ici 2030, en partie grâce à l'augmentation de l'utilisation des données.",
         //Cases
-        "cases": "Cases",
+        "cases": "PROJETS",
+        "sifox_technologies_has_successfully": "SIFOX Technologies a développé avec succès et continue de maintenir une variété de projets distinctifs dans divers pays africains.",
         "drc": "RDC", 
         //About
         "about_the_company": "À propos de la société",
@@ -170,6 +174,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "thank_you": "Merci de visiter SIFOX Technologies.",
          //Footer
         "privacy_policy": "politique de confidentialité",
+        //Header
+        "contact_us": "Contactez-nous",
     }
 }
 

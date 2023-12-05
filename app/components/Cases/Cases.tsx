@@ -19,9 +19,8 @@ export default function Cases() {
       <div className="cases__titles">
         <Title> {Dictionary[lang]["cases"]}</Title>
         <p className="cases__subtitle">
-          SIFOX Technologies has successfully developed and continues to
-          maintain a variety of distinctive projects across various African
-          countries.
+          {Dictionary[lang]["sifox_technologies_has_successfully"]}
+         
         </p>
         <Partners />
       </div>
