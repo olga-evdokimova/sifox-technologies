@@ -112,25 +112,32 @@ export default function RightNav({ open }) {
       {showListB2B && (
         <ul className="nav-menu__list">
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2b-data-voice-sharing"}>
-              Data & Voice Sharing<span>Small and micro business</span>
+            <Link href={`/products/${lang}/b2b-data-voice-sharing`}>
+              {Dictionary[lang]["data_voice_sharing"]}
+              <span>{Dictionary[lang]["for_small_and_micro_business"]}</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2b-data-sponsorship-or-gifting"}>
-              Data Sponsorship or Gifting
-              <span> Enterprises and Governments</span>
+            <Link href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}>
+              {Dictionary[lang]["data_sponsorship_or_gifting"]}
+              <span>
+                {" "}
+                {Dictionary[lang]["for_enterprises_and_governments"]}
+              </span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2b-reverse-billing"}>
-              Reverse Billing<span>Enterprises and Governments</span>
+            <Link href={`/products/${lang}/b2b-reverse-billing`}>
+              {Dictionary[lang]["reverse_billing"]}
+              <span>{Dictionary[lang]["for_enterprises_and_governments"]}</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2b-data-voice-distribution"}>
-              Data & Voice Distribution
-              <span>Distributors and resellers</span>
+            <Link href={`/products/${lang}/b2b-data-voice-distribution`}>
+              {Dictionary[lang]["data_voice_distribution"]}
+              <span>
+                {Dictionary[lang]["for_distributors_and_resellers"]}
+              </span>
             </Link>
           </li>
         </ul>
