@@ -57,6 +57,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         //Form
         "the_team_of_seasoned": "The team of seasoned professionals with extensive IT and telecom expertise",
         "let_us_help_you": "Let us help you",
+        //404
+        "signal_lost_in_space": "Signal lost in Space",
     },
     "fr": {
         //TopBlock
@@ -116,6 +118,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         //Form
         "the_team_of_seasoned": "L'équipe de professionnels chevronnés bénéficiant d'une vaste expertise en informatique et télécommunications",
         "let_us_help_you": "LAISSEZ-NOUS VOUS AIDER",
+        //404
+        "signal_lost_in_space": "Signal perdu dans l'espace",
     }
 }
 
