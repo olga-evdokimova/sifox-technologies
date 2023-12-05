@@ -59,6 +59,31 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "let_us_help_you": "Let us help you",
         //404
         "signal_lost_in_space": "Signal lost in Space",
+        //PrivacyPolicy
+        "personal_data_conditions": "Personal data conditions",
+        "user_agreement": "User Agreement:",
+        "welcome_to": "Welcome to SIFOX Technologies' website. By using our services and providing your personal information, you agree to the terms and conditions outlined below:",
+        "information_collection": "Information Collection:",
+        "sifox_technologies_may_collect": "SIFOX Technologies may collect personal data, including but not limited to your name, telephone number, and email address, when you choose to send us your questions or feedback via the website.",
+        "data_usage": "Data usage:",
+        "your_personal_information": "Your personal information will be used solely for the purpose of addressing your inquiries or feedback. SIFOX Technologies may also use your information for internal record-keeping, improvement of our products and services, and occasional promotional emails if you have opted to receive them.",
+        "data_protection": "Data Protection:",
+        "sifox_technologies_is_committed": "SIFOX Technologies is committed to protecting your privacy. We employ industry-standard security measures to prevent unauthorized access, disclosure, or alteration of your personal information.",
+        "data_sharing": "Data Sharing:",
+        "sifox_echnologies_does_not_sell": "SIFOX Technologies does not sell, trade, or otherwise transfer your personal information to outside parties unless required by law or as necessary to fulfill your requests.",
+
+        "cookies_and_tracking": "Cookies and Tracking:",
+        "by_using_our_website": "By using our website, you agree to the use of cookies and other tracking technologies to enhance your browsing experience and gather information about website traffic and usage patterns. You can adjust your browser settings to refuse cookies, although this may affect some website functionalities.",
+
+        "age_restrictions": "Age Restrictions:",
+        "sifox_technologies_website_is_intended": "SIFOX Technologies' website is intended for use by individuals who are at least 18 years old. If you are under 18, you may use the website under the supervision of a parent or legal guardian.",
+        "changes_to_agreement": "Changes to Agreement:",
+        "sifox_technologies_reserves_the_right": "SIFOX Technologies reserves the right to modify or update this User Agreement at any time. Users are encouraged to review this agreement periodically for any changes.",
+        "by_using_the_sifox_technologies_website": "By using the SIFOX Technologies website, you agree to the terms and conditions stated above. If you do not agree with any part of this agreement, please refrain from using our website or providing any personal information.",
+        "for_any_further_information": "For any further information or inquiries regarding this agreement, please contact us at [insert contact information].",
+        "thank_you": "Thank you for visiting SIFOX Technologies.",
+        //Footer
+        "privacy_policy": "privacy policy",
     },
     "fr": {
         //TopBlock
@@ -120,6 +145,29 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "let_us_help_you": "LAISSEZ-NOUS VOUS AIDER",
         //404
         "signal_lost_in_space": "Signal perdu dans l'espace",
+        //PrivacyPolicy
+        "personal_data_conditions": "CONDITIONS RELATIVES AUX DONNÉES PERSONNELLES",
+        "user_agreement": "CONTRAT UTILISATEUR :",
+        "welcome_to": "Welcome to SIFOX Technologies' website. By using our services and providing your personal information, you agree to the terms and conditions outlined below:",
+        "information_collection": "COLLECTE D'INFORMATIONS :",
+        "sifox_technologies_may_collect": "SIFOX Technologies peut collecter des données personnelles, y compris, mais sans s'y limiter, votre nom, numéro de téléphone et adresse e-mail, lorsque vous choisissez de nous envoyer vos questions ou commentaires via le site web.",
+        "data_usage": "UTILISATION DES DONNÉES : ",
+        "your_personal_information": "Vos informations personnelles seront utilisées uniquement dans le but de répondre à vos demandes ou commentaires. SIFOX Technologies peut également utiliser vos informations pour la tenue de registres internes, l'amélioration de nos produits et services, et l'envoi occasionnel d'e-mails promotionnels si vous avez choisi de les recevoir.",
+        "data_protection": "Protection des données : ",
+        "sifox_technologies_is_committed": "SIFOX Technologies s'engage à protéger votre vie privée. Nous utilisons des mesures de sécurité conformes aux normes de l'industrie pour empêcher tout accès non autorisé, divulgation ou altération de vos informations personnelles.",
+        "data_sharing": "PARTAGE DES DONNÉES : ",
+        "sifox_echnologies_does_not_sell": "SIFOX Technologies ne vend pas, n'échange pas et ne transfère pas vos informations personnelles à des tiers, sauf si requis par la loi ou nécessaire pour répondre à vos demandes.",
+        "cookies_and_tracking": "COOKIES ET SUIVI :",
+        "by_using_our_website": "En utilisant notre site web, vous acceptez l'utilisation de cookies et d'autres technologies de suivi pour améliorer votre expérience de navigation et recueillir des informations sur le trafic et les habitudes d'utilisation du site. Vous pouvez ajuster les paramètres de votre navigateur pour refuser les cookies, bien que cela puisse affecter certaines fonctionnalités du site.",
+        "age_restrictions": "RESTRICTIONS D' GE : ",
+        "sifox_technologies_website_is_intended": "Le site web de SIFOX Technologies est destiné à être utilisé par des individus âgés d'au moins 18 ans. Si vous avez moins de 18 ans, vous pouvez utiliser le site sous la supervision d'un parent ou d'un tuteur légal.",
+        "changes_to_agreement": "MODIFICATIONS DU CONTRAT : ",
+        "sifox_technologies_reserves_the_right": "SIFOX Technologies se réserve le droit de modifier ou mettre à jour ce contrat utilisateur à tout moment. Les utilisateurs sont encouragés à revoir périodiquement cet accord pour tout changement.",
+        "by_using_the_sifox_technologies_website": "En utilisant le site web de SIFOX Technologies, vous acceptez les termes et conditions énoncés ci-dessus. Si vous n'êtes pas d'accord avec une partie de cet accord, veuillez vous abstenir d'utiliser notre site web ou de fournir des informations personnelles.",
+        "for_any_further_information": "Pour toute information supplémentaire ou demande concernant cet accord, veuillez nous contacter à [insérer les informations de contact].",
+        "thank_you": "Merci de visiter SIFOX Technologies.",
+         //Footer
+        "privacy_policy": "politique de confidentialité",
     }
 }
 

@@ -1,9 +1,13 @@
-
+"use client";
 import AcccentTitle from "../components/AcccentTitle/AccentTitle";
 import Title from "../components/Title/Title";
 import "./style.scss";
 import NexLink from "next/link";
+import { PullState } from "../components/PullState/PullState";
+import { Dictionary } from "../components/PullState/Dictionary";
 export default function PrivacyPolicy() {
+  const lang = PullState.useState((state) => state.lang);
+
   return (
     <div className="privacy-policy">
       <div className="privacy-policy__ellipses"></div>
@@ -22,75 +26,46 @@ export default function PrivacyPolicy() {
           />
         </svg>
       </NexLink>
-      <Title> Personal data conditions</Title>
-      <AcccentTitle>User Agreement:</AcccentTitle>
+      <Title>{Dictionary[lang]["personal_data_conditions"]}</Title>
+      <AcccentTitle>{Dictionary[lang]["user_agreement"]}</AcccentTitle>
+      <p className="privacy-policy__text">{Dictionary[lang]["welcome_to"]}</p>
+      <AcccentTitle>
+        1. {Dictionary[lang]["information_collection"]}{" "}
+      </AcccentTitle>
       <p className="privacy-policy__text">
-        Welcome to&nbsp;Sifox Technologies&rsquo; website. By&nbsp;using our
-        services and providing your personal information, you agree to&nbsp;the
-        terms and conditions outlined below:
+        {Dictionary[lang]["sifox_technologies_may_collect"]}
       </p>
-      <AcccentTitle>1. Information Collection: </AcccentTitle>
+      <AcccentTitle>2. {Dictionary[lang]["data_usage"]}</AcccentTitle>
       <p className="privacy-policy__text">
-        Sifox Technologies may collect personal data, including but not limited
-        to&nbsp;your name, telephone number, and email address, when you choose
-        to send&nbsp;us your questions or&nbsp;feedback via the website.
+        {Dictionary[lang]["your_personal_information"]}
       </p>
-      <AcccentTitle>2. Data Usage:</AcccentTitle>
+      <AcccentTitle>3. {Dictionary[lang]["data_protection"]}</AcccentTitle>
       <p className="privacy-policy__text">
-        Your personal information will be used solely for the purpose of
-        addressing your inquiries or feedback. Sifox Technologies may also use
-        your information for internal record-keeping, improvement of our
-        products and services, and occasional promotional emails if you have
-        opted to receive them.
+        {Dictionary[lang]["sifox_technologies_is_committed"]}
       </p>
-      <AcccentTitle>3. Data Protection:</AcccentTitle>
+      <AcccentTitle>4. {Dictionary[lang]["data_sharing"]}</AcccentTitle>
       <p className="privacy-policy__text">
-        Your personal information will be&nbsp;used solely for the purpose of
-        addressing your inquiries or&nbsp;feedback. Sifox Technologies may also
-        use your information for internal record-keeping, improvement
-        of&nbsp;our products and services, and occasional promotional emails
-        if&nbsp;you have opted to&nbsp;receive them.
+        {Dictionary[lang]["sifox_echnologies_does_not_sell"]}
       </p>
-      <AcccentTitle>4. Data Sharing:</AcccentTitle>
+      <AcccentTitle>5. {Dictionary[lang]["cookies_and_tracking"]}</AcccentTitle>
       <p className="privacy-policy__text">
-        Sifox Technologies does not sell, trade, or&nbsp;otherwise transfer your
-        personal information to&nbsp;outside parties unless required by&nbsp;law
-        or&nbsp;as necessary to&nbsp;fulfill your requests.
+        {Dictionary[lang]["by_using_our_website"]}
       </p>
-      <AcccentTitle>5. Cookies and Tracking:</AcccentTitle>
+      <AcccentTitle>6. {Dictionary[lang]["age_restrictions"]}</AcccentTitle>
       <p className="privacy-policy__text">
-        By&nbsp;using our website, you agree to&nbsp;the use of&nbsp;cookies and
-        other tracking technologies to&nbsp;enhance your browsing experience and
-        gather information about website traffic and usage patterns. You can
-        adjust your browser settings to&nbsp;refuse cookies, although this may
-        affect some website functionalities.
+        {Dictionary[lang]["sifox_technologies_website_is_intended"]}
       </p>
-      <AcccentTitle>6. Age Restrictions:</AcccentTitle>
+      <AcccentTitle>7. {Dictionary[lang]["changes_to_agreement"]}</AcccentTitle>
       <p className="privacy-policy__text">
-        Sifox Technologies&rsquo; website is&nbsp;intended for use
-        by&nbsp;individuals who are at&nbsp;least 18&nbsp;years old. If&nbsp;you
-        are under&nbsp;18, you may use the website under the supervision
-        of&nbsp;a&nbsp;parent or&nbsp;legal guardian.
-      </p>
-      <AcccentTitle>7. Changes to Agreement:</AcccentTitle>
-      <p className="privacy-policy__text">
-        Sifox Technologies reserves the right to&nbsp;modify or&nbsp;update this
-        User Agreement at&nbsp;any time. Users are encouraged to&nbsp;review
-        this agreement periodically for any changes.
+        {Dictionary[lang]["sifox_technologies_reserves_the_right"]}
       </p>
       <p className="privacy-policy__text">
-        By&nbsp;using the Sifox Technologies website, you agree to&nbsp;the
-        terms and conditions stated above. If&nbsp;you do&nbsp;not agree with
-        any part of&nbsp;this agreement, please refrain from using our website
-        or&nbsp;providing any personal information.
+        {Dictionary[lang]["by_using_the_sifox_technologies_website"]}
       </p>
       <p className="privacy-policy__text">
-        For any further information or&nbsp;inquiries regarding this agreement,
-        please contact&nbsp;us at&nbsp;[insert contact information].
+        {Dictionary[lang]["for_any_further_information"]}
       </p>
-      <p className="privacy-policy__text">
-        Thank you for visiting Sifox Technologies.
-      </p>
+      <p className="privacy-policy__text">{Dictionary[lang]["thank_you"]}</p>
     </div>
   );
 }

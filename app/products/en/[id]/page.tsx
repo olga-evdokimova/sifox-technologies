@@ -6,12 +6,7 @@ import { PullStateServerSide } from "@/app/components/PullState/PullState";
 export default function PageSlug({ params }: any) {
   const post = getPostById(params.id + ".html", "en");
 
-  // mywebsite.com/products/en/b2c-blablabla.html
-  // mywebsite.com/products/fr/b2c-blablabla.html
-
-  // const { PullState } = PullStateServerSide.useStores()
-
-  // Это утащить в компонент чтобы не дублировать код в en и fr
+ 
   return (
     <>
       <Image
