@@ -36,7 +36,11 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "mobile_operator": "Mobile operators' revenue and investment will grow steadily and reach $58 billion by 2030 thanks in part to rising data usage",
         //Cases
         "cases": "Cases",
-        
+        //About
+        "about_the_company": "About the Company",
+        "providing_cutting_edge": "Providing cutting-edge solutions for mobile communications worldwide.",
+        "with_an_international": "With an international team of seasoned professionals, we specialize in creating highly adaptable and robust products for seamless data provisioning, efficient data and voice sharing, innovative data gifting, as well as streamlined data and voice distribution.",
+        "backed_by_unmatched": "Backed by unmatched technical assistance, our 5-star user interfaces, available on both mobile and browser platforms, guarantee a user-friendly experience, enabling our clients to effortlessly stay connected and communicate seamlessly worldwide.",
     },
     "fr": {
         //TopBlock
@@ -58,7 +62,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "data_voice_cost_sharing": "Partage des coûts de données et de voix",
         "for_friends_and_social_buying": "Pour les amis et achats sociaux",
         "social_network_bundles": "Forfaits Réseaux Sociaux",
-        "for_individuals_and_social_buying": "Pour les individus et les groupes sociaux",  
+        "for_individuals_and_social_buying": "Pour les individus et les groupes sociaux",
         "data_voice_distribution": "Distribution de données et de voix",
         "for_distributors_and_resellers": "Pour les distributeurs et les revendeurs",
         "airtime_credit": "Crédit de temps d'antenne",
@@ -75,6 +79,11 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "mobile_operator": "Les revenus et investissements des opérateurs mobiles augmenteront régulièrement pour atteindre 58 milliards de dollars d'ici 2030, en partie grâce à l'augmentation de l'utilisation des données.",
         //Cases
         "cases": "Cases",
+        //About
+        "about_the_company": "À propos de la société",
+        "providing_cutting_edge": "Fournir des solutions de pointe pour les communications mobiles à l'échelle mondiale.",
+        "with_an_international": "Avec une équipe internationale de professionnels chevronnés, nous sommes spécialisés dans la création de produits hautement adaptables et robustes pour une fourniture de données sans faille, un partage efficace de données et de voix, un don de données innovant, ainsi qu'une distribution rationalisée de données et de voix.",
+        "backed_by_unmatched": "Soutenus par une assistance technique inégalée, nos interfaces utilisateur 5 étoiles, disponibles sur les plates-formes mobiles et de navigation, garantissent une expérience conviviale, permettant à nos clients de rester connectés et de communiquer sans effort à l'échelle mondiale.",
     }
 }
 

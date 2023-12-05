@@ -2,8 +2,11 @@ import Link from "next/link";
 import "./About.scss";
 import AcccentTitle from "../AcccentTitle/AccentTitle";
 import Image from "next/image";
-
+import { PullState } from "../PullState/PullState";
+import { Dictionary } from "../PullState/Dictionary";
 export default function About() {
+  const lang = PullState.useState((state) => state.lang);
+
   return (
     <section className="about" id="about">
       <div className="about__content">
@@ -17,22 +20,16 @@ export default function About() {
             priority
           />
         </Link>
-        <AcccentTitle>About the company</AcccentTitle>
+        <AcccentTitle>{Dictionary[lang]["about_the_company"]}</AcccentTitle>
 
         <h4 className="about__title">
-          Providing cutting-edge solutions for mobile communications worldwide.
+          {Dictionary[lang]["providing_cutting_edge"]}
         </h4>
         <p className="about__text">
-          With an international team of seasoned professionals, we specialize in
-          creating highly adaptable and robust products for seamless data
-          provisioning, efficient data and voice sharing, innovative data
-          gifting, as well as streamlined data and voice distribution.
+          {Dictionary[lang]["with_an_international"]}
         </p>
         <p className="about__text">
-          Backed by unmatched technical assistance, our 5-star user interfaces,
-          available on both mobile and browser platforms, guarantee a
-          user-friendly experience, enabling our clients to effortlessly stay
-          connected and communicate seamlessly worldwide.
+          {Dictionary[lang]["backed_by_unmatched"]}
         </p>
       </div>
     </section>
