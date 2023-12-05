@@ -4,7 +4,8 @@ import "./Form.scss";
 import Title from "../Title/Title";
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
-
+import { PullState } from "../PullState/PullState";
+import { Dictionary } from "../PullState/Dictionary";
 type FormValues = {
   name: string;
   phone: string;
@@ -20,7 +21,7 @@ export default function Form() {
     reset,
   } = useForm<FormValues>({
   });
-
+const lang = PullState.useState((state) => state.lang);
   const [isSubmitted, setIsSubmitted] = useState(false);
  
   const handleCloseSubmittedMessage = () => {
@@ -44,10 +45,9 @@ export default function Form() {
 
   return (
     <div className="form">
-      <Title>LET US HELP YOU</Title>
+      <Title>{Dictionary[lang]["let_us_help_you"]}</Title>
       <p className="form__subtitle">
-        The team of seasoned professionals with extensive IT and telecom
-        expertise
+        {Dictionary[lang]["the_team_of_seasoned"]}
       </p>
 
       <form className="form__form" ref={form} onSubmit={sendEmail}>
@@ -65,7 +65,6 @@ export default function Form() {
                 value: /.*/,
               },
             })}
-        
           />
         </label>
 
@@ -94,7 +93,6 @@ export default function Form() {
                 message: "Please check if your e-mail is correct",
               },
             })}
-    
           />
           {errors.email && (
             <p className="message-error">{errors.email.message}</p>
@@ -116,7 +114,6 @@ export default function Form() {
                 message: "Please provide a bit more detail in your question",
               },
             })}
-      
           ></textarea>
           {errors.question && (
             <p className="message-error">{errors.question.message}</p>
@@ -124,7 +121,11 @@ export default function Form() {
         </label>
 
         <label className="form__checkbox">
-          <input type="checkbox" required {...register("checkbox", { required: true })} />
+          <input
+            type="checkbox"
+            required
+            {...register("checkbox", { required: true })}
+          />
           <span className="checkbox__label">I Agree to the Privacy Policy</span>
         </label>
 

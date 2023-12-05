@@ -15,7 +15,7 @@ import { PullState } from "./components/PullState/PullState";
 export default function Home() {
   const params = useSearchParams();
 
-  useEffect(() => {
+  // useEffect(() => {
     const pkParam = params.get("pk");
     
     if (pkParam) {
@@ -29,7 +29,7 @@ export default function Home() {
       hexagon?.scrollIntoView({ behavior: "smooth"});
 
     }
-  }, [params]);
+  // }, [params]);
 
   return (
     <section className="main">

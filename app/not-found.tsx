@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import styled from "styled-components";
+import { PullState } from "./components/PullState/PullState";
+import { Dictionary } from "./components/PullState/Dictionary";
 
 const Div = styled.div`
   .not-found__img {
@@ -61,6 +63,7 @@ const Div = styled.div`
 `;
 
 export default function NotFound() {
+  const lang = PullState.useState((state) => state.lang);
   return (
     <Div className="not-found">
       <div className="not-found__img">
@@ -75,7 +78,9 @@ export default function NotFound() {
       <div className="not-found__content">
         {" "}
         <h2 title="404">404</h2>
-        <p title="Page not found">Signal lost in Space</p>
+        <p title="Page not found">
+          {Dictionary[lang]["signal_lost_in_space"]}
+        </p>
       </div>
     </Div>
   );

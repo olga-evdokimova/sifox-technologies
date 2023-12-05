@@ -3,8 +3,11 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import "./style.scss";
 import { usePathname } from "next/navigation";
-
+import { PullState } from "../PullState/PullState";
+import { Dictionary } from "../PullState/Dictionary";
 export default function RightNav({ open }) {
+  const lang = PullState.useState((state) => state.lang);
+
   const [showListB2C, setShowListB2C] = useState(false);
   const [showListB2B, setShowListB2B] = useState(false);
   const [buttonColorB2B, setButtonColorB2B] = useState("black");
@@ -56,34 +59,42 @@ export default function RightNav({ open }) {
       {showListB2C && (
         <ul className="nav-menu__list">
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2c-data-voice-sharing"}>
-              Data & Voice Sharing<span>Family</span>
+            <Link href={`/products/${lang}/b2c-data-voice-sharing`}>
+              {Dictionary[lang]["data_voice_sharing"]}
+              <span>{Dictionary[lang]["for_family"]}</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2c-data-voice-cost-sharing"}>
-              Data & Voice Cost Sharing<span>Friends and social buying</span>
+            <Link href={`/products/${lang}/b2c-data-voice-cost-sharing`}>
+              {Dictionary[lang]["data_voice_cost_sharing"]}
+              <span>{Dictionary[lang]["for_friends_and_social_buying"]}</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2c-social-network-bundles"}>
-              Social Network Bundles<span>Individuals and social buying</span>
+            <Link href={`/products/${lang}/b2c-social-network-bundles`}>
+              {Dictionary[lang]["social_network_bundles"]}
+              <span>
+                {" "}
+                {Dictionary[lang]["for_individuals_and_social_buying"]}
+              </span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2c-airtime-credit"}>
-              Airtime Credit<span>Individuals</span>
+            <Link href={`/products/${lang}/b2c-airtime-credit`}>
+              {Dictionary[lang]["airtime_credit"]}
+              <span> {Dictionary[lang]["for_individual_users"]}</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2c-content-services"}>
-              Content Services<span>Individuals</span>
+            <Link href={`/products/${lang}/b2c-content-services`}>
+              {Dictionary[lang]["content_services"]}
+              <span> {Dictionary[lang]["for_individual_users"]}</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2c-cvm-campaign-management"}>
-              CVM campaigns management
-              <span>HV customers</span>
+            <Link href={`/products/${lang}/b2c-cvm-campaign-management`}>
+              {Dictionary[lang]["cvm_campaigns_management"]}
+              <span> {Dictionary[lang]["for_nv_customers"]}</span>
             </Link>
           </li>
         </ul>
@@ -101,25 +112,32 @@ export default function RightNav({ open }) {
       {showListB2B && (
         <ul className="nav-menu__list">
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2b-data-voice-sharing"}>
-              Data & Voice Sharing<span>Small and micro business</span>
+            <Link href={`/products/${lang}/b2b-data-voice-sharing`}>
+              {Dictionary[lang]["data_voice_sharing"]}
+              <span>{Dictionary[lang]["for_small_and_micro_business"]}</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2b-data-sponsorship-or-gifting"}>
-              Data Sponsorship or Gifting
-              <span> Enterprises and Governments</span>
+            <Link href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}>
+              {Dictionary[lang]["data_sponsorship_or_gifting"]}
+              <span>
+                {" "}
+                {Dictionary[lang]["for_enterprises_and_governments"]}
+              </span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2b-reverse-billing"}>
-              Reverse Billing<span>Enterprises and Governments</span>
+            <Link href={`/products/${lang}/b2b-reverse-billing`}>
+              {Dictionary[lang]["reverse_billing"]}
+              <span>{Dictionary[lang]["for_enterprises_and_governments"]}</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={"/products/b2b-data-voice-distribution"}>
-              Data & Voice Distribution
-              <span>Distributors and resellers</span>
+            <Link href={`/products/${lang}/b2b-data-voice-distribution`}>
+              {Dictionary[lang]["data_voice_distribution"]}
+              <span>
+                {Dictionary[lang]["for_distributors_and_resellers"]}
+              </span>
             </Link>
           </li>
         </ul>

@@ -4,10 +4,9 @@ import Title from "@/app/components/Title/Title";
 import Image from "next/image";
 import { PullStateServerSide } from "@/app/components/PullState/PullState";
 export default function PageSlug({ params }: any) {
-  const post = getPostById(params.id + ".html");
+  const post = getPostById(params.id + ".html", "en");
 
-  // const { PullState } = PullStateServerSide.useStores()
-
+ 
   return (
     <>
       <Image
@@ -29,11 +28,10 @@ export default function PageSlug({ params }: any) {
           >
             <path
               d="M40 7H1M1 7L7.41772 0.5M1 7L7.41772 13.5"
-              stroke="#E0933E"
+              stroke="white"
               stroke-linecap="round"
             />
           </svg>
-
           <span>PRODUCTS</span>
         </a>
         <div className="post__tag">{post.tag}</div>

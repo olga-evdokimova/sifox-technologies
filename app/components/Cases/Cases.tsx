@@ -5,7 +5,10 @@ import Partners from "../Partners/Partners";
 import Nigeria from "../Nigeria/Nigeria";
 import Congo from "../Congo/Congo";
 import Kenya from "../Kenya/Kenya";
+import { PullState } from "../PullState/PullState";
+import { Dictionary } from "../PullState/Dictionary";
 export default function Cases() {
+   const lang = PullState.useState((state) => state.lang);
   return (
     <section className="cases container">
       <div className="cases__map"></div>
@@ -14,11 +17,10 @@ export default function Cases() {
       <Congo />
       <Kenya />
       <div className="cases__titles">
-        <Title>Cases</Title>
+        <Title> {Dictionary[lang]["cases"]}</Title>
         <p className="cases__subtitle">
-          SIFOX Technologies has successfully developed and continues to
-          maintain a variety of distinctive projects across various African
-          countries.
+          {Dictionary[lang]["sifox_technologies_has_successfully"]}
+         
         </p>
         <Partners />
       </div>

@@ -3,10 +3,11 @@ import { useState } from "react";
 import Image from "next/image";
 import "./Kenya.scss";
 import Link from "next/link";
-
+import { PullState } from "../PullState/PullState";
+import { Dictionary } from "../PullState/Dictionary";
 
 export default function Kenya() {
- 
+ const lang = PullState.useState((state) => state.lang);
   const [showTooltip, setShowTooltip] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -59,8 +60,8 @@ export default function Kenya() {
           i
           {showTooltip && (
             <div className="kenya__tooltip">
-              <p>Airtime Credit</p>
-              <p>Content Services</p>
+              <p>{Dictionary[lang]["airtime_credit"]}</p>
+              <p>{Dictionary[lang]["content_services"]}</p>
             </div>
           )}
         </button>
@@ -97,8 +98,8 @@ export default function Kenya() {
               <Image src={"/kenya.png"} alt="" width={41} height={22}></Image>
               Kenya
             </h6>
-            <Link href={"/products/b2c-airtime-credit"}>
-              Airtime Credit
+            <Link href={`/products/${lang}/b2c-airtime-credit`}>
+              {Dictionary[lang]["airtime_credit"]}
               <svg
                 width="19"
                 height="19"
@@ -114,8 +115,8 @@ export default function Kenya() {
               </svg>
             </Link>
 
-            <Link href={"/products/b2c-content-services"}>
-              Content Services
+            <Link href={`/products/${lang}/b2c-content-services`}>
+              {Dictionary[lang]["content_services"]}
               <svg
                 width="19"
                 height="19"

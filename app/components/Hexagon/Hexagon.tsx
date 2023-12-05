@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Title from "../Title/Title";
 import Link from "next/link";
 import { PullState } from "../PullState/PullState";
-
+import { Dictionary } from "../PullState/Dictionary";
 export type HexagonProps = {};
 
 export default function Hexagon(props: HexagonProps) {
@@ -14,6 +14,7 @@ export default function Hexagon(props: HexagonProps) {
   const rightRef = useRef(null);
 
   const styleName = PullState.useState((state) => state.hexagonStyleName);
+  const lang = PullState.useState((state) => state.lang);
 
   useEffect(() => {
     
@@ -69,13 +70,11 @@ export default function Hexagon(props: HexagonProps) {
 
   return (
     <section className="hexagon" ref={hexagonRef}>
-      <div
-        className={`hexagon__inner ${window.screen.width > 768 && styleName}`}
-      >
+      <div className={`hexagon__inner ${styleName}`}>
         <div className="hexagon__block-left" ref={leftRef} id="b2b">
           {" "}
           <div className="hexagon__nav left">
-            <Title>B2B Products</Title>
+            <Title>B2B {Dictionary[lang]["products"]}</Title>
             <button
               onClick={() => {
                 console.log("click b2b");
@@ -84,7 +83,7 @@ export default function Hexagon(props: HexagonProps) {
                 });
               }}
             >
-              B2C <span>PRODUCTS</span>{" "}
+              B2C <span>{Dictionary[lang]["products"]}</span>{" "}
               <svg
                 width="42"
                 height="15"
@@ -100,15 +99,12 @@ export default function Hexagon(props: HexagonProps) {
                 />
               </svg>
             </button>
-            <p>
-              Cost savings. Enhanced flexibility. Improved voice and data
-              management.
-            </p>
+            <p>{Dictionary[lang]["cost_savings"]}</p>
           </div>
         </div>
         <div className="hexagon__block-right" ref={rightRef} id="b2c">
           <div className="hexagon__nav right">
-            <Title>B2C Products</Title>
+            <Title>B2C {Dictionary[lang]["products"]}</Title>
             <button
               onClick={() => {
                 PullState.update((state) => {
@@ -131,12 +127,9 @@ export default function Hexagon(props: HexagonProps) {
                   stroke-linecap="round"
                 />
               </svg>
-              B2B <span>PRODUCTS</span>
+              B2B <span>{Dictionary[lang]["products"]}</span>
             </button>
-            <p>
-              Cost savings. Enhanced flexibility. Improved voice and data
-              management.
-            </p>
+            <p>{Dictionary[lang]["cost_savings"]}</p>
           </div>
         </div>
         <div className="hexagon__row">
@@ -147,7 +140,7 @@ export default function Hexagon(props: HexagonProps) {
           </div>
           <Link
             className="hexagon__item"
-            href={"/products/b2c-data-voice-sharing"}
+            href={`/products/${lang}/b2c-data-voice-sharing`}
           >
             <div className="hexagon__content">
               <svg
@@ -163,12 +156,8 @@ export default function Hexagon(props: HexagonProps) {
                   strokeWidth="3"
                 />
               </svg>
-              <h6>
-                Data & Voice
-                <br />
-                Sharing{" "}
-              </h6>
-              <p>Family</p>
+              <h6>{Dictionary[lang]["data_voice_sharing"]}</h6>
+              <p>{Dictionary[lang]["for_family"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -181,7 +170,7 @@ export default function Hexagon(props: HexagonProps) {
         <div className="hexagon__row even">
           <Link
             className="hexagon__item"
-            href={"/products/b2b-data-voice-sharing"}
+            href={`/products/${lang}/b2b-data-voice-sharing`}
           >
             <div className="hexagon__content">
               <svg
@@ -198,16 +187,8 @@ export default function Hexagon(props: HexagonProps) {
                 />
               </svg>
 
-              <h6>
-                Data & Voice
-                <br />
-                Sharing{" "}
-              </h6>
-              <p>
-                Small and micro
-                <br />
-                business
-              </p>
+              <h6>{Dictionary[lang]["data_voice_sharing"]}</h6>
+              <p>{Dictionary[lang]["for_small_and_micro_business"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -216,7 +197,7 @@ export default function Hexagon(props: HexagonProps) {
           </Link>
           <Link
             className="hexagon__item"
-            href={"/products/b2b-data-sponsorship-or-gifting"}
+            href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}
           >
             <div className="hexagon__content">
               <svg
@@ -232,14 +213,8 @@ export default function Hexagon(props: HexagonProps) {
                   strokeWidth="3"
                 />
               </svg>
-              <h6>
-                Data Sponsorship
-                <br />
-                or Gifting
-              </h6>
-              <p>
-                Enterprises and <br /> Governments
-              </p>
+              <h6>{Dictionary[lang]["data_sponsorship_or_gifting"]}</h6>
+              <p>{Dictionary[lang]["for_enterprises_and_governments"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -251,7 +226,7 @@ export default function Hexagon(props: HexagonProps) {
           </div>
           <Link
             className="hexagon__item"
-            href={"/products/b2c-cvm-campaign-management"}
+            href={`/products/${lang}/b2c-cvm-campaign-management`}
           >
             <div className="hexagon__content">
               <svg
@@ -268,12 +243,8 @@ export default function Hexagon(props: HexagonProps) {
                 />
               </svg>
 
-              <h6>
-                CVM campaigns
-                <br />
-                management
-              </h6>
-              <p>HV customers</p>
+              <h6>{Dictionary[lang]["cvm_campaigns_management"]}</h6>
+              <p>{Dictionary[lang]["for_nv_customers"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -286,7 +257,7 @@ export default function Hexagon(props: HexagonProps) {
         <div className="hexagon__row">
           <Link
             className="hexagon__item"
-            href={"/products/b2b-reverse-billing"}
+            href={`/products/${lang}/b2b-reverse-billing`}
           >
             <div className="hexagon__content">
               <svg
@@ -303,14 +274,8 @@ export default function Hexagon(props: HexagonProps) {
                 />
               </svg>
 
-              <h6>
-                Reverse
-                <br />
-                Billing
-              </h6>
-              <p>
-                Enterprises and <br /> Governments
-              </p>
+              <h6>{Dictionary[lang]["reverse_billing"]}</h6>
+              <p>{Dictionary[lang]["for_enterprises_and_governments"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -325,7 +290,7 @@ export default function Hexagon(props: HexagonProps) {
           <div className="hexagon__item"></div>
           <Link
             className="hexagon__item"
-            href={"/products/b2c-data-voice-cost-sharing"}
+            href={`/products/${lang}/b2c-data-voice-cost-sharing`}
           >
             <div className="hexagon__content">
               <svg
@@ -342,15 +307,8 @@ export default function Hexagon(props: HexagonProps) {
                 />
               </svg>
 
-              <h6>
-                Data & Voice
-                <br />
-                Cost Sharing
-              </h6>
-              <p>
-                Friends and social
-                <br /> buying
-              </p>
+              <h6>{Dictionary[lang]["data_voice_cost_sharing"]}</h6>
+              <p>{Dictionary[lang]["for_friends_and_social_buying"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -375,7 +333,7 @@ export default function Hexagon(props: HexagonProps) {
           </div>
           <Link
             className="hexagon__item"
-            href={"/products/b2c-social-network-bundles"}
+            href={`/products/${lang}/b2c-social-network-bundles`}
           >
             <div className="hexagon__content">
               <svg
@@ -392,15 +350,8 @@ export default function Hexagon(props: HexagonProps) {
                 />
               </svg>
 
-              <h6>
-                Social Network
-                <br />
-                Bundles
-              </h6>
-              <p>
-                Individuals and social
-                <br /> buying
-              </p>
+              <h6>{Dictionary[lang]["social_network_bundles"]}</h6>
+              <p>{Dictionary[lang]["for_individuals_and_social_buying"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -413,7 +364,7 @@ export default function Hexagon(props: HexagonProps) {
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
           <Link
             className="hexagon__item"
-            href={"/products/b2b-data-voice-distribution"}
+            href={`/products/${lang}/b2b-data-voice-distribution`}
           >
             <div className="hexagon__content">
               <svg
@@ -430,15 +381,8 @@ export default function Hexagon(props: HexagonProps) {
                 />
               </svg>
 
-              <h6>
-                Data & Voice
-                <br />
-                Distribution
-              </h6>
-              <p>
-                Distributors and
-                <br /> resellers
-              </p>
+              <h6>{Dictionary[lang]["data_voice_distribution"]}</h6>
+              <p>{Dictionary[lang]["for_distributors_and_resellers"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -446,7 +390,10 @@ export default function Hexagon(props: HexagonProps) {
             </div>
           </Link>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
-          <Link className="hexagon__item" href={"/products/b2c-airtime-credit"}>
+          <Link
+            className="hexagon__item"
+            href={`/products/${lang}/b2c-airtime-credit`}
+          >
             <div className="hexagon__content">
               <svg
                 width="18"
@@ -461,13 +408,8 @@ export default function Hexagon(props: HexagonProps) {
                   strokeWidth="3"
                 />
               </svg>
-
-              <h6>
-                Airtime
-                <br />
-                Credit
-              </h6>
-              <p>Individuals</p>
+              <h6>{Dictionary[lang]["airtime_credit"]}</h6>
+              <p>{Dictionary[lang]["for_individual_users"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -476,7 +418,7 @@ export default function Hexagon(props: HexagonProps) {
           </Link>
           <Link
             className="hexagon__item"
-            href={"/products/b2c-content-services"}
+            href={`/products/${lang}/b2c-content-services`}
           >
             <div className="hexagon__content">
               <svg
@@ -492,13 +434,8 @@ export default function Hexagon(props: HexagonProps) {
                   strokeWidth="3"
                 />
               </svg>
-
-              <h6>
-                Content
-                <br />
-                Service
-              </h6>
-              <p>Individuals</p>
+              <h6>{Dictionary[lang]["content_services"]}</h6>
+              <p>{Dictionary[lang]["for_individual_users"]}</p>
             </div>{" "}
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
