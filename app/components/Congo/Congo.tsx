@@ -3,13 +3,14 @@ import { useState } from "react";
 import Image from "next/image";
 import "./Congo.scss";
 import Link from "next/link";
-
+import { PullState } from "../PullState/PullState";
+import { Dictionary } from "../PullState/Dictionary";
 
 export default function Congo() {
+  const lang = PullState.useState((state) => state.lang);
 
   const [showTooltip, setShowTooltip] = useState(false);
   const [showModal, setShowModal] = useState(false);
-
 
   const handleMouseEnter = () => {
     setShowTooltip(true);
@@ -60,10 +61,10 @@ export default function Congo() {
           i
           {showTooltip && (
             <div className="congo__tooltip">
-              <p>Reverse Billing</p>
-              <p>Data & Voice Distribution</p>
-              <p>Data & Voice Sharing</p>
-              <p>Data & Voice Cost Sharing</p>
+              <p>{Dictionary[lang]["reverse_billing"]}</p>
+              <p>{Dictionary[lang]["data_voice_distribution"]}</p>
+              <p>{Dictionary[lang]["data_voice_sharing"]}</p>
+              <p>{Dictionary[lang]["data_voice_cost_sharing"]}</p>
             </div>
           )}
         </button>
@@ -100,8 +101,8 @@ export default function Congo() {
               <Image src={"/congo.png"} alt="" width={41} height={22}></Image>
               DRC
             </h6>
-            <Link href={"/products/b2b-reverse-billing"}>
-              Reverse Billing
+            <Link href={`/products/${lang}/b2b-reverse-billing`}>
+              {Dictionary[lang]["reverse_billing"]}
               <svg
                 width="19"
                 height="19"
@@ -116,8 +117,8 @@ export default function Congo() {
                 />
               </svg>
             </Link>
-            <Link href={"/products/b2b-data-voice-distribution"}>
-              Data & Voice Distribution
+            <Link href={`/products/${lang}/b2b-data-voice-distribution`}>
+              {Dictionary[lang]["data_voice_distribution"]}
               <svg
                 width="19"
                 height="19"
@@ -132,8 +133,8 @@ export default function Congo() {
                 />
               </svg>
             </Link>
-            <Link href={"/products/b2c-data-voice-sharing"}>
-              Data & Voice Sharing
+            <Link href={`/products/${lang}/b2c-data-voice-sharing`}>
+              {Dictionary[lang]["data_voice_sharing"]}
               <svg
                 width="19"
                 height="19"
@@ -148,8 +149,8 @@ export default function Congo() {
                 />
               </svg>
             </Link>
-            <Link href={"/products/b2c-data-voice-cost-sharing"}>
-              Data & Voice Cost Sharing
+            <Link href={`/products/${lang}/b2c-data-voice-cost-sharing`}>
+              {Dictionary[lang]["data_voice_cost_sharing"]}
               <svg
                 width="19"
                 height="19"

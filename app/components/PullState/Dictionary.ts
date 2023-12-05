@@ -34,6 +34,9 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "the_total_number": "The total number of mobile service subscribers in Sub-Saharan Africa will reach 692 million by 2030 (50% of the region's population)",
         "billion": "billion",
         "mobile_operator": "Mobile operators' revenue and investment will grow steadily and reach $58 billion by 2030 thanks in part to rising data usage",
+        //Cases
+        "cases": "Cases",
+        
     },
     "fr": {
         //TopBlock
@@ -70,6 +73,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "the_total_number": "Le nombre total d'abonnés aux services mobiles en Afrique subsaharienne atteindra 692 millions d'ici 2030 (50% de la population de la région).",
         "billion": "milliards",
         "mobile_operator": "Les revenus et investissements des opérateurs mobiles augmenteront régulièrement pour atteindre 58 milliards de dollars d'ici 2030, en partie grâce à l'augmentation de l'utilisation des données.",
+        //Cases
+        "cases": "Cases",
     }
 }
 
