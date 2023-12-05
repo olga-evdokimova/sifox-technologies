@@ -68,7 +68,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         //Products
         "cost_savings": "Économies de coûts. Flexibilité accrue. Amélioration de la gestion des voix et des données.",
         "data_voice_sharing": "Partage de données et de voix",
-        "for_family": "pour les famille",
+        "for_family": "Pour les famille",
         "for_small_and_micro_business": "Pour les petites et micro-entreprises",
         "data_sponsorship_or_gifting": "Parrainage ou Offre de données",
         "for_enterprises_and_governments": "Pour les entreprises et les gouvernements",
