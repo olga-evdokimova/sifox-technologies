@@ -32,13 +32,13 @@ export default function LanguageButton() {
         onClick={() => handleLanguageChange("en")}
         className={lang === "en" ? "active" : ""}
       >
-        En
+        EN
       </button>
       <button
         onClick={() => handleLanguageChange("fr")}
         className={lang === "fr" ? "active" : ""}
       >
-        Fr
+        FR
       </button>
     </div>
   );
