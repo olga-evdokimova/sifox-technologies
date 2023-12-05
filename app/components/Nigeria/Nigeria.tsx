@@ -3,10 +3,11 @@ import { useState } from "react";
 import Image from "next/image";
 import "./Nigeria.scss";
 import Link from "next/link";
-
+import { PullState } from "../PullState/PullState";
+import { Dictionary } from "../PullState/Dictionary";
 
 export default function Nigeria() {
-
+ const lang = PullState.useState((state) => state.lang);
   const [showTooltip, setShowTooltip] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -58,8 +59,8 @@ export default function Nigeria() {
           i
           {showTooltip && (
             <div className="nigeria__tooltip">
-              <p>Data Sponsorship or Gifting</p>
-              <p>Data & Voice Distribution</p>
+              <p>{Dictionary[lang]["data_sponsorship_or_gifting"]}</p>
+              <p>{Dictionary[lang]["data_voice_distribution"]}</p>
             </div>
           )}
         </button>
@@ -96,8 +97,8 @@ export default function Nigeria() {
               <Image src={"/nigeria.png"} alt="" width={41} height={22}></Image>
               Nigeria
             </h6>
-            <Link href={"/products/b2b-data-sponsorship-or-gifting"}>
-              Data Sponsorship or Gifting
+            <Link href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}>
+              {Dictionary[lang]["data_sponsorship_or_gifting"]}
               <svg
                 width="19"
                 height="19"
@@ -113,8 +114,8 @@ export default function Nigeria() {
               </svg>
             </Link>
 
-            <Link href={"/products/b2b-data-voice-distribution"}>
-              Data & Voice Distribution
+            <Link href={`/products/${lang}/b2b-data-voice-distribution`}>
+              {Dictionary[lang]["data_voice_distribution"]}
               <svg
                 width="19"
                 height="19"
