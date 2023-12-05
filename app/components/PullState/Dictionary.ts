@@ -54,6 +54,9 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "silikin_village": "Silikin Village, 372, av. Colonel Mondjiba, Quartier/ Basoko, Commune/ Ngaliema, Kinshasa",
         "mail": "Mail:",
         "social_media": "Social Media:",
+        //Form
+        "the_team_of_seasoned": "The team of seasoned professionals with extensive IT and telecom expertise",
+        "let_us_help_you": "Let us help you",
     },
     "fr": {
         //TopBlock
@@ -110,6 +113,9 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "silikin_village": "Village Silikin, 372, av. Colonel Mondjiba, Quartier/ Basoko, Commune/ Ngaliema, Kinshasa",
         "mail": "Courriel :",
         "social_media": "Réseaux sociaux :",
+        //Form
+        "the_team_of_seasoned": "L'équipe de professionnels chevronnés bénéficiant d'une vaste expertise en informatique et télécommunications",
+        "let_us_help_you": "LAISSEZ-NOUS VOUS AIDER",
     }
 }
 
