@@ -58,7 +58,7 @@ const lang = PullState.useState((state) => state.lang);
         >
           <input
             className="form__input"
-            placeholder="Name"
+            placeholder={Dictionary[lang]["name"]}
             type="text"
             {...register("name", {
               pattern: {
@@ -71,7 +71,7 @@ const lang = PullState.useState((state) => state.lang);
         <label className="form__label">
           <input
             className="form__input"
-            placeholder="Phone"
+            placeholder={Dictionary[lang]["phone"]}
             type="text"
             {...register("phone")}
           />
@@ -90,7 +90,7 @@ const lang = PullState.useState((state) => state.lang);
               required: true,
               pattern: {
                 value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
-                message: "Please check if your e-mail is correct",
+                message: Dictionary[lang]["please_check"],
               },
             })}
           />
@@ -111,7 +111,7 @@ const lang = PullState.useState((state) => state.lang);
               required: true,
               pattern: {
                 value: /.{10,}/,
-                message: "Please provide a bit more detail in your question",
+                message: Dictionary[lang]["please_provide"],
               },
             })}
           ></textarea>
@@ -126,18 +126,20 @@ const lang = PullState.useState((state) => state.lang);
             required
             {...register("checkbox", { required: true })}
           />
-          <span className="checkbox__label">I Agree to the Privacy Policy</span>
+          <span className="checkbox__label">
+            {Dictionary[lang]["i_agree_to_the_privacy_policy"]}
+          </span>
         </label>
 
         <button className="form__btn" type="submit">
-          Submit
+          {Dictionary[lang]["submit"]}
         </button>
       </form>
       {isSubmitted && (
         <div className="submitted-message">
           <p>
-            The application has
-            <br /> been sent successfully!
+            {Dictionary[lang]["the_application_has"]}
+            <br /> {Dictionary[lang]["been_sent_successfully"]}
             <div
               className="submitted-message__close"
               onClick={handleCloseSubmittedMessage}

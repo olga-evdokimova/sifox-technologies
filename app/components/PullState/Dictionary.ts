@@ -90,6 +90,16 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "all_rights_reserved": "All rights reserved",
         //Header
         "contact_us": "Contact Us",
+        //Form
+        "name": "Name",
+        "phone": "Phone",
+        "i_agree_to_the_privacy_policy": "I agree to the privacy policy",
+        "submit": "Submit",
+        "the_application_has": "The application has",
+        "been_sent_successfully": "been sent successfully!",
+        "please_provide": "Please provide a bit more detail in your question",
+        "please_check": "Please check if your e-mail is correct",
+     
     },
     "fr": {
         //TopBlock
@@ -129,7 +139,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         //Cases
         "cases": "PROJETS",
         "sifox_technologies_has_successfully": "SIFOX Technologies a développé avec succès et continue de maintenir une variété de projets distinctifs dans divers pays africains.",
-        "drc": "RDC", 
+        "drc": "RDC",
         //About
         "about_the_company": "À propos de la société",
         "providing_cutting_edge": "Fournir des solutions de pointe pour les communications mobiles à l'échelle mondiale.",
@@ -174,12 +184,21 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "by_using_the_sifox_technologies_website": "En utilisant le site web de SIFOX Technologies, vous acceptez les termes et conditions énoncés ci-dessus. Si vous n'êtes pas d'accord avec une partie de cet accord, veuillez vous abstenir d'utiliser notre site web ou de fournir des informations personnelles.",
         "for_any_further_information": "Pour toute information supplémentaire ou demande concernant cet accord, veuillez nous contacter à [insérer les informations de contact].",
         "thank_you": "Merci de visiter SIFOX Technologies.",
-         //Footer
+        //Footer
         "privacy_policy": "politique de confidentialité",
         "copyright": "Droits d'auteur",
         "all_rights_reserved": "Tous droits réservés",
         //Header
         "contact_us": "Contactez-nous",
+        //Form
+        "name": "Nom",
+        "phone": "Téléphone",
+        "i_agree_to_the_privacy_policy": "Je consens à la politique de confidentialité",
+        "submit": "ENVOYER",
+        "the_application_has": "La demande a été",
+        "been_sent_successfully": "envoyée avec succès !",
+        "please_provide": "Veuillez fournir un peu plus de détails dans votre question.",
+        "please_check": "Veuillez vérifier si votre adresse e-mail est correcte.",
     }
 }
 
