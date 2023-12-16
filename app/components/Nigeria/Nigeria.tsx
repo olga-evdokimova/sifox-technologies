@@ -47,7 +47,7 @@ export default function Nigeria() {
           />
         </svg>
         <h6 className="nigeria__title" onClick={handleButtonClick}>
-          <Image src={"/nigeria.png"} alt="" width={41} height={22}></Image>
+          <Image src={"/nigeria.png"} alt="image" width={41} height={22}></Image>
           Nigeria
         </h6>
 
@@ -87,14 +87,14 @@ export default function Nigeria() {
           <Image
             className="modal-nigeria__image"
             src={"/nigeria-modal.png"}
-            alt=""
+            alt="image"
             width={955}
             height={769}
           ></Image>
           <div className="modal-nigeria__content">
             <h6>
               {" "}
-              <Image src={"/nigeria.png"} alt="" width={41} height={22}></Image>
+              <Image src={"/nigeria.png"} alt="image" width={41} height={22}></Image>
               Nigeria
             </h6>
             <Link href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}>

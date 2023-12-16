@@ -11,7 +11,7 @@ export default function PageSlug({ params }: any) {
       <Image
         className="post__img"
         src={post.image}
-        alt="Картинка"
+        alt="image"
         width={1598}
         height={1690}
       />

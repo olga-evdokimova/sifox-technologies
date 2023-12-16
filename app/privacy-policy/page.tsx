@@ -5,6 +5,7 @@ import "./style.scss";
 import NexLink from "next/link";
 import { PullState } from "../components/PullState/PullState";
 import { Dictionary } from "../components/PullState/Dictionary";
+
 export default function PrivacyPolicy() {
   const lang = PullState.useState((state) => state.lang);
 

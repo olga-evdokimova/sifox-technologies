@@ -161,7 +161,7 @@ export default function Hexagon(props: HexagonProps) {
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
-              <Image src="/b2c/b2c-1.png" alt="" fill sizes="1000" />
+              <Image src="/b2c/b2c-1.png" alt="image" fill sizes="1000" />
             </div>
           </Link>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
@@ -192,7 +192,7 @@ export default function Hexagon(props: HexagonProps) {
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
-              <Image src="/b2b/b2b-1.png" alt="" fill sizes="1000" />
+              <Image src="/b2b/b2b-1.png" alt="image" fill sizes="1000" />
             </div>
           </Link>
           <Link
@@ -218,7 +218,7 @@ export default function Hexagon(props: HexagonProps) {
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
-              <Image src="/b2b/b2b-4.png" alt="" fill sizes="1000" />
+              <Image src="/b2b/b2b-4.png" alt="image" fill sizes="1000" />
             </div>
           </Link>
           <div className="hexagon__item">
@@ -248,7 +248,7 @@ export default function Hexagon(props: HexagonProps) {
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
-              <Image src="/b2c/b2c-2.png" alt="" fill sizes="1000" />
+              <Image src="/b2c/b2c-2.png" alt="image" fill sizes="1000" />
             </div>
           </Link>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
@@ -279,7 +279,7 @@ export default function Hexagon(props: HexagonProps) {
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
-              <Image src="/b2b/b2b-2.png" alt="" fill sizes="1000" />
+              <Image src="/b2b/b2b-2.png" alt="image" fill sizes="1000" />
             </div>
           </Link>
           <div className="hexagon__item"></div>
@@ -312,7 +312,7 @@ export default function Hexagon(props: HexagonProps) {
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
-              <Image src="/b2c/b2c-6.png" alt="" fill sizes="1000" />
+              <Image src="/b2c/b2c-6.png" alt="image" fill sizes="1000" />
             </div>
           </Link>
           <div className="hexagon__item">
@@ -355,7 +355,7 @@ export default function Hexagon(props: HexagonProps) {
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
-              <Image src="/b2c/b2c-4.png" alt="" fill sizes="1000" />
+              <Image src="/b2c/b2c-4.png" alt="image" fill sizes="1000" />
             </div>
           </Link>
         </div>
@@ -386,7 +386,7 @@ export default function Hexagon(props: HexagonProps) {
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
-              <Image src="/b2b/b2b-3.png" alt="" fill sizes="1000" />
+              <Image src="/b2b/b2b-3.png" alt="image" fill sizes="1000" />
             </div>
           </Link>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
@@ -413,7 +413,7 @@ export default function Hexagon(props: HexagonProps) {
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
-              <Image src="/b2c/b2c-5.png" alt="" fill sizes="1000" />
+              <Image src="/b2c/b2c-5.png" alt="image" fill sizes="1000" />
             </div>
           </Link>
           <Link
@@ -439,7 +439,7 @@ export default function Hexagon(props: HexagonProps) {
             </div>{" "}
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
-              <Image src="/b2c/b2c-3.png" alt="" fill sizes="1000" />
+              <Image src="/b2c/b2c-3.png" alt="image" fill sizes="1000" />
             </div>
           </Link>
         </div>

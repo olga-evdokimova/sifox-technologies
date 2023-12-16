@@ -49,7 +49,7 @@ export default function Congo() {
         </svg>
 
         <h6 className="congo__title" onClick={handleButtonClick}>
-          <Image src={"/congo.png"} alt="" width={41} height={22}></Image>
+          <Image src={"/congo.png"} alt="congo" width={41} height={22}></Image>
           {Dictionary[lang]["drc"]}
         </h6>
 
@@ -91,14 +91,19 @@ export default function Congo() {
           <Image
             className="modal-congo__image"
             src={"/congo-modal.png"}
-            alt=""
+            alt="congo"
             width={1008}
             height={999}
           ></Image>
           <div className="modal-congo__content">
             <h6>
               {" "}
-              <Image src={"/congo.png"} alt="" width={41} height={22}></Image>
+              <Image
+                src={"/congo.png"}
+                alt="congo"
+                width={41}
+                height={22}
+              ></Image>
               {Dictionary[lang]["drc"]}
             </h6>
             <Link href={`/products/${lang}/b2b-reverse-billing`}>

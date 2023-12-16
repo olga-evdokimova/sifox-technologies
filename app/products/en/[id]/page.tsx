@@ -12,7 +12,7 @@ export default function PageSlug({ params }: any) {
       <Image
         className="post__img"
         src={post.image}
-        alt="Картинка"
+        alt="image"
         width={1598}
         height={1690}
       />
@@ -28,10 +28,11 @@ export default function PageSlug({ params }: any) {
           >
             <path
               d="M40 7H1M1 7L7.41772 0.5M1 7L7.41772 13.5"
-              stroke="white"
+              stroke="#E0933E"
               stroke-linecap="round"
             />
           </svg>
+
           <span>PRODUCTS</span>
         </a>
         <div className="post__tag">{post.tag}</div>

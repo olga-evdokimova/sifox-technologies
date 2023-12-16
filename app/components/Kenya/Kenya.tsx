@@ -48,7 +48,7 @@ export default function Kenya() {
         </svg>
 
         <h6 className="kenya__title" onClick={handleButtonClick}>
-          <Image src={"/kenya.png"} alt="" width={41} height={22}></Image>
+          <Image src={"/kenya.png"} alt="image" width={41} height={22}></Image>
           Kenya
         </h6>
 
@@ -88,14 +88,14 @@ export default function Kenya() {
           <Image
             className="modal-kenya__image"
             src={"/kenya-modal.png"}
-            alt=""
+            alt="image"
             width={729}
             height={901}
           ></Image>
           <div className="modal-kenya__content">
             <h6>
               {" "}
-              <Image src={"/kenya.png"} alt="" width={41} height={22}></Image>
+              <Image src={"/kenya.png"} alt="image" width={41} height={22}></Image>
               Kenya
             </h6>
             <Link href={`/products/${lang}/b2c-airtime-credit`}>
