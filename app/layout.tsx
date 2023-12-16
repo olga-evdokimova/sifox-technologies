@@ -6,13 +6,14 @@ import "./null.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
+
 const inter = Inter({
   weight: ["400", "500", "600"],
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 });
-export const bebas_neue = Bebas_Neue({
+ const bebas_neue = Bebas_Neue({
   weight: ["400"],
   subsets: ["latin"],
   variable: "--font-bebas-neue",

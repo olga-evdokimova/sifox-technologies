@@ -99,7 +99,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "been_sent_successfully": "been sent successfully!",
         "please_provide": "Please provide a bit more detail in your question",
         "please_check": "Please check if your e-mail is correct",
-     
+        //description
+        "description": "Mobile communication products for growing markets, including Data & Voice Sharing, Cost Sharing, Airtime Credit, CVM tools, Data Sponsorship, Reverse Billing and Distribution. The products, built on scalable and robust technological platforms, generate new revenues for MNOs.",
     },
     "fr": {
         //TopBlock
@@ -199,6 +200,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "been_sent_successfully": "envoyée avec succès !",
         "please_provide": "Veuillez fournir un peu plus de détails dans votre question.",
         "please_check": "Veuillez vérifier si votre adresse e-mail est correcte.",
+        //description
+        "description": "Produits de communication mobile pour des marchés en expansion, avec partage de données et voix, coûts partagés, crédit d'airtime, outils CVM, parrainage de données, facturation inverse et distribution. Construits sur des plateformes évolutives, ces produits génèrent de nouvelles sources de revenus pour les opérateurs de réseaux mobiles.",
     }
 }
 
