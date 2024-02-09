@@ -7,7 +7,10 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { PullState } from "./components/PullState/PullState";
 import { Dictionary } from "./components/PullState/Dictionary";
+
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
+
 const inter = Inter({
   weight: ["400", "500", "600"],
   subsets: ["latin"],
@@ -38,6 +41,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
