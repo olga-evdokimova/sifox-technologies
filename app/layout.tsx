@@ -1,5 +1,4 @@
 "use client";
-import type { Metadata } from "next";
 import { Inter, Bebas_Neue } from "next/font/google";
 import "./globals.scss";
 import "./style.scss";
@@ -21,11 +20,6 @@ const bebas_neue = Bebas_Neue({
   variable: "--font-bebas-neue",
   display: "swap",
 });
-
-// export const metadata: Metadata = {
-//   title: "SIFOX Technologies",
-//   description: "SIFOX Technologies",
-// };
 
 export default function RootLayout({
   children,
