@@ -18,7 +18,7 @@ export default function Hexagon(props: HexagonProps) {
 
   useEffect(() => {
     
-    console.log("useEffect on click", styleName);
+   
     const windowWidth = window.screen.width;
     if(windowWidth > 768) {
       return;
@@ -37,7 +37,7 @@ export default function Hexagon(props: HexagonProps) {
         }
       }
 
-      console.log("scroll", left, styleName);
+      
       hexagonRef.current?.scrollTo({
         left: 0,
         behavior: styleName === "style_left_instant" ? "auto" : "smooth",
@@ -77,7 +77,6 @@ export default function Hexagon(props: HexagonProps) {
             <Title>B2B {Dictionary[lang]["products"]}</Title>
             <button
               onClick={() => {
-                console.log("click b2b");
                 PullState.update((state) => {
                   state.hexagonStyleName = "style_right";
                 });
@@ -108,7 +107,6 @@ export default function Hexagon(props: HexagonProps) {
             <button
               onClick={() => {
                 PullState.update((state) => {
-                  console.log("click b2c");
                   state.hexagonStyleName = "style_left";
                 });
               }}

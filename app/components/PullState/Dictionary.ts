@@ -54,6 +54,9 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "primrose_drive": "Primrose Drive, Block H, Plot 5, Pinnock Estate Lekki, Lagos State, Nigeria",
         "office_in_dcr": "Office in DRC (Democratic Republic of the Congo): ",
         "silikin_village": "Silikin Village, 372, av. Colonel Mondjiba, Quartier/ Basoko, Commune/ Ngaliema, Kinshasa",
+        "partner_in_ivory_coast": "Partner in Ivory Coast:",
+        "lithium_africa": "C/o LITHIUM-AFRICA CONSULTING & SOLUTIONS Cocody II Plateaux, 8ème Tranche Rue L84, Carrefour Prière 25 BP 2122 Abidjan 25, COTE D’IVOIRE",
+
         "mail": "Mail:",
         "social_media": "Social Media:",
         //Form
@@ -157,6 +160,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "primrose_drive": "Primrose Drive, bloc H, parcelle 5, domaine Pinnock Estate Lekki, État de Lagos, Nigeria",
         "office_in_dcr": "Bureau en RDC (République démocratique du Congo) :",
         "silikin_village": "Village Silikin, 372, av. Colonel Mondjiba, Quartier/ Basoko, Commune/ Ngaliema, Kinshasa",
+        "partner_in_ivory_coast": "Partenaire en Côte d'Ivoire:",
+        "lithium_africa": "C/o LITHIUM-AFRICA CONSULTING & SOLUTIONS Cocody II Plateaux, 8ème Tranche Rue L84, Carrefour Prière 25 BP 2122 Abidjan 25, COTE D’IVOIRE",
         "mail": "Courriel :",
         "social_media": "Réseaux sociaux :",
         //Form

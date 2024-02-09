@@ -34,6 +34,14 @@ export default function Contacts() {
           <div className="contacts__address">
             {Dictionary[lang]["silikin_village"]}
           </div>
+
+          <span>{Dictionary[lang]["partner_in_ivory_coast"]}</span>
+          <div className="contacts__address">
+            {Dictionary[lang]["lithium_africa"]}
+          </div>
+          <span>{Dictionary[lang]["tel"]}</span>
+          <Link href="tel:+225272255718">+225 27 22 55 71 8</Link>
+
           <div className="contacts__social">
             <div className="contacts__social-item">
               <span>{Dictionary[lang]["mail"]}</span>
