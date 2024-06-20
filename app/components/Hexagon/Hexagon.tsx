@@ -6,6 +6,7 @@ import Title from "../Title/Title";
 import Link from "next/link";
 import { PullState } from "../PullState/PullState";
 import { Dictionary } from "../PullState/Dictionary";
+import SvgArrow from "../SvgArrow";
 export type HexagonProps = {};
 
 export default function Hexagon(props: HexagonProps) {
@@ -141,19 +142,7 @@ export default function Hexagon(props: HexagonProps) {
             href={`/products/${lang}/b2c-data-voice-sharing`}
           >
             <div className="hexagon__content">
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                  stroke="white"
-                  strokeWidth="3"
-                />
-              </svg>
+              <SvgArrow />
               <h6>{Dictionary[lang]["data_voice_sharing"]}</h6>
               <p>{Dictionary[lang]["for_family"]}</p>
             </div>
@@ -171,19 +160,7 @@ export default function Hexagon(props: HexagonProps) {
             href={`/products/${lang}/b2b-data-voice-sharing`}
           >
             <div className="hexagon__content">
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                  stroke="white"
-                  strokeWidth="3"
-                />
-              </svg>
+              <SvgArrow />
 
               <h6>{Dictionary[lang]["data_voice_sharing"]}</h6>
               <p>{Dictionary[lang]["for_small_and_micro_business"]}</p>
@@ -198,19 +175,7 @@ export default function Hexagon(props: HexagonProps) {
             href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}
           >
             <div className="hexagon__content">
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                  stroke="white"
-                  strokeWidth="3"
-                />
-              </svg>
+              <SvgArrow />
               <h6>{Dictionary[lang]["data_sponsorship_or_gifting"]}</h6>
               <p>{Dictionary[lang]["for_enterprises_and_governments"]}</p>
             </div>
@@ -227,20 +192,8 @@ export default function Hexagon(props: HexagonProps) {
             href={`/products/${lang}/b2c-cvm-campaign-management`}
           >
             <div className="hexagon__content">
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                  stroke="white"
-                  strokeWidth="3"
-                />
-              </svg>
-
+              {" "}
+              <SvgArrow />
               <h6>{Dictionary[lang]["cvm_campaigns_management"]}</h6>
               <p>{Dictionary[lang]["for_nv_customers"]}</p>
             </div>
@@ -258,19 +211,7 @@ export default function Hexagon(props: HexagonProps) {
             href={`/products/${lang}/b2b-reverse-billing`}
           >
             <div className="hexagon__content">
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                  stroke="white"
-                  strokeWidth="3"
-                />
-              </svg>
+              <SvgArrow />
 
               <h6>{Dictionary[lang]["reverse_billing"]}</h6>
               <p>{Dictionary[lang]["for_enterprises_and_governments"]}</p>
@@ -291,19 +232,7 @@ export default function Hexagon(props: HexagonProps) {
             href={`/products/${lang}/b2c-data-voice-cost-sharing`}
           >
             <div className="hexagon__content">
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                  stroke="white"
-                  strokeWidth="3"
-                />
-              </svg>
+              <SvgArrow />
 
               <h6>{Dictionary[lang]["data_voice_cost_sharing"]}</h6>
               <p>{Dictionary[lang]["for_friends_and_social_buying"]}</p>
@@ -334,19 +263,7 @@ export default function Hexagon(props: HexagonProps) {
             href={`/products/${lang}/b2c-social-network-bundles`}
           >
             <div className="hexagon__content">
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                  stroke="white"
-                  strokeWidth="3"
-                />
-              </svg>
+              <SvgArrow />
 
               <h6>{Dictionary[lang]["social_network_bundles"]}</h6>
               <p>{Dictionary[lang]["for_individuals_and_social_buying"]}</p>
@@ -365,19 +282,7 @@ export default function Hexagon(props: HexagonProps) {
             href={`/products/${lang}/b2b-data-voice-distribution`}
           >
             <div className="hexagon__content">
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                  stroke="white"
-                  strokeWidth="3"
-                />
-              </svg>
+              <SvgArrow />
 
               <h6>{Dictionary[lang]["data_voice_distribution"]}</h6>
               <p>{Dictionary[lang]["for_distributors_and_resellers"]}</p>
@@ -393,19 +298,7 @@ export default function Hexagon(props: HexagonProps) {
             href={`/products/${lang}/b2c-airtime-credit`}
           >
             <div className="hexagon__content">
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                  stroke="white"
-                  strokeWidth="3"
-                />
-              </svg>
+              <SvgArrow />
               <h6>{Dictionary[lang]["airtime_credit"]}</h6>
               <p>{Dictionary[lang]["for_individual_users"]}</p>
             </div>
@@ -419,19 +312,7 @@ export default function Hexagon(props: HexagonProps) {
             href={`/products/${lang}/b2c-content-services`}
           >
             <div className="hexagon__content">
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.3938 16.9973L16.3938 1.99731M16.3938 1.99731H1.3938M16.3938 1.99731V16.9973"
-                  stroke="white"
-                  strokeWidth="3"
-                />
-              </svg>
+              <SvgArrow />
               <h6>{Dictionary[lang]["content_services"]}</h6>
               <p>{Dictionary[lang]["for_individual_users"]}</p>
             </div>{" "}
