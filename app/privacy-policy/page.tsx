@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
           <path
             d="M40 7H1M1 7L7.41772 0.5M1 7L7.41772 13.5"
             stroke="white"
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
         </svg>
       </NexLink>

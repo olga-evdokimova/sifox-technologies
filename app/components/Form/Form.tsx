@@ -37,9 +37,9 @@ const lang = PullState.useState((state) => state.lang);
       .then((result) => {
           setIsSubmitted(true);
           reset();
-          console.log(result.text);
+          // console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+          // console.log(error.text);
       });
   };
 
@@ -155,8 +155,8 @@ const lang = PullState.useState((state) => state.lang);
                 <path
                   d="M41 1L21 21M1 41L21 21M21 21L1 1L41 41"
                   stroke="#0A0714"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                 />
               </svg>
             </div>

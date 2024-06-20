@@ -43,8 +43,8 @@ export default function ScrollToTopButton() {
         <path
           d="M1 12L11 2L21 12"
           stroke="#252B3A"
-          stroke-width="2"
-          stroke-linecap="round"
+          strokeWidth="2"
+          strokeLinecap="round"
         />
       </svg>
     </button>

@@ -28,7 +28,7 @@ export default function PageSlug({ params }: any) {
             <path
               d="M40 7H1M1 7L7.41772 0.5M1 7L7.41772 13.5"
               stroke="#E0933E"
-              stroke-linecap="round"
+              strokeLinecap="round"
             />
           </svg>
           <span>PRODUITS</span>

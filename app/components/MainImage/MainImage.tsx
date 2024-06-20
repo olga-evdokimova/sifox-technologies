@@ -10,6 +10,7 @@ export default function MainImage() {
           alt="background"
           fill
           sizes="1000"
+          priority 
         ></Image>
       </div>
       <div className="main__ellipses">
