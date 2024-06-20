@@ -1,46 +1,68 @@
-//@ts-nocheck
 import React, { useState, useRef } from "react";
 import "./Form.scss";
 import Title from "../Title/Title";
 import { useForm } from "react-hook-form";
-import emailjs from '@emailjs/browser';
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import emailjs from "@emailjs/browser";
 import { PullState } from "../PullState/PullState";
 import { Dictionary } from "../PullState/Dictionary";
-type FormValues = {
-  name: string;
-  phone: string;
-  email: string;
-  question: string;
-  checkbox: boolean;
-};
+
 export default function Form() {
+  
+  const lang = PullState.useState((state) => state.lang);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const formSchema = z.object({
+    name: z.string().min(1, { message: Dictionary[lang]["name_is_required"] }),
+    phone: z.string().optional(),
+    email: z
+      .string()
+      .email({ message: Dictionary[lang]["please_check_if_your_email"] }),
+    question: z
+      .string()
+      .min(10, { message: Dictionary[lang]["please_provide_question"] }),
+    checkbox: z.boolean().refine((val) => val === true, {
+      message: Dictionary[lang]["you_must_agree_to_the_privacy_policy"],
+    }),
+  });
+
+  type FormValues = z.infer<typeof formSchema>;
   const {
     register,
     handleSubmit,
     formState: { errors, isValid },
     reset,
   } = useForm<FormValues>({
+    resolver: zodResolver(formSchema),
+    mode: "onTouched",
   });
-const lang = PullState.useState((state) => state.lang);
-  const [isSubmitted, setIsSubmitted] = useState(false);
- 
+
+
   const handleCloseSubmittedMessage = () => {
     setIsSubmitted(false);
   };
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_gkyuxkt', 'template_xk593fv', form.current, '0BBekWC46Hftu0d4A')
-      .then((result) => {
-          setIsSubmitted(true);
-          reset();
-          // console.log(result.text);
-      }, (error) => {
-          // console.log(error.text);
-      });
+  const sendEmail = (data: FormValues) => {
+    // e.preventDefault();
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_gkyuxkt",
+          "template_xk593fv",
+          form.current,
+          "0BBekWC46Hftu0d4A"
+        )
+        .then(
+          (result) => {
+            setIsSubmitted(true);
+            reset();
+          },
+          (error) => {}
+        );
+    }
   };
 
   return (
@@ -50,7 +72,11 @@ const lang = PullState.useState((state) => state.lang);
         {Dictionary[lang]["the_team_of_seasoned"]}
       </p>
 
-      <form className="form__form" ref={form} onSubmit={sendEmail}>
+      <form
+        className="form__form"
+        ref={form}
+        onSubmit={handleSubmit(sendEmail)}
+      >
         <label
           className={`form__label ${
             errors.name ? "label-error" : isValid ? "label-success" : ""
@@ -60,12 +86,11 @@ const lang = PullState.useState((state) => state.lang);
             className="form__input"
             placeholder={Dictionary[lang]["name"]}
             type="text"
-            {...register("name", {
-              pattern: {
-                value: /.*/,
-              },
-            })}
+            {...register("name")}
           />
+          {errors.name && (
+            <p className="message-error">{errors.name.message}</p>
+          )}
         </label>
 
         <label className="form__label">
@@ -86,13 +111,7 @@ const lang = PullState.useState((state) => state.lang);
             className="form__input"
             placeholder="E-mail"
             type="text"
-            {...register("email", {
-              required: true,
-              pattern: {
-                value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
-                message: Dictionary[lang]["please_check"],
-              },
-            })}
+            {...register("email")}
           />
           {errors.email && (
             <p className="message-error">{errors.email.message}</p>
@@ -107,13 +126,7 @@ const lang = PullState.useState((state) => state.lang);
           <textarea
             className="form__textarea"
             placeholder="Question"
-            {...register("question", {
-              required: true,
-              pattern: {
-                value: /.{10,}/,
-                message: Dictionary[lang]["please_provide"],
-              },
-            })}
+            {...register("question")}
           ></textarea>
           {errors.question && (
             <p className="message-error">{errors.question.message}</p>
@@ -121,13 +134,15 @@ const lang = PullState.useState((state) => state.lang);
         </label>
 
         <label className="form__checkbox">
-          <input
-            type="checkbox"
-            required
-            {...register("checkbox", { required: true })}
-          />
+          <input type="checkbox" {...register("checkbox")} />
           <span className="checkbox__label">
             {Dictionary[lang]["i_agree_to_the_privacy_policy"]}
+
+            {errors.checkbox && (
+              <p className="message-error checkbox__label-error">
+                {errors.checkbox.message}
+              </p>
+            )}
           </span>
         </label>
 
@@ -144,7 +159,6 @@ const lang = PullState.useState((state) => state.lang);
               className="submitted-message__close"
               onClick={handleCloseSubmittedMessage}
             >
-              {" "}
               <svg
                 width="42"
                 height="42"

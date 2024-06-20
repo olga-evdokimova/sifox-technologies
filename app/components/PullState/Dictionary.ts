@@ -102,6 +102,11 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "been_sent_successfully": "been sent successfully!",
         "please_provide": "Please provide a bit more detail in your question",
         "please_check": "Please check if your e-mail is correct",
+        "name_is_required": "Name is required",
+        "please_check_if_your_email": "Please check if your e-mail is correct",
+        "please_provide_question": "Please provide a bit more detail in your question",
+        "you_must_agree_to_the_privacy_policy": "You must agree to the privacy policy",
+
         //description
         "description": "Mobile communication products for growing markets, including Data & Voice Sharing, Cost Sharing, Airtime Credit, CVM tools, Data Sponsorship, Reverse Billing and Distribution. The products, built on scalable and robust technological platforms, generate new revenues for MNOs.",
     },
@@ -205,6 +210,11 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "been_sent_successfully": "envoyée avec succès !",
         "please_provide": "Veuillez fournir un peu plus de détails dans votre question.",
         "please_check": "Veuillez vérifier si votre adresse e-mail est correcte.",
+        "name_is_required": "Le nom est obligatoire",
+        "please_check_if_your_email": "Veuillez vérifier que votre e-mail est correct",
+        "please_provide_question": "Veuillez fournir un peu plus de détails dans votre question",
+        "you_must_agree_to_the_privacy_policy": "Vous devez accepter la politique de confidentialité",
+
         //description
         "description": "Produits de communication mobile pour des marchés en expansion, avec partage de données et voix, coûts partagés, crédit d'airtime, outils CVM, parrainage de données, facturation inverse et distribution. Construits sur des plateformes évolutives, ces produits génèrent de nouvelles sources de revenus pour les opérateurs de réseaux mobiles.",
     }

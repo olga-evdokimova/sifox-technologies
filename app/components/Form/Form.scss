@@ -94,9 +94,10 @@
             background-color: transparent;
         }
         .checkbox__label {
-            display: inline-block;
+            display: flex;
             position: relative;
             padding-left: 55px;
+            padding-bottom: 30px;
              cursor: url('/cursor.png'), auto;
             @media (max-width: 768px) {
                 padding-left: 35px;
@@ -116,6 +117,14 @@
                     width: 16px;
                     height: 16px;
                 }
+            }
+            &-error {
+               font-size: 16px;
+               position: absolute;
+               bottom: 0;
+               @media (max-width: 768px){
+                font-size: 10px;
+               }
             }
         }
         span {
@@ -176,11 +185,11 @@
         font-size: 20px;
         line-height: 1;
         @media (max-width: 768px){
-            font-size: 16px;
+            font-size: 12px;
         }
     }
     @media (max-width: 768px) {
-        font-size: 12px;
+        font-size: 10px;
         bottom: -20px;
         right: 10px;
         padding-right: 20px;
