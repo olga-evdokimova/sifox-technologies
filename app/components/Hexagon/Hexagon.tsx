@@ -242,7 +242,7 @@ export default function Hexagon(props: HexagonProps) {
               <Image src="/b2c/b2c-6.png" alt="image" fill sizes="1000" />
             </div>
           </Link>
-          <div className="hexagon__item">
+          <div className="hexagon__item hexagon__item-hidden">
             <div className="hexagon__hover"></div>
           </div>
         </div>
