@@ -1,3 +1,4 @@
+// app/layout.tsx
 "use client";
 import { Inter, Bebas_Neue } from "next/font/google";
 import "./globals.scss";
@@ -10,7 +11,7 @@ import { Dictionary } from "./components/PullState/Dictionary";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-
+import Script from "next/script";
 const inter = Inter({
   weight: ["400", "500", "600"],
   subsets: ["latin"],
@@ -40,6 +41,19 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
         </div>
+        {/* Google Analytics Script */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=AW-11277040941`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-11277040941');
+          `}
+        </Script>
         <SpeedInsights />
         <Analytics />
       </body>
