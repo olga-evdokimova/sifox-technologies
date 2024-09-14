@@ -9,7 +9,7 @@ export default function MainImage() {
           src={"/main-img.png"}
           alt="background"
           fill
-          sizes="1000"
+          sizes="500"
           priority 
         ></Image>
       </div>

@@ -71,7 +71,7 @@ export default function NotFound() {
           src={"/image-404.png"}
           alt="background"
           fill
-          sizes="1000"
+          sizes="500"
         ></Image>
       </div>
       <div className="not-found__ellipses"></div>
