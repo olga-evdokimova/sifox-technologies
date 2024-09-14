@@ -26,7 +26,7 @@
     }
     &__ellipses {
         position: absolute;
-        background-image: url("/posts/post-ellipses.png");
+        background-image: url("/posts/post-ellipses.webp");
         background-repeat: no-repeat;
         background-size: cover;
         width: 2500px;
@@ -36,7 +36,7 @@
         transform: translateX(-50%);
         z-index: -4;
         @media (max-width: 992px) {
-            background-image: url("/posts/post-ellipses-992.png");
+            background-image: url("/posts/post-ellipses-992.webp");
             width: 1200px;
             height: 1200px;
         }

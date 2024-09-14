@@ -44,7 +44,7 @@ const Div = styled.div`
 
   .not-found__ellipses {
     position: absolute;
-    background-image: url("/main-ellipses.png");
+    background-image: url("/main-ellipses.webp");
     background-repeat: no-repeat;
     background-size: cover;
     width: 2312px;
@@ -55,7 +55,7 @@ const Div = styled.div`
     z-index: -3;
     opacity: 0.8;
     @media (max-width: 992px) {
-      background-image: url("/main-ellipses-992.png");
+      background-image: url("/main-ellipses-992.webp");
       width: 1200px;
       top: -300px;
     }
