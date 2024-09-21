@@ -32,7 +32,7 @@ export default function ScrollToTopButton() {
   };
 
   return (
-    <button id="scrollToTopButton" onClick={scrollToTop}>
+    <button id="scrollToTopButton" onClick={scrollToTop} aria-label="Scroll up">
       <svg
         width="22"
         height="13"
