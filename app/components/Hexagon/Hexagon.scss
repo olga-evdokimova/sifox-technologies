@@ -233,7 +233,7 @@
         left: 59px;
         top: 10px;
         z-index: 2;
-        cursor: url("/cursor.png"), auto;
+        cursor: url("/cursor.webp"), auto;
         pointer-events: none;
         @media (max-width: 1100px) {
             width: 168px;
@@ -282,7 +282,7 @@
         transform: rotate(-90deg);
         width: 332px;
         height: 287px;
-        cursor: url("/cursor.png"), auto;
+        cursor: url("/cursor.webp"), auto;
         z-index: 1;
         @media (max-width: 1100px) {
             width: 218px;

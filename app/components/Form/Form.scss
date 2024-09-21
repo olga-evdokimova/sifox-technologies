@@ -98,7 +98,7 @@
             position: relative;
             padding-left: 55px;
             padding-bottom: 30px;
-             cursor: url('/cursor.png'), auto;
+             cursor: url('/cursor.webp'), auto;
             @media (max-width: 768px) {
                 padding-left: 35px;
             }
@@ -230,7 +230,7 @@
         top: 30px;
         right: 30px;
         z-index: 10;
-          cursor: url('/cursor.png'), auto;
+          cursor: url('/cursor.webp'), auto;
         @media (max-width: 768px) {
             top: 15px;
             right: 15px;
