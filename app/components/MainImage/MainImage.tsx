@@ -5,16 +5,16 @@ export default function MainImage() {
   return (
     <div>
       <div className="main__img">
-        <Image
+        {/* <Image
           src={"/main-img.webp"}
           alt="background"
           fill
           sizes="500"
           priority 
-        ></Image>
+        ></Image> */}
       </div>
-      <div className="main__ellipses">
-      </div>
+      {/* <div className="main__ellipses">
+      </div> */}
     </div>
   );
 }
