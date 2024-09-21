@@ -10,7 +10,7 @@ export default function About() {
   return (
     <section className="about" id="about">
       <div className="about__content">
-        <div className="c"></div>
+        <div className="about__ellipses"></div>
         <Link href={"/"} className="header__logo">
           <Image
             src={"/logo.svg"}
