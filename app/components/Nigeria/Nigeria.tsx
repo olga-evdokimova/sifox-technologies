@@ -31,7 +31,7 @@ export default function Nigeria() {
     <>
       <div className="nigeria">
         <Svg />
-        <h5 className="nigeria__title" onClick={handleButtonClick}>
+        <h6 className="nigeria__title" onClick={handleButtonClick}>
           <Image
             src={"/nigeria.png"}
             alt="image"
@@ -39,7 +39,7 @@ export default function Nigeria() {
             height={22}
           ></Image>
           Nigeria
-        </h5>
+        </h6>
 
         <button
           className="nigeria__btn"
@@ -82,8 +82,7 @@ export default function Nigeria() {
             height={769}
           ></Image>
           <div className="modal-nigeria__content">
-            <h6>
-              {" "}
+            <div>
               <Image
                 src={"/nigeria.png"}
                 alt="image"
@@ -91,7 +90,7 @@ export default function Nigeria() {
                 height={22}
               ></Image>
               Nigeria
-            </h6>
+            </div>
             <Link href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}>
               {Dictionary[lang]["data_sponsorship_or_gifting"]}
               <SvgArrow />
