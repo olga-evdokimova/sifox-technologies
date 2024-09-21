@@ -49,28 +49,21 @@
             top: 0;
         }
     }
-    // &__ellipses {
-    //     position: absolute;
-    //     background-image: url("/about-ellipses.webp");
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     width: 1800px;
-    //     height: 1800px;
-    //     right: 100px;
-    //     z-index: -1;
-    //     opacity: 0.6;
-    //     @media (max-width: 768px) {
-    //         background-image: none;
-    //     }
-    // }
     &__ellipses {
         position: absolute;
-        right: 30%;
+        background-image: url("/about-ellipses.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1800px;
+        height: 1800px;
+        right: 100px;
+        z-index: -1;
         opacity: 0.6;
-        @media (max-width: 767px) {
-            display: none;
+        @media (max-width: 768px) {
+            background-image: none;
         }
     }
+
     h3 {
         padding: 10px;
         margin-bottom: 40px;

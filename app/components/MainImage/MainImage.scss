@@ -9,31 +9,22 @@
     height: 812px;
   }
 }
-// .main__ellipses {
-//   position: absolute;
-//   background-image: url("/main-ellipses.webp");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   width: 2312px;
-//   height: 1950px;
-//   top: -740px;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   z-index: -1;
-//   opacity: 0.6;
-//   @media (max-width: 992px) {
-//     background-image: url("/main-ellipses-992.webp");
-//     width: 992px;
-//     top: -300px;
-//   }
-// }
 .main__ellipses {
   position: absolute;
+  background-image: url("/main-ellipses.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2312px;
+  height: 1950px;
   top: -740px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
   opacity: 0.6;
   @media (max-width: 992px) {
-    width: 1600px;
-     left: -200px;
+    background-image: url("/main-ellipses-992.webp");
+    width: 992px;
+    top: -300px;
   }
 }
+
