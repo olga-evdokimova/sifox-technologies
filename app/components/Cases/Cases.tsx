@@ -12,7 +12,7 @@ export default function Cases() {
   return (
     <section className="cases container">
       <div className="cases__map"></div>
-      <div className="cases__ellipses"></div>
+      {/* <div className="cases__ellipses"></div> */}
       <Nigeria />
       <Congo />
       <Kenya />
