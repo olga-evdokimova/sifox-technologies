@@ -1,17 +1,14 @@
-import { NextResponse } from 'next/server';
+import type { MetadataRoute } from "next";
 
-export async function GET() {
-    const response = NextResponse.json({
+export default function robots(): MetadataRoute.Robots {
+    return {
         rules: [
             {
-                userAgent: '*',
-                allow: '/',
-                disallow: ['/app/privacy-policy', '/app/not-found'],
+                userAgent: "*",
+                allow: "/",
+                disallow: ["/not-found", "/privacy-policy"],
             },
         ],
-        sitemap: 'https://www.sifoxtech.com/sitemap.ts',
-    });
-
-    response.headers.set('Content-Type', 'application/json');
-    return response;
+        sitemap: "https://www.sifoxtech.com/sitemap.ts",
+    };
 }
