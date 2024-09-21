@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { join } from 'path'
-
+import type { NextApiRequest, NextApiResponse } from 'next';
 const postsDirectory = join(process.cwd(), 'posts')
 
 
@@ -45,5 +45,13 @@ export const getPostById = (slug: string, lang: string): Post => {
 
 // export const posts = fs.readdirSync(postsDirectory).map(x => getPostById(x, 'jopa'))
 
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+    const { slug, lang } = req.query;
 
+    const post = getPostById(slug as string, lang as string);
+
+    // Установка заголовков кеширования
+    res.setHeader('Cache-Control', 'public, max-age=600'); // 10 минут
+    res.status(200).json(post);
+}
 
