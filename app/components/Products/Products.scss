@@ -8,20 +8,14 @@
     }
     &__ellipses {
         position: absolute;
-        background-image: url("/products-ellipses.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 2312px;
-        height: 1900px;
         top: -240px;
         z-index: -4;
         opacity: 0.8;
-        @media (max-width: 1100px) {
-            background-image: url("/products-ellipses-992.webp");
-            width: 1100px;
-            height: 1500px;
-            left: 0;
+        @media (max-width: 768px) {
+            width: 1000px;
+            height: 1000px;
+            top: 0px;
+            right: -400px;
         }
     }
-
 }

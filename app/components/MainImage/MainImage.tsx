@@ -13,8 +13,15 @@ export default function MainImage() {
           priority
         ></Image>
       </div>
-      <div className="main__ellipses">
-      </div>
+      {/* <div className="main__ellipses">
+      </div> */}
+      <Image
+        src={"/main-ellipses.webp"}
+        className="main__ellipses"
+        alt="image"
+        width={2500}
+        height={2000}
+      />
     </div>
   );
 }
