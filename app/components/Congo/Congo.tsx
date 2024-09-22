@@ -30,7 +30,7 @@ export default function Congo() {
 
   return (
     <>
-      <div className="congo">
+      <div className="kenya">
         <Svg />
         <div className="congo__title" onClick={handleButtonClick}>
           <Image src={"/congo.png"} alt="congo" width={41} height={28}></Image>
