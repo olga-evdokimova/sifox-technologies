@@ -71,12 +71,11 @@ export default function NotFound() {
           src={"/image-404.png"}
           alt="background"
           fill
-          sizes="500"
+          sizes="(max-width: 768px) 200px 600px"
         ></Image>
       </div>
       <div className="not-found__ellipses"></div>
       <div className="not-found__content">
-        {" "}
         <h2 title="404">404</h2>
         <p title="Page not found">
           {Dictionary[lang]["signal_lost_in_space"]}
