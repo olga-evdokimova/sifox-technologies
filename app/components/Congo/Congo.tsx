@@ -79,16 +79,15 @@ export default function Congo() {
             height={999}
           ></Image>
           <div className="modal-congo__content">
-            <h6>
-              {" "}
+            <div>
               <Image
                 src={"/congo.png"}
                 alt="congo"
                 width={41}
-                height={22}
+                height={28}
               ></Image>
               {Dictionary[lang]["drc"]}
-            </h6>
+            </div>
             <Link href={`/products/${lang}/b2b-reverse-billing`}>
               {Dictionary[lang]["reverse_billing"]}
               <SvgArrow />

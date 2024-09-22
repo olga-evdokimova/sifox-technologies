@@ -77,8 +77,7 @@ export default function Kenya() {
             height={901}
           ></Image>
           <div className="modal-kenya__content">
-            <h6>
-              {" "}
+            <div>
               <Image
                 src={"/kenya.png"}
                 alt="image"
@@ -86,7 +85,7 @@ export default function Kenya() {
                 height={22}
               ></Image>
               Kenya
-            </h6>
+            </div>
             <Link href={`/products/${lang}/b2c-airtime-credit`}>
               {Dictionary[lang]["airtime_credit"]}
               <SvgArrow />

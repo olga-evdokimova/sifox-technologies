@@ -31,7 +31,7 @@ export default function Nigeria() {
     <>
       <div className="nigeria">
         <Svg />
-        <h6 className="nigeria__title" onClick={handleButtonClick}>
+        <div className="nigeria__title" onClick={handleButtonClick}>
           <Image
             src={"/nigeria.png"}
             alt="image"
@@ -39,7 +39,7 @@ export default function Nigeria() {
             height={22}
           ></Image>
           Nigeria
-        </h6>
+        </div>
 
         <button
           className="nigeria__btn"

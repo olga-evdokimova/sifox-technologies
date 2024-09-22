@@ -26,6 +26,7 @@ export default function TopBlock(props: TopBlockProps) {
             to="b2b"
             smooth={true}
             duration={1500}
+            href="#b2b"
             onClick={() => {
               PullState.update((state) => {
                 state.hexagonStyleName = "style_left";
@@ -35,12 +36,12 @@ export default function TopBlock(props: TopBlockProps) {
             B2B
             <br />
             {Dictionary[lang]["products"]}
-       
           </ScrollLink>
         </li>
         <li>
           <ScrollLink
             to="b2c"
+            href="#b2c"
             smooth={true}
             duration={1500}
             onClick={() => {
@@ -52,13 +53,11 @@ export default function TopBlock(props: TopBlockProps) {
             B2C
             <br />
             {Dictionary[lang]["products"]}
-       
           </ScrollLink>
         </li>
         <li>
-          <ScrollLink to="about" smooth={true} duration={1500}>
+          <ScrollLink to="about" smooth={true} duration={1500} href="about">
             {Dictionary[lang]["about"]}
-         
           </ScrollLink>
         </li>
       </ul>
