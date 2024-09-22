@@ -9,6 +9,10 @@
         padding: 155px 20px 56px;
         @media (max-width: 767px) {
             padding: 155px 0px 30px;
+            font-size: 30px;
+        }
+        @media (max-width: 480px){
+            font-size: 24px;
         }
     }
 
