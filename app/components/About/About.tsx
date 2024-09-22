@@ -14,7 +14,7 @@ export default function About() {
         <Link href={"/"} className="header__logo">
           <Image
             src={"/logo.svg"}
-            alt="logo"
+            alt="logo SIFOX Technologies"
             width={100}
             height={46}
             priority

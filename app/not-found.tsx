@@ -69,7 +69,7 @@ export default function NotFound() {
       <div className="not-found__img">
         <Image
           src={"/image-404.png"}
-          alt="background"
+          alt="background image"
           fill
           sizes="(max-width: 768px) 200px 600px"
         ></Image>

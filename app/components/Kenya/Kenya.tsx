@@ -32,7 +32,7 @@ export default function Kenya() {
       <div className="kenya">
         <Svg />
         <div className="kenya__title" onClick={handleButtonClick}>
-          <Image src={"/kenya.png"} alt="image" width={41} height={22}></Image>
+          <Image src={"/kenya.png"} alt="kenya" width={41} height={22}></Image>
           Kenya
         </div>
 
@@ -72,7 +72,7 @@ export default function Kenya() {
           <Image
             className="modal-kenya__image"
             src={"/kenya-modal.png"}
-            alt="image"
+            alt="kenya"
             width={729}
             height={901}
           ></Image>
@@ -80,7 +80,7 @@ export default function Kenya() {
             <div>
               <Image
                 src={"/kenya.png"}
-                alt="image"
+                alt="kenya"
                 width={41}
                 height={22}
               ></Image>

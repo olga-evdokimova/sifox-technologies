@@ -34,7 +34,7 @@ export default function Nigeria() {
         <div className="nigeria__title" onClick={handleButtonClick}>
           <Image
             src={"/nigeria.png"}
-            alt="image"
+            alt="nigeria"
             width={41}
             height={22}
           ></Image>
@@ -77,7 +77,7 @@ export default function Nigeria() {
           <Image
             className="modal-nigeria__image"
             src={"/nigeria-modal.png"}
-            alt="image"
+            alt="nigeria"
             width={955}
             height={769}
           ></Image>
@@ -85,7 +85,7 @@ export default function Nigeria() {
             <div>
               <Image
                 src={"/nigeria.png"}
-                alt="image"
+                alt="nigeria"
                 width={41}
                 height={22}
               ></Image>

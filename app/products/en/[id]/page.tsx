@@ -2,7 +2,6 @@ import { getPostById } from "@/api/api";
 import "@/app/products/style.scss";
 import Title from "@/app/components/Title/Title";
 import Image from "next/image";
-import { PullStateServerSide } from "@/app/components/PullState/PullState";
 export default function PageSlug({ params }: any) {
   const post = getPostById(params.id + ".html", "en");
 

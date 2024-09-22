@@ -74,7 +74,7 @@ export default function Congo() {
           <Image
             className="modal-congo__image"
             src={"/congo-modal.png"}
-            alt="congo"
+            alt="DRC"
             width={1008}
             height={999}
           ></Image>
@@ -82,7 +82,7 @@ export default function Congo() {
             <div>
               <Image
                 src={"/congo.png"}
-                alt="congo"
+                alt="DRC"
                 width={41}
                 height={21}
               ></Image>
