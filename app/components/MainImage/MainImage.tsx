@@ -7,14 +7,13 @@ export default function MainImage() {
       <div className="main__img">
         <Image
           src={"/main-img.webp"}
-          alt="background"
+          alt="background image"
           fill
           sizes="(max-width: 768px) 180px 600px"
           priority
         ></Image>
       </div>
-      <div className="main__ellipses">
-      </div>
+      <div className="main__ellipses"></div>
     </div>
   );
 }

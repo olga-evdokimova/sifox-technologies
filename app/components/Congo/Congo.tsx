@@ -32,10 +32,10 @@ export default function Congo() {
     <>
       <div className="congo">
         <Svg />
-        <h6 className="congo__title" onClick={handleButtonClick}>
-          <Image src={"/congo.png"} alt="congo" width={41} height={22}></Image>
+        <div className="congo__title" onClick={handleButtonClick}>
+          <Image src={"/congo.png"} alt="congo" width={41} height={28}></Image>
           {Dictionary[lang]["drc"]}
-        </h6>
+        </div>
         <button
           className="congo__btn"
           onMouseEnter={handleMouseEnter}
@@ -84,7 +84,7 @@ export default function Congo() {
                 src={"/congo.png"}
                 alt="congo"
                 width={41}
-                height={28}
+                height={21}
               ></Image>
               {Dictionary[lang]["drc"]}
             </div>

@@ -31,10 +31,10 @@ export default function Kenya() {
     <>
       <div className="kenya">
         <Svg />
-        <h6 className="kenya__title" onClick={handleButtonClick}>
+        <div className="kenya__title" onClick={handleButtonClick}>
           <Image src={"/kenya.png"} alt="image" width={41} height={22}></Image>
           Kenya
-        </h6>
+        </div>
 
         <button
           className="kenya__btn"
