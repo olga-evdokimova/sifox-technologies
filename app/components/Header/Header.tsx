@@ -30,6 +30,7 @@ export default function Header() {
       {isHomePage && (
         <ScrollLink
           to="contacts"
+          href="#contacts"
           smooth={true}
           duration={1500}
           className="header__btn"

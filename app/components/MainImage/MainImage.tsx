@@ -9,7 +9,7 @@ export default function MainImage() {
           src={"/main-img.webp"}
           alt="background"
           fill
-          sizes="500"
+          sizes="(max-width: 768px) 180px 600px"
           priority
         ></Image>
       </div>
