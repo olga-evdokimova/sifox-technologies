@@ -143,7 +143,7 @@ export default function Hexagon(props: HexagonProps) {
           >
             <div className="hexagon__content">
               <SvgArrow />
-              <h6>{Dictionary[lang]["data_voice_sharing"]}</h6>
+              <div>{Dictionary[lang]["data_voice_sharing"]}</div>
               <p>{Dictionary[lang]["for_family"]}</p>
             </div>
             <div className="hexagon__hover"></div>
@@ -162,7 +162,7 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__content">
               <SvgArrow />
 
-              <h6>{Dictionary[lang]["data_voice_sharing"]}</h6>
+              <div>{Dictionary[lang]["data_voice_sharing"]}</div>
               <p>{Dictionary[lang]["for_small_and_micro_business"]}</p>
             </div>
             <div className="hexagon__hover"></div>
@@ -176,7 +176,7 @@ export default function Hexagon(props: HexagonProps) {
           >
             <div className="hexagon__content">
               <SvgArrow />
-              <h6>{Dictionary[lang]["data_sponsorship_or_gifting"]}</h6>
+              <div>{Dictionary[lang]["data_sponsorship_or_gifting"]}</div>
               <p>{Dictionary[lang]["for_enterprises_and_governments"]}</p>
             </div>
             <div className="hexagon__hover"></div>
@@ -194,7 +194,7 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__content">
               {" "}
               <SvgArrow />
-              <h6>{Dictionary[lang]["cvm_campaigns_management"]}</h6>
+              <div>{Dictionary[lang]["cvm_campaigns_management"]}</div>
               <p>{Dictionary[lang]["for_nv_customers"]}</p>
             </div>
             <div className="hexagon__hover"></div>
@@ -213,7 +213,7 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__content">
               <SvgArrow />
 
-              <h6>{Dictionary[lang]["reverse_billing"]}</h6>
+              <div>{Dictionary[lang]["reverse_billing"]}</div>
               <p>{Dictionary[lang]["for_enterprises_and_governments"]}</p>
             </div>
             <div className="hexagon__hover"></div>
@@ -234,7 +234,7 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__content">
               <SvgArrow />
 
-              <h6>{Dictionary[lang]["data_voice_cost_sharing"]}</h6>
+              <div>{Dictionary[lang]["data_voice_cost_sharing"]}</div>
               <p>{Dictionary[lang]["for_friends_and_social_buying"]}</p>
             </div>
             <div className="hexagon__hover"></div>
@@ -265,7 +265,7 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__content">
               <SvgArrow />
 
-              <h6>{Dictionary[lang]["social_network_bundles"]}</h6>
+              <div>{Dictionary[lang]["social_network_bundles"]}</div>
               <p>{Dictionary[lang]["for_individuals_and_social_buying"]}</p>
             </div>
             <div className="hexagon__hover"></div>
@@ -284,7 +284,7 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__content">
               <SvgArrow />
 
-              <h6>{Dictionary[lang]["data_voice_distribution"]}</h6>
+              <div>{Dictionary[lang]["data_voice_distribution"]}</div>
               <p>{Dictionary[lang]["for_distributors_and_resellers"]}</p>
             </div>
             <div className="hexagon__hover"></div>
@@ -299,7 +299,7 @@ export default function Hexagon(props: HexagonProps) {
           >
             <div className="hexagon__content">
               <SvgArrow />
-              <h6>{Dictionary[lang]["airtime_credit"]}</h6>
+              <div>{Dictionary[lang]["airtime_credit"]}</div>
               <p>{Dictionary[lang]["for_individual_users"]}</p>
             </div>
             <div className="hexagon__hover"></div>
@@ -313,7 +313,7 @@ export default function Hexagon(props: HexagonProps) {
           >
             <div className="hexagon__content">
               <SvgArrow />
-              <h6>{Dictionary[lang]["content_services"]}</h6>
+              <div>{Dictionary[lang]["content_services"]}</div>
               <p>{Dictionary[lang]["for_individual_users"]}</p>
             </div>{" "}
             <div className="hexagon__hover"></div>
