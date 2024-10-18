@@ -16,20 +16,20 @@ export default function Contacts() {
           <div className="contacts__address">
             {Dictionary[lang]["5th_floor"]}
           </div>
-          <span>{Dictionary[lang]["tel"]}</span>
-          <Link href="tel:+2305773116">+230 5773 116</Link>
+          {/* <span>{Dictionary[lang]["tel"]}</span>
+          <Link href="tel:+2305773116">+230 5773 116</Link> */}
           <span>{Dictionary[lang]["operational_hq_in_enya"]}</span>
           <div className="contacts__address">
             {Dictionary[lang]["7th_floor"]}
           </div>
-          <span>{Dictionary[lang]["tel"]}</span>
-          <Link href="tel:+254786898658">+254 786 898 658</Link>
+          {/* <span>{Dictionary[lang]["tel"]}</span>
+          <Link href="tel:+254786898658">+254 786 898 658</Link> */}
           <span>{Dictionary[lang]["office_in_nigeria"]}</span>
           <div className="contacts__address">
             {Dictionary[lang]["primrose_drive"]}
           </div>
-          <span>{Dictionary[lang]["tel"]}</span>
-          <Link href="tel:+2439123800000">+243 912 380 0000</Link>
+          {/* <span>{Dictionary[lang]["tel"]}</span>
+          <Link href="tel:+2439123800000">+243 912 380 0000</Link> */}
           <span>{Dictionary[lang]["office_in_dcr"]}</span>
           <div className="contacts__address">
             {Dictionary[lang]["silikin_village"]}
@@ -39,8 +39,8 @@ export default function Contacts() {
           <div className="contacts__address">
             {Dictionary[lang]["lithium_africa"]}
           </div>
-          <span>{Dictionary[lang]["tel"]}</span>
-          <Link href="tel:+225272255718">+225 27 22 55 71 8</Link>
+          {/* <span>{Dictionary[lang]["tel"]}</span>
+          <Link href="tel:+225272255718">+225 27 22 55 71 8</Link> */}
 
           <div className="contacts__social">
             <div className="contacts__social-item">
