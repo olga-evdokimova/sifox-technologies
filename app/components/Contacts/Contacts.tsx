@@ -18,10 +18,10 @@ export default function Contacts() {
           </div>
           {/* <span>{Dictionary[lang]["tel"]}</span>
           <Link href="tel:+2305773116">+230 5773 116</Link> */}
-          <span>{Dictionary[lang]["operational_hq_in_enya"]}</span>
-          <div className="contacts__address">
+          {/* <span>{Dictionary[lang]["operational_hq_in_enya"]}</span> */}
+          {/* <div className="contacts__address">
             {Dictionary[lang]["7th_floor"]}
-          </div>
+          </div> */}
           {/* <span>{Dictionary[lang]["tel"]}</span>
           <Link href="tel:+254786898658">+254 786 898 658</Link> */}
           <span>{Dictionary[lang]["office_in_nigeria"]}</span>
@@ -48,13 +48,13 @@ export default function Contacts() {
               <Link href="mailto:info@sifoxtech.com">info@sifoxtech.com</Link>
             </div>
             <div className="contacts__social-item">
-              <span>{Dictionary[lang]["social_media"]}</span>
-              <Link
+              {/* <span>{Dictionary[lang]["social_media"]}</span> */}
+              {/* <Link
                 href="https://www.linkedin.com/company/sifox-technologies"
                 target="_blank"
               >
                 Linkedin
-              </Link>
+              </Link> */}
               {/* <Link href="#">Facebook</Link>
               <Link href="#">YouTube</Link>
               <Link href="#">WhatsApp</Link> */}
