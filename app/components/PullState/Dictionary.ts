@@ -55,7 +55,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "office_in_dcr": "Office in DRC (Democratic Republic of the Congo): ",
         "silikin_village": "Silikin Village, 372, av. Colonel Mondjiba, Quartier/ Basoko, Commune/ Ngaliema, Kinshasa",
         "partner_in_ivory_coast": "Partner in Ivory Coast:",
-        "lithium_africa": "C/o LITHIUM-AFRICA CONSULTING & SOLUTIONS Cocody II Plateaux, 8ème Tranche Rue L84, Carrefour Prière 25 BP 2122 Abidjan 25, COTE D’IVOIRE",
+        "lithium_africa": "Lithium Consulting Africa, Cocody II Plateaux, 8ème Tranche Rue L84, Carrefour Prière 25 BP 2122 Abidjan 25, Côte-d'Ivoire",
 
         "mail": "Mail:",
         "social_media": "Social Media:",
@@ -166,7 +166,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "office_in_dcr": "Bureau en RDC (République démocratique du Congo) :",
         "silikin_village": "Village Silikin, 372, av. Colonel Mondjiba, Quartier/ Basoko, Commune/ Ngaliema, Kinshasa",
         "partner_in_ivory_coast": "Partenaire en Côte d'Ivoire:",
-        "lithium_africa": "C/o LITHIUM-AFRICA CONSULTING & SOLUTIONS Cocody II Plateaux, 8ème Tranche Rue L84, Carrefour Prière 25 BP 2122 Abidjan 25, COTE D’IVOIRE",
+        "lithium_africa": "Lithium Consulting Africa, Cocody II Plateaux, 8ème Tranche Rue L84, Carrefour Prière 25 BP 2122 Abidjan 25, Côte-d'Ivoire",
         "mail": "Courriel :",
         "social_media": "Réseaux sociaux :",
         //Form
