@@ -13,15 +13,18 @@ export default function TopBlock(props: TopBlockProps) {
   return (
     <section className="top-block container">
       <h1>
-        {Dictionary[lang]["connect_the_world"]}:
-        <br />
+        <span>{Dictionary[lang]["connect_the_world"]}:</span>
+      
         {Dictionary[lang]["empowering_telecoms_for_seamless"]}
-        <br />
         {Dictionary[lang]["data_and_voice-access"]}
       </h1>
 
       <ul className="top-block__list">
         <li>
+          <hr className="hr-1" />
+          <hr className="hr-2" />
+          <hr className="hr-3" />
+          <hr className="hr-4" />
           <ScrollLink
             to="b2b"
             smooth={true}
@@ -33,12 +36,16 @@ export default function TopBlock(props: TopBlockProps) {
               });
             }}
           >
-            B2B
+            <span>B2B</span>
             <br />
             {Dictionary[lang]["products"]}
           </ScrollLink>
         </li>
         <li>
+          <hr className="hr-1" />
+          <hr className="hr-2" />
+          <hr className="hr-3" />
+          <hr className="hr-4" />
           <ScrollLink
             to="b2c"
             href="#b2c"
@@ -50,12 +57,16 @@ export default function TopBlock(props: TopBlockProps) {
               });
             }}
           >
-            B2C
+            <span> B2C</span>
             <br />
             {Dictionary[lang]["products"]}
           </ScrollLink>
         </li>
         <li>
+          <hr className="hr-1" />
+          <hr className="hr-2" />
+          <hr className="hr-3" />
+          <hr className="hr-4" />
           <ScrollLink to="about" smooth={true} duration={1500} href="about">
             {Dictionary[lang]["about"]}
           </ScrollLink>

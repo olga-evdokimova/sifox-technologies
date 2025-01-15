@@ -6,7 +6,7 @@ export default function MainImage() {
     <div>
       <div className="main__img">
         <Image
-          src={"/main-img.webp"}
+          src={"/new/main-new.webp"}
           alt="background image"
           fill
           sizes="(max-width: 768px) 180px 600px"
