@@ -18,7 +18,7 @@ const config: Config = {
       'mobile': { 'max': '580px' },
       'tablet': { 'max': '768px' },
       'laptop': { 'max': '1100px' },
-      'desktop': { 'max': '1281px' },
+      'desktop': { 'max': '1280px' },
     },
   },
   plugins: [],
