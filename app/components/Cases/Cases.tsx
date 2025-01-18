@@ -1,7 +1,6 @@
 "use client";
 import Title from "../Title/Title";
 import "./Cases.scss";
-import Partners from "../Partners/Partners";
 import Nigeria from "../Nigeria/Nigeria";
 import Congo from "../Congo/Congo";
 import Kenya from "../Kenya/Kenya";
@@ -22,7 +21,6 @@ export default function Cases() {
         <p className="cases__subtitle">
           {Dictionary[lang]["sifox_technologies_has_successfully"]}
         </p>
-        <Partners />
       </div>
     </section>
   );

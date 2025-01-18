@@ -8,6 +8,7 @@ import Cases from "./components/Cases/Cases";
 import Contacts from "./components/Contacts/Contacts";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import { useEffect } from "react";
+import Partners from "./components/Partners/Partners";
 import {useSearchParams} from "next/navigation";
 import { PullState } from "./components/PullState/PullState";
 
@@ -35,9 +36,10 @@ export default function Home() {
     <section className="main">
       <MainImage />
       <TopBlock />
-      <Products  />
+      <Products />
       <Platform />
       <Cases />
+      <Partners />
       <About />
       <Contacts />
       <ScrollToTopButton />
