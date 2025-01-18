@@ -7,6 +7,7 @@ import MainImage from "./components/MainImage/MainImage";
 import Cases from "./components/Cases/Cases";
 import Contacts from "./components/Contacts/Contacts";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import Performance from "./components/Performance/Performance";
 import { useEffect } from "react";
 import Partners from "./components/Partners/Partners";
 import {useSearchParams} from "next/navigation";
@@ -40,6 +41,7 @@ export default function Home() {
       <Platform />
       <Cases />
       <Partners />
+      <Performance />
       <About />
       <Contacts />
       <ScrollToTopButton />

@@ -9,6 +9,9 @@
        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     }
   }
+  .clip-polygon{
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
 }
 
 :root {
