@@ -17,6 +17,7 @@ const config: Config = {
     screens: {
       'mobile': { 'max': '580px' },
       'tablet': { 'max': '768px' },
+      'laptop-sm': { 'max': '992px' },
       'laptop': { 'max': '1100px' },
       'desktop': { 'max': '1280px' },
     },
