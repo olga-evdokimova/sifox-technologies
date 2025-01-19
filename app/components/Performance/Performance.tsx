@@ -16,7 +16,7 @@ export default function Performance() {
     },
     {
       src: "/performance/performance-02.png",
-      num: "1,2",
+      num: "1.2",
       text_num: " million",
       text: "Monthly Unique Users",
     },
@@ -57,7 +57,7 @@ function Counter({ item }) {
 
   useEffect(() => {
     if (inView && !hasAnimated) {
-      const targetNum = parseFloat(item.num.replace(",", "")); // Убираем запятую для правильного счёта
+      const targetNum = parseFloat(item.num.replace(",", ".")); // Заменяем запятую на точку для корректного преобразования
       let start = 0;
       const duration = 2000; // Длительность анимации в миллисекундах
       const increment = targetNum / (duration / 100); // Шаг инкремента
