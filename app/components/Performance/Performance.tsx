@@ -60,7 +60,7 @@ function Counter({ item }) {
        const targetNum = parseFloat(item.num); // Преобразуем строку в число
       let start = 0;
       const duration = 2000; // Длительность анимации в миллисекундах
-      const increment = targetNum / (duration / 50); // Шаг инкремента
+      const increment = targetNum / (duration / 100); // Шаг инкремента
 
       const timer = setInterval(() => {
         start += increment;

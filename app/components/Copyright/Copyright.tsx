@@ -5,7 +5,8 @@ export default function Copyright() {
   const lang = PullState.useState((state) => state.lang);
   return (
     <p className="footer__copyright">
-      {Dictionary[lang]["copyright"]} &copy; SIFOX Technologies. {Dictionary[lang]["all_rights_reserved"]} | {currentYear}
+      {Dictionary[lang]["copyright"]}. SIFOX Technologies | {currentYear}
     </p>
   );
 }
+     

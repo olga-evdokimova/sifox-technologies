@@ -18,9 +18,6 @@ export default function Form() {
     email: z
       .string()
       .email({ message: Dictionary[lang]["please_check_if_your_email"] }),
-    // question: z
-    //   .string()
-    //   .min(10, { message: Dictionary[lang]["please_provide_question"] }),
     checkbox: z.boolean().refine((val) => val === true, {
       message: Dictionary[lang]["you_must_agree_to_the_privacy_policy"],
     }),

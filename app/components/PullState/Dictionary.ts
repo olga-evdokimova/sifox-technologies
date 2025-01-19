@@ -89,8 +89,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "thank_you": "Thank you for visiting SIFOX Technologies.",
         //Footer
         "privacy_policy": "privacy policy",
-        "copyright": "Copyright",
-        "all_rights_reserved": "All rights reserved",
+        "copyright": "(с) Copywriting",
         //Header
         "contact_us": "Contact Us",
         //Form
@@ -197,8 +196,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "thank_you": "Merci de visiter SIFOX Technologies.",
         //Footer
         "privacy_policy": "politique de confidentialité",
-        "copyright": "Droits d'auteur",
-        "all_rights_reserved": "Tous droits réservés",
+        "copyright": "(с) Copywriting",
         //Header
         "contact_us": "Contactez-nous",
         //Form
