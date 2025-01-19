@@ -6,63 +6,133 @@ import Form from "../Form/Form";
 import { PullState } from "../PullState/PullState";
 import { Dictionary } from "../PullState/Dictionary";
 export default function Contacts() {
-   const lang = PullState.useState((state) => state.lang);
+  const lang = PullState.useState((state) => state.lang);
   return (
-    <section className="contacts container" id="contacts">
-      <div className="contacts__wrap">
-        <div className="contacts__content">
-          <AcccentTitle>{Dictionary[lang]["сontacts"]}</AcccentTitle>
-          <span>{Dictionary[lang]["head_office"]}</span>
-          <div className="contacts__address">
-            {Dictionary[lang]["5th_floor"]}
+    <section className="container " id="contacts">
+      <h2 className="text-[30px] text-[var(--color-accent)] font-semibold pb-[40px] tablet:pb-[30px]">
+        Contacts
+      </h2>
+      <div className="text-[var(--color-text-white)] opacity-[0.5] pb-[20px]">
+        Office locations:
+      </div>
+      <div className="flex gap-[50px] pb-[150px] tablet:pb-[100px] tablet:flex-wrap tablet:w-[330px] tablet:gap-[30px]">
+        <div>
+          <div className="pb-[30px] pl-[23px] flex gap-[5px] relative">
+            <svg
+              className="absolute left-0"
+              width="19"
+              height="20"
+              viewBox="0 0 19 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.4375 9.82373C15.4375 13.7073 11.2852 16.3551 9.92541 17.1181C9.65854 17.2678 9.34146 17.2678 9.07459 17.1181C7.71483 16.3551 3.5625 13.7073 3.5625 9.82373C3.5625 6.26123 6.43942 3.88623 9.5 3.88623C12.6667 3.88623 15.4375 6.26123 15.4375 9.82373Z"
+                stroke="#E0933E"
+              />
+              <circle cx="9.5" cy="9.82389" r="2.66667" stroke="#E0933E" />
+            </svg>
+            5th Floor, The Core Building No. 62 , ICT Avenue, Cybercity, Ebene,
+            Mauritius
           </div>
-          {/* <span>{Dictionary[lang]["tel"]}</span>
-          <Link href="tel:+2305773116">+230 5773 116</Link> */}
-          {/* <span>{Dictionary[lang]["operational_hq_in_enya"]}</span> */}
-          {/* <div className="contacts__address">
-            {Dictionary[lang]["7th_floor"]}
-          </div> */}
-          {/* <span>{Dictionary[lang]["tel"]}</span>
-          <Link href="tel:+254786898658">+254 786 898 658</Link> */}
-          <span>{Dictionary[lang]["office_in_nigeria"]}</span>
-          <div className="contacts__address">
-            {Dictionary[lang]["primrose_drive"]}
-          </div>
-          {/* <span>{Dictionary[lang]["tel"]}</span>
-          <Link href="tel:+2439123800000">+243 912 380 0000</Link> */}
-          <span>{Dictionary[lang]["office_in_dcr"]}</span>
-          <div className="contacts__address">
-            {Dictionary[lang]["silikin_village"]}
-          </div>
-
-          <span>{Dictionary[lang]["partner_in_ivory_coast"]}</span>
-          <div className="contacts__address">
-            {Dictionary[lang]["lithium_africa"]}
-          </div>
-          {/* <span>{Dictionary[lang]["tel"]}</span>
-          <Link href="tel:+225272255718">+225 27 22 55 71 8</Link> */}
-
-          <div className="contacts__social">
-            <div className="contacts__social-item">
-              <span>{Dictionary[lang]["mail"]}</span>
-              <Link href="mailto:info@sifoxtech.com">info@sifoxtech.com</Link>
+          <div className="pl-[23px] relative">
+            <div className="flex gap-[5px]">
+              <div className=" ">
+                <svg
+                  className="absolute left-0"
+                  width="19"
+                  height="20"
+                  viewBox="0 0 19 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.4375 9.82373C15.4375 13.7073 11.2852 16.3551 9.92541 17.1181C9.65854 17.2678 9.34146 17.2678 9.07459 17.1181C7.71483 16.3551 3.5625 13.7073 3.5625 9.82373C3.5625 6.26123 6.43942 3.88623 9.5 3.88623C12.6667 3.88623 15.4375 6.26123 15.4375 9.82373Z"
+                    stroke="#E0933E"
+                  />
+                  <circle cx="9.5" cy="9.82389" r="2.66667" stroke="#E0933E" />
+                </svg>
+                <div className="text-[var(--color-text-white)] opacity-[0.5] pb-[5px]">
+                  Lithinjm Consulting Africa
+                </div>
+              </div>
             </div>
-            <div className="contacts__social-item">
-              {/* <span>{Dictionary[lang]["social_media"]}</span> */}
-              {/* <Link
-                href="https://www.linkedin.com/company/sifox-technologies"
-                target="_blank"
-              >
-                Linkedin
-              </Link> */}
-              {/* <Link href="#">Facebook</Link>
-              <Link href="#">YouTube</Link>
-              <Link href="#">WhatsApp</Link> */}
+            <div>
+              Cocody II Plateaux, 8ème Tranche Rue L84, Carrefour Prière 25 BP
+              2122 Abidjan 25, Cote D’ivoire
             </div>
           </div>
         </div>
-
-        <Form />
+        <div>
+          <div className="flex gap-[5px] pb-[30px] relative pl-[23px]">
+            <svg
+              className="absolute left-0"
+              width="19"
+              height="20"
+              viewBox="0 0 19 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.4375 9.82373C15.4375 13.7073 11.2852 16.3551 9.92541 17.1181C9.65854 17.2678 9.34146 17.2678 9.07459 17.1181C7.71483 16.3551 3.5625 13.7073 3.5625 9.82373C3.5625 6.26123 6.43942 3.88623 9.5 3.88623C12.6667 3.88623 15.4375 6.26123 15.4375 9.82373Z"
+                stroke="#E0933E"
+              />
+              <circle cx="9.5" cy="9.82389" r="2.66667" stroke="#E0933E" />
+            </svg>
+            Primrose Drive, Block H, Plot 5, Pinnock Estate Lekki, Lagos State,
+            Nigeria
+          </div>
+          <div className="flex gap-[5px] relative pl-[23px]">
+            <svg
+              className="absolute left-0"
+              width="19"
+              height="20"
+              viewBox="0 0 19 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.4375 9.82373C15.4375 13.7073 11.2852 16.3551 9.92541 17.1181C9.65854 17.2678 9.34146 17.2678 9.07459 17.1181C7.71483 16.3551 3.5625 13.7073 3.5625 9.82373C3.5625 6.26123 6.43942 3.88623 9.5 3.88623C12.6667 3.88623 15.4375 6.26123 15.4375 9.82373Z"
+                stroke="#E0933E"
+              />
+              <circle cx="9.5" cy="9.82389" r="2.66667" stroke="#E0933E" />
+            </svg>
+            Silikin Village, 372, av. Colonel Mondjiba, Quartier/ Basoko,
+            Commune/ Ngaliema, Kinshasa
+          </div>
+        </div>
+        <Link
+          href="mailto:info@sifoxtech.com"
+          className="relative pl-[55px] cursor-custom"
+        >
+          <svg
+            className="absolute left-0"
+            width="48"
+            height="49"
+            viewBox="0 0 48 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="0.82373" width="48" height="48" rx="3" fill="white" />
+            <rect
+              x="7"
+              y="13.3237"
+              width="34"
+              height="24"
+              rx="2"
+              fill="#0A0714"
+            />
+            <path
+              d="M6 14.3237L23.6801 26.9049C24.0314 27.1549 24.5035 27.1516 24.8512 26.8966L42 14.3237"
+              stroke="white"
+              stroke-width="3"
+            />
+          </svg>
+          <div className="text-[var(--color-text-white)] opacity-[0.5] pb-[10px]">
+            mail:
+          </div>
+          <div>info@sifox.com</div>
+        </Link>
       </div>
     </section>
   );

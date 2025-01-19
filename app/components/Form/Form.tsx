@@ -9,7 +9,6 @@ import { PullState } from "../PullState/PullState";
 import { Dictionary } from "../PullState/Dictionary";
 
 export default function Form() {
-  
   const lang = PullState.useState((state) => state.lang);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -19,9 +18,9 @@ export default function Form() {
     email: z
       .string()
       .email({ message: Dictionary[lang]["please_check_if_your_email"] }),
-    question: z
-      .string()
-      .min(10, { message: Dictionary[lang]["please_provide_question"] }),
+    // question: z
+    //   .string()
+    //   .min(10, { message: Dictionary[lang]["please_provide_question"] }),
     checkbox: z.boolean().refine((val) => val === true, {
       message: Dictionary[lang]["you_must_agree_to_the_privacy_policy"],
     }),
@@ -37,7 +36,6 @@ export default function Form() {
     resolver: zodResolver(formSchema),
     mode: "onTouched",
   });
-
 
   const handleCloseSubmittedMessage = () => {
     setIsSubmitted(false);
@@ -66,7 +64,7 @@ export default function Form() {
   };
 
   return (
-    <div className="form">
+    <div className="form container">
       <Title>{Dictionary[lang]["let_us_help_you"]}</Title>
       <p className="form__subtitle">
         {Dictionary[lang]["the_team_of_seasoned"]}
@@ -77,78 +75,63 @@ export default function Form() {
         ref={form}
         onSubmit={handleSubmit(sendEmail)}
       >
-        <label
-          className={`form__label ${
-            errors.name ? "label-error" : isValid ? "label-success" : ""
-          }`}
-        >
-          <input
-            className="form__input"
-            placeholder={Dictionary[lang]["name"]}
-            type="text"
-            {...register("name")}
-          />
-          {errors.name && (
-            <p className="message-error">{errors.name.message}</p>
-          )}
-        </label>
-
-        <label className="form__label">
-          <input
-            className="form__input"
-            placeholder={Dictionary[lang]["phone"]}
-            type="text"
-            {...register("phone")}
-          />
-        </label>
-
-        <label
-          className={`form__label ${
-            errors.email ? "label-error" : isValid ? "label-success" : ""
-          }`}
-        >
-          <input
-            className="form__input"
-            placeholder="E-mail"
-            type="text"
-            {...register("email")}
-          />
-          {errors.email && (
-            <p className="message-error">{errors.email.message}</p>
-          )}
-        </label>
-
-        <label
-          className={`form__label-textarea ${
-            errors.question ? "label-error" : isValid ? "label-success" : ""
-          }`}
-        >
-          <textarea
-            className="form__textarea"
-            placeholder="Question"
-            {...register("question")}
-          ></textarea>
-          {errors.question && (
-            <p className="message-error">{errors.question.message}</p>
-          )}
-        </label>
-
-        <label className="form__checkbox">
-          <input type="checkbox" {...register("checkbox")} />
-          <span className="checkbox__label">
-            {Dictionary[lang]["i_agree_to_the_privacy_policy"]}
-
-            {errors.checkbox && (
-              <p className="message-error checkbox__label-error">
-                {errors.checkbox.message}
-              </p>
+        <div className="flex gap-[15px] laptop-sm:flex-col laptop-sm:gap-0">
+          <label
+            className={`form__label ${
+              errors.name ? "label-error" : isValid ? "label-success" : ""
+            }`}
+          >
+            <input
+              className="form__input"
+              placeholder={Dictionary[lang]["name"]}
+              type="text"
+              {...register("name")}
+            />
+            {errors.name && (
+              <p className="message-error">{errors.name.message}</p>
             )}
-          </span>
-        </label>
+          </label>
+          <label className="form__label">
+            <input
+              className="form__input"
+              placeholder={Dictionary[lang]["phone"]}
+              type="text"
+              {...register("phone")}
+            />
+          </label>
+          <label
+            className={`form__label ${
+              errors.email ? "label-error" : isValid ? "label-success" : ""
+            }`}
+          >
+            <input
+              className="form__input"
+              placeholder="E-mail"
+              type="text"
+              {...register("email")}
+            />
+            {errors.email && (
+              <p className="message-error">{errors.email.message}</p>
+            )}
+          </label>
+        </div>
+        <div className="flex flex-col">
+          <button className="form__btn" type="submit">
+            {Dictionary[lang]["submit"]}
+          </button>
+          <label className="form__checkbox ">
+            <input type="checkbox" {...register("checkbox")} />
+            <span className="checkbox__label">
+              {Dictionary[lang]["i_agree_to_the_privacy_policy"]}
 
-        <button className="form__btn" type="submit">
-          {Dictionary[lang]["submit"]}
-        </button>
+              {errors.checkbox && (
+                <p className="message-error checkbox__label-error">
+                  {errors.checkbox.message}
+                </p>
+              )}
+            </span>
+          </label>
+        </div>
       </form>
       {isSubmitted && (
         <div className="submitted-message">

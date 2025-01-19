@@ -12,7 +12,7 @@ import { useEffect } from "react";
 import Partners from "./components/Partners/Partners";
 import {useSearchParams} from "next/navigation";
 import { PullState } from "./components/PullState/PullState";
-
+import Form from "./components/Form/Form";
 
 export default function Home() {
   const params = useSearchParams();
@@ -25,11 +25,8 @@ export default function Home() {
         state.hexagonStyleName =
           pkParam === "B2C" ? "style_right_instant" : "style_left_instant";
       });
-      
       const hexagon = document.getElementById("hexagon");
-      
       hexagon?.scrollIntoView({ behavior: "smooth"});
-
     }
   // }, [params]);
 
@@ -43,6 +40,7 @@ export default function Home() {
       <Partners />
       <Performance />
       <About />
+       <Form />
       <Contacts />
       <ScrollToTopButton />
     </section>
