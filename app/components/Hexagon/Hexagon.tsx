@@ -93,7 +93,7 @@ export default function Hexagon(props: HexagonProps) {
               >
                 <path
                   d="M1 7.5H40.5M40.5 7.5L34 1M40.5 7.5L34 14"
-                  stroke="#E0933E"
+                  stroke="#ffffff"
                   strokeWidth="2"
                   strokeLinecap="round"
                 />
@@ -121,7 +121,7 @@ export default function Hexagon(props: HexagonProps) {
               >
                 <path
                   d="M41 7.5H1.5M1.5 7.5L8 1M1.5 7.5L8 14"
-                  stroke="#E0933E"
+                  stroke="#ffffff"
                   strokeWidth="2"
                   strokeLinecap="round"
                 />

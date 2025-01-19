@@ -9,7 +9,7 @@
         overflow-x: auto;
         left: 0;
     }
-      &::-webkit-scrollbar {
+    &::-webkit-scrollbar {
         width: 0;
     }
     &__block-left {
@@ -53,7 +53,7 @@
             @media (max-width: 1100px) {
                 font-size: 30px;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 font-size: 25px;
             }
         }
@@ -80,11 +80,11 @@
             font-size: 16px;
             font-family: var(--font-inter);
             white-space: nowrap;
-            color:var(--color-accent);
+            color: var(--color-text-white);
             text-transform: uppercase;
-
+            background-color: var(--color-accent);
             border-radius: var(--border-radius);
-            border: 1px solid var(--color-accent);
+            // border: 1px solid var(--color-accent);
             z-index: 100;
             @media (max-width: 1100px) {
                 font-size: 16px;
@@ -108,14 +108,15 @@
         left: 0px;
         top: 30px;
         button {
-            top: 20px;
+            top: 6px;
             left: 400px;
             @media (max-width: 1100px) {
                 top: 2px;
-                left: 220px;
+                left: 250px;
             }
             @media (max-width: 769px) {
-                left: 240px;
+                left: 230px;
+                top: -5px;
             }
         }
         svg {
@@ -137,14 +138,15 @@
             padding-right: 10px;
         }
         button {
-            top: 20px;
+            top: 6px;
             right: 400px;
             @media (max-width: 1100px) {
                 top: 2px;
-                right: 220px;
+                right: 250px;
             }
             @media (max-width: 769px) {
-                left: 240px;
+                left: 230px;
+                 top: -5px;
             }
         }
         p {
@@ -201,11 +203,10 @@
             margin-bottom: -16px;
             margin-right: 136px;
         }
-        &-hidden{
-            @media (max-width: 1440px){
-                 display: none;
+        &-hidden {
+            @media (max-width: 1440px) {
+                display: none;
             }
-           
         }
     }
     &__img {
@@ -287,7 +288,7 @@
         height: 287px;
         cursor: url("/cursor.webp"), auto;
         z-index: 1;
-         transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
         @media (max-width: 1100px) {
             width: 218px;
             height: 189px;
@@ -371,18 +372,15 @@
 }
 
 .style_right_instant {
-  left: -1500px;
-   
+    left: -1500px;
+
     @media (max-width: 1440px) {
-     left: -1376px;
-     
+        left: -1376px;
     }
     @media (max-width: 1100px) {
-       left: -850px;
-     
+        left: -850px;
     }
     @media (max-width: 769px) {
-      left: -990px;
-   
+        left: -990px;
     }
 }
