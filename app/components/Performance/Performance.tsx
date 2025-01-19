@@ -34,11 +34,11 @@ export default function Performance() {
     },
   ];
   return (
-    <div className="container">
+    <div className="container ">
       <div className="pb-[50px] tablet:pb-[30px] pt-[150px] tablet:pt-[50px]">
         <Title>Platform performance</Title>
       </div>
-      <div className="grid grid-cols-4 tablet:grid-cols-2">
+      <div className="grid grid-cols-4 tablet:grid-cols-2 pb-[150px] tablet:pb-[50px]">
         {items.map((item, index) => (
           <Counter key={index} item={item} />
         ))}
