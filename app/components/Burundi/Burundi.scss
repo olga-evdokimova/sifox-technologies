@@ -1,90 +1,97 @@
-.kenya {
+.burundi {
     position: absolute;
-    top: 576px;
-    right: 147px;
+    top: 689px;
+    right: 320px;
+    z-index: 8;
 
     @media (max-width: 768px) {
-        top: 416px;
-        right: 40px;
+        top: 413px;
+        right: 124px;
     }
     @media (max-width: 360px) {
-        right: 14px;
+        right: 98px;
     }
     &__title {
         display: none;
         position: absolute;
-        top: 43px;
-        left: 8px;
-        font-size: 20px;
-        font-weight: 600;
+        top:0px;
+       right: -50px;
+        // font-size: 20px;
+        // font-weight: 600;
         display: flex;
         align-items: center;
         opacity: 0;
         transition: all 0.5s ease-out;
         cursor: url("/cursor.webp"), auto;
+
         img {
             margin-right: 10px;
             @media (max-width: 768px) {
                 margin-right: 5px;
             }
         }
-        @media (max-width: 768px) {
-            font-size: 14px;
-            top: 21px;
-            left: -5px;
-        }
+        // @media (max-width: 768px) {
+        //     font-size: 14px;
+        //     top: 41px;
+        //     left: 52px;
+        // }
     }
 
     &:hover {
-        .kenya__title {
+        .burundi__title {
             opacity: 1;
             transition: all 0.5s ease-out;
         }
-        .kenya__svg {
-            transform: scale(1.8);
+        .burundi__svg {
+            transform: scale(2.8) translateX(8px);
             transition: all 0.5s ease-out;
             path {
                 fill: var(--color-hover);
             }
         }
-
-        .kenya__btn {
-            bottom: -7px;
-            left: 68px;
-            transition: all 0.5s ease-out;
-            @media (max-width: 768px) {
-                left: 32px;
-            }
-        }
+        // .burundi__btn {
+        //     bottom: 39px;
+        //     left: 245px;
+        //     transition: all 0.5s ease-out;
+        //     @media (max-width: 768px) {
+        //         left: 122px;
+        //     }
+        // }
     }
     &__btn {
         position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.3);
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        font-size: 16px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // background-color: rgba(255, 255, 255, 0.3);
+        // width: 30px;
+        // height: 30px;
+        // border-radius: 50%;
+        font-family: var(--font-inter);
+        font-size: 14px;
         font-weight: 600;
-        bottom: 42px;
-        left: 61px;
+        bottom: -30px;
+        left: 186px;
         transition: all 0.5s ease-out;
         @media (max-width: 768px) {
             width: 21px;
             height: 21px;
             font-size: 16px;
-            bottom: 15px;
-            left: 25px;
+            bottom: 26px;
+            left: 97px;
+        }
+        svg{
+            position: absolute;
+            top: -40px;
+            right: -5px;
         }
     }
 
     &__svg {
         transition: all 0.5s ease-out;
         @media (max-width: 768px) {
-            width: 61px;
-            height: 76px;
+            width: 149px;
+            height: 148px;
         }
     }
     &__tooltip {
@@ -97,15 +104,12 @@
         border: 1px solid rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(5px);
         text-align: start;
-        left: -209px;
-        bottom: -160px;
+        left: -270px;
+        bottom: -280px;
         @media (max-width: 992px) {
             width: 240px;
-            bottom: -127px;
-            left: -171px;
-        }
-        @media (max-width: 768px) {
-            left: -190px;
+            left: -194px;
+            bottom: -220px;
         }
         &::before {
             content: "";
@@ -116,13 +120,10 @@
             border-top: 32px solid transparent;
             border-right: 32px solid rgba(255, 255, 255, 0.1);
             top: -33px;
-            right: 76px;
+            right: 16px;
             transform: rotate(0deg);
             @media (max-width: 992px) {
-                right: 56px;
-            }
-            @media (max-width: 768px) {
-                right: 40px;
+                right: 34px;
             }
         }
 
@@ -143,20 +144,22 @@
         }
     }
 }
-.modal-kenya {
+.modal-burundi {
     position: absolute;
-    top: 50px;
+    top: 228px;
     right: 0px;
     z-index: 100;
     @media (max-width: 992px) {
-        right: 60px;
+        right: -60px;
+        top: 170px;
     }
     @media (max-width: 768px) {
-        top: 100px;
+        top: 150px;
+        right: 0px;
     }
     @media (max-width: 580px) {
+        right: -40px;
         top: 200px;
-        right: 10px;
     }
 
     &__content {
@@ -164,9 +167,9 @@
         align-items: flex-start;
         flex-direction: column;
         position: absolute;
-        top: 25%;
-        left: 20%;
-     
+        top: 28%;
+        left: 23%;
+
         a {
             display: flex;
             align-items: center;
@@ -174,14 +177,14 @@
         div {
             display: flex;
             gap: 10px;
-              font-size: 40px;
+            font-size: 40px;
             img {
                 border-radius: 6px;
-              width: 75px;
+                width: 75px;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 font-size: 16px;
-                img{
+                img {
                     width: 40px;
                 }
             }
@@ -189,10 +192,10 @@
     }
     &__close {
         position: absolute;
-        right: 15%;
-        top: 15%;
+        right: 25%;
+        top: 20%;
         padding: 10px;
-   
+
         svg {
             @media (max-width: 767px) {
                 width: 25px;
@@ -202,7 +205,7 @@
     }
     &__image {
         @media (max-width: 768px) {
-            width: 500px;
+            width: 600px;
             height: auto;
         }
     }

@@ -4,6 +4,8 @@ import "./Cases.scss";
 import Nigeria from "../Nigeria/Nigeria";
 import Congo from "../Congo/Congo";
 import Kenya from "../Kenya/Kenya";
+import Zimbabwe from "../Zimbabwe/Zimbabwe";
+import Burundi from "../Burundi/Burundi";
 import { PullState } from "../PullState/PullState";
 import { Dictionary } from "../PullState/Dictionary";
 export default function Cases() {
@@ -16,6 +18,8 @@ export default function Cases() {
       <Nigeria />
       <Congo />
       <Kenya />
+      <Zimbabwe />
+      <Burundi/>  
       <div className="cases__titles">
         <Title> {Dictionary[lang]["cases"]}</Title>
         <p className="cases__subtitle">

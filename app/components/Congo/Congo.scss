@@ -1,6 +1,6 @@
 .congo {
     position: absolute;
-    top: 257px;
+    top: 543px;
     right: 312px;
     z-index: 10;
 
@@ -140,15 +140,20 @@
 }
 .modal-congo {
     position: absolute;
-    top: 0;
+    top: 228px;
     right: 0px;
     z-index: 100;
     @media (max-width: 992px) {
         right: -60px;
-        top: -60px;
+        top: 170px;
     }
     @media (max-width: 768px) {
         top: 150px;
+        right: 0px;
+    }
+    @media (max-width: 580px){
+        right: -40px;
+        top: 200px;
     }
 
     &__content {
@@ -156,23 +161,35 @@
         align-items: flex-start;
         flex-direction: column;
         position: absolute;
-        top: 128px;
-        left: 303px;
-        max-width: 500px;
-        @media (max-width: 768px) {
-            top: 129px;
-            left: 196px;
+       top: 18%;
+        left: 30%;
+     
+        a {
+            display: flex;
+            align-items: center;
+        }
+        div {
+            display: flex;
+            gap: 10px;
+               font-size: 40px;
+            img {
+                border-radius: 6px;
+              width: 75px;
+            }
+            @media (max-width: 768px){
+                font-size: 16px;
+                img{
+                    width: 40px;
+                }
+            }
         }
     }
     &__close {
         position: absolute;
-        right: 146px;
-        top: 138px;
+        right: 10%;
+        top: 13%;
         padding: 10px;
-        @media (max-width: 768px) {
-            right: 67px;
-            top: 64px;
-        }
+     
         svg {
             @media (max-width: 767px) {
                 width: 25px;

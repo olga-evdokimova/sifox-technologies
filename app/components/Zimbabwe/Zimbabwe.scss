@@ -1,14 +1,14 @@
-.kenya {
+.zimbabwe {
     position: absolute;
-    top: 576px;
-    right: 147px;
+    top: 897px;
+    right: 284px;
 
     @media (max-width: 768px) {
-        top: 416px;
-        right: 40px;
+        top: 570px;
+        right: 112px;
     }
     @media (max-width: 360px) {
-        right: 14px;
+        right: 86px;
     }
     &__title {
         display: none;
@@ -24,6 +24,7 @@
         cursor: url("/cursor.webp"), auto;
         img {
             margin-right: 10px;
+            border-radius: 6px;
             @media (max-width: 768px) {
                 margin-right: 5px;
             }
@@ -36,11 +37,11 @@
     }
 
     &:hover {
-        .kenya__title {
+        .zimbabwe__title {
             opacity: 1;
             transition: all 0.5s ease-out;
         }
-        .kenya__svg {
+        .zimbabwe__svg {
             transform: scale(1.8);
             transition: all 0.5s ease-out;
             path {
@@ -48,7 +49,7 @@
             }
         }
 
-        .kenya__btn {
+        .zimbabwe__btn {
             bottom: -7px;
             left: 68px;
             transition: all 0.5s ease-out;
@@ -68,7 +69,7 @@
         border-radius: 50%;
         font-size: 16px;
         font-weight: 600;
-        bottom: 42px;
+        bottom: 12px;
         left: 61px;
         transition: all 0.5s ease-out;
         @media (max-width: 768px) {
@@ -98,10 +99,10 @@
         backdrop-filter: blur(5px);
         text-align: start;
         left: -209px;
-        bottom: -160px;
+        bottom: -100px;
         @media (max-width: 992px) {
             width: 240px;
-            bottom: -127px;
+            bottom: -80px;
             left: -171px;
         }
         @media (max-width: 768px) {
@@ -143,20 +144,22 @@
         }
     }
 }
-.modal-kenya {
+.modal-zimbabwe {
     position: absolute;
-    top: 50px;
-    right: 0px;
+    top: 420px;
+    right: 50px;
     z-index: 100;
     @media (max-width: 992px) {
         right: 60px;
+        top: 360px;
     }
     @media (max-width: 768px) {
-        top: 100px;
+        top: 200px;
+        right: 30px;
     }
     @media (max-width: 580px) {
-        top: 200px;
-        right: 10px;
+        top: 400px;
+        right: 50px;
     }
 
     &__content {
@@ -164,24 +167,25 @@
         align-items: flex-start;
         flex-direction: column;
         position: absolute;
-        top: 25%;
-        left: 20%;
-     
+        top: 35%;
+        left: 25%;
+
         a {
             display: flex;
             align-items: center;
         }
         div {
             display: flex;
+            align-items: center;
             gap: 10px;
-              font-size: 40px;
+            font-size: 40px;
             img {
                 border-radius: 6px;
-              width: 75px;
+                width: 75px;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 font-size: 16px;
-                img{
+                img {
                     width: 40px;
                 }
             }
@@ -189,10 +193,10 @@
     }
     &__close {
         position: absolute;
-        right: 15%;
-        top: 15%;
+        right: 8%;
+        top: 18%;
         padding: 10px;
-   
+
         svg {
             @media (max-width: 767px) {
                 width: 25px;
@@ -204,6 +208,9 @@
         @media (max-width: 768px) {
             width: 500px;
             height: auto;
+        }
+        @media (max-width: 580px) {
+            width: 300px;
         }
     }
     h6 {
