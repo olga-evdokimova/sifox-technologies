@@ -5,17 +5,17 @@
     z-index: 8;
 
     @media (max-width: 768px) {
-        top: 413px;
-        right: 124px;
+        top: 475px;
+        right: 125px;
     }
     @media (max-width: 360px) {
-        right: 98px;
+        // right: 98px;
     }
     &__title {
         display: none;
         position: absolute;
-        top:-10px;
-       right: -50px;
+        top: -10px;
+        right: -50px;
         // font-size: 20px;
         // font-weight: 600;
         display: flex;
@@ -27,14 +27,14 @@
         img {
             margin-right: 10px;
             @media (max-width: 768px) {
-                margin-right: 5px;
+                // margin-right: 5px;
+                width: 30px;
             }
         }
-        // @media (max-width: 768px) {
-        //     font-size: 14px;
-        //     top: 41px;
-        //     left: 52px;
-        // }
+        @media (max-width: 768px) {
+            top: -10px;
+            left: 10px;
+        }
     }
 
     &:hover {
@@ -48,6 +48,9 @@
             path {
                 fill: var(--color-hover);
             }
+            @media (max-width: 768px){
+                 transform: scale(1.5) translateX(0px);
+            }
         }
         // .burundi__btn {
         //     bottom: 39px;
@@ -60,38 +63,41 @@
     }
     &__btn {
         position: absolute;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // background-color: rgba(255, 255, 255, 0.3);
-        // width: 30px;
-        // height: 30px;
-        // border-radius: 50%;
-        font-family: var(--font-inter);
-        font-size: 14px;
-        font-weight: 600;
         bottom: -30px;
         left: 186px;
         transition: all 0.5s ease-out;
         @media (max-width: 768px) {
-            width: 21px;
-            height: 21px;
-            font-size: 16px;
-            bottom: 26px;
-            left: 97px;
+            bottom: -2px;
+            left: 110px;
         }
-        svg{
+        span {
+            font-family: var(--font-inter);
+            font-size: 14px;
+            font-weight: 600;
+            @media (max-width: 768px){
+                font-size: 8px;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        svg {
             position: absolute;
             top: -40px;
             right: -5px;
+            @media (max-width: 768px) {
+                top: -30px;
+                width: 100px;
+                right: 4px;
+            }
         }
     }
 
     &__svg {
         transition: all 0.5s ease-out;
         @media (max-width: 768px) {
-            width: 149px;
-            height: 148px;
+            width: 18px;
+            height: 18px;
         }
     }
     &__tooltip {
@@ -108,8 +114,12 @@
         bottom: -160px;
         @media (max-width: 992px) {
             width: 240px;
-            left: -194px;
-            bottom: -220px;
+            left: -164px;
+            bottom: -120px;
+        }
+        @media (max-width: 768px){
+            left: -210px;
+            bottom: -140px;
         }
         &::before {
             content: "";

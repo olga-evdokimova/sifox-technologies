@@ -46,7 +46,7 @@ export default function Burundi() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-        Burundi
+          <span>Burundi</span>
           <svg
             width="228"
             height="60"
