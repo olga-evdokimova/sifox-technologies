@@ -32,7 +32,7 @@ export default function Burundi() {
     <>
       <div className="burundi">
         <Svg />
-        <div className="burundi__title" onClick={handleButtonClick}>
+        <div className="burundi__title">
           <Image
             src={"/burundi.png"}
             alt="burundi"
@@ -42,10 +42,11 @@ export default function Burundi() {
         </div>
         <button
           className="burundi__btn"
+          onClick={handleButtonClick}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          Burundi
+        Burundi
           <svg
             width="228"
             height="60"
@@ -110,7 +111,6 @@ export default function Burundi() {
               {Dictionary[lang]["data_voice_distribution"]}
               <SvgArrow />
             </Link>
-          
           </div>
         </div>
       )}
