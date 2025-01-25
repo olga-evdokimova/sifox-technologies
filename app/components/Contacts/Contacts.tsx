@@ -10,7 +10,7 @@ export default function Contacts() {
   return (
     <section className="container " id="contacts">
       <h2 className="text-[30px] text-[var(--color-accent)] font-semibold pb-[40px] tablet:pb-[30px]">
-        Contacts
+        {Dictionary[lang]["сontacts"]}
       </h2>
       <div className="text-[var(--color-text-white)] opacity-[0.5] pb-[20px]">
         Office locations:
@@ -32,8 +32,7 @@ export default function Contacts() {
               />
               <circle cx="9.5" cy="9.82389" r="2.66667" stroke="#E0933E" />
             </svg>
-            5th Floor, The Core Building No. 62 , ICT Avenue, Cybercity, Ebene,
-            Mauritius
+            {Dictionary[lang]["5th_floor"]}
           </div>
           <div className="pl-[23px] relative">
             <div className="flex gap-[5px]">
@@ -53,14 +52,11 @@ export default function Contacts() {
                   <circle cx="9.5" cy="9.82389" r="2.66667" stroke="#E0933E" />
                 </svg>
                 <div className="text-[var(--color-text-white)] opacity-[0.5] pb-[5px]">
-                  Lithinjm Consulting Africa
+                  {Dictionary[lang]["Lithinjm_Consulting_Africa"]}
                 </div>
               </div>
             </div>
-            <div>
-              Cocody II Plateaux, 8ème Tranche Rue L84, Carrefour Prière 25 BP
-              2122 Abidjan 25, Cote D’ivoire
-            </div>
+            <div>{Dictionary[lang]["Cocody_II_Plateaux"]}</div>
           </div>
         </div>
         <div>
@@ -79,8 +75,7 @@ export default function Contacts() {
               />
               <circle cx="9.5" cy="9.82389" r="2.66667" stroke="#E0933E" />
             </svg>
-            Primrose Drive, Block H, Plot 5, Pinnock Estate Lekki, Lagos State,
-            Nigeria
+            {Dictionary[lang]["primrose_drive"]}
           </div>
           <div className="flex gap-[5px] relative pl-[23px]">
             <svg
@@ -97,8 +92,7 @@ export default function Contacts() {
               />
               <circle cx="9.5" cy="9.82389" r="2.66667" stroke="#E0933E" />
             </svg>
-            Silikin Village, 372, av. Colonel Mondjiba, Quartier/ Basoko,
-            Commune/ Ngaliema, Kinshasa
+            {Dictionary[lang]["silikin_village"]}
           </div>
         </div>
         <Link
