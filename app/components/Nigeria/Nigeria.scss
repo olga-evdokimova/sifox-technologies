@@ -48,9 +48,12 @@
         }
 
         .nigeria__btn {
-            bottom: -5px;
-            left: 24px;
+            top: -20px;
+            left: 4px;
             transition: all 0.5s ease-out;
+            @media (max-width: 768px){
+                top: -10px;
+            }
         }
     }
     &__btn {
@@ -64,8 +67,8 @@
         border-radius: 50%;
         font-size: 16px;
         font-weight: 600;
-        bottom: 31px;
-        left: 43px;
+        top: 20px;
+        left: 28px;
         transition: all 0.5s ease-out;
         @media (max-width: 768px) {
             width: 21px;
@@ -85,8 +88,8 @@
     }
     &__tooltip {
         position: absolute;
-        left: -238px;
-        bottom: -160px;
+        left: -38px;
+        bottom: 60px;
         padding: 0 20px;
         width: 300px;
         z-index: 20;
@@ -97,11 +100,12 @@
         text-align: start;
         @media (max-width: 992px) {
             width: 240px;
-            left: -71px;
-            bottom: -130px;
+            left: -11px;
+            bottom: 60px;
         }
         @media (max-width: 768px) {
-            left: -30px;
+            left: -20px;
+            bottom: 50px;
         }
         &::before {
             content: "";
@@ -111,16 +115,16 @@
             height: 27px;
             border-top: 32px solid transparent;
             border-right: 32px solid rgba(255, 255, 255, 0.1);
-            top: -33px;
-            right: 50px;
-            transform: rotate(0deg);
+            bottom: -32px;
+            left: 50px;
+            transform: rotate(180deg);
             @media (max-width: 992px) {
-                top: -48px;
-                right: 100px;
-                transform: rotate(90deg);
+               bottom: -32px;
+             left: 20px;
+              
             }
             @media (max-width: 768px) {
-                right: 150px;
+              left: 30px;
             }
         }
 
@@ -151,7 +155,6 @@
         top: 160px;
     }
     @media (max-width: 768px) {
-      
     }
     @media (max-width: 580px) {
         top: 200px;
@@ -164,7 +167,7 @@
         position: absolute;
         top: 25%;
         left: 15%;
-      
+
         a {
             display: flex;
             align-items: center;
@@ -188,7 +191,7 @@
     &__close {
         position: absolute;
         right: 15%;
-        top:15%;
+        top: 15%;
         padding: 10px;
         svg {
             @media (max-width: 767px) {

@@ -49,11 +49,12 @@
         }
 
         .kenya__btn {
-            bottom: -7px;
-            left: 68px;
+           top: -30px;
+            left: -10px;
             transition: all 0.5s ease-out;
             @media (max-width: 768px) {
-                left: 32px;
+                left: 2px;
+                top: -10px;
             }
         }
     }
@@ -68,8 +69,8 @@
         border-radius: 50%;
         font-size: 16px;
         font-weight: 600;
-        bottom: 42px;
-        left: 61px;
+        top:26px;
+        left: 26px;
         transition: all 0.5s ease-out;
         @media (max-width: 768px) {
             width: 21px;
@@ -98,14 +99,13 @@
         backdrop-filter: blur(5px);
         text-align: start;
         left: -209px;
-        bottom: -160px;
+        bottom: 58px;
         @media (max-width: 992px) {
             width: 240px;
-            bottom: -127px;
             left: -171px;
         }
         @media (max-width: 768px) {
-            left: -190px;
+            left: -170px;
         }
         &::before {
             content: "";
@@ -115,14 +115,14 @@
             height: 27px;
             border-top: 32px solid transparent;
             border-right: 32px solid rgba(255, 255, 255, 0.1);
-            top: -33px;
-            right: 76px;
-            transform: rotate(0deg);
+           bottom: -33px;
+            right: 20px;
+            transform: rotate(180deg);
             @media (max-width: 992px) {
-                right: 56px;
+                right: 0px;
             }
             @media (max-width: 768px) {
-                right: 40px;
+                right: -10px;
             }
         }
 
