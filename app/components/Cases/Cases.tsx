@@ -6,10 +6,11 @@ import Congo from "../Congo/Congo";
 import Kenya from "../Kenya/Kenya";
 import Zimbabwe from "../Zimbabwe/Zimbabwe";
 import Burundi from "../Burundi/Burundi";
+import EquatorialGuinea from "../EquatorialGuinea/Guinea";
 import { PullState } from "../PullState/PullState";
 import { Dictionary } from "../PullState/Dictionary";
 export default function Cases() {
-   const lang = PullState.useState((state) => state.lang);
+  const lang = PullState.useState((state) => state.lang);
   return (
     <section className="cases container">
       <div className="cases__map"></div>
@@ -19,7 +20,9 @@ export default function Cases() {
       <Congo />
       <Kenya />
       <Zimbabwe />
-      <Burundi/>  
+      <Burundi />
+      <EquatorialGuinea />
+
       <div className="cases__titles">
         <Title> {Dictionary[lang]["cases"]}</Title>
         <p className="cases__subtitle">
