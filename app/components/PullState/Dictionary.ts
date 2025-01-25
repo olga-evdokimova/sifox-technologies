@@ -64,9 +64,12 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "successful_transactions_per_month": "Successful Transactions Per Month",
         //About
         "about_the_company": "About the Company",
-        "providing_cutting_edge": "Providing cutting-edge solutions for mobile communications worldwide.",
-        "with_an_international": "With an international team of seasoned professionals, we specialize in creating highly adaptable and robust products for seamless data provisioning, efficient data and voice sharing, innovative data gifting, as well as streamlined data and voice distribution.",
-        "backed_by_unmatched": "Backed by unmatched technical assistance, our 5-star user interfaces, available on both mobile and browser platforms, guarantee a user-friendly experience, enabling our clients to effortlessly stay connected and communicate seamlessly worldwide.",
+        "SIFOX_Technologies_is_a_company": "SIFOX Technologies is a company run by a team of professionals with extensive experience in the Telecoms sector. Our focus is developing innovative products that support Telcos to increase revenue within their existing segments or to create new revenue channels.",
+        "We_offer_product_Suites_for_the": "We offer product Suites for the:",
+        "Consumer_and_Digital_and": "Consumer and Digital",
+        "Enterprise_segments": " Enterprise segments",
+        "Our_mission_at_SIFOX_Technologies": "Our mission at SIFOX Technologies is to partner with mobile network operators and boost their data and voice package sales to both consumers and enterprise customers.",
+        "We_aim_to_achieve_this_by": "We aim to achieve this by introducing innovative products that stimulate  consumption of products and grow revenue.  We believe that the significant investments in network infrastructure should result in higher ARPUs and ROI, and our mission is to enable this by helping Telcos monetize their existing networks without additional capital expenditure.",
         //Contacts
         "сontacts": "Contacts",
         "head_office": "Head Office:",
@@ -198,9 +201,12 @@ export const Dictionary: Record<string, Record<string, string>> = {
 
         //About
         "about_the_company": "À propos de la société",
-        "providing_cutting_edge": "Fournir des solutions de pointe pour les communications mobiles à l'échelle mondiale.",
-        "with_an_international": "Avec une équipe internationale de professionnels chevronnés, nous sommes spécialisés dans la création de produits hautement adaptables et robustes pour une fourniture de données sans faille, un partage efficace de données et de voix, un don de données innovant, ainsi qu'une distribution rationalisée de données et de voix.",
-        "backed_by_unmatched": "Soutenus par une assistance technique inégalée, nos interfaces utilisateur 5 étoiles, disponibles sur les plates-formes mobiles et de navigation, garantissent une expérience conviviale, permettant à nos clients de rester connectés et de communiquer sans effort à l'échelle mondiale.",
+        "SIFOX_Technologies_is_a_company": "SIFOX Technologies est une entreprise composée d’une équipe de professionnels ayant une grande expérience dans le secteur des télécommunications. Notre objectif est de développer des produits innovants qui  permettent  aux opérateurs télécoms d' augmenter leurs revenus  en utilisant les services existants  ou en créant de nouveaux flux  de revenus.",
+        "We_offer_product_Suites_for_the": "Nous proposons des suites de produits pour les segments:",
+        "Consumer_and_Digital_and": "Consommateurs et numériques",
+        "Enterprise_segments": "Entreprises",
+        "Our_mission_at_SIFOX_Technologies": "Notre mission chez SIFOX Technologies est de collaborer avec les opérateurs de réseaux mobiles afin d’améliorer leurs ventes de forfaits de données et voix , tant pour les utilisateurs grand public  que pour les entreprises clientes.",
+        "We_aim_to_achieve_this_by": "Nous visons à atteindre cet objectif en introduisant des produits innovants qui stimulent la consommation de services et augmentent les revenus. De plus, nous croyons que les investissements significatifs dans les infrastructures réseau devraient se traduire par des ARPU (Revenu Moyen par Utilisateur) et des ROI (Retour sur Investissement) plus élevés. Ainsi, notre mission est de permettre cela en aidant les opérateurs télécoms à rentabiliser leurs réseaux existants sans dépenses en capital supplémentaires.",
         //Contacts
         "сontacts": "Nos emplacements",
         "head_office": "Siège social :",

@@ -22,12 +22,11 @@ export default function About() {
         <div className="about__ellipses"></div>
         <AcccentTitle>{Dictionary[lang]["about_the_company"]}</AcccentTitle>
         <p className="font-semibold text-[35px] laptop-sm:text-[25px] pt-[20px] pb-[50px] laptop-sm:pb-[30px]">
-          Sifox Technologies is a company run by a team of professionals with
-          extensive experience in the Telecoms sector. Our focus is developing
-          innovative products that support Telcos to increase revenue within
-          their existing segments or to create new revenue channels. 
+          {Dictionary[lang]["SIFOX_Technologies_is_a_company"]}
         </p>
-        <AcccentTitle>We offer product Suites for the </AcccentTitle>
+        <AcccentTitle>
+          {Dictionary[lang]["We_offer_product_Suites_for_the"]} 
+        </AcccentTitle>
         <div>
           <ScrollLink
             className="text-[#0A0714] text-[20px] laptop-sm:text-[14px] bg-[var(--color-text-white)] rounded-[10px] inline-flex items-center justify-center py-[10px] px-[20px] laptop-sm:px-[10px] mr-[10px] mt-[20px] laptop-sm:mt-[10px] mb-[50px] laptop-sm:mb-[30px]"
@@ -41,7 +40,7 @@ export default function About() {
               });
             }}
           >
-            Consumer and Digital
+            {Dictionary[lang]["Consumer_and_Digital_and"]} 
           </ScrollLink>
           <ScrollLink
             className="text-[#0A0714] text-[20px] laptop-sm:text-[14px] bg-[var(--color-text-white)] rounded-[10px] inline-flex items-center justify-center py-[10px] px-[20px] laptop-sm:px-[10px]"
@@ -55,23 +54,14 @@ export default function About() {
               });
             }}
           >
-             Enterprise segments
+            {Dictionary[lang]["Enterprise_segments"]} 
           </ScrollLink>
         </div>
         <div className="flex gap-[50px] text-[20px] laptop-sm:text-[16px] laptop-sm:flex-col laptop-sm:gap-[20px]">
           <p className="">
-            Our mission at SIFOX Technologies is to partner with mobile network
-            operators and boost their data and voice package sales to both
-            consumers and enterprise customers.
+            {Dictionary[lang]["Our_mission_at_SIFOX_Technologies"]} 
           </p>
-          <p className="">
-            We aim to achieve this by introducing innovative products that
-            stimulate  consumption of products and grow revenue.  We believe
-            that the significant investments in network infrastructure should
-            result in higher ARPUs and ROI, and our mission is to enable this by
-            helping Telcos monetize their existing networks without additional
-            capital expenditure.
-          </p>
+          <p className="">{Dictionary[lang]["We_aim_to_achieve_this_by"]} </p>
         </div>
       </div>
     </section>
