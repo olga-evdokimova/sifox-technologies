@@ -52,6 +52,16 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "cases": "Cases",
         "sifox_technologies_has_successfully": " SIFOX Technologies has successfully developed and continues to maintain a variety of distinctive projects across various African countries.",
         "drc": "DRC",
+        //Partners
+        "partners": "Partners",
+        //Performance
+        "performance": "Platform performance",
+        "million": " million",
+        "TB": " TB",
+        "subscribers": "Subscribers",
+        "monthly_unique_users": "Monthly Unique Users",
+        "monthly_data_processed": "Monthly Data Processed",
+        "successful_transactions_per_month": "Successful Transactions Per Month",
         //About
         "about_the_company": "About the Company",
         "providing_cutting_edge": "Providing cutting-edge solutions for mobile communications worldwide.",
@@ -175,6 +185,17 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "cases": "PROJETS",
         "sifox_technologies_has_successfully": "SIFOX Technologies a développé avec succès et continue de maintenir une variété de projets distinctifs dans divers pays africains.",
         "drc": "RDC",
+        //Partners
+        "partners": "Partenaires",
+        //Performance
+        "performance": "Performance de la plate-forme",
+        "million": " millions",
+        "TB": " To",
+        "subscribers": "Abonnés",
+        "monthly_unique_users": "Utilisateurs Uniques Mensuels",
+        "monthly_data_processed": "Données Traitées Mensuellement",
+        "successful_transactions_per_month": "Transactions Réussies par Mois",
+
         //About
         "about_the_company": "À propos de la société",
         "providing_cutting_edge": "Fournir des solutions de pointe pour les communications mobiles à l'échelle mondiale.",

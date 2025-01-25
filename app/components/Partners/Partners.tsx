@@ -25,7 +25,7 @@ export default function Partners() {
   return (
     <div className="">
       <div className="max-w-[1450px] m-auto pb-[50px] tablet:pb-[30px] pt-[150px] tablet:pt-[50px] px-[20px]">
-        <Title>Partners</Title>
+        <Title>{Dictionary[lang]["partners"]}</Title>
       </div>
       <div className="max-w-[1600px] m-auto grid grid-cols-4 tablet:grid-cols-2">
         {partners.map((partner, index) => (

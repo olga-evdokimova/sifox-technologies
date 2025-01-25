@@ -5,38 +5,40 @@ import Title from "../Title/Title";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { title } from "process";
 
 export default function Performance() {
+  const lang = PullState.useState((state) => state.lang);
   const items = [
     {
       src: "/performance/performance-01.png",
       num: "120",
-      text_num: " million",
-      text: "Subscribers",
+      text_num: Dictionary[lang]["million"],
+      text: Dictionary[lang]["subscribers"],
     },
     {
       src: "/performance/performance-02.png",
       num: "1.2",
       text_num: " million",
-      text: "Monthly Unique Users",
+      text: Dictionary[lang]["monthly_unique_users"],
     },
     {
       src: "/performance/performance-01.png",
       num: "98",
-      text_num: " TB",
-      text: "Monthly Data Processed",
+      text_num: Dictionary[lang]["TB"],
+      text: Dictionary[lang]["monthly_data_processed"],
     },
     {
       src: "/performance/performance-02.png",
       num: "21",
-      text_num: " million",
-      text: "Successful Transactions Per Month",
+      text_num: Dictionary[lang]["million"],
+      text: Dictionary[lang]["successful_transactions_per_month"],
     },
   ];
   return (
     <div className="container ">
       <div className="pb-[50px] tablet:pb-[30px] pt-[150px] tablet:pt-[50px]">
-        <Title>Platform performance</Title>
+        <Title>{Dictionary[lang]["performance"]}</Title>
       </div>
       <div className="grid grid-cols-4 tablet:grid-cols-2 pb-[150px] tablet:pb-[50px]">
         {items.map((item, index) => (
