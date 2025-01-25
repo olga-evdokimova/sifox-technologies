@@ -6,94 +6,88 @@ export default function Platform() {
   const lang = PullState.useState((state) => state.lang);
   const data = [
     {
-      title: Dictionary[lang]["you_must_agree_to_the_privacy_policy"],
+      title: Dictionary[lang]["unique_mobile"],
       year2023: {
         value: "527m",
-        rate: "44% penetration rate*",
+        rate: "44% " + Dictionary[lang]["penetration_rate"],
       },
       year2030: {
         value: "751m",
-        rate: "53% penetration rate*",
+        rate: "54% " + Dictionary[lang]["penetration_rate"],
+      },
+      cagr: Dictionary[lang]["CAGR"],
+      num: "4.5%",
+      description: Dictionary[lang]["by_the_end_of_2023"],
+    },
+    {
+      title: Dictionary[lang]["mobile_internet_users"],
+      year2023: {
+        value: "320m",
+        rate: "27% " + Dictionary[lang]["penetration_rate"],
+      },
+      year2030: {
+        value: "518m",
+        rate: "37% " + Dictionary[lang]["penetration_rate"],
       },
       cagr: "CAGR 2023–2030",
-      num: "4.5%",
-      description:
-        "By the end of 2023, nearly 44% of the population in Sub-Saharan Africa subscribed to a mobile service, amounting to 527 million subscribers.",
+      num: "6.2%",
+      description: Dictionary[lang]["mobile_internet_penetration"],
     },
     {
-      title: "Unique mobile subscribers",
+      title: Dictionary[lang]["operator_revenues"],
       year2023: {
-        value: "527m",
-        rate: "44% penetration rate*",
+        value: "$38bn",
+        rate: Dictionary[lang]["total_revenues"],
       },
       year2030: {
-        value: "751m",
-        rate: "53% penetration rate*",
+        value: "$61bn",
+        rate: Dictionary[lang]["total_revenues"],
       },
-      cagr: "CAGR 2023–2030",
-      num: "4.5%",
-      description:
-        "Mobile internet penetration has been growing, reaching 27% in the region by the end of 2023.",
+      cagr: Dictionary[lang]["operator_capex"],
+      num: "$62bn",
+      description: Dictionary[lang]["mobile_revenues_have"],
     },
     {
-      title: "Unique mobile subscribers",
+      title: Dictionary[lang]["smartphones"],
       year2023: {
-        value: "527m",
-        rate: "44% penetration rate*",
+        value: "51%",
+        rate: Dictionary[lang]["percentage_of_connections"],
       },
       year2030: {
-        value: "751m",
-        rate: "53% penetration rate*",
-      },
-      cagr: "Operator capex for the period 2023–2020",
-      num: "4.5%",
-      description:
-        "Mobile revenues have been growing steadily in the region. Growth is being driven by the expansion of 4G and 5G networks, the rise in the use of mobile data, and the growing adoption of technologies such as IoT. Annual mobile revenue growth is expected to stay in positive territory through to 2030.",
-    },
-    {
-      title: "Unique mobile subscribers",
-      year2023: {
-        value: "527m",
-        rate: "44% penetration rate*",
-      },
-      year2030: {
-        value: "751m",
-        rate: "53% penetration rate*",
+        value: "81%",
+        rate: Dictionary[lang]["percentage_of_connections"],
       },
       cagr: "",
-      num: "4.5%",
-      description:
-        "By the end of 2030 smartphone adoption in the region will grow to 81% of the total connections contributing to an increase of mobile data traffic consumption.",
+      num: "",
+      description: Dictionary[lang]["by_the_end_of_2030_smartphone"],
     },
     {
-      title: "Unique mobile subscribers",
+      title: "4G",
       year2023: {
-        value: "527m",
-        rate: "44% penetration rate*",
+        value: "31%",
+        rate: Dictionary[lang]["percentage_of_connections"],
       },
       year2030: {
-        value: "751m",
-        rate: "53% penetration rate*",
+        value: "50%",
+        rate: Dictionary[lang]["percentage_of_connections"],
       },
       cagr: "",
-      num: "4.5%",
-      description:
-        "By the end of the decade, 4G adoption in Sub-Saharan Africa is expected to reach 50%, making it the dominant technology.",
+      num: "",
+      description: Dictionary[lang]["by_the_end_of_the_decade"],
     },
     {
-      title: "Unique mobile subscribers",
+      title: Dictionary[lang]["mobile_data_consumption"],
       year2023: {
-        value: "527m",
-        rate: "44% penetration rate*",
+        value: "31%",
+        rate: Dictionary[lang]["per_connection_per_month"],
       },
       year2030: {
-        value: "751m",
-        rate: "53% penetration rate*",
+        value: "50%",
+        rate: Dictionary[lang]["per_connection_per_month"],
       },
       cagr: "",
-      num: "4.5%",
-      description:
-        "Mobile data traffic will grow by almost 6 GB per connection, per month in Sub-Saharan Africa between 2023 and 2030.",
+      num: "",
+      description: Dictionary[lang]["mobile_data_traffic_will_grow"],
     },
   ];
   return (

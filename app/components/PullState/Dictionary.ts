@@ -26,14 +26,28 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "for_individual_users": "For individual users",
         "content_services": "Content Services",
         //Platform
-        "mobile_penetration": "Mobile penetration in Sub-Saharan Africa will reach 50% by 2030",
-        "by_2030": "By 2030, smartphones will account for 88% of total connections, on average, in Sub- Saharan Africa",
-        "gb": "GB",
-        "mobile_data": "Mobile data consumption in Sub-Saharan Africa will quadruple from 4.7GB to reach 19GB per smartphone per month by 2030",
-        "million": "million",
-        "the_total_number": "The total number of mobile service subscribers in Sub-Saharan Africa will reach 692 million by 2030 (50% of the region's population)",
-        "billion": "billion",
-        "mobile_operator": "Mobile operators' revenue and investment will grow steadily and reach $58 billion by 2030 thanks in part to rising data usage",
+        "unique_mobile": "Unique mobile subscibers",
+        "penetration_rate": "penetration rate*",
+        "CAGR": "CAGR 2023–2030",
+        "%": "4.5%",
+        "by_the_end_of_2023": "By the end of 2023, nearly 53% of the population in Sub-Saharan Africa subscribed to a mobile service, amounting to 527 million subscribers.",
+        "mobile_internet_users": "Mobile internet users",
+        "mobile_internet_penetration": "Mobile internet penetration has been growing, reaching 27% in the region by the end of 2023.",
+
+        "operator_revenues": "Operator revenues and investment",
+        "total_revenues": "Total revenues",
+        "operator_capex": "Operator capex for the period 2023–2020",
+        "mobile_revenues_have": "Mobile revenues have been growing steadily in the region. Growth is being driven by the expansion of 4G and 5G networks, the rise in the use of mobile data, and the growing adoption of technologies such as IoT. Annual mobile revenue growth is expected to stay in positive territory through to 2030.",
+
+        "smartphones": "Smartphones",
+        "percentage_of_connections": "Percentage of connections",
+        "by_the_end_of_2030_smartphone": "By the end of 2030, smartphone adoption in the region will grow to 81% of the total connections contributing to an increase of mobile data traffic consumption.",
+
+        "by_the_end_of_the_decade": "By the end of the decade, 4G adoption in Sub- Saharan Africa is expected to reach 50%, making it the dominant technology.",
+
+        "mobile_data_consumption": "Mobile data consumption",
+        "per_connection_per_month": "Per connection per month",
+        "mobile_data_traffic_will_grow": "Mobile data traffic will grow by almost 6 GB per connection, per month in Sub- Saharan Africa between 2023 and 2030.",
         //Cases
         "cases": "Cases",
         "sifox_technologies_has_successfully": " SIFOX Technologies has successfully developed and continues to maintain a variety of distinctive projects across various African countries.",
@@ -136,14 +150,27 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "for_individual_users": "Pour Individus",
         "content_services": "Services de contenu",
         //Platform
-        "mobile_penetration": "La pénétration du mobile en Afrique subsaharienne atteindra 50% d'ici 2030.",
-        "by_2030": "D'ici 2030, les smartphones représenteront en moyenne 88% des connexions totales en Afrique subsaharienne.",
-        "gb": "Go",
-        "mobile_data": "La consommation de données mobiles en Afrique subsaharienne quadruplera de 4,7 Go pour atteindre 19 Go par smartphone par mois d'ici 2030.",
-        "million": "millions",
-        "the_total_number": "Le nombre total d'abonnés aux services mobiles en Afrique subsaharienne atteindra 692 millions d'ici 2030 (50% de la population de la région).",
-        "billion": "milliards",
-        "mobile_operator": "Les revenus et investissements des opérateurs mobiles augmenteront régulièrement pour atteindre 58 milliards de dollars d'ici 2030, en partie grâce à l'augmentation de l'utilisation des données.",
+        "unique_mobile": "Abonnés mobiles uniques",
+        "penetration_rate": "de taux de pénétration*",
+        "CAGR": "CAGR 2023–2030",
+        "by_the_end_of_2023": "À la fin de 2023, près de 44 % de la population en Afrique subsaharienne étaient",
+        "mobile_internet_users": "Utilisateurs d’internet mobile",
+        "mobile_internet_penetration": "La pénétration de l’internet mobile a continué de croître, atteignant 27 % dans la région à la fin de 2023.",
+
+        "operator_revenues": "Revenus et investissements des opérateurs",
+        "total_revenues": "Revenus totaux",
+        "operator_capex": "Operator capex for the period 2023–2020",
+        "mobile_revenues_have": "Les revenus mobiles continuent de croître dans la région. Cette croissance est stimulée par l'expansion des réseaux 4G et 5G, l'augmentation de l'utilisation des données mobiles et l'adoption croissante de technologies comme l'IoT. La croissance annuelle des revenus mobiles devrait rester positive jusqu'en 2030",
+
+        "smartphones": "Smartphones",
+        "percentage_of_connections": "Pourcentage des connexions",
+        "by_the_end_of_2030_smartphone": "À la fin de 2030, l’adoption des smartphones dans la région atteindra 81 % de l’ensemble des connexions, contribuant à une augmentation de la consommation du trafic de données mobiles",
+
+        "by_the_end_of_the_decade": "À la fin de la décennie, l’adoption de la 4G en Afrique subsaharienne devrait atteindre 50 %, en faisant la technologie dominante.",
+
+        "mobile_data_consumption": "Consommation de données mobiles",
+        "per_connection_per_month": "par connexion et par mois",
+        "mobile_data_traffic_will_grow": "Le trafic de données mobiles augmentera de près de 6 Go par connexion et par mois en Afrique subsaharienne entre 2023 et 2030",
         //Cases
         "cases": "PROJETS",
         "sifox_technologies_has_successfully": "SIFOX Technologies a développé avec succès et continue de maintenir une variété de projets distinctifs dans divers pays africains.",
