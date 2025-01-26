@@ -91,10 +91,10 @@ export default function Kenya() {
               <SvgArrow />
             </Link>
 
-            <Link href={`/products/${lang}/b2c-content-services`}>
+            {/* <Link href={`/products/${lang}/b2c-content-services`}>
               {Dictionary[lang]["content_services"]}
               <SvgArrow />
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

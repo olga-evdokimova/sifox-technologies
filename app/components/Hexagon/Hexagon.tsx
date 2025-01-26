@@ -307,7 +307,7 @@ export default function Hexagon(props: HexagonProps) {
               <Image src="/b2c/b2c-5.png" alt="b2c product" fill sizes="180" />
             </div>
           </Link>
-          <Link
+          {/* <Link
             className="hexagon__item"
             href={`/products/${lang}/b2c-content-services`}
           >
@@ -320,7 +320,7 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__img">
               <Image src="/b2c/b2c-3.png" alt="b2c product" fill sizes="180" />
             </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>
