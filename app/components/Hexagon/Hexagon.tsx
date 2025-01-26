@@ -279,7 +279,7 @@ export default function Hexagon(props: HexagonProps) {
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
           <Link
             className="hexagon__item"
-            href={`/products/${lang}/b2b-data-voice-distribution`}
+            href={`/products/${lang}/b2b-voice-and-data-distribution-reselling`}
           >
             <div className="hexagon__content">
               <SvgArrow />

@@ -107,7 +107,7 @@ export default function Burundi() {
               {Dictionary[lang]["reverse_billing"]}
               <SvgArrow />
             </Link>
-            <Link href={`/products/${lang}/b2b-data-voice-distribution`}>
+            <Link href="">
               {Dictionary[lang]["data_voice_distribution"]}
               <SvgArrow />
             </Link>

@@ -133,11 +133,11 @@ export default function RightNav({ open }) {
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={`/products/${lang}/b2b-data-voice-distribution`}>
+            <Link
+              href={`/products/${lang}/b2b-voice-and-data-distribution-reselling`}
+            >
               {Dictionary[lang]["data_voice_distribution"]}
-              <span>
-                {Dictionary[lang]["for_distributors_and_resellers"]}
-              </span>
+              <span>{Dictionary[lang]["for_distributors_and_resellers"]}</span>
             </Link>
           </li>
         </ul>

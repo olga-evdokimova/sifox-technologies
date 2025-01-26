@@ -103,7 +103,7 @@ export default function EquatorialGuinea() {
               ></Image>
               Equatorial Guinea
             </div>
-            <Link href={`/products/${lang}/b2b-data-voice-distribution`}>
+            <Link href="">
               ACS
               <SvgArrow />
             </Link>

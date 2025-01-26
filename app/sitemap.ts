@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         //     priority: 0.7,
         // },
         {
-            url: 'https://www.sifoxtech.com/products/en/b2b-data-voice-distribution',
+            url: 'https://www.sifoxtech.com/products/en/b2b-voice-and-data-distribution-reselling',
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.7,
@@ -81,7 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         //     priority: 0.7,
         // },
         {
-            url: 'https://www.sifoxtech.com/products/fr/b2b-data-voice-distribution',
+            url: 'https://www.sifoxtech.com/products/fr/b2b-voice-and-data-distribution-reselling',
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.7,

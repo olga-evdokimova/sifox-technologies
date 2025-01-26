@@ -96,7 +96,9 @@ export default function Nigeria() {
               <SvgArrow />
             </Link> */}
 
-            <Link href={`/products/${lang}/b2b-data-voice-distribution`}>
+            <Link
+              href={`/products/${lang}/b2b-voice-and-data-distribution-reselling`}
+            >
               {Dictionary[lang]["data_voice_distribution"]}
               <SvgArrow />
             </Link>
