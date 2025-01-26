@@ -284,8 +284,8 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__content">
               <SvgArrow />
 
-              <div>{Dictionary[lang]["data_voice_distribution"]}</div>
-              <p>{Dictionary[lang]["for_distributors_and_resellers"]}</p>
+              <div>{Dictionary[lang]["Voice_and_data_distribution"]}</div>
+              {/* <p>{Dictionary[lang]["for_distributors_and_resellers"]}</p> */}
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
