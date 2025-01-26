@@ -117,7 +117,7 @@ export default function RightNav({ open }) {
               <span>{Dictionary[lang]["for_small_and_micro_business"]}</span>
             </Link>
           </li>
-          <li className="nav-menu__list-item">
+          {/* <li className="nav-menu__list-item">
             <Link href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}>
               {Dictionary[lang]["data_sponsorship_or_gifting"]}
               <span>
@@ -125,7 +125,7 @@ export default function RightNav({ open }) {
                 {Dictionary[lang]["for_enterprises_and_governments"]}
               </span>
             </Link>
-          </li>
+          </li> */}
           <li className="nav-menu__list-item">
             <Link href={`/products/${lang}/b2b-reverse-billing`}>
               {Dictionary[lang]["reverse_billing"]}

@@ -14,12 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'yearly',
             priority: 0.8,
         },
-        {
-            url: 'https://www.sifoxtech.com/products/en/b2b-data-sponsorship-or-gifting',
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.7,
-        },
+        // {
+        //     url: 'https://www.sifoxtech.com/products/en/b2b-data-sponsorship-or-gifting',
+        //     lastModified: new Date(),
+        //     changeFrequency: 'monthly',
+        //     priority: 0.7,
+        // },
         {
             url: 'https://www.sifoxtech.com/products/en/b2b-data-voice-distribution',
             lastModified: new Date(),
@@ -74,12 +74,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly',
             priority: 0.7,
         },
-        {
-            url: 'https://www.sifoxtech.com/products/fr/b2b-data-sponsorship-or-gifting',
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.7,
-        },
+        // {
+        //     url: 'https://www.sifoxtech.com/products/fr/b2b-data-sponsorship-or-gifting',
+        //     lastModified: new Date(),
+        //     changeFrequency: 'monthly',
+        //     priority: 0.7,
+        // },
         {
             url: 'https://www.sifoxtech.com/products/fr/b2b-data-voice-distribution',
             lastModified: new Date(),

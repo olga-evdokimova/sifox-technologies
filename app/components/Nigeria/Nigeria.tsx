@@ -91,10 +91,10 @@ export default function Nigeria() {
               ></Image>
               Nigeria
             </div>
-            <Link  href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}>
+            {/* <Link  href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}>
               {Dictionary[lang]["data_sponsorship_or_gifting"]}
               <SvgArrow />
-            </Link>
+            </Link> */}
 
             <Link href={`/products/${lang}/b2b-data-voice-distribution`}>
               {Dictionary[lang]["data_voice_distribution"]}
