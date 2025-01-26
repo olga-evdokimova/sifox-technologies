@@ -91,12 +91,12 @@ export default function RightNav({ open }) {
               <span> {Dictionary[lang]["for_individual_users"]}</span>
             </Link>
           </li> */}
-          <li className="nav-menu__list-item">
+          {/* <li className="nav-menu__list-item">
             <Link href={`/products/${lang}/b2c-cvm-campaign-management`}>
               {Dictionary[lang]["cvm_campaigns_management"]}
               <span> {Dictionary[lang]["for_nv_customers"]}</span>
             </Link>
-          </li>
+          </li> */}
         </ul>
       )}
       <li
