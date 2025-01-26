@@ -136,8 +136,8 @@ export default function RightNav({ open }) {
             <Link
               href={`/products/${lang}/b2b-voice-and-data-distribution-reselling`}
             >
-              {Dictionary[lang]["data_voice_distribution"]}
-              <span>{Dictionary[lang]["for_distributors_and_resellers"]}</span>
+              {Dictionary[lang]["Voice_and_data_distribution_reselling"]}
+              {/* <span>{Dictionary[lang]["for_distributors_and_resellers"]}</span> */}
             </Link>
           </li>
         </ul>

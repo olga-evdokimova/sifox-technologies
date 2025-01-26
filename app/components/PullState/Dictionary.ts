@@ -25,6 +25,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "airtime_credit": "Airtime Credit",
         "for_individual_users": "For individual users",
         "content_services": "Content Services",
+        //НОВОЕ
+        "Voice_and_data_distribution_reselling": "Data and Voice Distribution",
         //Platform
         "unique_mobile": "Unique mobile subscibers",
         "penetration_rate": "penetration rate*",
@@ -153,6 +155,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "airtime_credit": "Crédit de temps d'antenne",
         "for_individual_users": "Pour Individus",
         "content_services": "Services de contenu",
+        //НОВОЕ
+        "Voice_and_data_distribution_reselling": "Distribution de Données et de Voix",
         //Platform
         "unique_mobile": "Abonnés mobiles uniques",
         "penetration_rate": "de taux de pénétration*",

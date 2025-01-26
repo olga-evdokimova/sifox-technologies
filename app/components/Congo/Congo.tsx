@@ -45,7 +45,7 @@ export default function Congo() {
           {showTooltip && (
             <div className="congo__tooltip">
               <p>{Dictionary[lang]["reverse_billing"]}</p>
-              <p>{Dictionary[lang]["data_voice_distribution"]}</p>
+              <p>{Dictionary[lang]["Voice_and_data_distribution_reselling"]}</p>
               <p>{Dictionary[lang]["data_voice_sharing"]}</p>
               <p>{Dictionary[lang]["data_voice_cost_sharing"]}</p>
             </div>
@@ -95,7 +95,7 @@ export default function Congo() {
             <Link
               href={`/products/${lang}/b2b-voice-and-data-distribution-reselling`}
             >
-              {Dictionary[lang]["data_voice_distribution"]}
+              {Dictionary[lang]["Voice_and_data_distribution_reselling"]}
               <SvgArrow />
             </Link>
             <Link href={`/products/${lang}/b2c-data-voice-sharing`}>
