@@ -28,6 +28,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         //НОВОЕ
         "Voice_and_data_distribution_reselling": "Data and Voice Distribution",
         "Resource_Management_Platform": "Resource Management Platform(RMP)",
+        "Reverse_Billing": "Reverse Billing/Sponsored Data Platform",
         //Platform
         "unique_mobile": "Unique mobile subscibers",
         "penetration_rate": "penetration rate*",
@@ -159,6 +160,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         //НОВОЕ
         "Voice_and_data_distribution_reselling": "Distribution de Données et de Voix",
         "Resource_Management_Platform": "Resource Management Platform(RMP)",
+        "Reverse_Billing": "Facturation Inversée des Données",
         //Platform
         "unique_mobile": "Abonnés mobiles uniques",
         "penetration_rate": "de taux de pénétration*",

@@ -213,8 +213,8 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__content">
               <SvgArrow />
 
-              <div>{Dictionary[lang]["reverse_billing"]}</div>
-              <p>{Dictionary[lang]["for_enterprises_and_governments"]}</p>
+              <div>{Dictionary[lang]["Reverse_Billing"]}</div>
+              {/* <p>{Dictionary[lang]["for_enterprises_and_governments"]}</p> */}
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">

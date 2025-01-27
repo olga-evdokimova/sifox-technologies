@@ -89,7 +89,7 @@ export default function Congo() {
               {Dictionary[lang]["drc"]}
             </div>
             <Link href={`/products/${lang}/b2b-reverse-billing`}>
-              {Dictionary[lang]["reverse_billing"]}
+              {Dictionary[lang]["Reverse_Billing"]}
               <SvgArrow />
             </Link>
             <Link

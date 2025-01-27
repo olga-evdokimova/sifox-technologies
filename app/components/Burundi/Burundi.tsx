@@ -103,7 +103,7 @@ export default function Burundi() {
               ></Image>
               Burundi
             </div>
-            <Link href={`/products/${lang}/b2b-reverse-billing`}>
+            <Link href="">
               {Dictionary[lang]["reverse_billing"]}
               <SvgArrow />
             </Link>
