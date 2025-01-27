@@ -8,7 +8,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "about": "About",
         //Products
         "cost_savings": "Cost savings. Enhanced flexibility. Improved voice and data management.",
-        "data_voice_sharing": "Data & Voice Sharing",
+       
         "for_family": "For family",
         "for_small_and_micro_business": "For small and micro business",
         "data_sponsorship_or_gifting": "Data Sponsorship or Gifting",
@@ -30,6 +30,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "Reverse_Billing": "Reverse Billing/Sponsored Data Platform",
         "airtime_credit": "Airtime Credit System",
         "data_voice_cost_sharing": "Data & Voice Cost Sharing",
+        "b2c_data_sharing": "Data Sharing",
         //Platform
         "unique_mobile": "Unique mobile subscibers",
         "penetration_rate": "penetration rate*",
@@ -141,7 +142,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "about": "Ã propos",
         //Products
         "cost_savings": "Économies de coûts. Flexibilité accrue. Amélioration de la gestion des voix et des données.",
-        "data_voice_sharing": "Partage de données et de voix",
+       
         "for_family": "Pour les famille",
         "for_small_and_micro_business": "Pour les petites et micro-entreprises",
         "data_sponsorship_or_gifting": "Parrainage ou Offre de données",
@@ -163,6 +164,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "Reverse_Billing": "Facturation Inversée des Données",
         "airtime_credit": "",
         "data_voice_cost_sharing": "",
+        "b2c_data_sharing": "Partage de Données",
         //Platform
         "unique_mobile": "Abonnés mobiles uniques",
         "penetration_rate": "de taux de pénétration*",

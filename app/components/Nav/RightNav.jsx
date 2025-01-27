@@ -59,8 +59,8 @@ export default function RightNav({ open }) {
       {showListB2C && (
         <ul className="nav-menu__list">
           <li className="nav-menu__list-item">
-            <Link href={`/products/${lang}/b2c-data-voice-sharing`}>
-              {Dictionary[lang]["data_voice_sharing"]}
+            <Link href={`/products/${lang}/b2c-data-sharing`}>
+              {Dictionary[lang]["data_sharing"]}
               <span>{Dictionary[lang]["for_family"]}</span>
             </Link>
           </li>

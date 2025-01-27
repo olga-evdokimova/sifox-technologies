@@ -139,11 +139,11 @@ export default function Hexagon(props: HexagonProps) {
           </div>
           <Link
             className="hexagon__item"
-            href={`/products/${lang}/b2c-data-voice-sharing`}
+            href={`/products/${lang}/b2c-data-sharing`}
           >
             <div className="hexagon__content">
               <SvgArrow />
-              <div>{Dictionary[lang]["data_voice_sharing"]}</div>
+              <div>{Dictionary[lang]["b2c_data_sharing"]}</div>
               <p>{Dictionary[lang]["for_family"]}</p>
             </div>
             <div className="hexagon__hover"></div>

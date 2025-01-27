@@ -63,7 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
-            url: 'https://www.sifoxtech.com/products/en/b2c-data-voice-sharing',
+            url: 'https://www.sifoxtech.com/products/en/b2c-data-sharing',
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.7,
@@ -123,7 +123,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
-            url: 'https://www.sifoxtech.com/products/fr/b2c-data-voice-sharing',
+            url: 'https://www.sifoxtech.com/products/fr/b2c-data-sharing',
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.7,
