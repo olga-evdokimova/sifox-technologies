@@ -16,7 +16,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "cvm_campaigns_management": "CVM Campaigns Management",
         "for_nv_customers": "For NV customers",
         "reverse_billing": "Reverse Billing",
-        "data_voice_cost_sharing": "Data & Voice Cost Sharing",
+       
         "for_friends_and_social_buying": "For friends and social buying",
         "social_network_bundles": "Social Network Bundles",
         "for_individuals_and_social_buying": "For individuals and social buying",
@@ -29,6 +29,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "Resource_Management_Platform": "Resource Management Platform(RMP)",
         "Reverse_Billing": "Reverse Billing/Sponsored Data Platform",
         "airtime_credit": "Airtime Credit System",
+        "data_voice_cost_sharing": "Data & Voice Cost Sharing",
         //Platform
         "unique_mobile": "Unique mobile subscibers",
         "penetration_rate": "penetration rate*",
@@ -148,7 +149,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "cvm_campaigns_management": "Gestion des campagnes CVM",
         "for_nv_customers": "Pour les clients à haute valeur",
         "reverse_billing": "Facturation inversée",
-        "data_voice_cost_sharing": "Partage des coûts de données et de voix",
+       
         "for_friends_and_social_buying": "Pour les amis et achats sociaux",
         "social_network_bundles": "Forfaits Réseaux Sociaux",
         "for_individuals_and_social_buying": "Pour les individus et les groupes sociaux",
@@ -161,6 +162,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "Resource_Management_Platform": "Resource Management Platform(RMP)",
         "Reverse_Billing": "Facturation Inversée des Données",
         "airtime_credit": "",
+        "data_voice_cost_sharing": "",
         //Platform
         "unique_mobile": "Abonnés mobiles uniques",
         "penetration_rate": "de taux de pénétration*",
