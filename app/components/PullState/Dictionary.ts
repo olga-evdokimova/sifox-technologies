@@ -22,13 +22,13 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "for_individuals_and_social_buying": "For individuals and social buying",
         "Voice_and_data_distribution": "Voice and data distribution / reselling",
         "for_distributors_and_resellers": "For distributors and resellers",
-        "airtime_credit": "Airtime Credit",
         "for_individual_users": "For individual users",
         "content_services": "Content Services",
         //НОВОЕ
         "Voice_and_data_distribution_reselling": "Data and Voice Distribution",
         "Resource_Management_Platform": "Resource Management Platform(RMP)",
         "Reverse_Billing": "Reverse Billing/Sponsored Data Platform",
+        "airtime_credit": "Airtime Credit System",
         //Platform
         "unique_mobile": "Unique mobile subscibers",
         "penetration_rate": "penetration rate*",
@@ -154,13 +154,13 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "for_individuals_and_social_buying": "Pour les individus et les groupes sociaux",
         "Voice_and_data_distribution": "Distribution de Données et de Voix",
         "for_distributors_and_resellers": "Pour les distributeurs et les revendeurs",
-        "airtime_credit": "Crédit de temps d'antenne",
         "for_individual_users": "Pour Individus",
         "content_services": "Services de contenu",
         //НОВОЕ
         "Voice_and_data_distribution_reselling": "Distribution de Données et de Voix",
         "Resource_Management_Platform": "Resource Management Platform(RMP)",
         "Reverse_Billing": "Facturation Inversée des Données",
+        "airtime_credit": "",
         //Platform
         "unique_mobile": "Abonnés mobiles uniques",
         "penetration_rate": "de taux de pénétration*",
