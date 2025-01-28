@@ -265,12 +265,12 @@ export default function Hexagon(props: HexagonProps) {
           {/* ---Новая страница--b2b---- */}
           <Link
             className="hexagon__item"
-            href={`/products/${lang}/b2b-resource-management-platform`}
+            href={`/products/${lang}/b2b-data-voice-sms-gifting`}
           >
             <div className="hexagon__content">
               <SvgArrow />
 
-              <div>{Dictionary[lang]["Resource_Management_Platform"]}</div>
+              <div>{Dictionary[lang]["Data_Voice_SMS_gifting"]}</div>
               {/* <p>{Dictionary[lang]["for_small_and_micro_business"]}</p> */}
             </div>
             <div className="hexagon__hover"></div>

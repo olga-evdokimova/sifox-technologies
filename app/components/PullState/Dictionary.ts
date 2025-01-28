@@ -31,6 +31,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "airtime_credit": "Airtime Credit System",
         "data_voice_cost_sharing": "Data & Voice Cost Sharing",
         "b2c_data_sharing": "Data Sharing",
+        "Data_Voice_SMS_gifting": "Data/Voice/SMS gifting/sponsorship-customers and employees",
         //Platform
         "unique_mobile": "Unique mobile subscibers",
         "penetration_rate": "penetration rate*",
@@ -162,9 +163,11 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "Voice_and_data_distribution_reselling": "Distribution de Données et de Voix",
         "Resource_Management_Platform": "Resource Management Platform(RMP)",
         "Reverse_Billing": "Facturation Inversée des Données",
-        "airtime_credit": "",
-        "data_voice_cost_sharing": "",
+        "airtime_credit": "Système de Crédit de Temps d’Antenne (ACS)",
+        "data_voice_cost_sharing": "Partage des Coûts de Données et de Voix",
         "b2c_data_sharing": "Partage de Données",
+        "Data_Voice_SMS_gifting": "Le Parrainage/Don de Données, Voix et SMS pour les Clients et Employés",
+        
         //Platform
         "unique_mobile": "Abonnés mobiles uniques",
         "penetration_rate": "de taux de pénétration*",

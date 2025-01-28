@@ -140,6 +140,12 @@ export default function RightNav({ open }) {
               {/* <span>{Dictionary[lang]["for_distributors_and_resellers"]}</span> */}
             </Link>
           </li>
+          <li className="nav-menu__list-item">
+            <Link href={`/products/${lang}/b2b-data-voice-sms-gifting`}>
+              {Dictionary[lang]["Data_Voice_SMS_gifting"]}
+              {/* <span>{Dictionary[lang]["for_distributors_and_resellers"]}</span> */}
+            </Link>
+          </li>
         </ul>
       )}
     </ul>
