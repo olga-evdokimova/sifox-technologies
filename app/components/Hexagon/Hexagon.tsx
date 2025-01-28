@@ -153,7 +153,6 @@ export default function Hexagon(props: HexagonProps) {
           </Link>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
         </div>
-
         <div className="hexagon__row even">
           <Link
             className="hexagon__item"
@@ -170,28 +169,13 @@ export default function Hexagon(props: HexagonProps) {
               <Image src="/b2b/b2b-1.png" alt="b2b product" fill sizes="180" />
             </div>
           </Link>
-          {/* <Link
-            className="hexagon__item"
-            href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}
-          >
-            <div className="hexagon__content">
-              <SvgArrow />
-              <div>{Dictionary[lang]["data_sponsorship_or_gifting"]}</div>
-              <p>{Dictionary[lang]["for_enterprises_and_governments"]}</p>
-            </div>
-            <div className="hexagon__hover"></div>
-            <div className="hexagon__img">
-              <Image src="/b2b/b2b-4.png" alt="b2b product" fill sizes="180" />
-            </div>
-          </Link> */}
+          <div className="hexagon__item"></div>
           <div className="hexagon__item">
             <div className="hexagon__hover"></div>
           </div>
           <div className="hexagon__item"></div>
-
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
         </div>
-
         <div className="hexagon__row">
           <Link
             className="hexagon__item"
@@ -247,16 +231,13 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__hover"></div>
           </div>
         </div>
-
         <div className="hexagon__row even">
-          {/* ---Новая страница--b2b---- */}
           <Link
             className="hexagon__item"
             href={`/products/${lang}/b2b-data-voice-sms-gifting`}
           >
             <div className="hexagon__content">
               <SvgArrow />
-
               <div>{Dictionary[lang]["Data_Voice_SMS_gifting"]}</div>
               {/* <p>{Dictionary[lang]["for_small_and_micro_business"]}</p> */}
             </div>
@@ -265,7 +246,6 @@ export default function Hexagon(props: HexagonProps) {
               <Image src="/b2b/b2b-1.png" alt="b2b product" fill sizes="180" />
             </div>
           </Link>
-          {/* --------- */}
           <div className="hexagon__item"></div>
           <div className="hexagon__item"></div>
           <Link
@@ -282,7 +262,7 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__img">
               <Image src="/b2c/b2c-2.png" alt="b2c product" fill sizes="180" />
             </div>
-          </Link> 
+          </Link>
           <Link
             className="hexagon__item"
             href={`/products/${lang}/b2c-social-network-bundles`}
@@ -299,7 +279,6 @@ export default function Hexagon(props: HexagonProps) {
             </div>
           </Link>
         </div>
-
         <div className="hexagon__row">
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
           <div className="hexagon__item"></div>
