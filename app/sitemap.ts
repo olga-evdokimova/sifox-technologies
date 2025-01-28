@@ -50,12 +50,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         //     changeFrequency: 'monthly',
         //     priority: 0.7,
         // },
-        // {
-        //     url: 'https://www.sifoxtech.com/products/en/b2c-cvm-campaign-management',
-        //     lastModified: new Date(),
-        //     changeFrequency: 'monthly',
-        //     priority: 0.7,
-        // },
+        {
+            url: 'https://www.sifoxtech.com/products/en/b2c-buy-for-me',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
         {
             url: 'https://www.sifoxtech.com/products/en/b2c-data-voice-cost-sharing',
             lastModified: new Date(),

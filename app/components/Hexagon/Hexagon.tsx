@@ -187,21 +187,21 @@ export default function Hexagon(props: HexagonProps) {
           <div className="hexagon__item">
             <div className="hexagon__hover"></div>
           </div>
-          {/* <Link
+          <Link
             className="hexagon__item"
-            href={`/products/${lang}/b2c-cvm-campaign-management`}
+            href={`/products/${lang}/b2c-buy-for-me`}
           >
             <div className="hexagon__content">
               {" "}
               <SvgArrow />
-              <div>{Dictionary[lang]["cvm_campaigns_management"]}</div>
-              <p>{Dictionary[lang]["for_nv_customers"]}</p>
+              <div>{Dictionary[lang]["Buy-For-Me"]}</div>
+              <p>{Dictionary[lang]["For_individuals"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
               <Image src="/b2c/b2c-2.png" alt="b2c product" fill sizes="180" />
             </div>
-          </Link> */}
+          </Link>
           <div className="hexagon__item" style={{ opacity: 0 }}></div>
         </div>
 

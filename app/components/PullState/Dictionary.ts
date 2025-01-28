@@ -32,6 +32,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "data_voice_cost_sharing": "Data & Voice Cost Sharing",
         "b2c_data_sharing": "Data Sharing",
         "Data_Voice_SMS_gifting": "Data/Voice/SMS gifting/sponsorship-customers and employees",
+        "Buy-For-Me": "Buy For Me",
+        "For_individuals": "For individuals",
         //Platform
         "unique_mobile": "Unique mobile subscibers",
         "penetration_rate": "penetration rate*",
@@ -167,7 +169,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "data_voice_cost_sharing": "Partage des Coûts de Données et de Voix",
         "b2c_data_sharing": "Partage de Données",
         "Data_Voice_SMS_gifting": "Le Parrainage/Don de Données, Voix et SMS pour les Clients et Employés",
-        
+        "Buy-For-Me": "Achetez",
+        "For_individuals": "pour Moi",
         //Platform
         "unique_mobile": "Abonnés mobiles uniques",
         "penetration_rate": "de taux de pénétration*",
