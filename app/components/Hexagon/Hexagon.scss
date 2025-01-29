@@ -146,7 +146,7 @@
             }
             @media (max-width: 769px) {
                 left: 230px;
-                 top: -5px;
+                top: -5px;
             }
         }
         p {
@@ -382,5 +382,44 @@
     }
     @media (max-width: 769px) {
         left: -990px;
+    }
+}
+.svg-top {
+    position: absolute;
+    top: 58px;
+    left: -14px;
+    rotate: -30deg;
+    z-index: 50;
+    @media (max-width: 1100px) {
+        width: 38px;
+        height: 56px;
+        top: 30px;
+        left: -11px;
+    }
+}
+.svg-left {
+    position: absolute;
+    bottom: -58px;
+    left: 50px;
+    rotate: 270deg;
+    z-index: 50;
+    @media (max-width: 1100px) {
+        width: 38px;
+        height: 56px;
+        bottom: -50px;
+        left: 34px;
+    }
+}
+.svg-right {
+    position: absolute;
+    bottom: 169px;
+    left: 50px;
+    rotate: 30deg;
+    z-index: 50;
+    @media (max-width: 1100px) {
+        width: 38px;
+        height: 56px;
+        bottom: 105px;
+       left: 34px;
     }
 }
