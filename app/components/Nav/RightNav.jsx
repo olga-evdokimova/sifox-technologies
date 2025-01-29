@@ -71,12 +71,9 @@ export default function RightNav({ open }) {
             </Link>
           </li>
           <li className="nav-menu__list-item">
-            <Link href={`/products/${lang}/b2c-social-network-bundles`}>
-              {Dictionary[lang]["social_network_bundles"]}
-              <span>
-                {" "}
-                {Dictionary[lang]["for_individuals_and_social_buying"]}
-              </span>
+            <Link href={`/products/${lang}/b2c-reverse_call`}>
+              {Dictionary[lang]["Reverse_Call"]}
+              <span>{Dictionary[lang]["For_Individuals"]}</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">

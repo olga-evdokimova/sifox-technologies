@@ -34,6 +34,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "Data_Voice_SMS_gifting": "Data/Voice/SMS gifting/sponsorship-customers and employees",
         "Buy-For-Me": "Buy For Me",
         "For_individuals": "For individuals",
+        "Reverse_Call": "Reverse Call",
+        "For_Individuals": "For individuals",
         //Platform
         "unique_mobile": "Unique mobile subscibers",
         "penetration_rate": "penetration rate*",
@@ -171,6 +173,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "Data_Voice_SMS_gifting": "Le Parrainage/Don de Données, Voix et SMS pour les Clients et Employés",
         "Buy-For-Me": "Achetez",
         "For_individuals": "pour Moi",
+        "Reverse_Call": "Appel à l’Envers",
+        "For_Individuals": "Pour les particuliers",
         //Platform
         "unique_mobile": "Abonnés mobiles uniques",
         "penetration_rate": "de taux de pénétration*",

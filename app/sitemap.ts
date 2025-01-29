@@ -69,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
-            url: 'https://www.sifoxtech.com/products/en/b2c-social-network-bundles',
+            url: 'https://www.sifoxtech.com/products/en/b2c-reverse_call',
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.7,
@@ -129,7 +129,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
-            url: 'https://www.sifoxtech.com/products/fr/b2c-social-network-bundles',
+            url: 'https://www.sifoxtech.com/products/fr/b2c-reverse_call',
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.7,
