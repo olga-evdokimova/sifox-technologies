@@ -234,7 +234,7 @@
         width: 270px;
         height: 150px;
         position: relative;
-        left: 59px;
+        left: 46px;
         top: 10px;
         z-index: 2;
         cursor: url("/cursor.webp"), auto;
@@ -267,11 +267,11 @@
         }
         svg {
             position: absolute;
-            top: -50px;
+            top: -40px;
             left: 122px;
             @media (max-width: 1100px) {
                 width: 10px;
-                top: -39px;
+                top: -27px;
                 left: 76px;
             }
         }

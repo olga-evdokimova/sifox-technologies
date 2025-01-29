@@ -60,14 +60,14 @@ export default function RightNav({ open }) {
         <ul className="nav-menu__list">
           <li className="nav-menu__list-item">
             <Link href={`/products/${lang}/b2c-data-sharing`}>
-              {Dictionary[lang]["data_sharing"]}
+              {Dictionary[lang]["Data_Sharing"]}
               <span>{Dictionary[lang]["for_family"]}</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
             <Link href={`/products/${lang}/b2c-data-voice-cost-sharing`}>
               {Dictionary[lang]["data_voice_cost_sharing"]}
-              <span>{Dictionary[lang]["for_friends_and_social_buying"]}</span>
+              <span>{Dictionary[lang]["For_Friends"]}</span>
             </Link>
           </li>
           <li className="nav-menu__list-item">
@@ -79,7 +79,7 @@ export default function RightNav({ open }) {
           <li className="nav-menu__list-item">
             <Link href={`/products/${lang}/b2c-airtime-credit`}>
               {Dictionary[lang]["airtime_credit"]}
-              <span> {Dictionary[lang]["for_individual_users"]}</span>
+              <span> {Dictionary[lang]["For_individuals"]}</span>
             </Link>
           </li>
           {/* <li className="nav-menu__list-item">

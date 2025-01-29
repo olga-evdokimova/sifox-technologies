@@ -165,12 +165,7 @@ export default function Hexagon(props: HexagonProps) {
               {/* <p>{Dictionary[lang]["for_small_and_micro_business"]}</p> */}
             </div>
             <div className="hexagon__img ">
-              <Image
-                src="/b2b/b2b-5.png"
-                alt="b2b product"
-                fill
-                sizes="180"
-              />
+              <Image src="/b2b/b2b-5.png" alt="b2b product" fill sizes="180" />
             </div>
           </Link>
           <div className="hexagon__item"></div>
@@ -262,7 +257,7 @@ export default function Hexagon(props: HexagonProps) {
               <SvgArrow />
 
               <div>{Dictionary[lang]["data_voice_cost_sharing"]}</div>
-              <p>{Dictionary[lang]["for_friends_and_social_buying"]}</p>
+              <p>{Dictionary[lang]["For_Friends"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -317,7 +312,7 @@ export default function Hexagon(props: HexagonProps) {
               {" "}
               <SvgArrow />
               <div>{Dictionary[lang]["Buy-For-Me"]}</div>
-              <p>{Dictionary[lang]["For_individuals"]}</p>
+              <p>{Dictionary[lang]["Gifting"]}</p>
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -332,7 +327,7 @@ export default function Hexagon(props: HexagonProps) {
               <SvgArrow />
 
               <div>{Dictionary[lang]["Reverse_Call"]}</div>
-              <p>{Dictionary[lang]["For_Individuals"]}</p>
+              {/* <p>{Dictionary[lang]["For_Individuals"]}</p> */}
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
@@ -351,7 +346,7 @@ export default function Hexagon(props: HexagonProps) {
             <div className="hexagon__content">
               <SvgArrow />
               <div>{Dictionary[lang]["airtime_credit"]}</div>
-              <p>{Dictionary[lang]["for_individual_users"]}</p>
+              {/* <p>{Dictionary[lang]["for_individual_users"]}</p> */}
             </div>
             <div className="hexagon__hover"></div>
             <div className="hexagon__img">
