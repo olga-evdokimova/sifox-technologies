@@ -49,7 +49,7 @@ export default function Zimbabwe() {
           i
           {showTooltip && (
             <div className="zimbabwe__tooltip">
-              <p>{Dictionary[lang]["airtime_credit"]}</p>
+              <p>{Dictionary[lang]["Reverse_Call"]}</p>
             </div>
           )}
         </button>
@@ -90,11 +90,10 @@ export default function Zimbabwe() {
               ></Image>
               Zimbabwe
             </div>
-            <Link href={`/products/${lang}/b2c-airtime-credit`}>
-              {Dictionary[lang]["airtime_credit"]}
+            <Link href={`/products/${lang}/b2c-reverse_call`}>
+              {Dictionary[lang]["Reverse_Call"]}
               <SvgArrow />
             </Link>
-
           </div>
         </div>
       )}

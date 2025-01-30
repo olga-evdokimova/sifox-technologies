@@ -62,7 +62,7 @@ export default function EquatorialGuinea() {
 
           {showTooltip && (
             <div className="guinea__tooltip">
-              <p>ACS</p>
+              <p>{Dictionary[lang]["airtime_credit"]}</p>
             </div>
           )}
         </button>
@@ -103,8 +103,8 @@ export default function EquatorialGuinea() {
               ></Image>
               Equatorial Guinea
             </div>
-            <Link href="">
-              ACS
+            <Link href={`/products/${lang}/b2c-airtime-credit`}>
+              {Dictionary[lang]["airtime_credit"]}
               <SvgArrow />
             </Link>
           </div>

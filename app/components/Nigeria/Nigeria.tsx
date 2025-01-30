@@ -49,8 +49,8 @@ export default function Nigeria() {
           i
           {showTooltip && (
             <div className="nigeria__tooltip">
-              <p>{Dictionary[lang]["data_sponsorship_or_gifting"]}</p>
-              <p>{Dictionary[lang]["data_voice_distribution"]}</p>
+              <p>{Dictionary[lang]["Data_Voice_SMS_gifting"]}</p>
+              <p>{Dictionary[lang]["Voice_and_data_distribution_reselling"]}</p>
             </div>
           )}
         </button>
@@ -91,15 +91,15 @@ export default function Nigeria() {
               ></Image>
               Nigeria
             </div>
-            {/* <Link  href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}>
-              {Dictionary[lang]["data_sponsorship_or_gifting"]}
+            <Link href={`/products/${lang}/b2b-data-sponsorship-or-gifting`}>
+              {Dictionary[lang]["Data_Voice_SMS_gifting"]}
               <SvgArrow />
-            </Link> */}
+            </Link>
 
             <Link
               href={`/products/${lang}/b2b-voice-and-data-distribution-reselling`}
             >
-              {Dictionary[lang]["data_voice_distribution"]}
+              {Dictionary[lang]["Voice_and_data_distribution_reselling"]}
               <SvgArrow />
             </Link>
           </div>

@@ -61,8 +61,8 @@ export default function Burundi() {
           </svg>
           {showTooltip && (
             <div className="burundi__tooltip">
-              <p>Reverse call</p>
-              <p>ACS</p>
+              <p>{Dictionary[lang]["Reverse_Call"]}</p>
+              <p>{Dictionary[lang]["airtime_credit"]}</p>
             </div>
           )}
         </button>
@@ -103,12 +103,12 @@ export default function Burundi() {
               ></Image>
               Burundi
             </div>
-            <Link href="">
-              {Dictionary[lang]["reverse_billing"]}
+            <Link href={`/products/${lang}/b2c-reverse_call`}>
+              {Dictionary[lang]["Reverse_Call"]}
               <SvgArrow />
             </Link>
-            <Link href="">
-              {Dictionary[lang]["data_voice_distribution"]}
+            <Link href={`/products/${lang}/b2c-airtime-credit`}>
+              {Dictionary[lang]["airtime_credit"]}
               <SvgArrow />
             </Link>
           </div>

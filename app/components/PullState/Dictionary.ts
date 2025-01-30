@@ -24,7 +24,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "for_distributors_and_resellers": "For distributors and resellers",
         "for_individual_users": "For individual users",
         "content_services": "Content Services",
-        //НОВОЕ
+        //НОВОЕ----------------------------
         "Voice_and_data_distribution_reselling": "Data and Voice Distribution",
         "Resource_Management_Platform": "Resource Management Platform(RMP)",
         "Reverse_Billing": "Reverse Billing/Sponsored Data Platform",
@@ -39,6 +39,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "For_Individuals": "For individuals",
         "Gifting": "Gifting",
         "Data_Sharing": "Data Sharing",
+
+        //----------------------------------------------
         //Platform
         "unique_mobile": "Unique mobile subscibers",
         "penetration_rate": "penetration rate*",

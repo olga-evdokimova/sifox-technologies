@@ -45,7 +45,6 @@ export default function Kenya() {
           {showTooltip && (
             <div className="kenya__tooltip">
               <p>{Dictionary[lang]["airtime_credit"]}</p>
-              <p>{Dictionary[lang]["content_services"]}</p>
             </div>
           )}
         </button>
@@ -91,10 +90,7 @@ export default function Kenya() {
               <SvgArrow />
             </Link>
 
-            {/* <Link href={`/products/${lang}/b2c-content-services`}>
-              {Dictionary[lang]["content_services"]}
-              <SvgArrow />
-            </Link> */}
+         
           </div>
         </div>
       )}

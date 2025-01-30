@@ -185,10 +185,6 @@
         top: 64%;
         left: 40%;
 
-        a {
-            display: flex;
-            align-items: center;
-        }
         div {
             display: flex;
             gap: 10px;
@@ -239,16 +235,19 @@
         }
     }
 
-    a {
-        font-size: 30px;
+    a {position: relative;
+        font-size: 26px;
         font-weight: 600;
-        padding: 20px 20px 20px 0px;
+        padding: 20px 40px 20px 0px;
         border-bottom: 2px solid var(--color-text-white);
         cursor: url("/cursor.webp"), auto;
         @media (max-width: 768px) {
-            padding: 10px 10px 10px 0px;
+            padding: 10px 20px 10px 0px;
         }
-        svg {
+        svg {  position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
             margin-left: 20px;
             @media (max-width: 768px) {
                 width: 13px;
