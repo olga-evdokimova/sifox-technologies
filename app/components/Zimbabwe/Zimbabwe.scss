@@ -169,7 +169,8 @@
         position: absolute;
         top: 35%;
         left: 25%;
-
+        opacity: 0;
+        animation: fadeIn 0.3s ease 0.3s forwards;
         a {
             display: flex;
             align-items: center;

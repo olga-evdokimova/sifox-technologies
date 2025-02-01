@@ -74,7 +74,7 @@
                 top: -14px;
                 left: -100px;
             }
-            @media (max-width: 410px){
+            @media (max-width: 410px) {
                 left: -60px;
                 top: 0;
             }
@@ -115,7 +115,7 @@
             left: -80px;
             bottom: -20px;
         }
-        @media (max-width: 860px){
+        @media (max-width: 860px) {
             left: 0;
             bottom: -50px;
         }
@@ -137,7 +137,7 @@
             @media (max-width: 992px) {
                 left: 4px;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 left: -15px;
             }
         }
@@ -184,7 +184,8 @@
         position: absolute;
         top: 64%;
         left: 40%;
-
+        opacity: 0;
+        animation: fadeIn 0.3s ease 0.3s forwards;
         div {
             display: flex;
             gap: 10px;
@@ -235,7 +236,8 @@
         }
     }
 
-    a {position: relative;
+    a {
+        position: relative;
         font-size: 26px;
         font-weight: 600;
         padding: 20px 40px 20px 0px;
@@ -244,7 +246,8 @@
         @media (max-width: 768px) {
             padding: 10px 20px 10px 0px;
         }
-        svg {  position: absolute;
+        svg {
+            position: absolute;
             right: 0;
             top: 50%;
             transform: translateY(-50%);

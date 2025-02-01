@@ -105,3 +105,8 @@ body {
 .cursor-custom {
     cursor: url("/cursor.webp"), auto;
 }
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
