@@ -125,7 +125,7 @@ export default function Contacts() {
           <div className="text-[var(--color-text-white)] opacity-[0.5] pb-[10px]">
             mail:
           </div>
-          <div>info@sifox.com</div>
+          <div>info@sifoxtech.com</div>
         </Link>
       </div>
     </section>
