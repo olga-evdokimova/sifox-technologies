@@ -43,7 +43,7 @@ export default function About() {
             {Dictionary[lang]["Consumer_and_Digital_and"]} 
           </ScrollLink>
           <ScrollLink
-            className="text-[#0A0714] text-[20px] laptop-sm:text-[14px] bg-[var(--color-text-white)] rounded-[10px] inline-flex items-center justify-center py-[10px] px-[20px] laptop-sm:px-[10px]"
+            className="text-[#0A0714] text-[20px] laptop-sm:text-[14px] bg-[var(--color-text-white)] rounded-[10px] inline-flex items-center justify-center py-[10px] px-[20px] laptop-sm:px-[8px]"
             to="b2b"
             smooth={true}
             duration={1500}
