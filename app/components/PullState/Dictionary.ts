@@ -2,8 +2,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
     "en": {
         //TopBlock
         "connect_the_world": "Connecting the World",
-        "empowering_telecoms_for_seamless": "Empowering Telecoms for Seamless",
-        "data_and_voice-access": "Data and Voice Access",
+        "empowering_telecoms_for_seamless": "Empowering Telecoms for Seamless Data and Voice Access",
         "products": "Products",
         "about": "About",
         //Products
@@ -146,8 +145,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
     "fr": {
         //TopBlock
         "connect_the_world": "Donner aux télécommunications le",
-        "empowering_telecoms_for_seamless": "pouvoir d'un accès fluide aux",
-        "data_and_voice-access": "données et à la voix.",
+        "empowering_telecoms_for_seamless": "pouvoir d'un accès fluide aux données et à la voix",
         "products": "Produits",
         "about": "Ã propos",
         //Products
