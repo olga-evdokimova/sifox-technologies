@@ -50,65 +50,6 @@ export default function Performance() {
 }
 
 
-// function Counter({ item }) {
-//   const { ref, inView } = useInView({
-//     threshold: 0.1,
-//   });
-
-//   const [count, setCount] = useState(0);
-//   const [hasAnimated, setHasAnimated] = useState(false);
-
-//   useEffect(() => {
-//     if (inView && !hasAnimated) {
-//       const targetNum = parseFloat(item.num); 
-//       let start = 0;
-//       const duration = 2000; 
-//       const increment = item.num.includes(".") 
-//         ? targetNum / (duration / 100) 
-//         : Math.ceil(targetNum / (duration / 100)); 
-
-//       const timer = setInterval(() => {
-//         start += increment;
-//         if (start >= targetNum) {
-//           setCount(item.num.includes(".") ? targetNum.toFixed(1) : targetNum); 
-//           setHasAnimated(true);
-//           clearInterval(timer);
-//         } else {
-//           setCount(
-//             item.num.includes(".") ? start.toFixed(1) : Math.floor(start) 
-//           );
-//         }
-//       }, 100);
-
-//       return () => clearInterval(timer); 
-//     }
-//   }, [inView, hasAnimated, item.num]);
-
-//   return (
-//     <div
-//       ref={ref}
-//       className="relative flex items-center justify-center w-full h-auto"
-//     >
-//       <div className="absolute flex flex-col items-center">
-//         <div className="item-text_num font-semibold text-center">
-//           {count}
-//           {item.text_num}
-//         </div>
-//         <div className="item-text text-center">{item.text}</div>
-//       </div>
-//       <Image
-//         src={item.src}
-//         alt="color"
-//         width={400}
-//         height={300}
-//         className="object-contain "
-//       />
-//     </div>
-//   );
-// }
-
-
-
 function Counter({ item }) {
   const { ref, inView } = useInView({
     threshold: 0.1,
@@ -119,19 +60,23 @@ function Counter({ item }) {
 
   useEffect(() => {
     if (inView && !hasAnimated) {
-       const targetNum = parseFloat(item.num); 
+      const targetNum = parseFloat(item.num); 
       let start = 0;
       const duration = 2000; 
-      const increment = targetNum / (duration / 100); 
+      const increment = item.num.includes(".") 
+        ? targetNum / (duration / 100) 
+        : Math.ceil(targetNum / (duration / 100)); 
 
       const timer = setInterval(() => {
         start += increment;
         if (start >= targetNum) {
-          setCount(targetNum);
-          setHasAnimated(true); 
+          setCount(item.num.includes(".") ? targetNum.toFixed(1) : targetNum); 
+          setHasAnimated(true);
           clearInterval(timer);
         } else {
-          setCount(Math.floor(start));
+          setCount(
+            item.num.includes(".") ? start.toFixed(1) : Math.floor(start) 
+          );
         }
       }, 100);
 
@@ -149,9 +94,7 @@ function Counter({ item }) {
           {count}
           {item.text_num}
         </div>
-        <div className="item-text text-center">
-          {item.text}
-        </div>
+        <div className="item-text text-center">{item.text}</div>
       </div>
       <Image
         src={item.src}
@@ -163,3 +106,60 @@ function Counter({ item }) {
     </div>
   );
 }
+
+
+
+// function Counter({ item }) {
+//   const { ref, inView } = useInView({
+//     threshold: 0.1,
+//   });
+
+//   const [count, setCount] = useState(0);
+//   const [hasAnimated, setHasAnimated] = useState(false);
+
+//   useEffect(() => {
+//     if (inView && !hasAnimated) {
+//        const targetNum = parseFloat(item.num); 
+//       let start = 0;
+//       const duration = 2000; 
+//       const increment = targetNum / (duration / 100); 
+
+//       const timer = setInterval(() => {
+//         start += increment;
+//         if (start >= targetNum) {
+//           setCount(targetNum);
+//           setHasAnimated(true); 
+//           clearInterval(timer);
+//         } else {
+//           setCount(Math.floor(start));
+//         }
+//       }, 100);
+
+//       return () => clearInterval(timer); 
+//     }
+//   }, [inView, hasAnimated, item.num]);
+
+//   return (
+//     <div
+//       ref={ref}
+//       className="relative flex items-center justify-center w-full h-auto"
+//     >
+//       <div className="absolute flex flex-col items-center">
+//         <div className="item-text_num font-semibold text-center">
+//           {count}
+//           {item.text_num}
+//         </div>
+//         <div className="item-text text-center">
+//           {item.text}
+//         </div>
+//       </div>
+//       <Image
+//         src={item.src}
+//         alt="color"
+//         width={400}
+//         height={300}
+//         className="object-contain "
+//       />
+//     </div>
+//   );
+// }
