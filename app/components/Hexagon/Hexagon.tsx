@@ -73,7 +73,6 @@ export default function Hexagon(props: HexagonProps) {
     <section className="hexagon" ref={hexagonRef}>
       <div className={`hexagon__inner ${styleName}`}>
         <div className="hexagon__block-left" ref={leftRef} id="b2b">
-          {" "}
           <div className="hexagon__nav left">
             <Title>B2B {Dictionary[lang]["products"]}</Title>
             <button
@@ -93,7 +92,7 @@ export default function Hexagon(props: HexagonProps) {
               >
                 <path
                   d="M1 7.5H40.5M40.5 7.5L34 1M40.5 7.5L34 14"
-                  stroke="#ffffff"
+                  stroke="#e0933e"
                   strokeWidth="2"
                   strokeLinecap="round"
                 />
@@ -121,7 +120,7 @@ export default function Hexagon(props: HexagonProps) {
               >
                 <path
                   d="M41 7.5H1.5M1.5 7.5L8 1M1.5 7.5L8 14"
-                  stroke="#ffffff"
+                  stroke="#e0933e"
                   strokeWidth="2"
                   strokeLinecap="round"
                 />

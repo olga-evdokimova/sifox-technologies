@@ -34,16 +34,18 @@ button,
 textarea {
 	font-size: inherit;
 	outline: none;
-	 all: initial;
+	all: initial;
 }
 
 button {
-  cursor: url('/cursor.webp'), auto;
+	cursor: url("/cursor.webp"), auto;
 	color: inherit;
 	background-color: inherit;
 }
 a {
+	cursor: url("/cursor.webp"), auto;
 	color: inherit;
+	background-color: inherit;
 }
 a:link,
 a:visited {
