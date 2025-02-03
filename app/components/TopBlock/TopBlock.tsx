@@ -13,9 +13,8 @@ export default function TopBlock(props: TopBlockProps) {
   return (
     <section className="top-block container">
       <h1>
-        <span>{Dictionary[lang]["connect_the_world"]}:</span>
-        {Dictionary[lang]["empowering_telecoms_for_seamless"]}
- 
+        <span>{Dictionary[lang]["text_h1_span"]}:</span>
+        {Dictionary[lang]["text_h1"]}
       </h1>
 
       <ul className="top-block__list">
