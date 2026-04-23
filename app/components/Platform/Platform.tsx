@@ -8,15 +8,15 @@ export default function Platform() {
     {
       title: Dictionary[lang]["unique_mobile"],
       year2023: {
-        value: "527m",
-        rate: "44% " + Dictionary[lang]["penetration_rate"],
+        value: "710m",
+        rate: "47% " + Dictionary[lang]["penetration_rate"],
       },
       year2030: {
         value: "751m",
-        rate: "54% " + Dictionary[lang]["penetration_rate"],
+        rate: "53% " + Dictionary[lang]["penetration_rate"],
       },
       cagr: Dictionary[lang]["CAGR"],
-      num: "4.5%",
+      num: "4.3%",
       description: Dictionary[lang]["by_the_end_of_2023"],
     },
     {

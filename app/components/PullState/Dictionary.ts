@@ -42,8 +42,8 @@ export const Dictionary: Record<string, Record<string, string>> = {
         //----------------------------------------------
         //Platform
         "unique_mobile": "Unique mobile subscibers",
-        "penetration_rate": "penetration rate*",
-        "CAGR": "CAGR 2023–2030",
+        "penetration_rate": "penetration rate",
+        "CAGR": "CAGR 2024–2030",
         "%": "4.5%",
         "by_the_end_of_2023": "By the end of 2023, nearly 53% of the population in Sub-Saharan Africa subscribed to a mobile service, amounting to 527 million subscribers.",
         "mobile_internet_users": "Mobile internet users",
