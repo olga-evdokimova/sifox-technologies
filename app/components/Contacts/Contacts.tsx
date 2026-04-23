@@ -17,7 +17,7 @@ export default function Contacts() {
       </div>
       <div className="flex gap-[50px] pb-[150px] tablet:pb-[100px] tablet:flex-wrap tablet:w-[330px] tablet:gap-[30px]">
         <div>
-          <div className="pb-[30px] pl-[23px] flex gap-[5px] relative">
+         <div className="pb-[30px] pl-[23px] flex gap-[5px] relative">
             <svg
               className="absolute left-0"
               width="19"
