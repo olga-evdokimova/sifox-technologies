@@ -1,5 +1,5 @@
 import Title from "../Title/Title";
-import "./Platform.scss";
+// import "./Platform.scss";
 import { PullState } from "../PullState/PullState";
 import { Dictionary } from "../PullState/Dictionary";
 export default function Platform() {
