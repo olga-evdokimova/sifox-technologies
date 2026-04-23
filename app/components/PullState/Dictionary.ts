@@ -87,6 +87,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "We_aim_to_achieve_this_by": "We aim to achieve this by introducing innovative products that stimulate  consumption of products and grow revenue.  We believe that the significant investments in network infrastructure should result in higher ARPUs and ROI, and our mission is to enable this by helping Telcos monetize their existing networks without additional capital expenditure.",
         //Contacts
         "сontacts": "Contacts",
+         "Kenya": "2nd floor , Kalamu House, Grevillea Grove , Westlands, Nairobi, Kenya",
         "5th_floor": "5th Floor, The CORE Building No. 62, ICT Avenue, Cybercity, Ebene, Mauritius",
         "Lithinjm_Consulting_Africa": "Lithium Consulting Africa",
         "Cocody_II_Plateaux": "Cocody II Plateaux, 8ème Tranche Rue L84, Carrefour Prière 25 BP 2122 Abidjan 25, Cote D’ivoire",
@@ -227,6 +228,7 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "We_aim_to_achieve_this_by": "Nous visons à atteindre cet objectif en introduisant des produits innovants qui stimulent la consommation de services et augmentent les revenus. De plus, nous croyons que les investissements significatifs dans les infrastructures réseau devraient se traduire par des ARPU (Revenu Moyen par Utilisateur) et des ROI (Retour sur Investissement) plus élevés. Ainsi, notre mission est de permettre cela en aidant les opérateurs télécoms à rentabiliser leurs réseaux existants sans dépenses en capital supplémentaires.",
         //Contacts
        "сontacts": "Nos emplacements",
+       "Kenya": "2ᵉ étage, Kalamu House, Grevillea Grove, Westlands, Nairobi, Kenya",
         "5th_floor": "5e étage, immeuble The CORE, n° 62, avenue ICT, Cybercity, Ebène, Île Maurice",
         "Lithinjm_Consulting_Africa": "Lithinjm Consulting Africa",
         "Cocody_II_Plateaux": "Cocody II Plateaux, 8ème Tranche Rue L84, Carrefour Prière 25 BP 2122 Abidjan 25, Côte-d'Ivoire",

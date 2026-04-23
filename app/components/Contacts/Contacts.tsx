@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import AcccentTitle from "../AcccentTitle/AccentTitle";
-import "./Contacts.scss";
+// import "./Contacts.scss";
 import Form from "../Form/Form";
 import { PullState } from "../PullState/PullState";
 import { Dictionary } from "../PullState/Dictionary";
@@ -17,6 +17,23 @@ export default function Contacts() {
       </div>
       <div className="flex gap-[50px] pb-[150px] tablet:pb-[100px] tablet:flex-wrap tablet:w-[330px] tablet:gap-[30px]">
         <div>
+            <div className="pb-[30px] pl-[23px] flex gap-[5px] relative">
+            <svg
+              className="absolute left-0"
+              width="19"
+              height="20"
+              viewBox="0 0 19 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.4375 9.82373C15.4375 13.7073 11.2852 16.3551 9.92541 17.1181C9.65854 17.2678 9.34146 17.2678 9.07459 17.1181C7.71483 16.3551 3.5625 13.7073 3.5625 9.82373C3.5625 6.26123 6.43942 3.88623 9.5 3.88623C12.6667 3.88623 15.4375 6.26123 15.4375 9.82373Z"
+                stroke="#E0933E"
+              />
+              <circle cx="9.5" cy="9.82389" r="2.66667" stroke="#E0933E" />
+            </svg>
+            {Dictionary[lang]["Kenya"]}
+          </div>
           <div className="pb-[30px] pl-[23px] flex gap-[5px] relative">
             <svg
               className="absolute left-0"
