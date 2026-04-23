@@ -1,4 +1,6 @@
 "use client";
+import { Suspense, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import About from "./components/About/About";
 import Products from "./components/Products/Products";``
 import Platform from "./components/Platform/Platform";
@@ -8,28 +10,11 @@ import Cases from "./components/Cases/Cases";
 import Contacts from "./components/Contacts/Contacts";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import Performance from "./components/Performance/Performance";
-import { useEffect } from "react";
 import Partners from "./components/Partners/Partners";
-import {useSearchParams} from "next/navigation";
 import { PullState } from "./components/PullState/PullState";
 import Form from "./components/Form/Form";
 
 export default function Home() {
-  const params = useSearchParams();
-
-  // useEffect(() => {
-    const pkParam = params.get("pk");
-    
-    if (pkParam) {
-      PullState.update((state) => {
-        state.hexagonStyleName =
-          pkParam === "B2C" ? "style_right_instant" : "style_left_instant";
-      });
-      const hexagon = document.getElementById("hexagon");
-      hexagon?.scrollIntoView({ behavior: "smooth"});
-    }
-  // }, [params]);
-
   return (
     <section className="main">
       <MainImage />
@@ -40,9 +25,33 @@ export default function Home() {
       <Partners />
       <Performance />
       <About />
-       <Form />
+      <Form />
       <Contacts />
       <ScrollToTopButton />
+      
+      <Suspense fallback={null}>
+        <SearchParamsLogic />
+      </Suspense>
     </section>
   );
+}
+
+function SearchParamsLogic() {
+  const params = useSearchParams();
+
+  useEffect(() => {
+    const pkParam = params.get("pk");
+    if (pkParam) {
+      PullState.update((state) => {
+        state.hexagonStyleName =
+          pkParam === "B2C" ? "style_right_instant" : "style_left_instant";
+      });
+      const hexagon = document.getElementById("hexagon");
+      if (hexagon) {
+        hexagon.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [params]);
+
+  return null;
 }
