@@ -47,22 +47,23 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "%": "4.5%",
         "by_the_end_of_2024": "By the end of 2024, nearly 47% of the population in Africa subscribed to a mobile service, amounting to 710 million subscribers",
         "mobile_internet_users": "Mobile internet users",
-        "mobile_internet_penetration": "Mobile internet penetration has been growing, reaching 27% in the region by the end of 2023.",
+        "mobile_internet_penetration": "Mobile internet penetration has been growing, reaching 28% in the continent by the end of 2024",
 
         "operator_revenues": "Operator revenues and investment",
         "total_revenues": "Total revenues",
-        "operator_capex": "Operator capex for the period 2023–2020",
-        "mobile_revenues_have": "Mobile revenues have been growing steadily in the region. Growth is being driven by the expansion of 4G and 5G networks, the rise in the use of mobile data, and the growing adoption of technologies such as IoT. Annual mobile revenue growth is expected to stay in positive territory through to 2030.",
+        "operator_capex": "Operator capex for the period 2024–2020",
+        "mobile_revenues_have": "Mobile revenues growth is driven by expanding mobile services, enterprise digitalisation, and adoption of digital technologies like 5G, IoT, and AI, alongside network modernization and MVNO partnerships",
 
-        "smartphones": "Smartphones",
+      
         "percentage_of_connections": "Percentage of connections",
-        "by_the_end_of_2030_smartphone": "By the end of 2030, smartphone adoption in the region will grow to 81% of the total connections contributing to an increase of mobile data traffic consumption.",
+        "by_the_end_of_2030_smartphone": "By the end of the decade, 4G adoption in Africa is expected to reach 54%, making it the dominant technology.",
 
-        "by_the_end_of_the_decade": "By the end of the decade, 4G adoption in Sub- Saharan Africa is expected to reach 50%, making it the dominant technology.",
+        "by_the_end_of_the_decade": "5G connections in Africa are set to grow tenfold, rising from 2% in 2024 to 21% by 2030",
 
-        "mobile_data_consumption": "Mobile data consumption",
-        "per_connection_per_month": "Per connection per month",
-        "mobile_data_traffic_will_grow": "Mobile data traffic will grow by almost 6 GB per connection, per month in Sub- Saharan Africa between 2023 and 2030.",
+        "mobile_data_consumption": "Mobileʼs contribution to GDP",
+        "7,7": "7.7% of GDP",
+                "7,4": "7.4% of GDP",
+        "mobile_data_traffic_will_grow": "Mobile’s contribution to GDP remains high, at 7.7% in 2024 and 7.4% in 2030",
         //Cases
         "cases": "Cases",
         "sifox_technologies_has_successfully": " SIFOX Technologies has successfully developed and continues to maintain a variety of distinctive projects across various African countries.",
@@ -187,22 +188,22 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "CAGR": "CAGR 2024–2030",
         "by_the_end_of_2024": "À la fin de 2024, près de 47% de la population africaine avait souscrit à un service mobile, soit 710 millions d’abonnés",
         "mobile_internet_users": "Utilisateurs d’internet mobile",
-        "mobile_internet_penetration": "La pénétration de l’internet mobile a continué de croître, atteignant 27 % dans la région à la fin de 2023.",
+        "mobile_internet_penetration": "La pénétration de l’internet mobile a augmenté, atteignant 28% du continent à la fin de 2024",
 
         "operator_revenues": "Revenus et investissements des opérateurs",
         "total_revenues": "Revenus totaux",
-        "operator_capex": "Operator capex for the period 2023–2020",
-        "mobile_revenues_have": "Les revenus mobiles continuent de croître dans la région. Cette croissance est stimulée par l'expansion des réseaux 4G et 5G, l'augmentation de l'utilisation des données mobiles et l'adoption croissante de technologies comme l'IoT. La croissance annuelle des revenus mobiles devrait rester positive jusqu'en 2030",
+        "operator_capex": "Capex des opérateurs pour la période 2024-2030",
+        "mobile_revenues_have": "La croissance des revenus mobiles est portée par l’extension des services mobiles, la digitalisation des entreprises et l’adoption de technologies numériques comme la 5G, l’IoT et l’IA, ainsi que par la modernisation des réseaux et les partenariats MVNO",
 
-        "smartphones": "Smartphones",
         "percentage_of_connections": "Pourcentage des connexions",
-        "by_the_end_of_2030_smartphone": "À la fin de 2030, l’adoption des smartphones dans la région atteindra 81 % de l’ensemble des connexions, contribuant à une augmentation de la consommation du trafic de données mobiles",
+        "by_the_end_of_2030_smartphone": "La 4G reste la technologie dominante, passant de 45% des 2030.connexions en 2024 à 54% d’ici 2030",
 
-        "by_the_end_of_the_decade": "À la fin de la décennie, l’adoption de la 4G en Afrique subsaharienne devrait atteindre 50 %, en faisant la technologie dominante.",
+        "by_the_end_of_the_decade": "Les connexions 5G en Afrique devraient être multipliées par dix, passant de 2% en 2024 à 21% d’ici La contribution du mobile au PIB$220bn7.7% du PIB$270bn7.4% du PIBLa contribution du mobile au PIB reste élevée, à 7,7% en 2024 et 7,4% en 2030",
 
-        "mobile_data_consumption": "Consommation de données mobiles",
-        "per_connection_per_month": "par connexion et par mois",
-        "mobile_data_traffic_will_grow": "Le trafic de données mobiles augmentera de près de 6 Go par connexion et par mois en Afrique subsaharienne entre 2023 et 2030",
+        "mobile_data_consumption": "La contribution du mobile au PIB",
+        "7,7": "7.7% du PIB",
+              "7,4": ".4% du PIB",
+        "mobile_data_traffic_will_grow": "La contribution du mobile au PIB reste élevée, à 7,7% en 2024 et 7,4% en 2030",
         //Cases
         "cases": "PROJETS",
         "sifox_technologies_has_successfully": "SIFOX Technologies a développé avec succès et continue de maintenir une variété de projets distinctifs dans divers pays africains.",

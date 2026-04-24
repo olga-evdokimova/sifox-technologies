@@ -22,39 +22,39 @@ export default function Platform() {
     {
       title: Dictionary[lang]["mobile_internet_users"],
       year2023: {
-        value: "320m",
-        rate: "27% " + Dictionary[lang]["penetration_rate"],
+        value: "416m",
+        rate: "28% " + Dictionary[lang]["penetration_rate"],
       },
       year2030: {
-        value: "518m",
-        rate: "37% " + Dictionary[lang]["penetration_rate"],
+        value: "576m",
+        rate: "33% " + Dictionary[lang]["penetration_rate"],
       },
-      cagr: "CAGR 2023–2030",
-      num: "6.2%",
+      cagr: "CAGR 2024–2030",
+      num: "5,6%",
       description: Dictionary[lang]["mobile_internet_penetration"],
     },
     {
       title: Dictionary[lang]["operator_revenues"],
       year2023: {
-        value: "$38bn",
+        value: "$52bn",
         rate: Dictionary[lang]["total_revenues"],
       },
       year2030: {
-        value: "$61bn",
+        value: "$79bn",
         rate: Dictionary[lang]["total_revenues"],
       },
       cagr: Dictionary[lang]["operator_capex"],
-      num: "$62bn",
+      num: "$77bn",
       description: Dictionary[lang]["mobile_revenues_have"],
     },
     {
-      title: Dictionary[lang]["smartphones"],
+      title: "4G",
       year2023: {
-        value: "51%",
+        value: "45%",
         rate: Dictionary[lang]["percentage_of_connections"],
       },
       year2030: {
-        value: "81%",
+        value: "54%",
         rate: Dictionary[lang]["percentage_of_connections"],
       },
       cagr: "",
@@ -62,13 +62,13 @@ export default function Platform() {
       description: Dictionary[lang]["by_the_end_of_2030_smartphone"],
     },
     {
-      title: "4G",
+      title: "5G",
       year2023: {
-        value: "31%",
+        value: "2%",
         rate: Dictionary[lang]["percentage_of_connections"],
       },
       year2030: {
-        value: "50%",
+        value: "21%",
         rate: Dictionary[lang]["percentage_of_connections"],
       },
       cagr: "",
@@ -78,12 +78,12 @@ export default function Platform() {
     {
       title: Dictionary[lang]["mobile_data_consumption"],
       year2023: {
-        value: "31%",
-        rate: Dictionary[lang]["per_connection_per_month"],
+        value: "$220bn",
+        rate: Dictionary[lang]["7,7"],
       },
       year2030: {
-        value: "50%",
-        rate: Dictionary[lang]["per_connection_per_month"],
+        value: "$270bn",
+        rate: Dictionary[lang]["7,4"],
       },
       cagr: "",
       num: "",
