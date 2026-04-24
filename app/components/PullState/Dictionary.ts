@@ -40,12 +40,12 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "Data_Sharing": "Data Sharing",
 
         //----------------------------------------------
-        //Platform
+        //Platform 
         "unique_mobile": "Unique mobile subscibers",
-        "penetration_rate": "penetration rate",
+        "penetration_rate": "of the population",
         "CAGR": "CAGR 2024–2030",
         "%": "4.5%",
-        "by_the_end_of_2023": "By the end of 2023, nearly 53% of the population in Sub-Saharan Africa subscribed to a mobile service, amounting to 527 million subscribers.",
+        "by_the_end_of_2024": "By the end of 2024, nearly 47% of the population in Africa subscribed to a mobile service, amounting to 710 million subscribers",
         "mobile_internet_users": "Mobile internet users",
         "mobile_internet_penetration": "Mobile internet penetration has been growing, reaching 27% in the region by the end of 2023.",
 
@@ -183,9 +183,9 @@ export const Dictionary: Record<string, Record<string, string>> = {
         "Data_Sharing": "Partage de Données",
         //Platform
         "unique_mobile": "Abonnés mobiles uniques",
-        "penetration_rate": "de taux de pénétration*",
-        "CAGR": "CAGR 2023–2030",
-        "by_the_end_of_2023": "À la fin de 2023, près de 44 % de la population en Afrique subsaharienne étaient",
+        "penetration_rate": "de la population",
+        "CAGR": "CAGR 2024–2030",
+        "by_the_end_of_2024": "À la fin de 2024, près de 47% de la population africaine avait souscrit à un service mobile, soit 710 millions d’abonnés",
         "mobile_internet_users": "Utilisateurs d’internet mobile",
         "mobile_internet_penetration": "La pénétration de l’internet mobile a continué de croître, atteignant 27 % dans la région à la fin de 2023.",
 

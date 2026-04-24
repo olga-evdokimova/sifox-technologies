@@ -12,12 +12,12 @@ export default function Platform() {
         rate: "47% " + Dictionary[lang]["penetration_rate"],
       },
       year2030: {
-        value: "751m",
+        value: "915m",
         rate: "53% " + Dictionary[lang]["penetration_rate"],
       },
       cagr: Dictionary[lang]["CAGR"],
       num: "4.3%",
-      description: Dictionary[lang]["by_the_end_of_2023"],
+      description: Dictionary[lang]["by_the_end_of_2024"],
     },
     {
       title: Dictionary[lang]["mobile_internet_users"],
@@ -107,7 +107,7 @@ export default function Platform() {
                   className="bg-[var(--color-text-white)] text-[var(--color-accent)] font-semibold 
                   text-[20px] mobile:text-[14px] rounded-[10px] px-[10px] flex items-center h-[34px] mobile:h-[27px]"
                 >
-                  2023
+                  2024
                 </div>
                 <div className="pl-[30px]">
                   <div className="text-[50px] font-semibold">
